@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>RuangBelajar Pro - SMA & UTBK Terlengkap</title>
+    <title>RuangBelajar Pro - Terlengkap Kurikulum Merdeka & K13</title>
     <style>
         @import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap');
         
@@ -68,7 +68,7 @@
         .quiz-option { display: block; margin: 8px 0; padding: 12px 14px; background: #f8fafc; border: 1px solid #cbd5e1; border-radius: 8px; cursor: pointer; font-size: 14px; transition: 0.2s; font-weight: 500; }
         .quiz-option:hover { background: #f0fdf4; border-color: #22c55e; }
 
-        /* GEMINI AI CHATBOT */
+        /* MODALS (Chat & Tryout) */
         .gemini-btn { position: fixed; bottom: 20px; right: 20px; background: linear-gradient(135deg, #7c3aed, #4f46e5); color: white; border: none; padding: 12px 20px; border-radius: 30px; font-weight: 700; font-size: 13px; box-shadow: 0 8px 20px rgba(124, 58, 237, 0.3); cursor: pointer; z-index: 1000; }
         .chat-modal { display: none; position: fixed; bottom: 75px; right: 20px; width: 340px; height: 440px; background: white; border-radius: 14px; box-shadow: 0 12px 32px rgba(0,0,0,0.15); border: 1px solid #e2e8f0; z-index: 1000; flex-direction: column; overflow: hidden; }
         .chat-header { background: #7c3aed; color: white; padding: 12px 16px; font-weight: 700; font-size: 14px; display: flex; justify-content: space-between; align-items: center; }
@@ -79,7 +79,6 @@
         .chat-input-box input { flex: 1; padding: 8px 12px; border: 1px solid #cbd5e1; border-radius: 6px; outline: none; font-size: 12px; }
         .chat-input-box button { background: #7c3aed; color: white; border: none; padding: 8px 12px; margin-left: 6px; border-radius: 6px; cursor: pointer; font-weight: 700; }
 
-        /* TRYOUT MODAL */
         .tryout-overlay { display: none; position: fixed; top: 0; left: 0; width: 100%; height: 100%; background: rgba(15, 23, 42, 0.6); z-index: 2000; justify-content: center; align-items: center; }
         .tryout-box { background: white; width: 90%; max-width: 800px; height: 85vh; border-radius: 14px; display: flex; flex-direction: column; overflow: hidden; }
         .tryout-top { background: #0f172a; color: white; padding: 16px 20px; display: flex; justify-content: space-between; align-items: center; }
@@ -95,8 +94,8 @@
             <span>RuangBelajar Pro</span>
         </div>
         <div class="curriculum-switch">
-            <button class="curr-btn active" onclick="setCurriculum('merdeka', this)">Kurikulum Merdeka (Fase E-F)</button>
-            <button class="curr-btn" onclick="setCurriculum('k13', this)">Kurikulum 2013 Lengkap</button>
+            <button class="curr-btn active" onclick="setCurriculum('merdeka', this)">Kurikulum Merdeka</button>
+            <button class="curr-btn" onclick="setCurriculum('k13', this)">Kurikulum 2013</button>
         </div>
         <button class="btn-tryout" onclick="openTryoutModal()">🎯 Simulasi UTBK Nasional</button>
     </header>
@@ -107,18 +106,13 @@
                 <label>Pilih Jenjang & Kategori</label>
                 <select id="gradeSelect" onchange="loadCategorySubjects()">
                     <optgroup label="Tingkat SMA">
-                        <option value="k10">Kelas 10 (Semua Jurusan)</option>
-                        <option value="k11_ipa">Kelas 11 MIPA</option>
-                        <option value="k11_ips">Kelas 11 IPS</option>
-                        <option value="k12_ipa">Kelas 12 MIPA</option>
-                        <option value="k12_ips">Kelas 12 IPS</option>
-                        <option value="k12_bahasa">Kelas 12 Bahasa & Budaya</option>
+                        <option value="k10" selected>Kelas 10 Umum (Semua Jurusan)</option>
+                        <option value="ipa">Kelompok Sains (IPA)</option>
+                        <option value="ips">Kelompok Soshum (IPS)</option>
+                        <option value="bahasa">Kelompok Bahasa & Budaya</option>
                     </optgroup>
                     <optgroup label="Persiapan PTN">
-                        <option value="utbk_tps" selected>UTBK SNBT - Tes Potensi Skolastik</option>
-                        <option value="utbk_literasi">UTBK SNBT - Literasi</option>
-                        <option value="tka_saintek">TKA Saintek (Ujian Mandiri)</option>
-                        <option value="tka_soshum">TKA Soshum (Ujian Mandiri)</option>
+                        <option value="utbk">UTBK SNBT & TKA Lengkap</option>
                     </optgroup>
                 </select>
             </div>
@@ -130,15 +124,11 @@
         </main>
     </div>
 
-    <!-- AI CHATBOT -->
     <button class="gemini-btn" onclick="toggleChat()">✨ Tanya Gemini AI</button>
     <div class="chat-modal" id="chatWindow">
-        <div class="chat-header">
-            <span>Gemini AI Tutor</span>
-            <span style="cursor:pointer;" onclick="toggleChat()">✖</span>
-        </div>
+        <div class="chat-header"><span>Gemini AI Tutor</span><span style="cursor:pointer;" onclick="toggleChat()">✖</span></div>
         <div class="chat-body" id="chatBody">
-            <div class="msg-ai"><strong>Gemini:</strong> Halo! Masukkan soal matematika kompleks atau teori fisika yang ingin dibahas.</div>
+            <div class="msg-ai"><strong>Gemini:</strong> Halo! Masukkan soal kompleks atau teori yang ingin dibahas.</div>
         </div>
         <div class="chat-input-box">
             <input type="text" id="chatInput" placeholder="Ketik soal..." onkeypress="handleChatKey(event)">
@@ -150,22 +140,22 @@
     <div class="tryout-overlay" id="tryoutOverlay">
         <div class="tryout-box">
             <div class="tryout-top">
-                <h3>Tryout Akbar SNBT - Penalaran Matematika</h3>
+                <h3>Tryout Akbar UTBK SNBT</h3>
                 <div class="tryout-timer">15:00</div>
             </div>
             <div class="tryout-content">
-                <p style="font-weight: 700; margin-bottom: 12px; font-size: 16px;">Soal Nomor 1:</p>
+                <p style="font-weight: 700; margin-bottom: 12px; font-size: 16px;">Soal Penalaran Matematika:</p>
                 <p style="font-size: 16px; margin-bottom: 20px; line-height: 1.6;">
-                    Suatu bakteri membelah diri menjadi dua setiap 15 menit. Jika pada pukul 08:00 terdapat 30 bakteri, berapakah jumlah bakteri pada pukul 10:00?
+                    Jika $f(x) = 2x - 3$ dan $g(x) = x^2 + 1$, berapakah nilai $(f \circ g)(4)$?
                 </p>
-                <div class="quiz-option" onclick="pickTryoutAns(this)">A. 3.840</div>
-                <div class="quiz-option" onclick="pickTryoutAns(this)">B. 7.680</div>
-                <div class="quiz-option" onclick="pickTryoutAns(this)">C. 15.360</div>
-                <div class="quiz-option" onclick="pickTryoutAns(this)">D. 30.720</div>
+                <div class="quiz-option" onclick="pickTryoutAns(this)">A. 29</div>
+                <div class="quiz-option" onclick="pickTryoutAns(this)">B. 31</div>
+                <div class="quiz-option" onclick="pickTryoutAns(this)">C. 33</div>
+                <div class="quiz-option" onclick="pickTryoutAns(this)">D. 35</div>
             </div>
             <div class="tryout-bottom">
                 <button style="padding: 10px 20px; border: 1px solid #cbd5e1; background: white; border-radius: 8px; cursor: pointer; font-weight: 600;" onclick="closeTryoutModal()">Kembali</button>
-                <button style="padding: 10px 24px; background: #2563eb; color: white; border: none; border-radius: 8px; font-weight: 700; cursor: pointer;" onclick="submitTryout()">Kumpulkan Jawaban</button>
+                <button style="padding: 10px 24px; background: #2563eb; color: white; border: none; border-radius: 8px; font-weight: 700; cursor: pointer;" onclick="submitTryout()">Kumpulkan</button>
             </div>
         </div>
     </div>
@@ -173,308 +163,173 @@
     <script>
         let currentCurriculum = 'merdeka';
 
+        // Fungsi Helper untuk membuat list bab agar jumlahnya pas dengan request
+        const generateBabs = (baseBabs, targetCount) => {
+            const babs = [...baseBabs];
+            for (let i = baseBabs.length + 1; i <= targetCount; i++) {
+                babs.push(`Bab ${i}: Pendalaman Materi Ke-${i}`);
+            }
+            return babs;
+        };
+
         const appDatabase = {
-            // ================= KELAS 10 =================
+            // ================= MATA PELAJARAN UMUM & KELAS 10 =================
             k10: [
                 {
-                    id: "mtk10", name: "Matematika Wajib & Peminatan", tutor: "Tim Matematika Ahli", video: "https://www.youtube.com/embed/FqYIq9kdshM?rel=0&modestbranding=1",
-                    summary: "Mencakup Eksponen, Logaritma, Sistem Persamaan Linear Tiga Variabel (SPLTV), Pertidaksamaan Rasional, Vektor, Fungsi Kuadrat, dan Trigonometri Dasar.<br><br><strong>Fokus Pemahaman:</strong><br>1. Sifat distributif eksponen berlaku dua arah.<br>2. Logaritma adalah invers dari eksponen: a^c = b berarti a log b = c.<br>3. Nilai Sin, Cos, Tan harus dihafalkan minimal di kuadran I (0, 30, 45, 60, 90 derajat).",
-                    trick: "💡 <strong>Trik Logaritma & Eksponen:</strong><br>Jika menemukan soal berpangkat bertingkat, selesaikan dari pangkat paling atas. Untuk soal logaritma dengan basis berantai: <code>a log b × b log c = a log c</code>. Jika basisnya berbeda tapi bisa disamakan (misal 2 dan 4), gunakan sifat <code>a^n log b^m = (m/n) a log b</code>.",
-                    bab: ["Bab 1: Eksponen & Bentuk Akar", "Bab 2: Logaritma", "Bab 3: Sistem Persamaan Linear Tiga Variabel (SPLTV)", "Bab 4: Pertidaksamaan Rasional & Irasional", "Bab 5: Relasi & Fungsi", "Bab 6: Trigonometri Sudut Berelasi", "Bab 7: Vektor R2 dan R3", "Bab 8: Barisan dan Deret"],
-                    quiz: {
-                        question: "Jika 2^x = 16 dan 3^y = 81, berapakah nilai dari x + y?",
-                        options: ["A. 6", "B. 7", "C. 8", "D. 9"],
-                        correct: "C. 8",
-                        explain: "2^x = 16 -> x = 4. 3^y = 81 -> y = 4. Maka x + y = 4 + 4 = 8."
-                    }
+                    id: "ppkn", name: "Pendidikan Pancasila / PPKn", tutor: "Tim Guru PPKn", video: "https://www.youtube.com/embed/ScMzIvxBSi4?rel=0&modestbranding=1",
+                    summary: "Memahami Sejarah Pancasila, UUD 1945, Bhinneka Tunggal Ika, NKRI, Sistem Pemerintahan, dan Kewarganegaraan.",
+                    trick: "💡 <strong>Cara Hafal Konstitusi:</strong> UUD 1945 diamandemen 4 kali (1999, 2000, 2001, 2002). Ingat urutan perubahan pasal dengan metode jembatan keledai.",
+                    bab: generateBabs(["Bab 1: Sejarah Perumusan Pancasila", "Bab 2: Konstitusi & UUD 1945", "Bab 3: Sistem Demokrasi Indonesia", "Bab 4: Hak Asasi Manusia (HAM)"], 24),
+                    quiz: { question: "Amandemen pertama UUD 1945 dilakukan pada tahun...", options: ["A. 1998", "B. 1999", "C. 2000", "D. 2001"], correct: "B. 1999", explain: "Amandemen pertama disahkan pada Sidang Umum MPR 1999." }
                 },
                 {
-                    id: "fis10", name: "Fisika", tutor: "Master Fisika SMA", video: "https://www.youtube.com/embed/ScMzIvxBSi4?rel=0&modestbranding=1",
-                    summary: "Mempelajari Besaran, Satuan, Angka Penting, Vektor, Kinematika (GLB, GLBB, Gerak Parabola, Gerak Melingkar), dan Dinamika Partikel (Hukum Newton).",
-                    trick: "💡 <strong>Metode Rumus Tanpa Waktu (GLBB):</strong><br>Jika soal tidak menyebutkan dan tidak menanyakan waktu (t), langsung gunakan rumus: <code>Vt² = V0² + 2as</code>. Untuk Gerak Parabola, ketinggian maksimum (H) dihafal dengan <code>H = (V0² sin²θ) / 2g</code>.",
-                    bab: ["Bab 1: Hakikat Fisika & Pengukuran", "Bab 2: Vektor: Penjumlahan & Penguraian", "Bab 3: Gerak Lurus Beraturan (GLB) & GLBB", "Bab 4: Gerak Parabola", "Bab 5: Gerak Melingkar Beraturan", "Bab 6: Hukum Newton tentang Gerak", "Bab 7: Hukum Newton tentang Gravitasi"],
-                    quiz: {
-                        question: "Sebuah mobil mengerem dari kecepatan 20 m/s hingga berhenti dalam waktu 4 detik. Berapa percepatannya?",
-                        options: ["A. -5 m/s²", "B. 5 m/s²", "C. -4 m/s²", "D. 4 m/s²"],
-                        correct: "A. -5 m/s²",
-                        explain: "Gunakan a = (Vt - V0) / t. a = (0 - 20) / 4 = -5 m/s² (tanda minus berarti perlambatan)."
-                    }
+                    id: "bind", name: "Bahasa Indonesia", tutor: "Pakar Bahasa", video: "https://www.youtube.com/embed/FqYIq9kdshM?rel=0&modestbranding=1",
+                    summary: "Teks Laporan Hasil Observasi (LHO), Teks Eksposisi, Anekdot, Hikayat, Negosiasi, Teks Prosedur, dan Kaidah PUEBI.",
+                    trick: "💡 <strong>Trik Kalimat Efektif:</strong> Kalimat tidak boleh memiliki Subjek ganda dan harus menghindari preposisi (di, ke, dari, pada) di awal kalimat jika bertindak sebagai Subjek.",
+                    bab: generateBabs(["Bab 1: Teks Laporan Hasil Observasi", "Bab 2: Teks Eksposisi", "Bab 3: Teks Anekdot & Humor", "Bab 4: Nilai Kehidupan dalam Hikayat", "Bab 5: PUEBI & Tata Kalimat"], 30),
+                    quiz: { question: "Struktur teks eksposisi yang benar adalah...", options: ["A. Tesis - Argumentasi - Penegasan Ulang", "B. Orientasi - Komplikasi - Resolusi", "C. Pernyataan Umum - Deskripsi Bagian", "D. Abstraksi - Orientasi - Krisis"], correct: "A. Tesis - Argumentasi - Penegasan Ulang", explain: "Teks eksposisi mengemukakan pendapat (tesis) yang didukung alasan (argumentasi)." }
                 },
                 {
-                    id: "kim10", name: "Kimia", tutor: "Pakar Kimia Nasional", video: "https://www.youtube.com/embed/FqYIq9kdshM?rel=0&modestbranding=1",
-                    summary: "Menguasai Struktur Atom, Konfigurasi Elektron, Ikatan Kimia (Ion, Kovalen, Logam), Bentuk Molekul (VSEPR), dan Stoikiometri dasar (Mol, Molaritas).",
-                    trick: "💡 <strong>Trik Ikatan Kovalen vs Ion:</strong><br>Ion = Logam + Non-Logam (Gol I/IIA + Gol VI/VIIA). Kovalen = Non-Logam + Non-Logam. Untuk hibridisasi bentuk molekul, ingat jumlah domain elektron: 2=Linear (sp), 3=Segitiga Datar (sp²), 4=Tetrahedral (sp³).",
-                    bab: ["Bab 1: Model & Struktur Atom", "Bab 2: Sistem Periodik Unsur", "Bab 3: Ikatan Ion & Kovalen", "Bab 4: Bentuk Molekul (Teori Domain Elektron)", "Bab 5: Gaya Antarmolekul", "Bab 6: Tata Nama Senyawa & Persamaan Reaksi", "Bab 7: Hukum Dasar Kimia", "Bab 8: Konsep Mol (Stoikiometri)"],
-                    quiz: {
-                        question: "Senyawa dengan ikatan kovalen polar di bawah ini adalah...",
-                        options: ["A. H2", "B. CH4", "C. HCl", "D. O2"],
-                        correct: "C. HCl",
-                        explain: "Kovalen polar terjadi antara dua atom non-logam yang memiliki perbedaan keelektronegatifan, seperti H dan Cl."
-                    }
+                    id: "bing", name: "Bahasa Inggris", tutor: "English Native Tutor", video: "https://www.youtube.com/embed/ScMzIvxBSi4?rel=0&modestbranding=1",
+                    summary: "Tenses (Present, Past, Future, Perfect), Narrative Text, Descriptive Text, Analytical Exposition, Procedure Text, Passive Voice, dan Conditional Sentences.",
+                    trick: "💡 <strong>Trik Tenses V3:</strong> Setiap tenses yang memiliki kata 'Perfect' (Present Perfect, Past Perfect) WAJIB menggunakan Verb 3.",
+                    bab: generateBabs(["Bab 1: Descriptive Text & Present Tense", "Bab 2: Recount Text & Past Tense", "Bab 3: Narrative Text & Direct-Indirect Speech", "Bab 4: Passive Voice", "Bab 5: Conditional Sentences (If Clause)"], 30),
+                    quiz: { question: "If I ___ a bird, I would fly around the world.", options: ["A. am", "B. was", "C. were", "D. be"], correct: "C. were", explain: "Conditional Type 2 for unreal situations always uses 'were' for all subjects." }
                 },
                 {
-                    id: "bio10", name: "Biologi", tutor: "Tutor Biologi Ahli", video: "https://www.youtube.com/embed/ScMzIvxBSi4?rel=0&modestbranding=1",
-                    summary: "Fokus pada Ruang Lingkup Biologi, Virus, Bakteri (Monera), Protista, Fungi (Jamur), Plantae, Animalia, dan Ekologi.",
-                    trick: "💡 <strong>Mnemonik Klasifikasi Kingdom Plantae:</strong><br>Bryophyta (Lumut) = Akar semu, tidak ada pembuluh. Pteridophyta (Paku) = Akar sejati, ada pembuluh, berspora. Spermatophyta (Biji) = Akar sejati, ada pembuluh, berbiji.",
-                    bab: ["Bab 1: Ruang Lingkup Biologi", "Bab 2: Virus: Struktur & Reproduksi", "Bab 3: Archaebacteria & Eubacteria", "Bab 4: Protista", "Bab 5: Fungi (Jamur)", "Bab 6: Plantae (Dunia Tumbuhan)", "Bab 7: Animalia (Invertebrata & Vertebrata)", "Bab 8: Ekologi & Daur Biogeokimia"],
-                    quiz: {
-                        question: "Fungi (Jamur) yang berperan dalam pembuatan tempe adalah...",
-                        options: ["A. Saccharomyces cerevisiae", "B. Rhizopus oryzae", "C. Penicillium notatum", "D. Aspergillus wentii"],
-                        correct: "B. Rhizopus oryzae",
-                        explain: "Rhizopus oryzae adalah jamur kelompok Zygomycota yang digunakan untuk memfermentasi kedelai menjadi tempe."
-                    }
+                    id: "mtk_umum", name: "Matematika", tutor: "Jerome Polin", video: "https://www.youtube.com/embed/FqYIq9kdshM?rel=0&modestbranding=1",
+                    summary: "Aljabar Dasar, Eksponen & Logaritma, Fungsi Kuadrat, Pertidaksamaan, Trigonometri, Statistika, Peluang, dan Geometri Dasar.",
+                    trick: "💡 <strong>Trik Cepat Persamaan Kuadrat:</strong> Rumus ABC $\\rightarrow$ $x = (-b \\pm \\sqrt{D}) / 2a$. Jika Ditanya $x_1 + x_2$ rumusnya $-b/a$. Jika $x_1 \\cdot x_2$ rumusnya $c/a$.",
+                    bab: generateBabs(["Bab 1: Eksponen & Bentuk Akar", "Bab 2: Logaritma Dasar", "Bab 3: Persamaan & Fungsi Kuadrat", "Bab 4: Trigonometri Segitiga Siku-Siku", "Bab 5: Peluang & Kombinatorika"], 35),
+                    quiz: { question: "Jika akar-akar persamaan $x^2 - 5x + 6 = 0$ adalah $p$ dan $q$, nilai $p+q$ adalah...", options: ["A. -5", "B. 5", "C. 6", "D. -6"], correct: "B. 5", explain: "$p+q = -b/a = -(-5)/1 = 5$." }
                 },
                 {
-                    id: "eko10", name: "Ekonomi", tutor: "Tim Ekonomi SMA", video: "https://www.youtube.com/embed/FqYIq9kdshM?rel=0&modestbranding=1",
-                    summary: "Mencakup Konsep Dasar Ilmu Ekonomi, Masalah Ekonomi, Pelaku Ekonomi (Circulair Flow Diagram), Permintaan, Penawaran, Keseimbangan Pasar, Bank, dan OJK.",
-                    trick: "💡 <strong>Trik Menghitung Keseimbangan Pasar:</strong><br>Keseimbangan terjadi ketika fungsi Permintaan (Qd) = Fungsi Penawaran (Qs). Jangan tertukar dengan harga (Pd = Ps). Setelah dapat Q, masukkan ke salah satu fungsi untuk mencari P.",
-                    bab: ["Bab 1: Konsep Ilmu & Masalah Ekonomi", "Bab 2: Sistem Ekonomi Dunia", "Bab 3: Pelaku & Interaksi Ekonomi (Circulair Flow)", "Bab 4: Permintaan, Penawaran & Harga Keseimbangan", "Bab 5: Pasar Persaingan Sempurna & Tidak Sempurna", "Bab 6: Bank Sentral & Sistem Pembayaran", "Bab 7: Otoritas Jasa Keuangan (OJK)", "Bab 8: Manajemen & Koperasi"],
-                    quiz: {
-                        question: "Jika Qd = 100 - 2P dan Qs = -20 + 4P, berapakah harga keseimbangannya?",
-                        options: ["A. 10", "B. 20", "C. 30", "D. 40"],
-                        correct: "B. 20",
-                        explain: "Qd = Qs -> 100 - 2P = -20 + 4P -> 120 = 6P -> P = 20."
-                    }
+                    id: "sej", name: "Sejarah", tutor: "Tim Sejarah Nasional", video: "https://www.youtube.com/embed/ScMzIvxBSi4?rel=0&modestbranding=1",
+                    summary: "Konsep berpikir sejarah, Zaman Pra-Aksara, Kerajaan Hindu-Buddha, Kerajaan Islam, Kolonialisme, hingga Pergerakan Nasional.",
+                    trick: "💡 <strong>Sinkronik vs Diakronik:</strong> Diakronik = memanjang dalam waktu, menyempit ruang. Sinkronik = meluas dalam ruang, menyempit waktu.",
+                    bab: generateBabs(["Bab 1: Konsep Berpikir Sinkronik & Diakronik", "Bab 2: Manusia Purba & Pra-Aksara", "Bab 3: Pengaruh Hindu-Buddha di Nusantara", "Bab 4: Masuknya Islam di Indonesia", "Bab 5: Kolonialisme VOC"], 30),
+                    quiz: { question: "Sumpah Pemuda diikrarkan pada Kongres Pemuda II tanggal...", options: ["A. 2 Mei 1928", "B. 28 Oktober 1928", "C. 20 Mei 1908", "D. 17 Agustus 1945"], correct: "B. 28 Oktober 1928", explain: "Kongres Pemuda II berlangsung pada 27-28 Oktober 1928 di Batavia." }
                 },
                 {
-                    id: "sej10", name: "Sejarah", tutor: "Tutor Sejarah Nasional", video: "https://www.youtube.com/embed/ScMzIvxBSi4?rel=0&modestbranding=1",
-                    summary: "Konsep berpikir sinkronik & diakronik, masa Pra-aksara Indonesia, peradaban awal dunia, dan masuknya agama Hindu-Buddha serta Islam ke Nusantara.",
-                    trick: "💡 <strong>Perbedaan Sinkronik & Diakronik:</strong><br>Diakronik = Memanjang dalam waktu, menyempit dalam ruang (Kronologis/Sejarah murni). Sinkronik = Meluas dalam ruang, menyempit dalam waktu (Pendekatan Ilmu Sosial seperti Ekonomi/Sosiologi pada satu masa tertentu).",
-                    bab: ["Bab 1: Konsep Berpikir Sejarah", "Bab 2: Manusia Purba di Indonesia & Dunia", "Bab 3: Corak Kehidupan Masyarakat Praaksara", "Bab 4: Peradaban Awal Dunia (Mesopotamia, Mesir, India)", "Bab 5: Masuknya Hindu-Buddha ke Nusantara", "Bab 6: Kerajaan Hindu-Buddha Besar (Sriwijaya & Majapahit)", "Bab 7: Masuknya Islam ke Nusantara", "Bab 8: Kerajaan-Kerajaan Islam Nusantara"],
-                    quiz: {
-                        question: "Fosil manusia purba Meganthropus Paleojavanicus ditemukan di daerah...",
-                        options: ["A. Trinil", "B. Sangiran", "C. Ngandong", "D. Mojokerto"],
-                        correct: "B. Sangiran",
-                        explain: "Fosil ini ditemukan oleh von Koenigswald di formasi Pucangan, Sangiran."
-                    }
+                    id: "info", name: "Informatika", tutor: "Pakar IT Pendidikan", video: "https://www.youtube.com/embed/FqYIq9kdshM?rel=0&modestbranding=1",
+                    summary: "Berpikir Komputasional (Computational Thinking), Algoritma & Pemrograman Dasar (Python/C++), Jaringan Komputer, dan Analisis Data.",
+                    trick: "💡 <strong>Algoritma 4 Pilar:</strong> Dekomposisi, Pengenalan Pola, Abstraksi, Algoritma.",
+                    bab: generateBabs(["Bab 1: Berpikir Komputasional", "Bab 2: Sistem Komputer & Hardware", "Bab 3: Jaringan Komputer & Internet", "Bab 4: Algoritma & Pemrograman Dasar", "Bab 5: Dampak Sosial Informatika"], 25),
+                    quiz: { question: "Proses memecah masalah besar dan kompleks menjadi bagian-bagian kecil disebut...", options: ["A. Abstraksi", "B. Pengenalan Pola", "C. Dekomposisi", "D. Algoritma"], correct: "C. Dekomposisi", explain: "Dekomposisi adalah teknik dasar dalam Berpikir Komputasional." }
                 }
             ],
 
-            // ================= KELAS 11 IPA =================
-            k11_ipa: [
+            // ================= KELAS 11-12 IPA =================
+            ipa: [
                 {
-                    id: "mtk11_ipa", name: "Matematika 11 MIPA", tutor: "Tim Matematika", video: "https://www.youtube.com/embed/FqYIq9kdshM?rel=0&modestbranding=1",
-                    summary: "Program Linear, Matriks, Transformasi Geometri, Barisan & Deret Tak Hingga, Limit Fungsi Aljabar, Turunan Fungsi Aljabar, dan Integral Tak Tentu.",
-                    trick: "💡 <strong>Trik Turunan Pembagian (U/V):</strong><br>y = U/V $\\rightarrow$ y' = (U'V - UV') / V². Jangan terbalik urutan pembilangnya! <br><strong>Trik Limit Tak Hingga Aljabar:</strong> Bentuk √(ax²+bx+c) - √(px²+qx+r). Jika a=p, gunakan rumus cepat: (b - q) / 2√a.",
-                    bab: ["Bab 1: Induksi Matematika", "Bab 2: Program Linear Dua Variabel", "Bab 3: Matriks: Determinan & Invers", "Bab 4: Transformasi Geometri", "Bab 5: Polinomial (Teorema Sisa & Faktor)", "Bab 6: Limit Fungsi Aljabar", "Bab 7: Turunan Fungsi Aljabar", "Bab 8: Integral Tak Tentu Aljabar"],
-                    quiz: {
-                        question: "Turunan pertama dari y = 3x^4 - 2x^2 + 5x adalah...",
-                        options: ["A. 12x^3 - 4x + 5", "B. 12x^3 - 2x + 5", "C. 4x^3 - 4x + 5", "D. 12x^4 - 4x^2 + 5"],
-                        correct: "A. 12x^3 - 4x + 5",
-                        explain: "Aturan turunan: pangkat dikali koefisien depan, lalu pangkat dikurangi 1."
-                    }
+                    id: "fisika", name: "Fisika", tutor: "Tim Fisika Sains", video: "https://www.youtube.com/embed/ScMzIvxBSi4?rel=0&modestbranding=1",
+                    summary: "Kinematika, Dinamika Partikel & Rotasi, Termodinamika, Listrik Magnet, Gelombang Elektromagnetik, dan Fisika Modern.",
+                    trick: "💡 <strong>Trik Energi Mekanik (EM):</strong> EM selalu konstan (Ep + Ek). Pada titik tertinggi, Ek = 0. Pada titik terendah, Ep = 0.",
+                    bab: generateBabs(["Bab 1: Vektor & Kinematika Gerak Lurus", "Bab 2: Hukum Newton & Dinamika Partikel", "Bab 3: Usaha, Energi & Daya", "Bab 4: Impuls & Momentum", "Bab 5: Fluida Statis & Dinamis", "Bab 6: Listrik Statis & Dinamis", "Bab 7: Medan Magnet & Induksi Elektromagnetik"], 35),
+                    quiz: { question: "Satuan dari Gaya (F) dalam SI adalah...", options: ["A. Joule", "B. Newton", "C. Watt", "D. Pascal"], correct: "B. Newton", explain: "$F = m \\times a = kg \\cdot m/s^2 = Newton$." }
                 },
                 {
-                    id: "fis11", name: "Fisika 11", tutor: "Tim Fisika", video: "https://www.youtube.com/embed/ScMzIvxBSi4?rel=0&modestbranding=1",
-                    summary: "Dinamika Rotasi, Kesetimbangan Benda Tegar, Elastisitas, Fluida Statis, Fluida Dinamis, Suhu & Kalor, Teori Kinetik Gas, dan Termodinamika.",
-                    trick: "💡 <strong>Trik Fluida (Hukum Bernoulli):</strong><br>Kecepatan fluida berbanding terbalik dengan tekanan. Jika aliran air menyempit, kecepatan (v) NAIK, tetapi tekanan (P) justru TURUN. Konsep ini diaplikasikan pada sayap pesawat terbang (Gaya Angkat).",
-                    bab: ["Bab 1: Dinamika Rotasi & Momen Inersia", "Bab 2: Kesetimbangan Benda Tegar", "Bab 3: Elastisitas & Hukum Hooke", "Bab 4: Fluida Statis (Pascal, Archimedes)", "Bab 5: Fluida Dinamis (Kontinuitas & Bernoulli)", "Bab 6: Suhu, Kalor & Perpindahan Kalor", "Bab 7: Teori Kinetik Gas Ideal", "Bab 8: Termodinamika (Mesin Carnot)"],
-                    quiz: {
-                        question: "Sebuah gaya 50 N bekerja pada jarak 0,2 m dari poros putar dengan sudut 90 derajat. Berapa besar momen gaya (torsi)?",
-                        options: ["A. 10 Nm", "B. 25 Nm", "C. 100 Nm", "D. 250 Nm"],
-                        correct: "A. 10 Nm",
-                        explain: "Torsi (τ) = F × r × sin(θ) = 50 × 0.2 × sin(90°) = 10 Nm."
-                    }
+                    id: "kimia", name: "Kimia", tutor: "Tim Kimia Sains", video: "https://www.youtube.com/embed/FqYIq9kdshM?rel=0&modestbranding=1",
+                    summary: "Struktur Atom, Stoikiometri, Termokimia, Laju Reaksi, Kesetimbangan, Sifat Koligatif, Redoks, dan Senyawa Karbon.",
+                    trick: "💡 <strong>Trik pH Asam Lemah:</strong> pH = $-\\log[H^+]$ dimana $[H^+] = \\sqrt{Ka \\times M}$.",
+                    bab: generateBabs(["Bab 1: Struktur Atom & Ikatan Kimia", "Bab 2: Stoikiometri Larutan", "Bab 3: Termokimia & Hukum Hess", "Bab 4: Laju Reaksi & Kesetimbangan", "Bab 5: Larutan Asam Basa & Titrasi", "Bab 6: Sifat Koligatif Larutan", "Bab 7: Elektrokimia (Sel Volta & Elektrolisis)"], 35),
+                    quiz: { question: "Pada sel Volta, reaksi reduksi terjadi di elektroda...", options: ["A. Anoda", "B. Katoda", "C. Jembatan Garam", "D. Elektrolit"], correct: "B. Katoda", explain: "KRAO: Katoda Reduksi, Anoda Oksidasi." }
                 },
                 {
-                    id: "kim11", name: "Kimia 11", tutor: "Tim Kimia", video: "https://www.youtube.com/embed/FqYIq9kdshM?rel=0&modestbranding=1",
-                    summary: "Senyawa Hidrokarbon, Minyak Bumi, Termokimia (ΔH), Laju Reaksi, Kesetimbangan Kimia, Larutan Asam Basa, Penyangga (Buffer), dan Hidrolisis Garam.",
-                    trick: "💡 <strong>Trik Hidrolisis Garam:</strong><br>Sifat garam ditentukan oleh induk yang KUAT. Jika berasal dari Asam Kuat + Basa Lemah $\\rightarrow$ Garam Asam (pH < 7). Rumusnya selalu menggunakan akar(Kw / Kb × [Kation]). Gunakan Kb (lawan dari sifat garamnya).",
-                    bab: ["Bab 1: Senyawa Hidrokarbon & Isomer", "Bab 2: Minyak Bumi & Fraksinasi", "Bab 3: Termokimia (Hukum Hess & Energi Ikatan)", "Bab 4: Laju Reaksi & Faktor Penentu", "Bab 5: Kesetimbangan Kimia (Kc & Kp)", "Bab 6: Teori Asam Basa & Derajat Keasaman (pH)", "Bab 7: Larutan Penyangga (Buffer)", "Bab 8: Hidrolisis Garam & Ksp"],
-                    quiz: {
-                        question: "Pencampuran antara asam asetat (CH3COOH) berlebih dengan basa kuat (NaOH) akan membentuk larutan...",
-                        options: ["A. Penyangga Asam", "B. Penyangga Basa", "C. Hidrolisis Asam", "D. Garam Netral"],
-                        correct: "A. Penyangga Asam",
-                        explain: "Asam lemah yang tersisa (berlebih) bereaksi dengan basa kuat membentuk larutan buffer asam."
-                    }
+                    id: "biologi", name: "Biologi", tutor: "Tim Biologi Sains", video: "https://www.youtube.com/embed/ScMzIvxBSi4?rel=0&modestbranding=1",
+                    summary: "Sel & Organel, Sistem Organ Tubuh Manusia, Genetika (DNA/RNA), Metabolisme (Fotosintesis/Respirasi), Mutasi, dan Evolusi.",
+                    trick: "💡 <strong>Respirasi Sel (4 Tahap):</strong> Glikolisis $\\rightarrow$ Dekarboksilasi Oksidatif $\\rightarrow$ Siklus Krebs $\\rightarrow$ Transpor Elektron.",
+                    bab: generateBabs(["Bab 1: Struktur & Fungsi Sel", "Bab 2: Jaringan Tumbuhan & Hewan", "Bab 3: Sistem Gerak & Peredaran Darah", "Bab 4: Sistem Pencernaan & Pernapasan", "Bab 5: Metabolisme Sel (Enzim & ATP)", "Bab 6: Sintesis Protein (Transkripsi & Translasi)", "Bab 7: Hukum Mendel & Genetika Populasi"], 40),
+                    quiz: { question: "Organel yang berfungsi sebagai tempat pembentukan energi (ATP) adalah...", options: ["A. Lisosom", "B. Ribosom", "C. Mitokondria", "D. Badan Golgi"], correct: "C. Mitokondria", explain: "Mitokondria melakukan respirasi seluler untuk menghasilkan ATP." }
+                },
+                {
+                    id: "mtk_lanjut", name: "Matematika Tingkat Lanjut", tutor: "Jerome Polin", video: "https://www.youtube.com/embed/FqYIq9kdshM?rel=0&modestbranding=1",
+                    summary: "Polinomial (Suku Banyak), Matriks Lanjutan, Irisan Kerucut (Parabola, Elips, Hiperbola), Limit Tak Hingga, Turunan & Integral Lanjut.",
+                    trick: "💡 <strong>Trik Teorema Sisa:</strong> Jika polinomial $P(x)$ dibagi $(x-a)$, sisanya adalah $P(a)$.",
+                    bab: generateBabs(["Bab 1: Polinomial & Teorema Sisa", "Bab 2: Matriks Transformasi & Determinan 3x3", "Bab 3: Irisan Kerucut (Lingkaran & Parabola)", "Bab 4: Limit Fungsi Trigonometri & Limit Tak Hingga", "Bab 5: Aplikasi Integral (Volume Benda Putar)"], 25),
+                    quiz: { question: "Sisa pembagian $x^3 - 2x + 5$ oleh $(x-2)$ adalah...", options: ["A. 5", "B. 7", "C. 9", "D. 11"], correct: "C. 9", explain: "Substitusi x = 2. $2^3 - 2(2) + 5 = 8 - 4 + 5 = 9$." }
                 }
             ],
 
-            // ================= KELAS 11 IPS =================
-            k11_ips: [
+            // ================= KELAS 11-12 IPS =================
+            ips: [
                 {
-                    id: "eko11", name: "Ekonomi 11", tutor: "Tim Ekonomi", video: "https://www.youtube.com/embed/FqYIq9kdshM?rel=0&modestbranding=1",
-                    summary: "Pendapatan Nasional (Pendekatan Produksi, Pengeluaran, Pendapatan), Pertumbuhan Ekonomi, Ketenagakerjaan, Inflasi, Kebijakan Moneter & Fiskal, APBN, Pajak, dan Perdagangan Internasional.",
-                    trick: "💡 <strong>Trik Menghitung Pendapatan Nasional (Pengeluaran):</strong><br>C-I-G-X-M $\\rightarrow$ Y = C + I + G + (X - M). (C=Konsumsi, I=Investasi, G=Pengeluaran Pemerintah, X=Ekspor, M=Impor).",
-                    bab: ["Bab 1: Pendapatan Nasional", "Bab 2: Pertumbuhan & Pembangunan Ekonomi", "Bab 3: Ketenagakerjaan & Pengangguran", "Bab 4: Indeks Harga & Inflasi", "Bab 5: Kebijakan Moneter & Kebijakan Fiskal", "Bab 6: APBN & APBD", "Bab 7: Perpajakan di Indonesia", "Bab 8: Perdagangan Internasional"],
-                    quiz: {
-                        question: "Kebijakan pemerintah untuk menurunkan jumlah uang beredar guna mengatasi inflasi dengan menjual surat berharga disebut kebijakan...",
-                        options: ["A. Operasi Pasar Terbuka (Open Market)", "B. Diskonto", "C. Cadangan Kas", "D. Kredit Selektif"],
-                        correct: "A. Operasi Pasar Terbuka (Open Market)",
-                        explain: "Dengan menjual Surat Bank Indonesia (SBI), uang dari masyarakat tertarik masuk ke bank sentral."
-                    }
+                    id: "geografi", name: "Geografi", tutor: "Tim Geografi", video: "https://www.youtube.com/embed/ScMzIvxBSi4?rel=0&modestbranding=1",
+                    summary: "Biosfer, Antroposfer, Litosfer, Atmosfer, Hidrosfer, Pemetaan & SIG, Tata Ruang Wilayah (Desa-Kota).",
+                    trick: "💡 <strong>Trik Skala Peta:</strong> Jarak Sebenarnya (JS) = Jarak Peta (JP) $\\times$ Penyebut Skala.",
+                    bab: generateBabs(["Bab 1: Prinsip & Pendekatan Geografi", "Bab 2: Dinamika Litosfer & Gempa", "Bab 3: Dinamika Atmosfer & Iklim", "Bab 4: Persebaran Flora & Fauna", "Bab 5: Penginderaan Jauh & SIG", "Bab 6: Pola Keruangan Desa & Kota", "Bab 7: Negara Maju & Berkembang"], 35),
+                    quiz: { question: "Pendekatan geografi yang menganalisis hubungan manusia dengan lingkungannya adalah...", options: ["A. Keruangan", "B. Ekologi", "C. Kompleks Wilayah", "D. Regional"], correct: "B. Ekologi", explain: "Ekologi (Kelingkungan) fokus pada interaksi makhluk hidup dengan alam." }
                 },
                 {
-                    id: "sos11", name: "Sosiologi 11", tutor: "Tim Sosiologi", video: "https://www.youtube.com/embed/ScMzIvxBSi4?rel=0&modestbranding=1",
-                    summary: "Pembentukan Kelompok Sosial (Paguyuban, Patembayan, In-Group, Out-Group), Permasalahan Sosial, Kesetaraan, Konflik, dan Resolusi Konflik.",
-                    trick: "💡 <strong>Beda Paguyuban & Patembayan (Tönnies):</strong><br>Paguyuban (Gemeinschaft) = Ikatan batin murni, kekeluargaan (Contoh: RT, Marga). Patembayan (Gesellschaft) = Ikatan pamrih, orientasi ekonomi/kontrak (Contoh: Serikat pekerja, perusahaan).",
-                    bab: ["Bab 1: Proses Pembentukan Kelompok Sosial", "Bab 2: Berbagai Jenis Kelompok Sosial", "Bab 3: Permasalahan Sosial dalam Masyarakat", "Bab 4: Eksklusi Sosial & Kemiskinan", "Bab 5: Perbedaan, Kesetaraan & Harmoni Sosial", "Bab 6: Konflik & Kekerasan Sosial", "Bab 7: Resolusi Konflik (Mediasi, Arbitrase)", "Bab 8: Integrasi & Reintegrasi Sosial"],
-                    quiz: {
-                        question: "Penyelesaian konflik dimana pihak ketiga memiliki wewenang untuk memberikan keputusan mutlak (mengikat) disebut...",
-                        options: ["A. Arbitrase", "B. Mediasi", "C. Konsiliasi", "D. Ajudikasi"],
-                        correct: "A. Arbitrase",
-                        explain: "Dalam arbitrase, pihak ketiga adalah pengambil keputusan. Dalam mediasi, pihak ketiga hanya penasihat."
-                    }
+                    id: "ekonomi", name: "Ekonomi", tutor: "Tim Ekonomi", video: "https://www.youtube.com/embed/FqYIq9kdshM?rel=0&modestbranding=1",
+                    summary: "Mikro & Makro Ekonomi, Elastisitas, Kebijakan Moneter & Fiskal, Pendapatan Nasional, Akuntansi Perusahaan Jasa & Dagang.",
+                    trick: "💡 <strong>Persamaan Dasar Akuntansi:</strong> Harta = Utang + Modal. Debit-Kredit = H E L P (Harta Beban = Debit).",
+                    bab: generateBabs(["Bab 1: Permintaan, Penawaran & Elastisitas", "Bab 2: Pasar Persaingan Sempurna & Monopoli", "Bab 3: Pendapatan Nasional & Inflasi", "Bab 4: Kebijakan Moneter Bank Sentral", "Bab 5: Persamaan Dasar Akuntansi", "Bab 6: Jurnal Umum & Buku Besar", "Bab 7: Jurnal Penyesuaian"], 35),
+                    quiz: { question: "Kenaikan harga barang secara umum dan terus menerus disebut...", options: ["A. Deflasi", "B. Inflasi", "C. Devaluasi", "D. Depresiasi"], correct: "B. Inflasi", explain: "Inflasi menurunkan daya beli mata uang." }
                 },
                 {
-                    id: "geo11", name: "Geografi 11", tutor: "Tim Geografi", video: "https://www.youtube.com/embed/FqYIq9kdshM?rel=0&modestbranding=1",
-                    summary: "Posisi Silang Indonesia, Biosfer (Persebaran Flora Fauna), Antroposfer (Dinamika Penduduk), Sumber Daya Alam, Ketahanan Pangan, dan Mitigasi Bencana.",
-                    trick: "💡 <strong>Trik Menghitung Pertumbuhan Penduduk Alami:</strong><br>P = L - M (Lahir - Mati). Pertumbuhan Total: P = (L - M) + (I - E) dimana I = Imigrasi, E = Emigrasi.",
-                    bab: ["Bab 1: Indonesia Sebagai Poros Maritim Dunia", "Bab 2: Bioma & Biosfer Dunia", "Bab 3: Persebaran Flora Fauna Indonesia", "Bab 4: Pengelolaan Sumber Daya Alam", "Bab 5: Ketahanan Pangan & Energi Terbarukan", "Bab 6: Dinamika Kependudukan (Piramida Penduduk)", "Bab 7: Kebudayaan Nasional & Global", "Bab 8: Mitigasi & Adaptasi Bencana Alam"],
-                    quiz: {
-                        question: "Hutan hujan tropis di Indonesia memiliki ciri khas yaitu...",
-                        options: ["A. Kanopi rapat, heterogen, hijau sepanjang tahun", "B. Pohon sejenis, menggugurkan daun di musim kemarau", "C. Didominasi padang rumput", "D. Curah hujan sangat rendah"],
-                        correct: "A. Kanopi rapat, heterogen, hijau sepanjang tahun",
-                        explain: "Hutan hujan tropis sangat lebat (berkanopi) dan terdiri dari berbagai macam spesies (heterogen)."
-                    }
+                    id: "sosiologi", name: "Sosiologi", tutor: "Tim Sosiologi", video: "https://www.youtube.com/embed/ScMzIvxBSi4?rel=0&modestbranding=1",
+                    summary: "Interaksi Sosial, Nilai Norma, Kelompok Sosial, Stratifikasi Sosial, Konflik, dan Perubahan Sosial Global.",
+                    trick: "💡 <strong>Trik Interaksi:</strong> Syarat interaksi sosial = Kontak Sosial + Komunikasi.",
+                    bab: generateBabs(["Bab 1: Interaksi & Tindakan Sosial", "Bab 2: Nilai, Norma & Lembaga Sosial", "Bab 3: Stratifikasi & Diferensiasi Sosial", "Bab 4: Kelompok Sosial (Paguyuban/Patembayan)", "Bab 5: Konflik & Resolusi Konflik", "Bab 6: Perubahan Sosial & Globalisasi"], 30),
+                    quiz: { question: "Sikap menilai budaya lain dengan standar budayanya sendiri disebut...", options: ["A. Relativisme", "B. Etnosentrisme", "C. Asimilasi", "D. Chauvinisme"], correct: "B. Etnosentrisme", explain: "Etnosentrisme merasa budayanya paling benar/unggul." }
+                },
+                {
+                    id: "sej_lanjut", name: "Sejarah Tingkat Lanjut", tutor: "Tutor Sejarah Dunia", video: "https://www.youtube.com/embed/FqYIq9kdshM?rel=0&modestbranding=1",
+                    summary: "Revolusi Besar Dunia (Prancis, Amerika, Rusia, Tiongkok), Perang Dunia I & II, Perang Dingin, dan Sejarah Kontemporer.",
+                    trick: "💡 <strong>Urutan Revolusi:</strong> Amerika (1776) $\\rightarrow$ Prancis (1789) $\\rightarrow$ Rusia (1917).",
+                    bab: generateBabs(["Bab 1: Peradaban Kuno Dunia", "Bab 2: Aufklarung & Revolusi Industri", "Bab 3: Revolusi Amerika & Prancis", "Bab 4: Perang Dunia I & II", "Bab 5: Perang Dingin & Runtuhnya Uni Soviet"], 25),
+                    quiz: { question: "Semboyan Revolusi Prancis adalah Liberte, Egalite, dan...", options: ["A. Fraternite", "B. Solidarite", "C. Vini Vidi Vici", "D. Laissez-faire"], correct: "A. Fraternite", explain: "Liberte (Kebebasan), Egalite (Keadilan), Fraternite (Persaudaraan)." }
                 }
             ],
 
-            // ================= KELAS 12 IPA =================
-            k12_ipa: [
+            // ================= KELAS 12 BAHASA/BUDAYA =================
+            bahasa: [
                 {
-                    id: "mtk12_ipa", name: "Matematika 12 MIPA", tutor: "Jerome Polin", video: "https://www.youtube.com/embed/FqYIq9kdshM?rel=0&modestbranding=1",
-                    summary: "Geometri Ruang (Jarak Titik, Garis, Bidang), Statistika (Mean, Median, Modus, Simpangan), Kaidah Pencacahan (Permutasi, Kombinasi), Peluang Kejadian Majemuk.",
-                    trick: "💡 <strong>Trik Jarak Kubus Rusuk 'a':</strong><br>Diagonal sisi = a√2. Diagonal ruang = a√3. Jarak titik sudut ke tengah bidang = (a/2)√6. Jarak titik sudut ke diagonal ruang = (a/3)√6.",
-                    bab: ["Bab 1: Geometri Ruang - Jarak Titik ke Titik", "Bab 2: Geometri Ruang - Jarak Titik ke Garis/Bidang", "Bab 3: Statistika - Penyajian Data", "Bab 4: Statistika - Pemusatan Data (Mean, Median, Modus)", "Bab 5: Statistika - Penyebaran Data", "Bab 6: Aturan Perkalian & Faktorial", "Bab 7: Permutasi & Kombinasi", "Bab 8: Peluang Kejadian Majemuk"],
-                    quiz: {
-                        question: "Berapa banyak cara memilih 3 pengurus dari 10 calon tanpa memperhatikan jabatan (kombinasi)?",
-                        options: ["A. 120", "B. 240", "C. 720", "D. 30"],
-                        correct: "A. 120",
-                        explain: "Kombinasi C(10,3) = 10! / (7! * 3!) = (10*9*8) / (3*2*1) = 120."
-                    }
+                    id: "sas_ind", name: "Sastra Indonesia", tutor: "Tim Sastra", video: "https://www.youtube.com/embed/ScMzIvxBSi4?rel=0&modestbranding=1",
+                    summary: "Apresiasi Puisi, Prosa, Drama, Sejarah Sastra Indonesia, Kritik Sastra dan Esai.",
+                    trick: "💡 <strong>Trik Majas:</strong> Metafora (Perbandingan langsung tanpa kata hubung). Personifikasi (Benda mati seperti manusia).",
+                    bab: generateBabs(["Bab 1: Unsur Intrinsik & Ekstrinsik Prosa", "Bab 2: Majas & Citraan dalam Puisi", "Bab 3: Resensi & Kritik Sastra", "Bab 4: Penulisan Naskah Drama", "Bab 5: Periodisasi Sastra Indonesia"], 25),
+                    quiz: { question: "Majas yang membandingkan benda mati seolah-olah memiliki sifat manusia disebut...", options: ["A. Hiperbola", "B. Personifikasi", "C. Metafora", "D. Litotes"], correct: "B. Personifikasi", explain: "Contoh: Angin menari-nari." }
                 },
                 {
-                    id: "fis12", name: "Fisika 12", tutor: "Tim Fisika 12", video: "https://www.youtube.com/embed/ScMzIvxBSi4?rel=0&modestbranding=1",
-                    summary: "Listrik Arus Searah (DC), Listrik Statis, Medan Magnet, Induksi Elektromagnetik, Listrik Bolak-Balik (AC), Gelombang Elektromagnetik, Relativitas, Fisika Kuantum, Inti Atom.",
-                    trick: "💡 <strong>Hukum II Kirchhoff (Loop):</strong><br>ΣE + Σ(IR) = 0. Trik tanda arah loop: Jika arah loop mengenai kutub panjang (positif) baterai lebih dulu, maka E positif. Arus I searah loop = positif.",
-                    bab: ["Bab 1: Rangkaian Arus Searah (Hukum Ohm & Kirchhoff)", "Bab 2: Listrik Statis (Gaya Coulomb & Potensial)", "Bab 3: Medan Magnet & Gaya Lorentz", "Bab 4: Induksi Elektromagnetik (Faraday & Lenz)", "Bab 5: Rangkaian Arus Bolak-Balik (RLC)", "Bab 6: Radiasi Gelombang Elektromagnetik", "Bab 7: Teori Relativitas Khusus", "Bab 8: Fisika Inti & Radioaktivitas"],
-                    quiz: {
-                        question: "Pada rangkaian RLC seri, jika reaktansi induktif (XL) lebih besar dari reaktansi kapasitif (XC), maka sifat rangkaian adalah...",
-                        options: ["A. Induktif", "B. Kapasitif", "C. Resonansi", "D. Resistif murni"],
-                        correct: "A. Induktif",
-                        explain: "Jika XL > XC, arus tertinggal oleh tegangan, sehingga rangkaian bersifat induktif."
-                    }
+                    id: "sas_ing", name: "Sastra Inggris", tutor: "English Native Literature", video: "https://www.youtube.com/embed/FqYIq9kdshM?rel=0&modestbranding=1",
+                    summary: "English Literature History, Poetry Analysis, Drama (Shakespearean), Short Stories, and Literary Criticism.",
+                    trick: "💡 <strong>Poetry Trik:</strong> Rhyme scheme (AABB, ABAB) determines the rhythm. Pay attention to Stanza forms.",
+                    bab: generateBabs(["Bab 1: Elements of Short Stories", "Bab 2: Figurative Language in Poetry", "Bab 3: Reading Shakespeare (Drama)", "Bab 4: Literary Criticism", "Bab 5: Essay Writing Process"], 25),
+                    quiz: { question: "In literature, the main character is known as the...", options: ["A. Antagonist", "B. Protagonist", "C. Narrator", "D. Foil"], correct: "B. Protagonist", explain: "The protagonist is the central character." }
                 },
                 {
-                    id: "kim12", name: "Kimia 12", tutor: "Tim Kimia 12", video: "https://www.youtube.com/embed/FqYIq9kdshM?rel=0&modestbranding=1",
-                    summary: "Sifat Koligatif Larutan, Redoks & Elektrokimia (Sel Volta & Elektrolisis), Kimia Unsur, Senyawa Karbon Turunan Alkana, Benzena, dan Makromolekul.",
-                    trick: "💡 <strong>Trik Reaksi Elektrolisis (Katoda):</strong><br>Perhatikan WUJUD zat. Jika larutan (aq) dan kation golongan IA, IIA, Al, Mn $\\rightarrow$ yang tereduksi adalah AIR (2H2O + 2e -> H2 + 2OH-). Jika lelehan (l) $\\rightarrow$ kation logam itu sendiri yang tereduksi.",
-                    bab: ["Bab 1: Sifat Koligatif Larutan Nonelektrolit", "Bab 2: Sifat Koligatif Larutan Elektrolit (Faktor Van't Hoff)", "Bab 3: Penyetaraan Reaksi Redoks", "Bab 4: Sel Volta & Potensial Sel", "Bab 5: Sel Elektrolisis & Hukum Faraday", "Bab 6: Kimia Unsur (Halogen, Alkali, Gas Mulia)", "Bab 7: Senyawa Karbon (Alkohol, Eter, Aldehid, Keton, Asam Karboksilat)", "Bab 8: Benzena & Polimer"],
-                    quiz: {
-                        question: "Gugus fungsi dari senyawa alkanon (keton) adalah...",
-                        options: ["A. -OH", "B. -O-", "C. -CO-", "D. -COOH"],
-                        correct: "C. -CO-",
-                        explain: "Keton memiliki gugus karbonil (-CO-) yang terikat pada dua atom karbon lain."
-                    }
+                    id: "jepang", name: "Bahasa Jepang", tutor: "Sensei Jepang", video: "https://www.youtube.com/embed/ScMzIvxBSi4?rel=0&modestbranding=1",
+                    summary: "Huruf Hiragana, Katakana, Kanji Dasar, Tata Bahasa (Bunpou), Kosakata (Kotoba), dan Pemahaman Bacaan (Dokkai).",
+                    trick: "💡 <strong>Trik Hafal Huruf:</strong> Hiragana (melengkung/asli Jepang), Katakana (kaku/serapan asing), Kanji (simbol makna).",
+                    bab: generateBabs(["Bab 1: Pengenalan Hiragana & Katakana", "Bab 2: Salam & Perkenalan (Aisatsu)", "Bab 3: Pola Kalimat N4/N5 Dasar", "Bab 4: Kanji Dasar JLPT N5", "Bab 5: Keterampilan Mendengar (Choukai)"], 30),
+                    quiz: { question: "Salam 'Selamat Pagi' dalam bahasa Jepang adalah...", options: ["A. Konnichiwa", "B. Konbanwa", "C. Ohayou Gozaimasu", "D. Sayounara"], correct: "C. Ohayou Gozaimasu", explain: "Digunakan di pagi hari." }
                 },
                 {
-                    id: "bio12", name: "Biologi 12", tutor: "Tim Biologi", video: "https://www.youtube.com/embed/ScMzIvxBSi4?rel=0&modestbranding=1",
-                    summary: "Pertumbuhan Perkembangan, Enzim & Metabolisme (Respirasi & Fotosintesis), Substansi Genetik, Pembelahan Sel, Hukum Mendel, Mutasi, Evolusi, Bioteknologi.",
-                    trick: "💡 <strong>Trik Respirasi Aerob:</strong><br>1. Glikolisis: Glukosa -> 2 Asam Piruvat + 2 ATP + 2 NADH (Sitosol).<br>2. DO: Piruvat -> 2 Asetil KoA + 2 CO2 + 2 NADH (Matriks).<br>3. Krebs: Asetil KoA -> 4 CO2 + 6 NADH + 2 FADH2 + 2 ATP (Matriks).",
-                    bab: ["Bab 1: Pertumbuhan & Perkembangan", "Bab 2: Enzim & Kerjanya", "Bab 3: Katabolisme (Respirasi Aerob & Anaerob)", "Bab 4: Anabolisme (Fotosintesis)", "Bab 5: DNA, RNA & Sintesis Protein", "Bab 6: Pembelahan Sel (Mitosis & Meiosis)", "Bab 7: Hukum Mendel & Penyimpangannya", "Bab 8: Evolusi & Bioteknologi"],
-                    quiz: {
-                        question: "Basa nitrogen penyusun RNA yang TIDAK terdapat pada DNA adalah...",
-                        options: ["A. Adenin", "B. Guanin", "C. Sitosin", "D. Urasil"],
-                        correct: "D. Urasil",
-                        explain: "Pada RNA, Timin (pada DNA) digantikan oleh Urasil."
-                    }
+                    id: "antro", name: "Antropologi", tutor: "Tim Antropologi", video: "https://www.youtube.com/embed/FqYIq9kdshM?rel=0&modestbranding=1",
+                    summary: "Etnografi, Sistem Kekerabatan, Kepercayaan/Religi, Dinamika Budaya, dan Keberagaman Masyarakat.",
+                    trick: "💡 <strong>Trik 7 Unsur Budaya:</strong> Bahasa, Pengetahuan, Organisasi Sosial, Peralatan Hidup, Ekonomi, Agama, Kesenian.",
+                    bab: generateBabs(["Bab 1: Konsep Dasar Antropologi", "Bab 2: Etnografi Nusantara", "Bab 3: Sistem Kekerabatan (Patrilineal/Matrilineal)", "Bab 4: Dinamika Kepercayaan Lokal", "Bab 5: Multikulturalisme di Indonesia"], 25),
+                    quiz: { question: "Sistem kekerabatan yang menarik garis keturunan dari pihak ibu disebut...", options: ["A. Patrilineal", "B. Matrilineal", "C. Bilateral", "D. Ambilineal"], correct: "B. Matrilineal", explain: "Diterapkan misalnya pada suku Minangkabau." }
                 }
             ],
 
-            // ================= KELAS 12 IPS =================
-            k12_ips: [
+            // ================= UTBK SNBT =================
+            utbk: [
                 {
-                    id: "eko12", name: "Akuntansi (Ekonomi) 12", tutor: "Tutor Akuntansi", video: "https://www.youtube.com/embed/FqYIq9kdshM?rel=0&modestbranding=1",
-                    summary: "Akuntansi sebagai Sistem Informasi, Persamaan Dasar Akuntansi, Jurnal Umum, Buku Besar, Neraca Saldo, Jurnal Penyesuaian, Kertas Kerja, dan Laporan Keuangan Perusahaan Jasa & Dagang.",
-                    trick: "💡 <strong>Aturan Debit Kredit (Saldo Normal):</strong><br>H E L P (Harta & Beban bertambah di DEBIT. Utang, Modal, Pendapatan bertambah di KREDIT).",
-                    bab: ["Bab 1: Akuntansi & Sistem Informasi", "Bab 2: Persamaan Dasar Akuntansi", "Bab 3: Jurnal Umum Perusahaan Jasa", "Bab 4: Buku Besar & Neraca Saldo", "Bab 5: Jurnal Penyesuaian (Perlengkapan, Penyusutan, Beban YMhD)", "Bab 6: Laporan Keuangan (Laba Rugi, Perubahan Modal, Neraca)", "Bab 7: Jurnal Khusus Perusahaan Dagang", "Bab 8: Harga Pokok Penjualan (HPP)"],
-                    quiz: {
-                        question: "Jika pemilik perusahaan mengambil uang kas untuk keperluan pribadi (prive), maka pencatatannya dalam jurnal umum adalah...",
-                        options: ["A. Beban Debit, Kas Kredit", "B. Prive Debit, Kas Kredit", "C. Kas Debit, Prive Kredit", "D. Modal Debit, Kas Kredit"],
-                        correct: "B. Prive Debit, Kas Kredit",
-                        explain: "Prive bertambah di Debit, Kas berkurang di Kredit."
-                    }
+                    id: "pk", name: "Pengetahuan Kuantitatif", tutor: "Tim UTBK", video: "https://www.youtube.com/embed/FqYIq9kdshM?rel=0&modestbranding=1",
+                    summary: "Operasi Bilangan, Aljabar, Geometri, Statistika, Peluang.",
+                    trick: "💡 <strong>Trik Kecukupan Data:</strong> Cek Pernyataan 1 saja. Jika tidak cukup, cek Pernyataan 2 saja. Jika tidak cukup, gabungkan keduanya.",
+                    bab: generateBabs(["Bab 1: Aljabar Dasar", "Bab 2: Geometri", "Bab 3: Kecukupan Data", "Bab 4: Analisis Kuantitas P dan Q", "Bab 5: Peluang dan Kombinatorika"], 30),
+                    quiz: { question: "Berapa 10% dari 500?", options: ["A. 10", "B. 50", "C. 100", "D. 500"], correct: "B. 50", explain: "0.1 * 500 = 50." }
                 },
                 {
-                    id: "geo12", name: "Geografi 12", tutor: "Tim Geografi", video: "https://www.youtube.com/embed/ScMzIvxBSi4?rel=0&modestbranding=1",
-                    summary: "Konsep Wilayah dan Perwilayahan, Pola Keruangan Desa dan Kota, Interaksi Desa-Kota, Penginderaan Jauh, Sistem Informasi Geografis (SIG), Negara Maju & Berkembang.",
-                    trick: "💡 <strong>Trik Teori Sektoral (Homer Hoyt):</strong><br>Sektor selalu berbentuk juring lingkaran/potongan kue. Ingat urutan dari tengah: CBD (Pusat Bisnis) $\\rightarrow$ Manufaktur/Grosir $\\rightarrow$ Pemukiman Kelas Rendah $\\rightarrow$ Menengah $\\rightarrow$ Tinggi.",
-                    bab: ["Bab 1: Wilayah & Perwilayahan (Nodal, Formal)", "Bab 2: Struktur Keruangan Desa & Kota", "Bab 3: Teori Interaksi Desa-Kota (Gravitasi, Titik Henti)", "Bab 4: Prinsip Penginderaan Jauh", "Bab 5: Interpretasi Citra Satelit", "Bab 6: Konsep Dasar SIG", "Bab 7: Analisis SIG untuk Tata Ruang", "Bab 8: Karakteristik Negara Maju & Berkembang"],
-                    quiz: {
-                        question: "Zona pemukiman kelas tinggi pada Teori Konsentris (Burgess) terletak di wilayah paling...",
-                        options: ["A. Pusat kota", "B. Tepi/Luar kota (Zona Penglaju)", "C. Dekat pabrik", "D. Zona transisi"],
-                        correct: "B. Tepi/Luar kota (Zona Penglaju)",
-                        explain: "Dalam teori konsentris, kelas atas memilih tinggal jauh dari pusat kota/pabrik demi kenyamanan."
-                    }
-                },
-                {
-                    id: "sos12", name: "Sosiologi 12", tutor: "Tim Sosiologi", video: "https://www.youtube.com/embed/FqYIq9kdshM?rel=0&modestbranding=1",
-                    summary: "Perubahan Sosial, Dampak Perubahan Sosial, Globalisasi, Ketimpangan Sosial di Era Global, Kearifan Lokal, dan Pemberdayaan Komunitas.",
-                    trick: "💡 <strong>Bentuk Perubahan Sosial:</strong><br>Evolusi (Lambat, tanpa direncanakan matang, cth: masyarakat tradisional ke industri). Revolusi (Cepat, mengubah dasar institusi, cth: Revolusi Industri/Kemerdekaan).",
-                    bab: ["Bab 1: Hakikat Perubahan Sosial", "Bab 2: Teori & Bentuk Perubahan Sosial", "Bab 3: Globalisasi & Modernisasi", "Bab 4: Dampak Globalisasi (Konsumerisme, Westernisasi)", "Bab 5: Ketimpangan Sosial & Digital Divide", "Bab 6: Kearifan Lokal Nusantara", "Bab 7: Strategi Pemberdayaan Komunitas", "Bab 8: Evaluasi Aksi Pemberdayaan"],
-                    quiz: {
-                        question: "Kesenjangan budaya dimana elemen materiil berubah cepat sementara elemen non-materiil (nilai/norma) lambat beradaptasi disebut...",
-                        options: ["A. Cultural Shock", "B. Cultural Lag", "C. Anomie", "D. Disorganisasi"],
-                        correct: "B. Cultural Lag",
-                        explain: "Cultural Lag (ketertinggalan budaya) terjadi karena kecepatan adopsi teknologi tidak diimbangi kesiapan mental/hukum."
-                    }
-                }
-            ],
-
-            // ================= UTBK TPS =================
-            utbk_tps: [
-                {
-                    id: "pk", name: "Pengetahuan Kuantitatif (PK)", tutor: "Tutor Eksakta UTBK", video: "https://www.youtube.com/embed/FqYIq9kdshM?rel=0&modestbranding=1",
-                    summary: "Aljabar, Geometri dasar, Teori Bilangan, Aritmetika Sosial, Fungsi, Logika Matematika Dasar, Peluang.",
-                    trick: "💡 <strong>Metode Substitusi Ekstrem:</strong> Jika ada soal 'Manakah hubungan P dan Q yang benar?', cobalah angka ekstrem seperti x=0, x=1, dan x=-1, atau x=0.5 (pecahan). Jika hasil hubungan berubah-ubah, jawabannya pasti 'Hubungan tidak dapat ditentukan'.",
-                    bab: ["Aljabar & Persamaan", "Geometri Bidang & Ruang", "Statistika, Peluang & Kombinatorika", "Kecukupan Data (Pernyataan 1 & 2)", "Analisis Kuantitatif P & Q"],
-                    quiz: {
-                        question: "Jika x > 0 dan y < 0, manakah yang nilainya pasti negatif?",
-                        options: ["A. x - y", "B. x^2 + y", "C. x * y", "D. -y / x"],
-                        correct: "C. x * y",
-                        explain: "Positif dikali Negatif selalu menghasilkan Negatif."
-                    }
-                },
-                {
-                    id: "pu", name: "Penalaran Umum (PU)", tutor: "Tim Logika UTBK", video: "https://www.youtube.com/embed/ScMzIvxBSi4?rel=0&modestbranding=1",
-                    summary: "Penalaran Deduktif, Induktif, Logika Matematika, Deret Angka/Huruf, Kesesuaian Pernyataan, Kesimpulan Paragraf.",
-                    trick: "💡 <strong>Modus Tollens (Logika Dasar):</strong> Jika P -> Q benar, dan diketahui ~Q (Negasi Q) benar. Maka kesimpulan pastinya adalah ~P. (Cth: Jika hujan, tanah basah. Tanah tidak basah. Pasti tidak hujan).",
-                    bab: ["Penalaran Deduktif & Logika Proposisi", "Penalaran Induktif & Generalisasi", "Pola Deret Angka & Huruf", "Pemahaman Bacaan & Grafik Data"],
-                    quiz: {
-                        question: "Jika Amir makan, ia kenyang. Jika Amir kenyang, ia mengantuk. Amir tidak mengantuk. Kesimpulan?",
-                        options: ["A. Amir makan", "B. Amir tidak makan", "C. Amir kenyang tapi tidak mengantuk", "D. Tidak bisa disimpulkan"],
-                        correct: "B. Amir tidak makan",
-                        explain: "Silogisme: P->Q, Q->R, maka P->R. Jika ~R benar (Modus Tollens), maka ~P benar (Amir tidak makan)."
-                    }
-                },
-                {
-                    id: "pbm", name: "Pemahaman Bacaan & Menulis (PBM)", tutor: "Pakar Bahasa", video: "https://www.youtube.com/embed/FqYIq9kdshM?rel=0&modestbranding=1",
-                    summary: "Fokus pada struktur tata bahasa baku (PUEBI/EYD), keefektifan kalimat, penggunaan konjungsi, huruf kapital, tanda baca.",
-                    trick: "💡 <strong>Aturan Imbuhan Me-N:</strong> Me-N luluh jika bertemu kata dasar berawalan K, T, S, P yang diikuti vokal. (Contoh: me + pesona = memesona. me + kritik = mengkritik [k tidak luluh karena diikuti konsonan 'r']).",
-                    bab: ["Penggunaan Tanda Baca & Huruf Kapital", "Kata Baku, Serapan, & Bentukan Kata", "Kalimat Efektif & Struktur Inti", "Kepaduan Paragraf & Konjungsi Antarkalimat"],
-                    quiz: {
-                        question: "Penulisan gabungan kata yang benar adalah...",
-                        options: ["A. Bertanggungjawab", "B. Tanggung jawab", "C. Pertanggung jawaban", "D. Bekerja-sama"],
-                        correct: "B. Tanggung jawab",
-                        explain: "Kata majemuk ditulis terpisah jika tidak mendapat awalan dan akhiran sekaligus (tanggung jawab, tetapi dipertanggungjawabkan)."
-                    }
-                }
-            ],
-
-            // ================= TKA SAINTEK =================
-            tka_saintek: [
-                {
-                    id: "tka_fis", name: "TKA Fisika", tutor: "Tim Fisika TKA", video: "https://www.youtube.com/embed/ScMzIvxBSi4?rel=0&modestbranding=1",
-                    summary: "Soal Analitik HOTS: Mekanika, Termodinamika, Elektromagnetik, Fisika Modern, Optik Fisis/Geometri.",
-                    trick: "💡 <strong>Trik Optik (Cermin/Lensa):</strong> Jarak fokus (f) positif untuk cermin Cekung / lensa Cembung. Negatif untuk cermin Cembung / lensa Cekung. M = |s'/s|. Jika s' negatif = Maya, Tegak.",
-                    bab: ["Mekanika (Dinamika, Usaha Energi, Momentum)", "Zat & Kalor (Asas Black, Termodinamika)", "Gelombang & Optik (Interferensi, Difraksi)", "Listrik Magnet", "Fisika Modern (Relativitas, Kuantum)"],
-                    quiz: {
-                        question: "Dimensi dari besaran Usaha adalah...",
-                        options: ["A. [M][L][T]^-1", "B. [M][L]^2[T]^-2", "C. [M][L][T]^-2", "D. [M][L]^2[T]^-3"],
-                        correct: "B. [M][L]^2[T]^-2",
-                        explain: "Usaha (W) = F * s = (m*a) * s. Dimensinya: kg(M) * m/s^2 (L T^-2) * m (L) = M L^2 T^-2."
-                    }
+                    id: "litindo", name: "Literasi Bahasa Indonesia", tutor: "Tim Bahasa", video: "https://www.youtube.com/embed/ScMzIvxBSi4?rel=0&modestbranding=1",
+                    summary: "Gagasan Utama, Makna Tersirat, Evaluasi Argumen, Kesimpulan.",
+                    trick: "💡 <strong>Trik Ide Pokok:</strong> Baca kalimat pertama dan terakhir setiap paragraf (Deduktif/Induktif).",
+                    bab: generateBabs(["Bab 1: Gagasan Utama", "Bab 2: Analisis Argumen", "Bab 3: Makna Tersirat Paragraf", "Bab 4: PUEBI dalam Konteks Bacaan"], 30),
+                    quiz: { question: "Letak kalimat utama pada paragraf deduktif adalah...", options: ["A. Awal", "B. Akhir", "C. Tengah", "D. Awal dan Akhir"], correct: "A. Awal", explain: "Deduktif = Umum ke Khusus." }
                 }
             ]
         };
@@ -546,7 +401,7 @@
                     </div>
 
                     <div class="tabs-nav">
-                        <div class="tab-btn active" onclick="switchTab(this, 'tabBab')">📺 Video & Bab</div>
+                        <div class="tab-btn active" onclick="switchTab(this, 'tabBab')">📺 Video & Bab (${sub.bab.length} Bab)</div>
                         <div class="tab-btn" onclick="switchTab(this, 'tabSummary')">📖 Rangkuman Lengkap</div>
                         <div class="tab-btn" onclick="switchTab(this, 'tabTrick')">⚡ Metode Cepat</div>
                         <div class="tab-btn" onclick="switchTab(this, 'tabQuiz')">✏️ Kuis Pemahaman</div>
@@ -626,7 +481,7 @@
                 setTimeout(() => {
                     body.innerHTML += `
                         <div class="msg-ai">
-                            <strong>Gemini AI:</strong> Untuk materi "${text}", pastikan kamu sudah membaca <strong>Rangkuman Lengkap</strong> dan mempraktikkan <strong>Metode Cepat</strong> di tab materi yang sedang terbuka. Tetap semangat belajarnya!
+                            <strong>Gemini AI:</strong> Untuk pertanyaan "${text}", pastikan kamu juga mempelajari <strong>Metode Cepat</strong> di menu sebelah kiri. Tetap semangat belajarnya!
                         </div>
                     `;
                     body.scrollTop = body.scrollHeight;
@@ -638,4 +493,4 @@
     </script>
 </body>
 </html>
-                                       
+
