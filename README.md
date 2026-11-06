@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Nihiluxxy AI Pro v6.5 - Super Module Elite & Presentation Learning Engine</title>
+    <title>Nihiluxxy AI Pro v8.0 - Ultimate Megamodule Engine SMA & UTBK SNBT 2026</title>
     <!-- Tailwind CSS CDN -->
     <script src="https://cdn.tailwindcss.com"></script>
     <script>
@@ -25,7 +25,6 @@
                     animation: {
                         'pulse-glow': 'pulseGlow 2.5s infinite alternate',
                         'float': 'float 4s ease-in-out infinite',
-                        'fadeIn': 'fadeIn 0.3s ease-out forwards',
                     },
                     keyframes: {
                         pulseGlow: {
@@ -35,10 +34,6 @@
                         float: {
                             '0%, 100%': { transform: 'translateY(0px)' },
                             '50%': { transform: 'translateY(-8px)' }
-                        },
-                        fadeIn: {
-                            '0%': { opacity: '0', transform: 'translateY(6px)' },
-                            '100%': { opacity: '1', transform: 'translateY(0)' }
                         }
                     }
                 }
@@ -52,38 +47,38 @@
     <style>
         body { 
             font-family: 'Plus Jakarta Sans', sans-serif; 
-            background-color: #050811;
+            background-color: #04060d;
             background-image: 
                 radial-gradient(at 0% 0%, rgba(124, 58, 237, 0.22) 0px, transparent 50%),
-                radial-gradient(at 100% 0%, rgba(99, 102, 241, 0.2) 0px, transparent 50%),
-                radial-gradient(at 50% 100%, rgba(236, 72, 153, 0.15) 0px, transparent 50%);
+                radial-gradient(at 100% 0%, rgba(99, 102, 241, 0.22) 0px, transparent 50%),
+                radial-gradient(at 50% 100%, rgba(236, 72, 153, 0.18) 0px, transparent 50%);
             background-attachment: fixed;
         }
-        .gradient-brand { background: linear-gradient(135deg, #090e1a 0%, #161b33 45%, #2a224a 100%); }
+        .gradient-brand { background: linear-gradient(135deg, #070a14 0%, #12162b 45%, #231c3e 100%); }
         .gradient-accent { background: linear-gradient(135deg, #6366f1 0%, #8b5cf6 50%, #ec4899 100%); }
-        .glass-header { background: rgba(5, 8, 17, 0.88); backdrop-filter: blur(20px); -webkit-backdrop-filter: blur(20px); }
-        .glass-card { background: rgba(18, 25, 43, 0.55); backdrop-filter: blur(16px); -webkit-backdrop-filter: blur(16px); border: 1px solid rgba(255, 255, 255, 0.09); }
-        .glass-modal { background: rgba(8, 12, 24, 0.96); backdrop-filter: blur(24px); -webkit-backdrop-filter: blur(24px); border: 1px solid rgba(139, 92, 246, 0.4); }
+        .glass-header { background: rgba(4, 6, 13, 0.9); backdrop-filter: blur(20px); -webkit-backdrop-filter: blur(20px); }
+        .glass-card { background: rgba(15, 20, 35, 0.6); backdrop-filter: blur(16px); -webkit-backdrop-filter: blur(16px); border: 1px solid rgba(255, 255, 255, 0.09); }
+        .glass-modal { background: rgba(6, 8, 18, 0.97); backdrop-filter: blur(28px); -webkit-backdrop-filter: blur(28px); border: 1px solid rgba(139, 92, 246, 0.45); }
         
         .custom-scrollbar::-webkit-scrollbar { width: 6px; height: 6px; }
-        .custom-scrollbar::-webkit-scrollbar-track { background: rgba(9, 14, 26, 0.8); }
+        .custom-scrollbar::-webkit-scrollbar-track { background: rgba(9, 13, 24, 0.8); }
         .custom-scrollbar::-webkit-scrollbar-thumb { background: rgba(139, 92, 246, 0.45); border-radius: 9999px; }
         .custom-scrollbar::-webkit-scrollbar-thumb:hover { background: rgba(139, 92, 246, 0.8); }
     </style>
 </head>
-<body class="bg-[#050811] text-slate-100 min-h-screen flex flex-col selection:bg-purple-500 selection:text-white custom-scrollbar relative">
+<body class="bg-[#04060d] text-slate-100 min-h-screen flex flex-col selection:bg-purple-500 selection:text-white custom-scrollbar relative">
 
     <!-- Top Announcement & AI Status Bar -->
     <div class="bg-gradient-to-r from-purple-950 via-slate-950 to-indigo-950 text-xs py-2 px-4 font-medium border-b border-purple-500/20 text-purple-200 flex justify-between items-center z-50">
         <div class="flex items-center gap-2">
             <span class="inline-flex items-center px-2.5 py-0.5 rounded-full text-[10px] font-black bg-purple-500/20 text-purple-300 border border-purple-500/40 shadow-sm">
-                ⚡ Nihiluxxy AI Pro v6.5 Slide Edition
+                ⚡ Nihiluxxy AI Pro v8.0 Megamodule Engine
             </span>
-            <span class="hidden sm:inline text-slate-300">Sistem Modul Slide Interactive 15 Bab SMA & Bank Soal UTBK SNBT 2026</span>
+            <span class="hidden sm:inline text-slate-300">Modul Bimbingan Belajar Ultra-Lengkap (135 Bab Penuh) & Bank Soal UTBK SNBT 2026</span>
         </div>
         <div class="flex items-center gap-4 text-[11px] font-semibold text-purple-300">
             <span class="hidden md:flex items-center gap-1.5 font-mono text-emerald-400">
-                <span class="w-2 h-2 rounded-full bg-emerald-400 animate-pulse"></span> Presenter Engine Active
+                <span class="w-2 h-2 rounded-full bg-emerald-400 animate-pulse"></span> Multi-Solver Deep Engine Active
             </span>
             <span class="text-slate-700 hidden md:inline">•</span>
             <span id="live-clock" class="font-mono text-purple-200 font-bold">--:--:-- WIB</span>
@@ -97,14 +92,14 @@
             <!-- Brand Logo -->
             <div class="flex items-center gap-3 cursor-pointer group" onclick="switchView('home')">
                 <div class="w-11 h-11 rounded-2xl gradient-accent flex items-center justify-center text-white font-black text-xl shadow-lg shadow-purple-500/30 group-hover:scale-105 transition duration-300 animate-pulse-glow">
-                    <i data-lucide="presentation" class="w-6 h-6"></i>
+                    <i data-lucide="sparkles" class="w-6 h-6"></i>
                 </div>
                 <div class="flex flex-col">
                     <div class="flex items-center gap-1.5">
                         <span class="text-2xl font-black tracking-tight text-white group-hover:text-purple-300 transition">Nihiluxxy</span>
-                        <span class="text-[9px] font-black px-1.5 py-0.5 rounded-md bg-gradient-to-r from-purple-500 to-pink-500 text-white uppercase tracking-wider">AI PRO</span>
+                        <span class="text-[9px] font-black px-1.5 py-0.5 rounded-md bg-gradient-to-r from-purple-500 to-pink-500 text-white uppercase tracking-wider">AI PRO v8.0</span>
                     </div>
-                    <span class="text-[9px] uppercase tracking-widest text-purple-400 font-extrabold -mt-1">Super Learning Engine</span>
+                    <span class="text-[9px] uppercase tracking-widest text-purple-400 font-extrabold -mt-1">Super Megamodule Engine</span>
                 </div>
             </div>
 
@@ -112,7 +107,7 @@
             <div class="hidden lg:flex items-center flex-1 max-w-md mx-6">
                 <div class="relative w-full">
                     <i data-lucide="search" class="w-4 h-4 absolute left-3.5 top-1/2 -translate-y-1/2 text-slate-400"></i>
-                    <input type="text" id="global-search" oninput="handleGlobalSearch(this.value)" placeholder="Cari materi & soal (misal: Turunan, Termokimia, Hukum Newton, Indrajaja)..." class="w-full bg-slate-900/90 border border-slate-700/80 rounded-2xl pl-10 pr-12 py-2 text-xs text-slate-200 focus:outline-none focus:border-purple-500 focus:ring-1 focus:ring-purple-500 transition shadow-inner">
+                    <input type="text" id="global-search" oninput="handleGlobalSearch(this.value)" placeholder="Cari bab & konsep (misal: Vieta, Bernoulli, Glikolisis, Hardy-Weinberg)..." class="w-full bg-slate-900/90 border border-slate-700/80 rounded-2xl pl-10 pr-12 py-2 text-xs text-slate-200 focus:outline-none focus:border-purple-500 focus:ring-1 focus:ring-purple-500 transition shadow-inner">
                     <kbd class="hidden sm:inline-block absolute right-3 top-1/2 -translate-y-1/2 text-[9px] bg-slate-800 border border-slate-700 px-1.5 py-0.5 rounded text-slate-400 font-mono font-bold">⌘K</kbd>
                     <div id="search-results-popover" class="hidden absolute left-0 right-0 top-12 bg-slate-900/95 border border-purple-500/30 rounded-2xl shadow-2xl p-2 z-50 max-h-80 overflow-y-auto custom-scrollbar backdrop-blur-xl"></div>
                 </div>
@@ -120,22 +115,25 @@
 
             <!-- Navigation Desktop -->
             <nav class="hidden md:flex items-center gap-1 bg-slate-900/90 p-1.5 rounded-2xl border border-slate-800 text-xs font-semibold">
-                <button onclick="switchView('home')" id="nav-home" class="px-4 py-2.5 rounded-xl text-white bg-purple-600 transition flex items-center gap-1.5 font-bold shadow-md shadow-purple-600/30">
+                <button onclick="switchView('home')" id="nav-home" class="px-3.5 py-2 rounded-xl text-white bg-purple-600 transition flex items-center gap-1.5 font-bold shadow-md shadow-purple-600/30">
                     <i data-lucide="home" class="w-4 h-4"></i> Beranda
                 </button>
-                <button onclick="switchView('materi')" id="nav-materi" class="px-4 py-2.5 rounded-xl text-slate-300 hover:text-white transition flex items-center gap-1.5">
-                    <i data-lucide="book-open" class="w-4 h-4"></i> Modul Slide
+                <button onclick="switchView('materi')" id="nav-materi" class="px-3.5 py-2 rounded-xl text-slate-300 hover:text-white transition flex items-center gap-1.5">
+                    <i data-lucide="book-open" class="w-4 h-4"></i> Modul Elite
                 </button>
-                <button onclick="switchView('kalkulator')" id="nav-kalkulator" class="px-4 py-2.5 rounded-xl text-slate-300 hover:text-white transition flex items-center gap-1.5">
-                    <i data-lucide="calculator" class="w-4 h-4 text-cyan-400"></i> Kalkulator AI
+                <button onclick="switchView('visualizer')" id="nav-visualizer" class="px-3.5 py-2 rounded-xl text-slate-300 hover:text-white transition flex items-center gap-1.5">
+                    <i data-lucide="line-chart" class="w-4 h-4 text-emerald-400"></i> Graph AI
                 </button>
-                <button onclick="switchView('utbk')" id="nav-utbk" class="px-4 py-2.5 rounded-xl text-slate-300 hover:text-white transition flex items-center gap-1.5">
-                    <i data-lucide="award" class="w-4 h-4 text-amber-400"></i> Simulasi UTBK
+                <button onclick="switchView('kalkulator')" id="nav-kalkulator" class="px-3.5 py-2 rounded-xl text-slate-300 hover:text-white transition flex items-center gap-1.5">
+                    <i data-lucide="calculator" class="w-4 h-4 text-cyan-400"></i> Hitung AI
                 </button>
-                <button onclick="switchView('flashcards')" id="nav-flashcards" class="px-4 py-2.5 rounded-xl text-slate-300 hover:text-white transition flex items-center gap-1.5">
-                    <i data-lucide="brain" class="w-4 h-4 text-emerald-400"></i> Flashcards
+                <button onclick="switchView('utbk')" id="nav-utbk" class="px-3.5 py-2 rounded-xl text-slate-300 hover:text-white transition flex items-center gap-1.5">
+                    <i data-lucide="award" class="w-4 h-4 text-amber-400"></i> UTBK
                 </button>
-                <button onclick="switchView('riwayat')" id="nav-riwayat" class="px-4 py-2.5 rounded-xl text-slate-300 hover:text-white transition flex items-center gap-1.5">
+                <button onclick="switchView('flashcards')" id="nav-flashcards" class="px-3.5 py-2 rounded-xl text-slate-300 hover:text-white transition flex items-center gap-1.5">
+                    <i data-lucide="brain" class="w-4 h-4 text-pink-400"></i> Kartu
+                </button>
+                <button onclick="switchView('riwayat')" id="nav-riwayat" class="px-3.5 py-2 rounded-xl text-slate-300 hover:text-white transition flex items-center gap-1.5">
                     <i data-lucide="history" class="w-4 h-4 text-purple-400"></i> Riwayat
                 </button>
             </nav>
@@ -179,8 +177,8 @@
                     </div>
                     <div>
                         <div class="flex items-center gap-2">
-                            <h3 class="font-black text-white text-base">Nihiluxxy AI Super Tutor</h3>
-                            <span class="text-[9px] px-2 py-0.5 rounded-full bg-emerald-500/20 text-emerald-300 border border-emerald-500/40 font-mono font-bold">Smart Multi-Solver v6.5</span>
+                            <h3 class="font-black text-white text-base">Nihiluxxy AI Super Tutor v8.0</h3>
+                            <span class="text-[9px] px-2 py-0.5 rounded-full bg-emerald-500/20 text-emerald-300 border border-emerald-500/40 font-mono font-bold">Deep Concept Engine</span>
                         </div>
                         <p class="text-[11px] text-purple-300">Pakar Matematika, Fisika, Kimia, Biologi, Geografi, Ekonomi, Sosiologi, Sejarah & UTBK SNBT 2026</p>
                     </div>
@@ -192,17 +190,17 @@
 
             <!-- AI Quick Action Chips Bar -->
             <div class="p-3 bg-slate-900/90 border-b border-slate-800 flex gap-2 overflow-x-auto custom-scrollbar text-xs">
-                <button onclick="injectAiPrompt('Bagaimana cara cepat menghitung Perkalian Titik dan Proyeksi Vektor Ortogonal?')" class="px-3.5 py-1.5 rounded-xl bg-slate-800 hover:bg-purple-900/50 border border-slate-700 text-purple-200 whitespace-nowrap transition flex items-center gap-1.5">
-                    <i data-lucide="move-right" class="w-3.5 h-3.5 text-blue-400"></i> Proyeksi Vektor
+                <button onclick="injectAiPrompt('Tolong jelaskan secara mendalam tentang rumus Vieta dan cara menurunkan rumus jumlah kuadrat akar-akar!')" class="px-3.5 py-1.5 rounded-xl bg-slate-800 hover:bg-purple-900/50 border border-slate-700 text-purple-200 whitespace-nowrap transition flex items-center gap-1.5">
+                    <i data-lucide="calculator" class="w-3.5 h-3.5 text-blue-400"></i> Rumus Vieta
                 </button>
-                <button onclick="injectAiPrompt('Tolong jelaskan konsep Hukum Orde Reaksi Kimia dan cara menentukan persamaan laju reaksi!')" class="px-3.5 py-1.5 rounded-xl bg-slate-800 hover:bg-purple-900/50 border border-slate-700 text-purple-200 whitespace-nowrap transition flex items-center gap-1.5">
-                    <i data-lucide="flask-conical" class="w-3.5 h-3.5 text-pink-400"></i> Laju Reaksi Kimia
+                <button onclick="injectAiPrompt('Bagaimana cara cepat membedakan larutan buffer dan hidrolisis garam dari soal campuran asam-basa?')" class="px-3.5 py-1.5 rounded-xl bg-slate-800 hover:bg-purple-900/50 border border-slate-700 text-purple-200 whitespace-nowrap transition flex items-center gap-1.5">
+                    <i data-lucide="flask-conical" class="w-3.5 h-3.5 text-pink-400"></i> Buffer vs Hidrolisis
                 </button>
-                <button onclick="injectAiPrompt('Jelaskan prinsip Gerak Harmonis Sederhana dan periode ayunan bandul fisika!')" class="px-3.5 py-1.5 rounded-xl bg-slate-800 hover:bg-purple-900/50 border border-slate-700 text-purple-200 whitespace-nowrap transition flex items-center gap-1.5">
-                    <i data-lucide="zap" class="w-3.5 h-3.5 text-amber-400"></i> Gerak Harmonis
+                <button onclick="injectAiPrompt('Paparkan alur 4 tahap respirasi aerob seluler beserta lokasi dan jumlah ATP yang dihasilkan!')" class="px-3.5 py-1.5 rounded-xl bg-slate-800 hover:bg-purple-900/50 border border-slate-700 text-purple-200 whitespace-nowrap transition flex items-center gap-1.5">
+                    <i data-lucide="dna" class="w-3.5 h-3.5 text-emerald-400"></i> Respirasi Aerob
                 </button>
-                <button onclick="injectAiPrompt('Bagaimana cara menghitung skala peta dan interpretasi citra penginderaan jauh geografi?')" class="px-3.5 py-1.5 rounded-xl bg-slate-800 hover:bg-purple-900/50 border border-slate-700 text-purple-200 whitespace-nowrap transition flex items-center gap-1.5">
-                    <i data-lucide="globe" class="w-3.5 h-3.5 text-emerald-400"></i> Indrajaja Geografi
+                <button onclick="injectAiPrompt('Jelaskan prinsip Hukum Bernoulli dan aplikasinya pada gaya angkat pesawat terbang!')" class="px-3.5 py-1.5 rounded-xl bg-slate-800 hover:bg-purple-900/50 border border-slate-700 text-purple-200 whitespace-nowrap transition flex items-center gap-1.5">
+                    <i data-lucide="zap" class="w-3.5 h-3.5 text-amber-400"></i> Hukum Bernoulli
                 </button>
             </div>
 
@@ -211,15 +209,15 @@
                 <div class="flex gap-3 items-start">
                     <div class="w-9 h-9 rounded-xl gradient-accent flex-shrink-0 flex items-center justify-center text-white text-xs font-bold shadow-md">AI</div>
                     <div class="bg-slate-900/90 border border-purple-500/30 p-4 sm:p-5 rounded-2xl text-xs sm:text-sm text-slate-200 max-w-xl leading-relaxed shadow-xl">
-                        <p class="font-bold text-purple-300 text-sm mb-1">Selamat datang di Nihiluxxy AI Super Tutor v6.5 Presentation Edition! 🚀</p>
-                        <p>Ketik soal dari 15 bab mata pelajaran Matematika, Fisika, Kimia, Biologi, Geografi, Ekonomi, Sosiologi, Sejarah, atau UTBK. Engine AI akan mengurai rumus, menyajikan analogi, dan memberikan solusi presisi langkah-demi-langkah!</p>
+                        <p class="font-bold text-purple-300 text-sm mb-1">Selamat datang di Nihiluxxy AI Super Tutor v8.0 Megamodule Edition! 🚀</p>
+                        <p>Ketik soal dari 135 bab mata pelajaran SMA atau UTBK SNBT. Engine AI akan mengurai konsep hingga akar-akarnya, menyajikan derivasi rumus, dan memberikan langkah penyelesaian terperinci!</p>
                     </div>
                 </div>
             </div>
 
             <!-- AI Input Box Area -->
             <div class="p-3 sm:p-4 bg-slate-900 border-t border-slate-800 flex items-center gap-2">
-                <textarea id="ai-user-input" rows="1" onkeydown="handleAiKeyDown(event)" placeholder="Ketik pertanyaan atau salin soal di sini (misal: 'Berapa laju reaksi jika konsentrasi A dinaikkan 2 kali membuat laju naik 4 kali?')..." class="flex-1 bg-slate-950 border border-slate-700/80 rounded-2xl px-4 py-3 text-xs sm:text-sm text-slate-100 focus:outline-none focus:border-purple-500 custom-scrollbar resize-none"></textarea>
+                <textarea id="ai-user-input" rows="1" onkeydown="handleAiKeyDown(event)" placeholder="Ketik pertanyaan atau salin soal di sini (misal: 'Jelaskan cara mencari integral substitusi sin³ x cos x dx')..." class="flex-1 bg-slate-950 border border-slate-700/80 rounded-2xl px-4 py-3 text-xs sm:text-sm text-slate-100 focus:outline-none focus:border-purple-500 custom-scrollbar resize-none"></textarea>
                 <button onclick="sendAiQuery()" class="w-12 h-12 rounded-2xl gradient-accent text-white flex items-center justify-center hover:opacity-95 transition shadow-lg shadow-purple-500/25 flex-shrink-0">
                     <i data-lucide="send" class="w-5 h-5"></i>
                 </button>
@@ -234,6 +232,9 @@
         </button>
         <button onclick="switchView('materi')" id="mob-materi" class="flex flex-col items-center gap-1">
             <i data-lucide="book-open" class="w-5 h-5"></i> Modul
+        </button>
+        <button onclick="switchView('visualizer')" id="mob-visualizer" class="flex flex-col items-center gap-1">
+            <i data-lucide="line-chart" class="w-5 h-5"></i> Grafik
         </button>
         <button onclick="switchView('kalkulator')" id="mob-kalkulator" class="flex flex-col items-center gap-1">
             <i data-lucide="calculator" class="w-5 h-5"></i> Hitung
@@ -251,7 +252,7 @@
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-col md:flex-row justify-between items-center gap-4">
             <div class="flex items-center gap-2">
                 <div class="w-6 h-6 rounded-lg gradient-accent flex items-center justify-center text-white text-xs font-bold">N</div>
-                <span class="font-extrabold text-slate-200">Nihiluxxy AI Platform Edition 2026</span>
+                <span class="font-extrabold text-slate-200">Nihiluxxy AI Platform Megamodule Edition 2026 (v8.0)</span>
                 <span class="text-slate-600">|</span>
                 <span>Hak Cipta &copy; 2026. Kurikulum Merdeka & K13 Terverifikasi.</span>
             </div>
@@ -283,14 +284,13 @@
             }
         });
 
-        // Core State Engine
+        // Core Application State
         const state = {
             activeView: 'home',
             selectedKurikulum: 'Merdeka',
             selectedSubject: 'mat',
-            currentBabIdx: 0,
-            currentTabSlide: 'konsep', // 'konsep' | 'formula' | 'tips' | 'soal'
-            attempts: JSON.parse(localStorage.getItem('nihiluxxy_attempts') || '[]'),
+            attempts: JSON.parse(localStorage.getItem('nihiluxxy_v8_attempts') || '[]'),
+            userNotes: JSON.parse(localStorage.getItem('nihiluxxy_v8_notes') || '{}'),
             currentSimAnswers: {},
             activeSimKey: null,
             simTimerInterval: null,
@@ -299,18 +299,18 @@
             flashcardFilter: 'semua'
         };
 
-        // Fully Expanded Database Engine - 15 Complete Chapters Per Subject (Elite Presentation Standard)
+        // Fully Expanded Database Engine - 15 Deep-Dive Chapters Per Subject (135 Total Chapters)
         const db = {
             mapel: [
-                { id: 'mat', nama: 'Matematika Wajib & Lanjut', icon: 'calculator', color: 'from-blue-600 to-cyan-500', k13: 'Kelas 10-12 IPA/IPS', merdeka: 'Fase E & F (15 Bab Slide System)' },
-                { id: 'fis', nama: 'Fisika Lanjut', icon: 'zap', color: 'from-indigo-600 to-blue-500', k13: 'Kelas 10-12 IPA', merdeka: 'Fase F (15 Bab Slide System)' },
-                { id: 'kim', nama: 'Kimia Lanjut', icon: 'flask-conical', color: 'from-purple-600 to-pink-500', k13: 'Kelas 10-12 IPA', merdeka: 'Fase F (15 Bab Slide System)' },
-                { id: 'bio', nama: 'Biologi Lanjut', icon: 'dna', color: 'from-emerald-600 to-teal-500', k13: 'Kelas 10-12 IPA', merdeka: 'Fase F (15 Bab Slide System)' },
-                { id: 'geo', nama: 'Geografi Lanjut', icon: 'globe', color: 'from-teal-600 to-emerald-500', k13: 'Kelas 10-12 IPS', merdeka: 'Fase F (15 Bab Slide System)' },
-                { id: 'eko', nama: 'Ekonomi & Akuntansi', icon: 'trending-up', color: 'from-amber-600 to-yellow-500', k13: 'Kelas 10-12 IPS', merdeka: 'Fase F (15 Bab Slide System)' },
-                { id: 'sos', nama: 'Sosiologi Lanjut', icon: 'users', color: 'from-rose-600 to-red-500', k13: 'Kelas 10-12 IPS', merdeka: 'Fase F (15 Bab Slide System)' },
-                { id: 'sej', nama: 'Sejarah Indonesia & Dunia', icon: 'landmark', color: 'from-red-600 to-orange-500', k13: 'Kelas 10-12 Wajib/Peminatan', merdeka: 'Fase E & F (15 Bab Slide System)' },
-                { id: 'lit', nama: 'Literasi Bahasa & Penalaran', icon: 'book-marked', color: 'from-orange-600 to-amber-500', k13: 'Wajib Semua Jurusan', merdeka: 'Fase E & F (15 Bab Slide System)' }
+                { id: 'mat', nama: 'Matematika Wajib & Lanjut', icon: 'calculator', color: 'from-blue-600 to-cyan-500', k13: 'Kelas 10-12 IPA/IPS', merdeka: 'Fase E & F (15 Bab Terperinci Modul Bintang)' },
+                { id: 'fis', nama: 'Fisika Lanjut', icon: 'zap', color: 'from-indigo-600 to-blue-500', k13: 'Kelas 10-12 IPA', merdeka: 'Fase F (15 Bab Terperinci Modul Bintang)' },
+                { id: 'kim', nama: 'Kimia Lanjut', icon: 'flask-conical', color: 'from-purple-600 to-pink-500', k13: 'Kelas 10-12 IPA', merdeka: 'Fase F (15 Bab Terperinci Modul Bintang)' },
+                { id: 'bio', nama: 'Biologi Lanjut', icon: 'dna', color: 'from-emerald-600 to-teal-500', k13: 'Kelas 10-12 IPA', merdeka: 'Fase F (15 Bab Terperinci Modul Bintang)' },
+                { id: 'geo', nama: 'Geografi Lanjut', icon: 'globe', color: 'from-teal-600 to-emerald-500', k13: 'Kelas 10-12 IPS', merdeka: 'Fase F (15 Bab Terperinci Modul Bintang)' },
+                { id: 'eko', nama: 'Ekonomi & Akuntansi', icon: 'trending-up', color: 'from-amber-600 to-yellow-500', k13: 'Kelas 10-12 IPS', merdeka: 'Fase F (15 Bab Terperinci Modul Bintang)' },
+                { id: 'sos', nama: 'Sosiologi Lanjut', icon: 'users', color: 'from-rose-600 to-red-500', k13: 'Kelas 10-12 IPS', merdeka: 'Fase F (15 Bab Terperinci Modul Bintang)' },
+                { id: 'sej', nama: 'Sejarah Indonesia & Dunia', icon: 'landmark', color: 'from-red-600 to-orange-500', k13: 'Kelas 10-12 Wajib/Peminatan', merdeka: 'Fase E & F (15 Bab Terperinci Modul Bintang)' },
+                { id: 'lit', nama: 'Literasi Bahasa & Penalaran', icon: 'book-marked', color: 'from-orange-600 to-amber-500', k13: 'Wajib Semua Jurusan', merdeka: 'Fase E & F (15 Bab Terperinci Modul Bintang)' }
             ],
             flashcards: [
                 { mapel: 'Matematika', pertanyaan: 'Apakah turunan pertama dari f(x) = axⁿ menurut aturan turunan dasar?', jawaban: 'f\'(x) = a · n · xⁿ⁻¹.' },
@@ -329,1098 +329,1098 @@
                     {
                         title: 'Bab 1: Eksponen, Bentuk Akar & Logaritma Lanjut',
                         kurikulum: 'K13 & Merdeka (Fase E)',
-                        summary: '<strong>Penjelasan Konsep Terperinci:</strong> Eksponen menggambarkan bentuk perkalian berulang dari suatu bilangan basis. Logaritma merupakan fungsi kebalikan (invers) dari eksponensial yang digunakan untuk menentukan besar pangkat bilangan pokok. Pemahaman bentuk akar digunakan untuk merasionalkan penyebut irasional.',
-                        visual: 'ᵃlog(b·c) = ᵃlog b + ᵃlog c  |  ᵃlog(b/c) = ᵃlog b - ᵃlog c  |  ᵃlog bⁿ = n · ᵃlog b',
-                        tips: '<strong>Trik Cepat Bimbingan Belajar:</strong> Apabila menemui persamaan eksponen berbentuk a^(f(x)) = a^(g(x)), segera samakan pangkatnya menjadi f(x) = g(x) dengan syarat basis a > 0 dan a ≠ 1.',
-                        contohSoal: 'Jika diketahui ᵃlog b + ᵃlog b² = 12, hitunglah nilai dari ᵃlog(a·b).<br><strong>Langkah Penyelesaian Terperinci:</strong><br>1. Gunakan sifat logaritma: ᵃlog b² = 2 · ᵃlog b.<br>2. Persamaan menjadi: ᵃlog b + 2 · ᵃlog b = 12 ⇒ 3 · ᵃlog b = 12 ⇒ ᵃlog b = 4.<br>3. Hitung ᵃlog(a·b) = ᵃlog a + ᵃlog b = 1 + 4 = <strong>5</strong>.'
+                        summary: '<strong>Akar Konsep & Derivasi Matematis:</strong> Eksponen menggambarkan perkalian berulang basis $a^n = a \times a \times \dots \times a$. Logaritma merupakan invers langsung dari fungsi eksponensial ($a^y = x \iff \text{^a}\log x = y$). Sifat-sifat logaritma diturunkan langsung dari hukum eksponen. Bentuk akar ($\sqrt[n]{a^m} = a^{m/n}$) digunakan untuk menyederhanakan pecahan irasional melalui teknik merasionalkan penyebut (dikalikan sekawan).',
+                        visual: 'ᵃlog(b·c) = ᵃlog b + ᵃlog c  |  ᵃlog(b/c) = ᵃlog b - ᵃlog c  |  ᵃlog bⁿ = n · ᵃlog b  |  ᵃlog b · ᵇlog c = ᵃlog c',
+                        tips: '<strong>Trik Bimbel Elite:</strong> Jika menemukan persamaan eksponen $a^{f(x)} = a^{g(x)}$, samakan pangkatnya $f(x) = g(x)$ (syarat $a>0, a \neq 1$). Jika basis mengandung variabel $h(x)^{f(x)} = h(x)^{g(x)}$, uji 4 kondisi: (1) $f(x)=g(x)$, (2) $h(x)=1$, (3) $h(x)=0$ (dengan $f(x),g(x)>0$), (4) $h(x)=-1$ (dengan $f(x),g(x)$ sama-sama genap/ganjil).',
+                        contohSoal: '<strong>Soal 1:</strong> Jika diketahui $\text{^a}\log b + \text{^a}\log b^2 = 12$, hitunglah nilai dari $\text{^a}\log(a \cdot b)$.<br><strong>Langkah Penyelesaian Terperinci:</strong><br>1. Gunakan sifat pangkat logaritma: $\text{^a}\log b^2 = 2 \cdot \text{^a}\log b$.<br>2. Substitusi ke persamaan: $\text{^a}\log b + 2 \cdot \text{^a}\log b = 12 \implies 3 \cdot \text{^a}\log b = 12 \implies \text{^a}\log b = 4$.<br>3. Hitung $\text{^a}\log(a \cdot b) = \text{^a}\log a + \text{^a}\log b = 1 + 4 = \mathbf{5}$.<br><br><strong>Soal 2 (HOTS):</strong> Tentukan himpunan penyelesaian dari $\text{^2}\log^2 x - \text{^2}\log x^3 + 2 = 0$.<br><strong>Langkah Penyelesaian Terperinci:</strong><br>1. Ubah $\text{^2}\log x^3 = 3 \cdot \text{^2}\log x$. Persamaan menjadi $(\text{^2}\log x)^2 - 3(\text{^2}\log x) + 2 = 0$.<br>2. Misalkan $y = \text{^2}\log x \implies y^2 - 3y + 2 = 0 \implies (y-1)(y-2) = 0$.<br>3. Untuk $y=1 \implies \text{^2}\log x = 1 \implies x = 2$. Untuk $y=2 \implies \text{^2}\log x = 2 \implies x = 4$.<br>4. HP = $\mathbf{\{2, 4\}}$.'
                     },
                     {
                         title: 'Bab 2: Persamaan & Fungsi Kuadrat serta Rumus Vieta',
                         kurikulum: 'K13 & Merdeka (Fase E)',
-                        summary: '<strong>Penjelasan Konsep Terperinci:</strong> Persamaan kuadrat ax² + bx + c = 0 memiliki nilai diskriminan D = b² - 4ac yang menentukan jenis akar. Rumus Vieta memberikan hubungan langsung antara koefisien persamaan dan jumlah serta hasil kali akar-akarnya tanpa harus mencari akar secara eksplisit.',
-                        visual: 'Vieta: x₁ + x₂ = -b/a  |  x₁ · x₂ = c/a  |  Puncak Parabola: (-b / 2a , -D / 4a)',
-                        tips: 'Gunakan identitas aljabar Vieta untuk menentukan jumlah kuadrat akar-akar: x₁² + x₂² = (x₁ + x₂)² - 2(x₁·x₂).',
-                        contohSoal: 'Jika x² - (k + 2)x + 16 = 0 memiliki dua akar kembar positif, tentukan nilai k.<br><strong>Langkah Penyelesaian Terperinci:</strong><br>1. Syarat akar kembar D = 0 ⇒ (-(k+2))² - 4(1)(16) = 0 ⇒ (k+2)² = 64.<br>2. Maka k + 2 = 8 atau k + 2 = -8 ⇒ k = 6 atau k = -10.<br>3. Syarat akar positif: x₁+x₂ = k+2 > 0 ⇒ 6+2 = 8 > 0. Jadi k = <strong>6</strong>.'
+                        summary: '<strong>Akar Konsep & Derivasi Matematis:</strong> Persamaan kuadrat $ax^2 + bx + c = 0$ memiliki titik balik parabola di $x_p = -b/(2a)$ dan $y_p = -D/(4a)$. Diskriminan $D = b^2 - 4ac$ menentukan jumlah akar real. Rumus Vieta diturunkan dari faktorisasi $a(x-x_1)(x-x_2) = ax^2 - a(x_1+x_2)x + a x_1 x_2$, sehingga diperoleh $x_1+x_2 = -b/a$ dan $x_1 x_2 = c/a$.',
+                        visual: 'Vieta: x₁ + x₂ = -b/a  |  x₁ · x₂ = c/a  |  x₁ - x₂ = √D / a  |  Puncak Parabola: (-b / 2a , -D / 4a)',
+                        tips: 'Gunakan identitas aljabar Vieta untuk menghemat waktu tanpa mencari akar secara eksplisit:<br>• $x_1^2 + x_2^2 = (x_1+x_2)^2 - 2 x_1 x_2$<br>• $x_1^3 + x_2^3 = (x_1+x_2)^3 - 3 x_1 x_2 (x_1+x_2)$<br>• $\frac{1}{x_1} + \frac{1}{x_2} = \frac{x_1+x_2}{x_1 x_2}$',
+                        contohSoal: '<strong>Soal 1:</strong> Jika $x^2 - (k + 2)x + 16 = 0$ memiliki dua akar kembar positif, tentukan nilai $k$.<br><strong>Langkah Penyelesaian:</strong><br>1. Syarat akar kembar: $D = 0 \implies (-(k+2))^2 - 4(1)(16) = 0 \implies (k+2)^2 = 64$.<br>2. Maka $k+2 = 8 \implies k = 6$ atau $k+2 = -8 \implies k = -10$.<br>3. Uji syarat akar positif: $x_1+x_2 = k+2 > 0 \implies 6+2 = 8 > 0$ (Memenuhi). Jadi $k = \mathbf{6}$.<br><br><strong>Soal 2 (HOTS):</strong> Akar-akar $2x^2 - 6x + 1 = 0$ adalah $\alpha$ dan $\beta$. Buat persamaan kuadrat baru yang akar-akarnya $(2\alpha + 1)$ dan $(2\beta + 1)$.<br><strong>Langkah Penyelesaian:</strong><br>1. Dari persamaan awal: $\alpha + \beta = 6/2 = 3$, $\alpha \beta = 1/2$.<br>2. Jumlah akar baru $S = (2\alpha+1) + (2\beta+1) = 2(\alpha+\beta) + 2 = 2(3) + 2 = 8$.<br>3. Hasil kali akar baru $P = (2\alpha+1)(2\beta+1) = 4\alpha\beta + 2(\alpha+\beta) + 1 = 4(1/2) + 2(3) + 1 = 2 + 6 + 1 = 9$.<br>4. Persamaan kuadrat baru: $x^2 - Sx + P = 0 \implies \mathbf{x^2 - 8x + 9 = 0}$.'
                     },
                     {
                         title: 'Bab 3: Trigonometri Analitik & Identitas Jumlah Sudut',
                         kurikulum: 'K13 & Merdeka (Fase E/F)',
-                        summary: '<strong>Penjelasan Konsep Terperinci:</strong> Trigonometri analitik memperluas perbandingan siku-siku ke seluruh kuadran serta memperkenalkan rumus jumlah dan selisih dua sudut, sudut ganda, serta perkalian fungsi sinus dan kosinus.',
-                        visual: 'sin(A ± B) = sin A cos B ± cos A sin B  |  cos(A ± B) = cos A cos B ∓ sin A sin B',
-                        tips: 'Gunakan Aturan Sinus (a/sin A = b/sin B) jika diketahui pasang sudut-sisi berhadapan, dan Aturan Kosinus (c² = a² + b² - 2ab cos C) jika diketahui dua sisi dan sudut apit.',
-                        contohSoal: 'Segitiga ABC memiliki a = 4 cm, b = 6 cm, dan sudut C = 60°. Hitunglah panjang sisi c.<br><strong>Langkah Penyelesaian Terperinci:</strong><br>1. c² = a² + b² - 2ab cos C = 4² + 6² - 2(4)(6) cos 60°.<br>2. c² = 16 + 36 - 48(0.5) = 52 - 24 = 28.<br>3. c = √28 = <strong>2√7 cm</strong>.'
+                        summary: '<strong>Akar Konsep & Derivasi Matematis:</strong> Trigonometri analitik menghubungkan fungsi rasional sudut siku-siku dengan koordinat kartesius lingkaran satuan ($x = r \cos \theta, y = r \sin \theta$). Rumus jumlah dan selisih sudut diperoleh dari rumus jarak vektor koordinat pada lingkaran satuan.',
+                        visual: 'sin(A ± B) = sin A cos B ± cos A sin B  |  cos(A ± B) = cos A cos B ∓ sin A sin B  |  tan(A ± B) = (tan A ± tan B) / (1 ∓ tan A tan B)',
+                        tips: 'Ingat sudut ganda: $\sin 2A = 2 \sin A \cos A$ dan $\cos 2A = \cos^2 A - \sin^2 A = 2\cos^2 A - 1 = 1 - 2\sin^2 A$. Uji Aturan Kosinus $c^2 = a^2 + b^2 - 2ab \cos C$ jika diketahui dua sisi dan satu sudut apit.',
+                        contohSoal: '<strong>Soal 1:</strong> Segitiga ABC memiliki $a = 4\text{ cm}$, $b = 6\text{ cm}$, dan sudut $C = 60^\circ$. Hitung panjang sisi $c$.<br><strong>Langkah Penyelesaian:</strong><br>1. $c^2 = a^2 + b^2 - 2ab \cos C = 4^2 + 6^2 - 2(4)(6) \cos 60^\circ$.<br>2. $c^2 = 16 + 36 - 48(0,5) = 52 - 24 = 28 \implies c = \sqrt{28} = \mathbf{2\sqrt{7}\text{ cm}}$.<br><br><strong>Soal 2 (HOTS):</strong> Hitung nilai pasti dari $\cos 15^\circ$.<br><strong>Langkah Penyelesaian:</strong><br>1. Ubah $\cos 15^\circ = \cos(45^\circ - 30^\circ) = \cos 45^\circ \cos 30^\circ + \sin 45^\circ \sin 30^\circ$.<br>2. $= (\frac{1}{2}\sqrt{2})(\frac{1}{2}\sqrt{3}) + (\frac{1}{2}\sqrt{2})(\frac{1}{2}) = \frac{1}{4}\sqrt{6} + \frac{1}{4}\sqrt{2} = \mathbf{\frac{1}{4}(\sqrt{6} + \sqrt{2})}$.'
                     },
                     {
                         title: 'Bab 4: Vektor pada R² & R³ serta Proyeksi Ortogonal',
                         kurikulum: 'K13 & Merdeka (Fase E)',
-                        summary: '<strong>Penjelasan Konsep Terperinci:</strong> Vektor merepresentasikan besaran berarah. Perkalian skalar dua vektor (dot product) digunakan untuk mengukur sudut antar vektor serta menentukan proyeksi ortogonal skalar maupun vektor.',
-                        visual: 'Dua Vektor Tegak Lurus: u · v = 0  |  Proyeksi Skalar: |p| = (u · v) / |v|',
-                        tips: 'Dua vektor u dan v saling tegak lurus (ortogonal) jika dan hanya jika hasil perkalian titiknya sama dengan nol (u · v = 0).',
-                        contohSoal: 'Diketahui u = (2, -1) dan v = (x, 4). Jika u dan v saling tegak lurus, berapa x?<br><strong>Langkah Penyelesaian Terperinci:</strong><br>1. Syarat tegak lurus u · v = 0.<br>2. (2)(x) + (-1)(4) = 0 ⇒ 2x - 4 = 0 ⇒ <strong>x = 2</strong>.'
+                        summary: '<strong>Akar Konsep & Derivasi Matematis:</strong> Vektor merepresentasikan besaran yang memiliki panjang (magnitudo) dan arah. Perkalian titik (dot product) $\vec{u} \cdot \vec{v} = |\vec{u}| |\vec{v}| \cos \theta$ mengukur sejauh mana dua vektor berada pada arah yang sama. Jika $\vec{u} \cdot \vec{v} = 0$, maka kedua vektor tegak lurus ($\theta = 90^\circ$).',
+                        visual: 'Dua Vektor Tegak Lurus: u · v = 0  |  Proyeksi Skalar: |p| = (u · v) / |v|  |  Proyeksi Vektor: p = [ (u · v) / |v|² ] · v',
+                        tips: 'Proyeksi skalar menghasilkan bilangan real (panjang), sedangkan proyeksi vektor menghasilkan komponen vektor baru yang sejajar dengan vektor alas.',
+                        contohSoal: '<strong>Soal 1:</strong> Diketahui $\vec{u} = (2, -1)$ dan $\vec{v} = (x, 4)$. Jika $\vec{u} \perp \vec{v}$, berapa $x$? <br><strong>Langkah Penyelesaian:</strong><br>1. Syarat tegak lurus: $\vec{u} \cdot \vec{v} = 0 \implies (2)(x) + (-1)(4) = 0 \implies 2x - 4 = 0 \implies \mathbf{x = 2}$.<br><br><strong>Soal 2 (HOTS):</strong> Vektor $\vec{a} = (1, 2, 2)$ diproyeksikan secara ortogonal pada $\vec{b} = (2, -2, 1)$. Tentukan vektor proyeksinya.<br><strong>Langkah Penyelesaian:</strong><br>1. Hitung $\vec{a} \cdot \vec{b} = (1)(2) + (2)(-2) + (2)(1) = 2 - 4 + 2 = 0$.<br>2. Karena $\vec{a} \cdot \vec{b} = 0$, maka proyeksi vektornya adalah $\mathbf{\vec{0} = (0, 0, 0)}$.'
                     },
                     {
                         title: 'Bab 5: Matriks, Determinan & Invers Operasi Baris',
                         kurikulum: 'K13 & Merdeka (Fase F)',
-                        summary: '<strong>Penjelasan Konsep Terperinci:</strong> Matriks digunakan untuk menyusun sistem persamaan linear secara efisien. Determinan memberikan nilai skalar unik yang menentukan keberadaan invers matriks.',
+                        summary: '<strong>Akar Konsep & Derivasi Matematis:</strong> Matriks adalah susunan kuantitas berbentuk persegi panjang. Invers matriks $A^{-1}$ memenuhi $A \cdot A^{-1} = I$. Determinan mengukur faktor skala transformasi linear dari matriks tersebut.',
                         visual: 'det(A · B) = det(A) · det(B)  |  det(A⁻¹) = 1 / det(A)  |  det(k·A_2x2) = k²·det(A)',
-                        tips: 'Jika determinan det(A) = 0, matriks bersifat singular dan tidak memiliki invers.',
-                        contohSoal: 'Jika det(A) = 5 dan det(B) = 2, berapakah determinan dari 3A⁻¹ · B untuk matriks 2x2?<br><strong>Langkah Penyelesaian Terperinci:</strong><br>1. det(3A⁻¹ · B) = 3² · det(A⁻¹) · det(B).<br>2. det(A⁻¹) = 1/5.<br>3. Hasil = 9 × (1/5) × 2 = <strong>18/5 = 3,6</strong>.'
+                        tips: 'Jika $\det(A) = 0$, matriks dinamakan matriks singular (tidak memiliki invers).',
+                        contohSoal: '<strong>Soal 1:</strong> Jika $\det(A) = 5$ dan $\det(B) = 2$, berapakah determinan dari $3 A^{-1} \cdot B$ untuk matriks berordo $2 \times 2$? <br><strong>Langkah Penyelesaian:</strong><br>1. $\det(3 A^{-1} B) = 3^2 \cdot \det(A^{-1}) \cdot \det(B) = 9 \cdot (1/5) \cdot 2 = \mathbf{18/5 = 3,6}$.'
                     },
                     {
                         title: 'Bab 6: Barisan & Deret Aritmatika, Geometri & Tak Hingga',
                         kurikulum: 'K13 & Merdeka (Fase F)',
-                        summary: '<strong>Penjelasan Konsep Terperinci:</strong> Barisan aritmatika memiliki beda tetap b, sedangkan geometri memiliki rasio r. Deret geometri tak hingga konvergen menuju nilai terbatas jika rasio memenuhi -1 < r < 1.',
-                        visual: 'Aritmatika: U_n = a + (n-1)b  |  Geometri: U_n = a·rⁿ⁻¹  |  Tak Hingga: S_∞ = a / (1 - r)',
-                        tips: 'Jumlah n suku pertama deret aritmatika dapat dicari instan dengan S_n = (n / 2) · (a + U_n).',
-                        contohSoal: 'Deret geometri tak hingga memiliki a = 12 dan S_∞ = 18. Hitunglah rasionya.<br><strong>Langkah Penyelesaian Terperinci:</strong><br>1. S_∞ = a / (1 - r) ⇒ 18 = 12 / (1 - r).<br>2. 1 - r = 12/18 = 2/3 ⇒ r = 1 - 2/3 = <strong>1/3</strong>.'
+                        summary: '<strong>Akar Konsep & Derivasi Matematis:</strong> Barisan aritmatika memiliki beda tetap $b = U_n - U_{n-1}$, sedangkan barisan geometri memiliki rasio tetap $r = U_n / U_{n-1}$. Deret geometri tak hingga konvergen jika $|r| < 1$, dengan jumlah $S_\infty = \frac{a}{1 - r}$.',
+                        visual: 'Aritmatika: U_n = a + (n-1)b  |  Geometri: U_n = a·rⁿ⁻¹  |  Tak Hingga Konvergen: S_∞ = a / (1 - r)',
+                        tips: 'Jumlah $n$ suku pertama deret aritmatika dapat langsung dicari dengan $S_n = \frac{n}{2}(a + U_n)$.',
+                        contohSoal: '<strong>Soal 1:</strong> Deret geometri tak hingga memiliki $a = 12$ dan $S_\infty = 18$. Hitung rasionya.<br><strong>Langkah Penyelesaian:</strong><br>1. $S_\infty = \frac{a}{1-r} \implies 18 = \frac{12}{1-r} \implies 1-r = \frac{12}{18} = \frac{2}{3} \implies r = 1 - \frac{2}{3} = \mathbf{1/3}$.'
                     },
                     {
                         title: 'Bab 7: Limit Fungsi Aljabar, Trigonometri & Aturan L\'Hopital',
                         kurikulum: 'K13 & Merdeka (Fase F)',
-                        summary: '<strong>Penjelasan Konsep Terperinci:</strong> Limit fungsi menentukan kecenderungan nilai f(x) saat x mendekati batas c. Bentuk tak tentu 0/0 diselesaikan dengan pemfaktoran, perkalian sekawan, atau diferensiasi L\'Hopital.',
-                        visual: 'lim (x→c) [f(x)/g(x)] = lim (x→c) [f\'(x)/g\'(x)]  |  lim (x→0) (sin ax / bx) = a/b',
-                        tips: 'Limit trigonometri dasar: lim (x→0) (sin ax / bx) = a/b dan lim (x→0) (tan ax / bx) = a/b.',
-                        contohSoal: 'Hitung lim (x→0) (1 - cos 2x) / (x sin x).<br><strong>Langkah Penyelesaian Terperinci:</strong><br>1. Ubah 1 - cos 2x menjadi 2 sin² x.<br>2. lim (x→0) (2 sin² x) / (x sin x) = lim (x→0) (2 sin x / x) = 2(1) = <strong>2</strong>.'
+                        summary: '<strong>Akar Konsep & Derivasi Matematis:</strong> Limit menentukan perilaku nilai $f(x)$ saat $x$ mendekati titik tertentu $c$. Untuk bentuk tak tentu $\frac{0}{0}$ atau $\frac{\infty}{\infty}$, gunakan aturan L\'Hopital $\lim_{x \to c} \frac{f(x)}{g(x)} = \lim_{x \to c} \frac{f\'(x)}{g\'(x)}$.',
+                        visual: 'lim (x→0) (sin ax / bx) = a/b  |  lim (x→0) (tan ax / bx) = a/b  |  L\'Hopital: f\'(x)/g\'(x)',
+                        tips: 'Limit trigonometri dasar: $\lim_{x \to 0} \frac{1 - \cos ax}{x^2} = \frac{1}{2} a^2$. Gunakan ini untuk menyelesaikan soal limit trigonometri secara instan!',
+                        contohSoal: '<strong>Soal 1:</strong> Hitung $\lim_{x \to 0} \frac{1 - \cos 4x}{x \sin 2x}$.<br><strong>Langkah Penyelesaian:</strong><br>1. Gunakan trik cepat: pembilang $1 - \cos 4x \approx \frac{1}{2}(4)^2 x^2 = 8x^2$.<br>2. Penyebut $x \sin 2x \approx 2x^2$.<br>3. Limit $= \frac{8x^2}{2x^2} = \mathbf{4}$.'
                     },
                     {
                         title: 'Bab 8: Turunan Fungsi, Garis Singgung & Titik Stasioner',
                         kurikulum: 'K13 & Merdeka (Fase F)',
-                        summary: '<strong>Penjelasan Konsep Terperinci:</strong> Turunan f\'(x) merepresentasikan gradien garis singgung kurva di titik tertentu. Titik stasioner dicapai saat turunan pertama bernilai nol (f\'(x) = 0).',
-                        visual: 'Aturan Rantai: d/dx [f(g(x))] = f\'(g(x)) · g\'(x)  |  m = f\'(x₁)',
-                        tips: 'Fungsi selalu naik pada interval di mana f\'(x) > 0, dan fungsi turun jika f\'(x) < 0.',
-                        contohSoal: 'Tentukan titik stasioner minimum f(x) = x² - 6x + 8.<br><strong>Langkah Penyelesaian Terperinci:</strong><br>1. f\'(x) = 2x - 6 = 0 ⇒ x = 3.<br>2. y = f(3) = 3² - 6(3) + 8 = -1.<br>3. Titik minimum = <strong>(3, -1)</strong>.'
+                        summary: '<strong>Akar Konsep & Derivasi Matematis:</strong> Turunan $f\'(x) = \lim_{h \to 0} \frac{f(x+h)-f(x)}{h}$ merepresentasikan laju perubahan seketika dan gradien garis singgung kurva di titik $(x_1, y_1)$ dengan $m = f\'(x_1)$. Titik stasioner dicapai saat $f\'(x) = 0$.',
+                        visual: 'Aturan Rantai: d/dx [f(g(x))] = f\'(g(x)) · g\'(x)  |  Stasioner: f\'(x) = 0',
+                        tips: 'Kurva fungsi selalu naik pada interval $f\'(x) > 0$ dan selalu turun pada interval $f\'(x) < 0$. Uji turunan kedua $f\'\'(x_0)$ untuk menentukan jenis stasioner (minimum jika $>0$, maksimum jika $<0$).',
+                        contohSoal: '<strong>Soal 1:</strong> Tentukan nilai minimum fungsi $f(x) = x^3 - 3x^2 + 5$.<br><strong>Langkah Penyelesaian:</strong><br>1. $f\'(x) = 3x^2 - 6x = 0 \implies 3x(x - 2) = 0 \implies x = 0$ atau $x = 2$.<br>2. Uji turunan kedua $f\'\'(x) = 6x - 6$. Untuk $x=2 \implies f\'\'(2) = 6 > 0$ (Minimum).<br>3. Nilai minimum $= f(2) = 2^3 - 3(2)^2 + 5 = 8 - 12 + 5 = \mathbf{1}$.'
                     },
                     {
                         title: 'Bab 9: Integral Tentu, Luas Daerah & Benda Putar',
                         kurikulum: 'K13 & Merdeka (Fase F)',
-                        summary: '<strong>Penjelasan Konsep Terperinci:</strong> Integral merupakan kebalikan dari turunan. Integral tentu digunakan untuk mengukur luas wilayah yang dibatasi kurva serta volume benda putar hasil rotasi.',
-                        visual: 'Trik Luas Parabola-Garis: L = (D √D) / (6 a²)',
-                        tips: 'Gunakan rumus cepat L = (D √D) / (6a²) untuk menghitung luas antara parabola ax²+bx+c dan sumbu-X secara instan.',
-                        contohSoal: 'Hitung luas daerah dibatasi y = x² - 4x dan sumbu-X.<br><strong>Langkah Penyelesaian Terperinci:</strong><br>1. a = 1, D = (-4)² - 4(1)(0) = 16.<br>2. Luas = (16 × √16) / (6 × 1²) = 64 / 6 = <strong>32/3 satuan luas</strong>.'
+                        summary: '<strong>Akar Konsep & Derivasi Matematis:</strong> Integral merupakan antiturunan (Teorema Dasar Kalkulus). Integral tentu $\int_a^b f(x) dx = F(b) - F(a)$ mengukur akumulasi luas di bawah kurva.',
+                        visual: 'Luas Parabola & Garis: L = (D √D) / (6 a²)  |  Volume Rotasi Sumbu-X: V = π ∫ y² dx',
+                        tips: 'Gunakan rumus instan $L = \frac{D\sqrt{D}}{6a^2}$ untuk mencari luas daerah yang dibatasi oleh parabola $y = ax^2+bx+c$ dan garis!',
+                        contohSoal: '<strong>Soal 1:</strong> Hitung luas daerah yang dibatasi oleh $y = x^2 - 4x$ dan sumbu-X.<br><strong>Langkah Penyelesaian:</strong><br>1. $a = 1, b = -4, c = 0 \implies D = (-4)^2 - 4(1)(0) = 16$.<br>2. Luas $= \frac{16 \cdot \sqrt{16}}{6(1)^2} = \frac{16 \cdot 4}{6} = \frac{64}{6} = \mathbf{32/3\text{ satuan luas}}$.'
                     },
                     {
                         title: 'Bab 10: Polinomial, Metode Horner & Teorema Sisa',
                         kurikulum: 'K13 & Merdeka (Fase F Lanjut)',
-                        summary: '<strong>Penjelasan Konsep Terperinci:</strong> Polinomial P(x) adalah fungsi suku banyak. Teorema Sisa menyatakan bahwa sisa pembagian P(x) oleh (x - k) sama dengan nilai P(k).',
-                        visual: 'Teorema Faktor: (x - k) adalah faktor dari P(x) jika dan hanya jika P(k) = 0',
-                        tips: 'Gunakan Bagan Horner untuk mempercepat pembagian polinomial dibandingkan cara bersusun.',
-                        contohSoal: 'Jika P(x) = 2x³ - x² + ax - 4 dibagi (x - 2) bersisa 10, tentukan nilai a.<br><strong>Langkah Penyelesaian Terperinci:</strong><br>1. P(2) = 10 ⇒ 2(2)³ - (2)² + a(2) - 4 = 10.<br>2. 16 - 4 + 2a - 4 = 10 ⇒ 8 + 2a = 10 ⇒ <strong>a = 1</strong>.'
+                        summary: '<strong>Akar Konsep & Algoritma:</strong> Polinomial $P(x) = a_n x^n + \dots + a_0$ dibagi $(x - k)$ dapat ditulis $P(x) = (x - k)Q(x) + S$. Menurut Teorema Sisa, sisa pembagian sama dengan nilai suku banyak $S = P(k)$. Menurut Teorema Faktor, $(x - k)$ adalah faktor jika $P(k) = 0$.',
+                        visual: 'Teorema Sisa: P(k) = Sisa  |  Teorema Faktor: P(k) = 0 ⇔ (x - k) adalah faktor',
+                        tips: 'Gunakan Skema Horner untuk mempercepat perhitungan pembagian dan pemfaktoran polinomial derajat tinggi!',
+                        contohSoal: '<strong>Soal 1:</strong> Jika $P(x) = 2x^3 - x^2 + ax - 4$ dibagi $(x - 2)$ bersisa 10, tentukan $a$.<br><strong>Langkah Penyelesaian:</strong><br>1. $P(2) = 10 \implies 2(2)^3 - (2)^2 + a(2) - 4 = 10 \implies 16 - 4 + 2a - 4 = 10 \implies 8 + 2a = 10 \implies \mathbf{a = 1}$.'
                     },
                     {
                         title: 'Bab 11: Kombinatorika, Permutasi, Kombinasi & Peluang',
                         kurikulum: 'K13 & Merdeka (Fase F)',
-                        summary: '<strong>Penjelasan Konsep Terperinci:</strong> Permutasi memperhatikan urutan susunan, sedangkan Kombinasi tidak memperhatikan urutan. Peluang mengukur tingkat kepastian terjadinya suatu kejadian.',
-                        visual: 'Peluang P(A) = n(A) / n(S)  |  P(A ∩ B) = P(A) × P(B)',
-                        tips: 'Keyword: "Jabatan/Ranking" = Permutasi. "Tim/Pengambilan Acak" = Kombinasi.',
-                        contohSoal: 'Dari 6 calon, dipilih 3 orang anggota tim. Berapa banyak cara pemilihan?<br><strong>Langkah Penyelesaian Terperinci:</strong><br>1. Kombinasi C(6,3) = 6! / (3! 3!) = (6 × 5 × 4) / (3 × 2 × 1) = <strong>20 cara</strong>.'
+                        summary: '<strong>Akar Konsep & Teori Peluang:</strong> Permutasi $P(n,r) = \frac{n!}{(n-r)!}$ memperhitungkan urutan susunan, sedangkan Kombinasi $C(n,r) = \frac{n!}{r!(n-r)!}$ tidak memperhitungkan urutan. Peluang kejadian $P(A) = \frac{n(A)}{n(S)}$.',
+                        visual: 'Permutasi (Ada Jabatan/Urutan) vs Kombinasi (Acak/Tim)  |  P(A ∪ B) = P(A) + P(B) - P(A ∩ B)',
+                        tips: 'Jika soal menyebutkan pembentukan pengurus (Ketua, Sekretaris), gunakan **Permutasi**. Jika pembentukan tim acak, gunakan **Kombinasi**.',
+                        contohSoal: '<strong>Soal 1:</strong> Dari 7 kandidat, akan dipilih 3 orang anggota delegasi. Berapa banyak cara pemilihan?<br><strong>Langkah Penyelesaian:</strong><br>1. Karena urutan tidak penting, gunakan Kombinasi: $C(7,3) = \frac{7!}{3!4!} = \frac{7 \cdot 6 \cdot 5}{3 \cdot 2 \cdot 1} = \mathbf{35\text{ cara}}$.'
                     },
                     {
                         title: 'Bab 12: Geometri Analitik Lingkaran & Garis Singgung',
                         kurikulum: 'K13 & Merdeka (Fase F Lanjut)',
-                        summary: '<strong>Penjelasan Konsep Terperinci:</strong> Lingkaran adalah tempat kedudukan titik-titik berjarak sama terhadap titik pusat. Persamaan umum x² + y² + Ax + By + C = 0 memiliki Pusat (-A/2, -B/2) dan Jari-jari r = √(A²/4 + B²/4 - C).',
+                        summary: '<strong>Akar Konsep Geometri:</strong> Persamaan lingkaran berpusat $(a,b)$ ber-jari-jari $r$ adalah $(x-a)^2 + (y-b)^2 = r^2$. Bentuk umum $x^2 + y^2 + Ax + By + C = 0$ memiliki pusat $(-A/2, -B/2)$ dan jari-jari $r = \sqrt{\frac{A^2}{4} + \frac{B^2}{4} - C}$.',
                         visual: 'Garis Singgung Bergradien m: y - b = m(x - a) ± r √(1 + m²)',
-                        tips: 'Jarak titik (x₁, y₁) ke garis Ax + By + C = 0 adalah d = |Ax₁ + By₁ + C| / √(A² + B²).',
-                        contohSoal: 'Tentukan pusat dan jari-jari lingkaran x² + y² - 4x + 6y - 12 = 0.<br><strong>Langkah Penyelesaian Terperinci:</strong><br>1. Pusat = (-(-4)/2, -6/2) = (2, -3).<br>2. r = √(4 + 9 - (-12)) = √25 = <strong>5</strong>.'
+                        tips: 'Jarak titik $(x_1, y_1)$ ke garis $Ax + By + C = 0$ adalah $d = \frac{|Ax_1 + By_1 + C|}{\sqrt{A^2 + B^2}}$.',
+                        contohSoal: '<strong>Soal 1:</strong> Tentukan pusat dan jari-jari lingkaran $x^2 + y^2 - 6x + 8y = 0$.<br><strong>Langkah Penyelesaian:</strong><br>1. Pusat $= (-(-6)/2, -8/2) = \mathbf{(3, -4)}$.<br>2. Jari-jari $r = \sqrt{3^2 + (-4)^2 - 0} = \sqrt{9+16} = \mathbf{5}$.'
                     },
                     {
                         title: 'Bab 13: Fungsi Komposisi & Fungsi Invers',
                         kurikulum: 'K13 & Merdeka (Fase E/F)',
-                        summary: '<strong>Penjelasan Konsep Terperinci:</strong> Fungsi komposisi (f ∘ g)(x) memetakan g(x) ke dalam f(x). Invers f⁻¹(x) merepresentasikan pemetaan kebalikan dari daerah hasil ke daerah asal.',
-                        visual: 'Invers Rasional: f(x) = (ax + b)/(cx + d) ⇒ f⁻¹(x) = (-dx + b)/(cx - a)',
-                        tips: 'Tukar posisi a dan d pada fungsi rasional lalu balikkan tandanya untuk menentukan invers instan.',
-                        contohSoal: 'Jika f(x) = (3x + 2) / (x - 4), tentukan f⁻¹(x).<br><strong>Langkah Penyelesaian Terperinci:</strong><br>1. a = 3, d = -4.<br>2. Tukar posisi dan ubah tanda: f⁻¹(x) = <strong>(4x + 2) / (x - 3)</strong>.'
+                        summary: '<strong>Akar Konsep Pemetaan:</strong> Fungsi komposisi $(f \circ g)(x) = f(g(x))$ memetakan himpunan domain $g$ ke daerah hasil $f$. Fungsi invers $f^{-1}(x)$ membalik pemetaan $y = f(x) \iff x = f^{-1}(y)$.',
+                        visual: 'Invers Fungsi Rasional: f(x) = (ax + b)/(cx + d) ⇒ f⁻¹(x) = (-dx + b)/(cx - a)',
+                        tips: 'Tukar posisi koefisien $a$ dan $d$ lalu kalikan $-1$ untuk mencari invers fungsi rasional secara instan!',
+                        contohSoal: '<strong>Soal 1:</strong> Jika $f(x) = \frac{2x + 5}{3x - 4}$, tentukan $f^{-1}(x)$.<br><strong>Langkah Penyelesaian:</strong><br>1. Gunakan trik cepat: $a=2, b=5, c=3, d=-4 \implies f^{-1}(x) = \mathbf{\frac{4x + 5}{3x - 2}}$.'
                     },
                     {
                         title: 'Bab 14: Program Linear & Uji Titik Pojok Optimum',
                         kurikulum: 'K13 & Merdeka (Fase F)',
-                        summary: '<strong>Penjelasan Konsep Terperinci:</strong> Program linear menentukan nilai optimum (maksimum/minimum) fungsi tujuan di bawah kendala sistem pertidaksamaan linear.',
-                        visual: 'Garis Selidik: ax + by = k  |  Uji Titik Pojok Daerah Penyelesaian (DP)',
-                        tips: 'Nilai optimum selalu terletak pada salah satu titik sudut (pojok) daerah penyelesaian.',
-                        contohSoal: 'Maksimumkan z = 3x + 4y pada titik pojok (0,5), (3,3), dan (4,0).<br><strong>Langkah Penyelesaian Terperinci:</strong><br>1. z(0,5) = 20, z(3,3) = 21, z(4,0) = 12.<br>2. Nilai maksimum = <strong>21</strong>.'
+                        summary: '<strong>Akar Konsep Optimasi:</strong> Program linear menentukan nilai optimum (maksimum/minimum) dari fungsi objektif $Z = ax + by$ di bawah daerah himpunan penyelesaian sistem pertidaksamaan linear.',
+                        visual: 'Metode Titik Pojok (Corner Point Method)  |  Garis Selidik: ax + by = k',
+                        tips: 'Nilai optimum SELALU terletak pada salah satu titik sudut (pojok) daerah penyelesaian!',
+                        contohSoal: '<strong>Soal 1:</strong> Tentukan nilai maksimum $Z = 5x + 2y$ pada titik-titik pojok daerah penyelesaian $(0,0), (4,0), (2,3), (0,5)$.<br><strong>Langkah Penyelesaian:</strong><br>1. Evaluasi: $Z(0,0)=0, Z(4,0)=20, Z(2,3)=5(2)+2(3)=16, Z(0,5)=10$.<br>2. Nilai maksimum $= \mathbf{20}$ pada titik $(4,0)$.'
                     },
                     {
                         title: 'Bab 15: Dimensi Tiga (Jarak & Sudut dalam Ruang)',
                         kurikulum: 'K13 & Merdeka (Fase F)',
-                        summary: '<strong>Penjelasan Konsep Terperinci:</strong> Geometri ruang menganalisis hubungan titik, garis, dan bidang pada bangun tiga dimensi dengan bantuan Teorema Pythagoras dan proyeksi tegak lurus.',
-                        visual: 'Diagonal Sisi Kubus = s√2  |  Diagonal Ruang Kubus = s√3',
-                        tips: 'Untuk mencari jarak titik ke garis, buat segitiga penolong lalu gunakan aturan luas segitiga.',
-                        contohSoal: 'Kubus ABCD.EFGH memiliki rusuk 6 cm. Hitung jarak titik A ke C.<br><strong>Langkah Penyelesaian Terperinci:</strong><br>1. AC merupakan diagonal sisi kubus.<br>2. Jarak AC = s√2 = <strong>6√2 cm</strong>.'
+                        summary: '<strong>Akar Konsep Geometri Ruang:</strong> Analisis posisi titik, garis, dan bidang pada bangun tiga dimensi menggunakan proyeksi tegak lurus dan Teorema Pythagoras.',
+                        visual: 'Diagonal Sisi Kubus = s√2  |  Diagonal Ruang Kubus = s√3  |  Jarak Titik ke Garis via Proyeksi Tegak Lurus',
+                        tips: 'Jarak titik sudut kubus ke diagonal ruang yang tidak melaluinya adalah $\frac{1}{3} s \sqrt{6}$.',
+                        contohSoal: '<strong>Soal 1:</strong> Kubus ABCD.EFGH memiliki rusuk $6\text{ cm}$. Hitung jarak titik A ke garis CF.<br><strong>Langkah Penyelesaian:</strong><br>1. Segitiga ACF adalah segitiga sama sisi dengan panjang sisi $s\sqrt{2} = 6\sqrt{2}\text{ cm}$.<br>2. Tingginya $= \frac{\text{sisi}}{2} \sqrt{3} = \frac{6\sqrt{2}}{2} \sqrt{3} = \mathbf{3\sqrt{6}\text{ cm}}$.'
                     }
                 ],
                 'fis': [
                     {
                         title: 'Bab 1: Kinematika Gerak Lurus & Parabola',
                         kurikulum: 'K13 & Merdeka (Fase F)',
-                        summary: '<strong>Penjelasan Konsep Terperinci:</strong> Kinematika mempelajari gerak tanpa meninjau penyebabnya. Gerak parabola merupakan gabungan GLB pada sumbu X dan GLBB pada sumbu Y di bawah gravitasi.',
-                        visual: 'H_max = (v₀² sin² θ) / 2g  |  X_max = (v₀² sin 2θ) / g',
-                        tips: 'Di titik puncak lintasan parabola, kecepatan vertikal v_y bernilai 0 m/s.',
-                        contohSoal: 'Ditembakkan v₀ = 20 m/s sudut 30° (g = 10 m/s²). Ketinggian maksimum?<br><strong>Langkah Penyelesaian Terperinci:</strong><br>1. H_max = (20² × sin² 30°) / (2 × 10) = (400 × 0.25) / 20 = <strong>5 meter</strong>.'
+                        summary: '<strong>Akar Konsep & Derivasi Fisika:</strong> Kinematika mengkaji posisi, kecepatan, dan percepatan benda tanpa meninjau gaya penyebabnya. Gerak Parabola merupakan superposisi dua gerak independen yang saling tegak lurus: Gerak Lurus Beraturan (GLB) pada sumbu mendatar $X$ ($v_x = v_0 \cos \theta$) dan Gerak Lurus Berubah Beraturan (GLBB) pada sumbu vertikal $Y$ ($v_y = v_0 \sin \theta - gt$).',
+                        visual: 'H_max = (v₀² sin² θ) / 2g  |  X_max = (v₀² sin 2θ) / g  |  t_puncak = (v₀ sin θ) / g',
+                        tips: '<strong>Trik Cepat Fisika:</strong> Pada titik tertinggi lintasan parabola, kecepatan vertikal $v_y = 0$, tetapi kecepatan total benda TIDAK NOL, melainkan $v = v_x = v_0 \cos \theta$.',
+                        contohSoal: '<strong>Soal 1:</strong> Ditembakkan peluru $v_0 = 20\text{ m/s}$ sudut $30^\circ$ ($g = 10\text{ m/s}^2$). Hitung ketinggian maksimumnya.<br><strong>Langkah Penyelesaian:</strong><br>1. $H_{\text{max}} = \frac{v_0^2 \sin^2 \theta}{2g} = \frac{20^2 \cdot (\sin 30^\circ)^2}{2(10)} = \frac{400 \cdot (0,5)^2}{20} = \frac{400 \cdot 0,25}{20} = \mathbf{5\text{ meter}}$.<br><br><strong>Soal 2 (HOTS):</strong> Berapakah jangkauan horisontal terjauh ($X_{\text{max}}$) jika peluru tersebut ditembakkan dengan sudut elevasi $45^\circ$? <br><strong>Langkah Penyelesaian:</strong><br>1. $X_{\text{max}} = \frac{v_0^2 \sin(2\theta)}{g} = \frac{20^2 \cdot \sin(90^\circ)}{10} = \frac{400 \cdot 1}{10} = \mathbf{40\text{ meter}}$.'
                     },
                     {
                         title: 'Bab 2: Hukum-Hukum Newton & Dinamika Gerak',
                         kurikulum: 'K13 & Merdeka (Fase F)',
-                        summary: '<strong>Penjelasan Konsep Terperinci:</strong> Dinamika menganalisis penyebab gerak. Hukum I Newton (kelembaman), Hukum II Newton (ΣF = m·a), dan Hukum III Newton (aksi-reaksi).',
-                        visual: 'Gaya Gesek: f_g = μ · N  |  Komponen Bidang Miring: F = m·g sin θ',
-                        tips: 'Uraikan seluruh komponen gaya searah dan tegak lurus bidang gerak terlebih dahulu.',
-                        contohSoal: 'Balok 4 kg berada pada bidang miring licin 30° (g = 10 m/s²). Hitung percepatannya.<br><strong>Langkah Penyelesaian Terperinci:</strong><br>1. a = g sin 30° = 10 × 0,5 = <strong>5 m/s²</strong>.'
+                        summary: '<strong>Akar Konsep & Derivasi Fisika:</strong> Dinamika mengkaji pengaruh gaya terhadap gerak benda. Hukum I Newton ($\Sigma \vec{F} = 0$) menyatakan kelembaman (inersia). Hukum II Newton ($\Sigma \vec{F} = m \vec{a}$) menyatakan hubungan sebab-akibat antara gaya netral dan percepatan massa. Hukum III Newton ($\vec{F}_{\text{aksi}} = -\vec{F}_{\text{reaksi}}$) menyatakan sifat pasangan gaya interaksi.',
+                        visual: 'Gaya Gesek: f_g = μ · N  |  Komponen Bidang Miring: F = m·g sin θ  |  N = m·g cos θ',
+                        tips: 'Gaya normal $N$ pada bidang miring selalu sebesar $m g \cos \theta$, bukan $m g$!',
+                        contohSoal: '<strong>Soal 1:</strong> Balok $m = 4\text{ kg}$ berada pada bidang miring licin $30^\circ$ ($g = 10\text{ m/s}^2$). Hitung percepatannya.<br><strong>Langkah Penyelesaian:</strong><br>1. Komponen gaya sejajar bidang: $F = m g \sin 30^\circ$.<br>2. Menurut Hukum II Newton: $a = \frac{F}{m} = g \sin 30^\circ = 10 \cdot 0,5 = \mathbf{5\text{ m/s}^2}$.'
                     },
                     {
                         title: 'Bab 3: Usaha, Energi & Hukum Kekekalan Energi Mekanik',
                         kurikulum: 'K13 & Merdeka (Fase F)',
-                        summary: '<strong>Penjelasan Konsep Terperinci:</strong> Usaha W = F · s cos θ adalah perubahan energi. Energi Mekanik EM = EP + EK bersifat kekal pada sistem tertentu tanpa gesekan.',
-                        visual: 'Usaha: W = ΔEK = ΔEP  |  Hukum Kekekalan: EP₁ + EK₁ = EP₂ + EK₂',
-                        tips: 'Pada gerak jatuh bebas, berkurangnya EP sama persis dengan bertambahnya EK.',
-                        contohSoal: 'Benda 1 kg jatuh dari ketinggian 20 m (g = 10 m/s²). Hitung EK saat h = 5 m.<br><strong>Langkah Penyelesaian Terperinci:</strong><br>1. ΔEP = m·g·Δh = 1 × 10 × (20 - 5) = 150 J.<br>2. EK saat h=5 m = ΔEP = <strong>150 Joule</strong>.'
+                        summary: '<strong>Akar Konsep Energi:</strong> Usaha $W = \vec{F} \cdot \vec{s} = F s \cos \theta$ adalah transfer energi. Energi Mekanik $EM = EP + EK$ bersifat kekal pada sistem tertutup tanpa gaya gesek non-konservatif.',
+                        visual: 'Usaha W = ΔEK = ΔEP  |  Hukum Kekekalan Energi Mekanik: EP₁ + EK₁ = EP₂ + EK₂',
+                        tips: 'Pada gerak jatuh bebas tanpa kecepatan awal dari ketinggian $h$, $v = \sqrt{2gh}$.',
+                        contohSoal: '<strong>Soal 1:</strong> Benda $1\text{ kg}$ jatuh dari ketinggian $20\text{ m}$ ($g = 10\text{ m/s}^2$). Hitung energi kinetiknya saat ketinggian $5\text{ m}$.<br><strong>Langkah Penyelesaian:</strong><br>1. $\Delta EP = m g \Delta h = 1 \cdot 10 \cdot (20 - 5) = 150\text{ J}$.<br>2. Menurut kekekalan energi: $EK_{\text{akhir}} = \Delta EP = \mathbf{150\text{ Joule}}$.'
                     },
                     {
                         title: 'Bab 4: Impuls, Momentum & Tumbukan',
                         kurikulum: 'K13 & Merdeka (Fase F)',
-                        summary: '<strong>Penjelasan Konsep Terperinci:</strong> Momentum p = m·v merepresentasikan kesukaran menghentikan benda. Impuls I = F·Δt adalah perubahan momentum (I = Δp).',
-                        visual: 'Kekekalan Momentum: m₁v₁ + m₂v₂ = m₁v₁\' + m₂v₂\'  |  Koefisien Restitusi e',
-                        tips: 'Pada tumbukan tidak lenting sama sekali, kedua benda bergabung dan bergerak bersama (v₁\' = v₂\').',
-                        contohSoal: 'Benda A (2 kg, 4 m/s) menumbuk B (3 kg, diam) dan menyatu. Berapa kecepatan akhirnya?<br><strong>Langkah Penyelesaian Terperinci:</strong><br>1. (2×4) + (3×0) = (2+3)v\' ⇒ 8 = 5v\' ⇒ v\' = <strong>1,6 m/s</strong>.'
+                        summary: '<strong>Akar Konsep Momentum:</strong> Momentum $\vec{p} = m \vec{v}$ mengukur kesukaran menghentikan benda bergerak. Impuls $\vec{I} = \vec{F} \Delta t = \Delta \vec{p}$ adalah perubahan momentum. Hukum Kekekalan Momentum berlaku jika $\Sigma \vec{F}_{\text{eksternal}} = 0$.',
+                        visual: 'Impuls I = F · Δt = m(v₂ - v₁)  |  Koefisien Restitusi e = -(v₂\' - v₁\') / (v₂ - v₁)',
+                        tips: 'Pada tumbukan tidak lenting sama sekali ($e = 0$), kedua benda bergabung dan bergerak dengan kecepatan akhir yang sama ($v_1\' = v_2\'$).',
+                        contohSoal: '<strong>Soal 1:</strong> Bola A ($2\text{ kg}, 4\text{ m/s}$) menumbuk bola B ($3\text{ kg}$, diam) dan menyatu. Hitung kecepatan akhirnya.<br><strong>Langkah Penyelesaian:</strong><br>1. $(2 \cdot 4) + (3 \cdot 0) = (2 + 3) v\' \implies 8 = 5 v\' \implies v\' = \mathbf{1,6\text{ m/s}}$.'
                     },
                     {
                         title: 'Bab 5: Gerak Harmonis Sederhana & Ayunan Bandul',
                         kurikulum: 'K13 & Merdeka (Fase F)',
-                        summary: '<strong>Penjelasan Konsep Terperinci:</strong> GHS adalah gerak bolak-balik periodik di sekitar titik setimbang dengan gaya pemulih berbanding lurus dengan simpangan.',
+                        summary: '<strong>Akar Konsep Getaran:</strong> GHS adalah gerak bolak-balik periodik di sekitar titik setimbang akibat gaya pemulih yang berbanding lurus dengan simpangan ($F = -k x$).',
                         visual: 'Periode Pegas: T = 2π √(m/k)  |  Periode Bandul: T = 2π √(L/g)',
-                        tips: 'Periode ayunan bandul sederhana hanya bergantung pada panjang tali L dan gravitasi g, bukan massa bandul.',
-                        contohSoal: 'Panjang tali bandul 0,98 m (g = 9,8 m/s²). Hitung periodenya.<br><strong>Langkah Penyelesaian Terperinci:</strong><br>1. T = 2π √(0,98 / 9,8) = 2π √0,1 ≈ <strong>2π × 0,316 detik</strong>.'
+                        tips: 'Periode ayunan bandul sederhana HANYA bergantung pada panjang tali $L$ dan gravitasi $g$, tidak terpengaruh massa bandul!',
+                        contohSoal: '<strong>Soal 1:</strong> Panjang tali bandul $0,98\text{ m}$ ($g = 9,8\text{ m/s}^2$). Hitung periodenya.<br><strong>Langkah Penyelesaian:</strong><br>1. $T = 2\pi \sqrt{\frac{0,98}{9,8}} = 2\pi \sqrt{0,1} \approx \mathbf{0,628\text{ detik}}$.'
                     },
                     {
                         title: 'Bab 6: Dinamika Rotasi & Kesetimbangan Benda Tegar',
                         kurikulum: 'K13 & Merdeka (Fase F)',
-                        summary: '<strong>Penjelasan Konsep Terperinci:</strong> Rotasi dipengaruhi momen gaya (torsi τ = F·r sin θ) dan momen inersia I. Kesetimbangan tegar membutuhkan ΣF = 0 dan Στ = 0.',
-                        visual: 'Hukum II Rotasi: Στ = I · α  |  Momentum Sudut: L = I · ω',
-                        tips: 'Batang homogen yang diputar di ujung memiliki momen inersia I = (1/3) m L².',
-                        contohSoal: 'Momen gaya 20 Nm bekerja pada roda dengan I = 4 kg m². Hitung percepatan sudutnya.<br><strong>Langkah Penyelesaian Terperinci:</strong><br>1. α = τ / I = 20 / 4 = <strong>5 rad/s²</strong>.'
+                        summary: '<strong>Akar Konsep Rotasi:</strong> Rotasi dipengaruhi oleh Momen Gaya (Torsi $\tau = F r \sin \theta$) dan Momen Inersia ($I = \sum m r^2$). Syarat kesetimbangan benda tegar: $\Sigma \vec{F} = 0$ dan $\Sigma \vec{\tau} = 0$.',
+                        visual: 'Hukum II Rotasi: Στ = I · α  |  Momentum Sudut: L = I · ω (Kekal jika Στ = 0)',
+                        tips: 'Batang homogen diputar di pusat: $I = \frac{1}{12} m L^2$. Batang diputar di ujung: $I = \frac{1}{3} m L^2$.',
+                        contohSoal: '<strong>Soal 1:</strong> Momen gaya $20\text{ Nm}$ bekerja pada roda $I = 4\text{ kg m}^2$. Hitung percepatan sudutnya.<br><strong>Langkah Penyelesaian:</strong><br>1. $\alpha = \frac{\tau}{I} = \frac{20}{4} = \mathbf{5\text{ rad/s}^2}$.'
                     },
                     {
                         title: 'Bab 7: Fluida Statis: Hukum Pascal & Archimedes',
                         kurikulum: 'K13 & Merdeka (Fase F)',
-                        summary: '<strong>Penjelasan Konsep Terperinci:</strong> Fluida statis mengkaji zat alir diam. Tekanan hidrostatis P = ρ·g·h. Gaya apung Archimedes F_a = ρ_fluida · V_celup · g.',
-                        visual: 'Hukum Pascal: F₁ / A₁ = F₂ / A₂  |  F_a = ρ · V · g',
-                        tips: 'Benda terapung memiliki gaya apung F_a sama dengan berat total benda W.',
-                        contohSoal: 'Dongkrak hidrolik memiliki A₁ = 10 cm² dan A₂ = 200 cm². Jika F₁ = 50 N, hitung F₂.<br><strong>Langkah Penyelesaian Terperinci:</strong><br>1. F₂ = (A₂ / A₁) × F₁ = (200 / 10) × 50 = 20 × 50 = <strong>1000 N</strong>.'
+                        summary: '<strong>Akar Konsep Fluida Diam:</strong> Tekanan hidrostatis $P = \rho g h$ bekerja secara seragam ke segala arah. Hukum Pascal menyatakan tekanan yang diberikan pada zat cair diteruskan sama besar. Hukum Archimedes menyatakan gaya apung $F_a = \rho_{\text{fluida}} V_{\text{celup}} g$.',
+                        visual: 'Hukum Pascal: F₁ / A₁ = F₂ / A₂  |  Gaya Apung: F_a = ρ · V · g',
+                        tips: 'Benda terapung memiliki gaya apung $F_a$ yang tepat sama dengan berat total benda $W$.',
+                        contohSoal: '<strong>Soal 1:</strong> Dongkrak hidrolik $A_1 = 10\text{ cm}^2$ dan $A_2 = 200\text{ cm}^2$. Jika $F_1 = 50\text{ N}$, berapa $F_2$? <br><strong>Langkah Penyelesaian:</strong><br>1. $F_2 = \frac{A_2}{A_1} \cdot F_1 = \frac{200}{10} \cdot 50 = 20 \cdot 50 = \mathbf{1000\text{ N}}$.'
                     },
                     {
                         title: 'Bab 8: Fluida Dinamis & Persamaan Kontinuitas - Bernoulli',
                         kurikulum: 'K13 & Merdeka (Fase F)',
-                        summary: '<strong>Penjelasan Konsep Terperinci:</strong> Fluida ideal dianggap tidak kompresibel dan tidak memiliki viskositas. Debit air konstan Q = A·v. Hukum Bernoulli merupakan kekekalan energi fluida.',
+                        summary: '<strong>Akar Konsep Fluida Bergerak:</strong> Fluida ideal tidak kompresibel dan tanpa viskositas. Persamaan Kontinuitas $A_1 v_1 = A_2 v_2$ menyatakan kekekalan debit ($Q = A v$). Hukum Bernoulli $P + \frac{1}{2}\rho v^2 + \rho g h = \text{konstan}$ menyatakan kekekalan energi fluida.',
                         visual: 'Kontinuitas: A₁ v₁ = A₂ v₂  |  Bernoulli: P + ½ ρ v² + ρ g h = Konstan',
-                        tips: 'Makin kecil penampang pipa, makin besar kelajuan alir fluidanya.',
-                        contohSoal: 'Pipa penampang A₁ = 8 cm² (v₁ = 2 m/s) menyempit ke A₂ = 2 cm². Hitung v₂.<br><strong>Langkah Penyelesaian Terperinci:</strong><br>1. v₂ = (A₁ / A₂) × v₁ = (8 / 2) × 2 = 4 × 2 = <strong>8 m/s</strong>.'
+                        tips: 'Makin kecil penampang pipa, makin besar kelajuan fluida, dan makin kecil tekanan statis fluida tersebut!',
+                        contohSoal: '<strong>Soal 1:</strong> Pipa $A_1 = 8\text{ cm}^2$ ($v_1 = 2\text{ m/s}$) menyempit ke $A_2 = 2\text{ cm}^2$. Hitung $v_2$.<br><strong>Langkah Penyelesaian:</strong><br>1. $v_2 = \frac{A_1}{A_2} \cdot v_1 = \frac{8}{2} \cdot 2 = \mathbf{8\text{ m/s}}$.'
                     },
                     {
                         title: 'Bab 9: Termodinamika & Mesin Carnot',
                         kurikulum: 'K13 & Merdeka (Fase F)',
-                        summary: '<strong>Penjelasan Konsep Terperinci:</strong> Termodinamika mengkaji hubungan kalor dan usaha. Hukum I Termodinamika Q = ΔU + W. Mesin Carnot adalah mesin kalor ideal efisiensi maksimum.',
-                        visual: 'Efisiensi Carnot: η = (1 - T₂ / T₁) × 100%  (Suhu dalam Kelvin)',
-                        tips: 'Suhu pada perhitungan termodinamika selalu wajib diubah ke Kelvin (T_K = T_C + 273).',
-                        contohSoal: 'Mesin Carnot bekerja antara reservoir T₁ = 600 K dan T₂ = 300 K. Berapa efisiensinya?<br><strong>Langkah Penyelesaian Terperinci:</strong><br>1. η = (1 - 300 / 600) × 100% = (1 - 0.5) × 100% = <strong>50%</strong>.'
+                        summary: '<strong>Akar Konsep Kalor & Usaha:</strong> Hukum I Termodinamika $Q = \Delta U + W$ adalah kekekalan energi. Mesin Carnot adalah mesin kalor reversibel ideal dengan efisiensi maksimum $\eta = (1 - \frac{T_2}{T_1}) \times 100\%$.',
+                        visual: 'Efisiensi Carnot: η = (1 - T₂ / T₁) × 100%  (Wajib Suhu Kelvin: T_K = T_C + 273)',
+                        tips: 'Selalu ubah satuan suhu ke Kelvin ($K$) sebelum dimasukkan ke dalam rumus termodinamika!',
+                        contohSoal: '<strong>Soal 1:</strong> Mesin Carnot bekerja antara $T_1 = 600\text{ K}$ dan $T_2 = 300\text{ K}$. Hitung efisiensinya.<br><strong>Langkah Penyelesaian:</strong><br>1. $\eta = (1 - \frac{300}{600}) \times 100\% = (1 - 0,5) \times 100\% = \mathbf{50\%}$.'
                     },
                     {
                         title: 'Bab 10: Gelombang Bunyi & Efek Doppler Lanjut',
                         kurikulum: 'K13 & Merdeka (Fase F)',
-                        summary: '<strong>Penjelasan Konsep Terperinci:</strong> Bunyi merupakan gelombang longitudinal mekanik. Efek Doppler menjelaskan pergeseran frekuensi akibat gerak relatif sumber dan pendengar.',
-                        visual: 'f_p = [(v ± v_p) / (v ± v_s)] · f_s  |  Intensitas TI = 10 log(I / I₀)',
-                        tips: 'Pendengar mendekat (+), Sumber mendekat (-).',
-                        contohSoal: 'Ambulans (f_s = 640 Hz) mendekati pendengar diam (v = 340 m/s, v_s = 20 m/s). Hitung f_p.<br><strong>Langkah Penyelesaian Terperinci:</strong><br>1. f_p = [340 / (340 - 20)] × 640 = (340 / 320) × 640 = <strong>680 Hz</strong>.'
+                        summary: '<strong>Akar Konsep Gelombang:</strong> Bunyi adalah gelombang mekanik longitudinal. Efek Doppler menjelaskan pergeseran frekuensi terdengar $f_p$ akibat gerak relatif antara sumber dan pendengar: $f_p = \frac{v \pm v_p}{v \pm v_s} f_s$.',
+                        visual: 'f_p = [(v ± v_p) / (v ± v_s)] · f_s  |  Intensitas Bunyi: TI = 10 log(I / I₀)',
+                        tips: 'Pendengar Mendekat ($+v_p$), Sumber Mendekat ($-v_s$). Pendengar Menjauh ($-v_p$), Sumber Menjauh ($+v_s$).',
+                        contohSoal: '<strong>Soal 1:</strong> Ambulans ($f_s = 640\text{ Hz}$) mendekati pendengar diam ($v = 340\text{ m/s}, v_s = 20\text{ m/s}$). Hitung $f_p$.<br><strong>Langkah Penyelesaian:</strong><br>1. $f_p = \frac{340 + 0}{340 - 20} \cdot 640 = \frac{340}{320} \cdot 640 = \mathbf{680\text{ Hz}}$.'
                     },
                     {
                         title: 'Bab 11: Listrik Searah (DC) & Hukum Kirchhoff',
                         kurikulum: 'K13 & Merdeka (Fase F)',
-                        summary: '<strong>Penjelasan Konsep Terperinci:</strong> Arus listrik adalah aliran muatan. Hukum Kirchhoff I (arus cabang) dan II (loop tegangan ΣE + Σ(IR) = 0).',
+                        summary: '<strong>Akar Konsep Arus Listrik:</strong> Hukum Ohm $V = I R$. Hukum I Kirchhoff (arus masuk node = arus keluar). Hukum II Kirchhoff ($\Sigma E + \Sigma (I R) = 0$) menyatakan kekekalan energi dalam loop tertutup.',
                         visual: 'Seri: R_total = R₁ + R₂  |  Paralel: 1/R_total = 1/R₁ + 1/R₂',
-                        tips: 'Hambatan paralel selalu menghasilkan R total lebih kecil dari hambatan terkecilnya.',
-                        contohSoal: 'R₁ = 3 Ω dan R₂ = 6 Ω dirangkai paralel pada baterai 12 V. Arus total?<br><strong>Langkah Penyelesaian Terperinci:</strong><br>1. R_p = (3×6)/(3+6) = 2 Ω. Arus I = 12 / 2 = <strong>6 Ampere</strong>.'
+                        tips: 'Hambatan paralel selalu menghasilkan hambatan pengganti yang lebih kecil dari nilai hambatan terkecilnya.',
+                        contohSoal: '<strong>Soal 1:</strong> $R_1 = 3\,\Omega$ dan $R_2 = 6\,\Omega$ diparalelkan pada baterai $12\text{ V}$. Hitung arus total.<br><strong>Langkah Penyelesaian:</strong><br>1. $R_p = \frac{3 \cdot 6}{3 + 6} = 2\,\Omega$.<br>2. Arus $I = \frac{V}{R_p} = \frac{12}{2} = \mathbf{6\text{ Ampere}}$.'
                     },
                     {
                         title: 'Bab 12: Listrik Statis, Medan Listrik & Kapasitor',
                         kurikulum: 'K13 & Merdeka (Fase F)',
-                        summary: '<strong>Penjelasan Konsep Terperinci:</strong> Gaya Coulomb F = k q₁ q₂ / r². Kapasitor menyimpan energi listrik W = ½ C V².',
-                        visual: 'Hukum Coulomb: F = k (q₁ q₂) / r²  |  Kapasitansi: C = ε₀ A / d',
-                        tips: 'Jika jarak r diperbesar 2 kali, gaya Coulomb berkurang menjadi 1/4 kali semula.',
-                        contohSoal: 'Dua muatan q₁=2μC dan q₂=3μC berjarak 0,3 m (k=9×10⁹). Hitung gaya F.<br><strong>Langkah Penyelesaian Terperinci:</strong><br>1. F = (9×10⁹ × 2×10⁻⁶ × 3×10⁻⁶) / (0.3)² = 0.054 / 0.09 = <strong>0,6 Newton</strong>.'
+                        summary: '<strong>Akar Konsep Muatan Listrik:</strong> Hukum Coulomb $F = k \frac{q_1 q_2}{r^2}$. Medan listrik $E = k \frac{q}{r^2}$. Kapasitor menyimpan muatan $Q = C V$ dan energi $W = \frac{1}{2} C V^2$.',
+                        visual: 'Hukum Coulomb: F = k (q₁ q₂) / r²  |  Kapasitansi keping sejajar: C = ε₀ A / d',
+                        tips: 'Jika jarak $r$ antara dua muatan diperbesar 2 kali, gaya Coulomb berkurang menjadi $\frac{1}{4}$ kali semula!',
+                        contohSoal: '<strong>Soal 1:</strong> Muatan $q_1 = 2\,\mu\text{C}$ dan $q_2 = 3\,\mu\text{C}$ berjarak $0,3\text{ m}$ ($k = 9 \times 10^9$). Hitung gaya $F$.<br><strong>Langkah Penyelesaian:</strong><br>1. $F = \frac{9 \times 10^9 \cdot (2 \times 10^{-6}) \cdot (3 \times 10^{-6})}{(0,3)^2} = \frac{0,054}{0,09} = \mathbf{0,6\text{ N}}$.'
                     },
                     {
                         title: 'Bab 13: Medan Magnet & Induksi Elektromagnetik Faraday',
                         kurikulum: 'K13 & Merdeka (Fase F)',
-                        summary: '<strong>Penjelasan Konsep Terperinci:</strong> Arus listrik menimbulkan medan magnet (Hukum Ampere/Lorentz). Perubahan fluks magnetik menimbulkan GGL induksi (Hukum Faraday).',
-                        visual: 'Gaya Lorentz: F = B · I · L sin θ  |  GGL Induksi: E = -N (ΔΦ / Δt)',
-                        tips: 'Gunakan Aturan Tangan Kanan untuk menentukan arah Gaya Lorentz.',
-                        contohSoal: 'Kawat L = 2 m berarus I = 5 A dalam medan B = 0,4 T tegak lurus. Hitung F.<br><strong>Langkah Penyelesaian Terperinci:</strong><br>1. F = B · I · L = 0,4 × 5 × 2 = <strong>4 Newton</strong>.'
+                        summary: '<strong>Akar Konsep Magnetisme:</strong> Arus listrik menimbulkan medan magnet $B$. Muatan bergerak dalam medan magnet mengalami Gaya Lorentz $F = B I L \sin \theta$. Perubahan fluks magnetik menimbulkan GGL Induksi $E = -N \frac{\Delta \Phi}{\Delta t}$ (Hukum Faraday).',
+                        visual: 'Gaya Lorentz: F = B · I · L sin θ  |  GGL Induksi Faraday: E = -N (ΔΦ / Δt)',
+                        tips: 'Gunakan Aturan Tangan Kanan: Ibu jari = Arus ($I$), Jari-jari = Medan Magnet ($B$), Telapak tangan = Gaya Lorentz ($F$).',
+                        contohSoal: '<strong>Soal 1:</strong> Kawat $L = 2\text{ m}$ berarus $I = 5\text{ A}$ dalam medan $B = 0,4\text{ T}$ tegak lurus. Hitung $F$.<br><strong>Langkah Penyelesaian:</strong><br>1. $F = B I L \sin 90^\circ = 0,4 \cdot 5 \cdot 2 \cdot 1 = \mathbf{4\text{ N}}$.'
                     },
                     {
                         title: 'Bab 14: Rangkaian Listrik Bolak-Balik (AC) & Resonansi RLC',
                         kurikulum: 'K13 & Merdeka (Fase F)',
-                        summary: '<strong>Penjelasan Konsep Terperinci:</strong> Arus AC bervariasi secara sinusoidal. Impedansi Z = √(R² + (X_L - X_C)²). Resonansi terjadi saat X_L = X_C.',
+                        summary: '<strong>Akar Konsep Arus AC:</strong> Tegangan dan arus AC bervariasi secara sinusoidal. Impedansi total $Z = \sqrt{R^2 + (X_L - X_C)^2}$. Resonansi terjadi saat $X_L = X_C$, menghasilkan frekuensi resonansi $f = \frac{1}{2\pi \sqrt{L C}}$.',
                         visual: 'Impedansi: Z = √(R² + (X_L - X_C)²)  |  Frekuensi Resonansi: f = 1 / (2π √(LC))',
-                        tips: 'Saat resonansi, hambatan total bernilai minimum (Z = R) dan arus bernilai maksimum.',
-                        contohSoal: 'Rangkaian RLC memiliki R=30 Ω, X_L=80 Ω, X_C=40 Ω. Hitung Z.<br><strong>Langkah Penyelesaian Terperinci:</strong><br>1. Z = √(30² + (80 - 40)²) = √(900 + 1600) = √2500 = <strong>50 Ohm</strong>.'
+                        tips: 'Saat terjadi resonansi RLC, hambatan total bernilai minimum ($Z = R$) dan arus listrik bernilai maksimum!',
+                        contohSoal: '<strong>Soal 1:</strong> Rangkaian RLC memiliki $R = 30\,\Omega, X_L = 80\,\Omega, X_C = 40\,\Omega$. Hitung $Z$.<br><strong>Langkah Penyelesaian:</strong><br>1. $Z = \sqrt{30^2 + (80 - 40)^2} = \sqrt{900 + 1600} = \sqrt{2500} = \mathbf{50\,\Omega}$.'
                     },
                     {
                         title: 'Bab 15: Fisika Modern, Efek Fotolistrik & Relativitas',
                         kurikulum: 'K13 & Merdeka (Fase F)',
-                        summary: '<strong>Penjelasan Konsep Terperinci:</strong> Cahaya bersifat dualisme (gelombang-partikel). Efek fotolistrik membuktikan cahaya sebagai paket energi foton E = h·f. Relativitas Einstein membatasi kecepatan maksimal c.',
-                        visual: 'Energi Foton: E = h · f = h (c / λ)  |  Relativitas Massa: m = m₀ / √(1 - v²/c²)',
-                        tips: 'Efek fotolistrik terjadi hanya jika frekuensi foton melebihi frekuensi ambang logam.',
-                        contohSoal: 'Hitung energi foton cahaya dengan frekuensi 5 × 10¹⁴ Hz (h = 6,63 × 10⁻³⁴ J s).<br><strong>Langkah Penyelesaian Terperinci:</strong><br>1. E = h · f = 6,63 × 10⁻³⁴ × 5 × 10¹⁴ = <strong>3,315 × 10⁻¹⁹ Joule</strong>.'
+                        summary: '<strong>Akar Konsep Kuantum & Relativitas:</strong> Cahaya memiliki dualisme gelombang-partikel. Efek fotolistrik membuktikan cahaya sebagai paket energi foton $E = h f$. Teori Relativitas Khusus Einstein membatasi kecepatan maksimum universal pada $c$.',
+                        visual: 'Energi Foton: E = h · f  |  Relativitas Massa: m = m₀ / √(1 - v²/c²)  |  E = m c²',
+                        tips: 'Efek fotolistrik HANYA terjadi jika frekuensi foton memancar melebihi frekuensi ambang ($f > f_0$) logam target!',
+                        contohSoal: '<strong>Soal 1:</strong> Hitung energi foton dengan frekuensi $5 \times 10^{14}\text{ Hz}$ ($h = 6,63 \times 10^{-34}\text{ J s}$).<br><strong>Langkah Penyelesaian:</strong><br>1. $E = h f = 6,63 \times 10^{-34} \cdot (5 \times 10^{14}) = \mathbf{3,315 \times 10^{-19}\text{ Joule}}$.'
                     }
                 ],
                 'kim': [
                     {
                         title: 'Bab 1: Struktur Atom, Konfigurasi spdf & Sistem Periodik',
                         kurikulum: 'K13 & Merdeka (Fase F)',
-                        summary: '<strong>Penjelasan Konsep Terperinci:</strong> Atom terdiri dari proton, neutron, dan elektron. Konfigurasi elektron subkulit (s, p, d, f) ditentukan berdasarkan Aturan Aufbau, Larangan Pauli, dan Kaidah Hund.',
-                        visual: 'Jumlah Maksimal Elektron Subkulit: s=2, p=6, d=10, f=14',
-                        tips: 'Kulit valensi menentukan Golongan, sedangkan jumlah kulit menentukan Periode unsur.',
-                        contohSoal: 'Tentukan golongan dan periode dari unsur ₂₆Fe (konfigurasi: [Ar] 4s² 3d⁶).<br><strong>Langkah Penyelesaian Terperinci:</strong><br>1. Jumlah elektron valensi 4s² + 3d⁶ = 8 (Golongan VIII B). Kulit terbesar = 4 (Periode 4).'
+                        summary: '<strong>Akar Konsep & Teori Kuantum:</strong> Atom terdiri dari inti (proton + neutron) dan awan elektron. Konfigurasi elektron subkulit ditentukan berdasarkan mekanika kuantum melalui 3 aturan dasar: (1) Prinsip Aufbau (pengisian dari tingkat energi terendah), (2) Kaidah Hund (elektron mengisi orbital sejajar sebelum berpasangan), dan (3) Larangan Pauli (tidak ada 2 elektron dengan 4 bilangan kuantum yang sama).',
+                        visual: 'Subkulit: s(2), p(6), d(10), f(14)  |  Golongan = Jumlah Elektron Valensi  |  Periode = Kulit Utama Terbesar (n)',
+                        tips: 'Untuk unsur transisi blok-$d$, golongan ditentukan dari jumlah elektron di subkulit $(n)s + (n-1)d$. Jika totalnya 8, 9, 10 $\implies$ Golongan VIII B. Jika 11 $\implies$ I B. Jika 12 $\implies$ II B.',
+                        contohSoal: '<strong>Soal 1:</strong> Tentukan letak golongan dan periode dari unsur $_{26}\text{Fe}$.<br><strong>Langkah Penyelesaian:</strong><br>1. Konfigurasi $_{26}\text{Fe} = [\text{Ar}]\, 4s^2\, 3d^6$.<br>2. Kulit terbesar $n=4 \implies \mathbf{\text{Periode 4}}$.<br>3. Elektron valensi $4s^2 + 3d^6 = 8 \implies \mathbf{\text{Golongan VIII B}}$.'
                     },
                     {
                         title: 'Bab 2: Ikatan Kimia, Bentuk Molekul VSEPR & Kepolaran',
                         kurikulum: 'K13 & Merdeka (Fase F)',
-                        summary: '<strong>Penjelasan Konsep Terperinci:</strong> Unsur berikatan untuk mencapai konfigurasi oktet (8 elektron valensi). Ikatan ion (serah terima elektron), ikatan kovalen (pemakaian bersama). Geometri molekul ditentukan teori VSEPR.',
-                        visual: 'AX₂ = Linear  |  AX₃ = Trigonal Planar  |  AX₄ = Tetrahedral  |  AX₂E₂ = Bengkok',
-                        tips: 'Molekul simetris tanpa Pasangan Elektron Bebas (PEB) pada atom pusat bersifat Nonpolar.',
-                        contohSoal: 'Tentukan bentuk molekul CH₄ (Atom pusat C punya 4 elektron valensi berikatan dengan 4 H).<br><strong>Langkah Penyelesaian Terperinci:</strong><br>1. Domain ikatan X = 4, PEB E = (4-4)/2 = 0. Tipe AX₄ = <strong>Tetrahedral</strong>.'
+                        summary: '<strong>Akar Konsep Ikatan:</strong> Atom berikatan untuk mencapai konfigurasi stabil oktet (8 elektron valensi). Ikatan ionik terjadi melalui serah terima elektron. Ikatan kovalen terjadi via pemakaian bersama elektron. Geometri molekul ditentukan oleh Tolakan Pasangan Elektron Valensi (VSEPR).',
+                        visual: 'AX₂ = Linear  |  AX₃ = Trigonal Planar  |  AX₄ = Tetrahedral  |  AX₂E₂ = Bengkok (V)',
+                        tips: 'Molekul simetris tanpa Pasangan Elektron Bebas (PEB) pada atom pusat bersifat **Nonpolar**.',
+                        contohSoal: '<strong>Soal 1:</strong> Tentukan tipe geometri molekul $\text{CH}_4$ (Atom pusat C punya 4 elektron valensi berikatan dengan 4 H).<br><strong>Langkah Penyelesaian:</strong><br>1. Pasangan terikat $X = 4$. PEB $E = \frac{4-4}{2} = 0$. Tipe $\text{AX}_4 = \mathbf{\text{Tetrahedral}}$.'
                     },
                     {
                         title: 'Bab 3: Stoikiometri, Konsep Mol & Pereaksi Pembatas',
                         kurikulum: 'K13 & Merdeka (Fase F)',
-                        summary: '<strong>Penjelasan Konsep Terperinci:</strong> Mol adalah jembatan kuantitatif kimia (n = m / Mr). Hukum stoikiometri menghubungkan mol dengan jumlah partikel, volume gas STP, dan molaritas larutan.',
-                        visual: 'n = m / Mr  |  V_STP = n × 22,4 L  |  Molaritas M = n / V(L)',
-                        tips: 'Bagi mol reaktan dengan koefisiennya. Nilai terkecil menjadi Pereaksi Pembatas.',
-                        contohSoal: 'Berapakah volume dari 0,25 mol gas O₂ pada keadaan STP?<br><strong>Langkah Penyelesaian Terperinci:</strong><br>1. V = 0.25 × 22,4 = <strong>5,6 Liter</strong>.'
+                        summary: '<strong>Akar Konsep Kuantitatif Kimia:</strong> Mol adalah satuan jumlah zat ($n = m / M_r$). Stoikiometri menghubungkan mol reaktan dan produk berdasarkan koefisien reaksi setara.',
+                        visual: 'n = m / Mr  |  V_STP (0°C, 1atm) = n × 22,4 L  |  Molaritas M = n / V(L)',
+                        tips: 'Bagi jumlah mol masing-masing reaktan dengan koefisien reaksinya. Nilai terkecil menjadi **Pereaksi Pembatas** yang menentukan jumlah produk!',
+                        contohSoal: '<strong>Soal 1:</strong> Berapakah volume dari $0,25\text{ mol}$ gas $\text{O}_2$ pada keadaan STP?<br><strong>Langkah Penyelesaian:</strong><br>1. $V = n \times 22,4 = 0,25 \times 22,4 = \mathbf{5,6\text{ Liter}}$.'
                     },
                     {
                         title: 'Bab 4: Termokimia, Entalpi & Hukum Hess',
                         kurikulum: 'K13 & Merdeka (Fase F)',
-                        summary: '<strong>Penjelasan Konsep Terperinci:</strong> Termokimia mempelajari efek kalor reaksi. Reaksi eksoterm melepaskan kalor (ΔH < 0), endoterm menyerap kalor (ΔH > 0). Hukum Hess menyatakan ΔH tidak bergantung pada tahapan lintasan.',
-                        visual: 'ΔH_reaksi = Σ ΔH°f(produk) - Σ ΔH°f(pereaksi)',
-                        tips: 'Jika persamaan reaksi dibalik, nilai ΔH berganti tanda (+/-).',
-                        contohSoal: 'ΔH°f CO₂ = -393.5 kJ/mol. Pembakaran 12 gram C (Ar=12) melepas kalor sebesar?<br><strong>Langkah Penyelesaian Terperinci:</strong><br>1. mol C = 12/12 = 1 mol. Kalor yang dilepas = <strong>393,5 kJ</strong>.'
+                        summary: '<strong>Akar Konsep Kalor Kimia:</strong> Termokimia mengukur perubahan entalpi $\Delta H$. Reaksi eksoterm melepaskan kalor ($\Delta H < 0$). Reaksi endoterm menyerap kalor ($\Delta H > 0$). Hukum Hess menyatakan $\Delta H$ hanya bergantung pada keadaan awal dan akhir.',
+                        visual: 'ΔH_reaksi = Σ ΔH°f(produk) - Σ ΔH°f(pereaksi)  |  Hukum Hess: ΔH total = ΔH₁ + ΔH₂',
+                        tips: 'Jika suatu persamaan reaksi dibalik, tanda $\Delta H$ harus dibalik (+ menjadi -). Jika koefisien dikali $n$, nilai $\Delta H$ juga dikali $n$.',
+                        contohSoal: '<strong>Soal 1:</strong> $\Delta H^\circ_f \text{ CO}_2 = -393,5\text{ kJ/mol}$. Hitung kalor yang dilepas saat membakar $12\text{ gram}$ Karbon ($A_r = 12$).<br><strong>Langkah Penyelesaian:</strong><br>1. $\text{mol C} = 12/12 = 1\text{ mol}$. Kalor dilepas $= \mathbf{393,5\text{ kJ}}$.'
                     },
                     {
                         title: 'Bab 5: Laju Reaksi, Teori Tumbukan & Orde Reaksi',
                         kurikulum: 'K13 & Merdeka (Fase F)',
-                        summary: '<strong>Penjelasan Konsep Terperinci:</strong> Laju reaksi V = k [A]ᵐ [B]ⁿ diukur dari berkurangnya reaktan per satuan waktu. Faktor yang mempercepat laju: konsentrasi, suhu, luas permukaan, dan katalis.',
+                        summary: '<strong>Akar Konsep Kinetika Kimia:</strong> Laju reaksi $V = k [\text{A}]^m [\text{B}]^n$ diukur dari berkurangnya konsentrasi reaktan per detik. Katalis mempercepat laju reaksi dengan cara menyediakan jalur alternatif ber-Energi Aktivasi ($E_a$) lebih rendah.',
                         visual: 'Persamaan Laju: V = k [A]ᵐ [B]ⁿ  |  Orde Total = m + n',
-                        tips: 'Katalis mempercepat reaksi dengan cara menurunkan Energi Aktivasi (Ea).',
-                        contohSoal: 'Jika konsentrasi A dinaikkan 2 kali membuat laju V naik 4 kali, berapa orde reaksi terhadap A?<br><strong>Langkah Penyelesaian Terperinci:</strong><br>1. 2ᵐ = 4 ⇒ <strong>m = 2 (Orde 2)</strong>.'
+                        tips: 'Jika konsentrasi dinaikkan $x$ kali menyebabkan laju naik $y$ kali, ordenya $m$ memenuhi $x^m = y$.',
+                        contohSoal: '<strong>Soal 1:</strong> Jika konsentrasi A dinaikkan 2 kali membuat laju naik 4 kali, berapa orde reaksi terhadap A?<br><strong>Langkah Penyelesaian:</strong><br>1. $2^m = 4 \implies m = \mathbf{2\text{ (Orde 2)}}$.'
                     },
                     {
                         title: 'Bab 6: Kesetimbangan Kimia & Asas Le Chatelier',
                         kurikulum: 'K13 & Merdeka (Fase F)',
-                        summary: '<strong>Penjelasan Konsep Terperinci:</strong> Kesetimbangan dinamis terjadi saat laju reaksi maju sama dengan laju reaksi balik. Pergeseran kesetimbangan dipengaruhi perubahan konsentrasi, suhu, dan tekanan.',
-                        visual: 'K_c = [Produk]ⁿ / [Reaktan]ᵐ  |  Hanya wujud Gas (g) dan Larutan (aq)',
-                        tips: 'Jika suhu dinaikkan, kesetimbangan bergeser ke arah reaksi Endoterm (ΔH positif).',
-                        contohSoal: 'Reaksi N₂ + 3H₂ ⇌ 2NH₃ (ΔH = -92 kJ). Agar NH₃ bertambah, suhu harus?<br><strong>Langkah Penyelesaian Terperinci:</strong><br>1. Karena reaksi pembentukan NH₃ eksoterm, suhu harus <strong>Diturunkan</strong>.'
+                        summary: '<strong>Akar Konsep Kesetimbangan Dinamis:</strong> Kesetimbangan terjadi saat laju reaksi maju sama dengan laju reaksi balik. Asas Le Chatelier: jika sistem kesetimbangan diberi aksi, sistem akan bergeser meminimalkan pengaruh aksi tersebut.',
+                        visual: 'K_c = [Produk]ⁿ / [Reaktan]ᵐ  (Hanya fasa Gas g dan Larutan aq)',
+                        tips: 'Jika suhu DITAIKKAN, kesetimbangan selalu bergeser ke arah reaksi **Endoterm** ($\Delta H$ positif).',
+                        contohSoal: '<strong>Soal 1:</strong> Reaksi $\text{N}_2 + 3\text{H}_2 \rightleftharpoons 2\text{NH}_3$ ($\Delta H = -92\text{ kJ}$). Agar produk $\text{NH}_3$ bertambah, suhu harus?<br><strong>Langkah Penyelesaian:</strong> Reaksi pembentukan $\text{NH}_3$ eksoterm, maka suhu harus **Diturunkan**.'
                     },
                     {
                         title: 'Bab 7: Larutan Asam-Basa, Derajat pH & Indikator',
                         kurikulum: 'K13 & Merdeka (Fase F)',
-                        summary: '<strong>Penjelasan Konsep Terperinci:</strong> Menurut Arrhenius, asam menghasilkan H⁺ dan basa menghasilkan OH⁻. Nilai pH = -log[H⁺]. Asam kuat terionisasi sempurna, asam lemah terionisasi sebagian (Ka).',
+                        summary: '<strong>Akar Konsep Asam Basa:</strong> Menurut Arrhenius, asam menghasilkan $\text{H}^+$ dan basa menghasilkan $\text{OH}^-$. Nilai $\text{pH} = -\log[\text{H}^+]$. Asam kuat terionisasi sempurna ($\alpha = 1$), asam lemah terionisasi sebagian ($K_a$).',
                         visual: 'Asam Kuat: [H⁺] = M × valensi  |  Asam Lemah: [H⁺] = √(K_a × M)',
-                        tips: 'pH + pOH = 14 pada suhu kamar 25°C.',
-                        contohSoal: 'Hitung pH larutan CH₃COOH 0,1 M jika Ka = 10⁻⁵.<br><strong>Langkah Penyelesaian Terperinci:</strong><br>1. [H⁺] = √(10⁻⁵ × 0.1) = √10⁻⁶ = 10⁻³ M. pH = -log(10⁻³) = <strong>3</strong>.'
+                        tips: 'Pada suhu $25^\circ\text{C}$, $\text{pH} + \text{pOH} = 14$.',
+                        contohSoal: '<strong>Soal 1:</strong> Hitung pH larutan $\text{CH}_3\text{COOH } 0,1\text{ M}$ ($K_a = 10^{-5}$).<br><strong>Langkah Penyelesaian:</strong><br>1. $[\text{H}^+] = \sqrt{10^{-5} \cdot 0,1} = \sqrt{10^{-6}} = 10^{-3}\text{ M}$.<br>2. $\text{pH} = -\log(10^{-3}) = \mathbf{3}$.'
                     },
                     {
                         title: 'Bab 8: Larutan Penyangga (Buffer) & Kapasitas Penyangga',
                         kurikulum: 'K13 & Merdeka (Fase F)',
-                        summary: '<strong>Penjelasan Konsep Terperinci:</strong> Larutan buffer mampu mempertahankan pH dari penambahan sedikit asam, basa, atau pengenceran. Terdiri dari campuran asam lemah + basa konjugasi.',
+                        summary: '<strong>Akar Konsep Buffer:</strong> Larutan buffer mampu mempertahankan nilai pH dari penambahan sedikit asam, basa, atau pengenceran. Terdiri dari campuran asam lemah + basa konjugasinya.',
                         visual: 'Buffer Asam: [H⁺] = K_a × (mol Asam Lemah / mol Basa Konjugasi)',
-                        tips: 'Jika reaksi asam lemah dan basa kuat menyisakan asam lemah, maka terbentuk buffer.',
-                        contohSoal: '0.1 mol CH₃COOH (Ka=10⁻⁵) dicampur dengan 0.01 mol CH₃COONa. Hitung pH.<br><strong>Langkah Penyelesaian Terperinci:</strong><br>1. [H⁺] = 10⁻⁵ × (0.1 / 0.01) = 10⁻⁴ M. pH = -log(10⁻⁴) = <strong>4</strong>.'
+                        tips: 'Jika reaksi antara asam lemah dan basa kuat menyisakan **SISA ASAM LEMAH**, maka terbentuk larutan buffer!',
+                        contohSoal: '<strong>Soal 1:</strong> $0,1\text{ mol CH}_3\text{COOH}$ ($K_a = 10^{-5}$) dicampur dengan $0,01\text{ mol CH}_3\text{COONa}$. Hitung pH.<br><strong>Langkah Penyelesaian:</strong><br>1. $[\text{H}^+] = 10^{-5} \cdot \frac{0,1}{0,01} = 10^{-4}\text{ M} \implies \text{pH} = -\log(10^{-4}) = \mathbf{4}$.'
                     },
                     {
                         title: 'Bab 9: Hidrolisis Garam & Sifat Asam-Basa Garam',
                         kurikulum: 'K13 & Merdeka (Fase F)',
-                        summary: '<strong>Penjelasan Konsep Terperinci:</strong> Hidrolisis adalah reaksi kation/anion garam dengan air. Garam dari asam lemah + basa kuat mengalami hidrolisis sebagian bersifat basa (pH > 7).',
+                        summary: '<strong>Akar Konsep Hidrolisis:</strong> Hidrolisis adalah reaksi kation/anion garam dengan air. Garam dari asam lemah + basa kuat mengalami hidrolisis sebagian bersifat basa ($\text{pH} > 7$).',
                         visual: 'Garam Basa: [OH⁻] = √( (K_w / K_a) × M_garam )',
-                        tips: 'Garam dari asam kuat dan basa kuat tidak mengalami hidrolisis (pH netral = 7).',
-                        contohSoal: 'Hitung [OH⁻] larutan CH₃COONa 0.1 M (Kw=10⁻¹⁴, Ka=10⁻⁵).<br><strong>Langkah Penyelesaian Terperinci:</strong><br>1. [OH⁻] = √( (10⁻¹⁴ / 10⁻⁵) × 0.1 ) = √10⁻¹⁰ = <strong>10⁻⁵ M</strong>.'
+                        tips: 'Garam dari asam kuat dan basa kuat TIDAK mengalami hidrolisis ($\text{pH} = 7$ netral).',
+                        contohSoal: '<strong>Soal 1:</strong> Hitung $[\text{OH}^-]$ larutan $\text{CH}_3\text{COONa } 0,1\text{ M}$ ($K_w = 10^{-14}, K_a = 10^{-5}$).<br><strong>Langkah Penyelesaian:</strong><br>1. $[\text{OH}^-] = \sqrt{\frac{10^{-14}}{10^{-5}} \cdot 0,1} = \sqrt{10^{-10}} = \mathbf{10^{-5}\text{ M}}$.'
                     },
                     {
                         title: 'Bab 10: Kelarutan & Hasil Kali Kelarutan (Ksp)',
                         kurikulum: 'K13 & Merdeka (Fase F)',
-                        summary: '<strong>Penjelasan Konsep Terperinci:</strong> Ksp adalah konstanta kesetimbangan larutan jenuh garam sukar larut. Jika Qsp > Ksp, terjadi pengendapan.',
+                        summary: '<strong>Akar Konsep Ksp:</strong> $K_{sp}$ adalah konstanta kesetimbangan larutan jenuh dari garam yang sukar larut. Jika $Q_{sp} > K_{sp}$, terjadi endapan.',
                         visual: 'Garam AX₂ ⇌ A²⁺ + 2X⁻  ⇒  Ksp = 4s³',
-                        tips: 'Penambahan ion sejenis akan menurunkan kelarutan zat dalam larutan.',
-                        contohSoal: 'Jika kelarutan AgCl (s) = 10⁻⁵ M, hitung Ksp AgCl.<br><strong>Langkah Penyelesaian Terperinci:</strong><br>1. AgCl ⇌ Ag⁺ + Cl⁻. Ksp = s × s = (10⁻⁵)² = <strong>10⁻¹⁰</strong>.'
+                        tips: 'Penambahan ion sejenis akan menggeser kesetimbangan ke kiri dan MENURUNKAN kelarutan zat.',
+                        contohSoal: '<strong>Soal 1:</strong> Kelarutan $\text{AgCl}$ dalam air $= 10^{-5}\text{ M}$. Hitung $K_{sp} \text{ AgCl}$.<br><strong>Langkah Penyelesaian:</strong><br>1. $K_{sp} = s \cdot s = (10^{-5})^2 = \mathbf{10^{-10}}$.'
                     },
                     {
                         title: 'Bab 11: Sifat Koligatif Larutan & Hukum Raoult',
                         kurikulum: 'K13 & Merdeka (Fase F)',
-                        summary: '<strong>Penjelasan Konsep Terperinci:</strong> Sifat koligatif hanya bergantung pada jumlah partikel zat terlarut, meliputi: penurunan tekanan uap, kenaikan titik didih, penurunan titik beku, dan tekanan osmotik.',
-                        visual: 'ΔTb = m · Kb · i  |  ΔTf = m · Kf · i  |  π = M · R · T · i',
-                        tips: 'Untuk zat elektrolit, sertakan faktor van\'t Hoff i = 1 + (n - 1)α.',
-                        contohSoal: 'Hitung ΔTb larutan 1 mol glukosa non-elektrolit dalam 1 kg air (Kb = 0,52 °C/m).<br><strong>Langkah Penyelesaian Terperinci:</strong><br>1. ΔTb = m × Kb × 1 = 1 × 0,52 = <strong>0,52 °C</strong>.'
+                        summary: '<strong>Akar Konsep Koligatif:</strong> Sifat koligatif HANYA bergantung pada jumlah partikel zat terlarut, tidak bergantung pada jenisnya. Meliputi: penurunan tekanan uap, kenaikan titik didih, penurunan titik beku, dan tekanan osmotik.',
+                        visual: 'ΔTb = m · Kb · i  |  ΔTf = m · Kf · i  |  Tekanan Osmotik: π = M · R · T · i',
+                        tips: 'Untuk larutan elektrolit, selalu sertakan faktor van\'t Hoff $i = 1 + (n - 1)\alpha$!',
+                        contohSoal: '<strong>Soal 1:</strong> Hitung $\Delta T_b$ larutan $1\text{ mol}$ glukosa non-elektrolit dalam $1\text{ kg}$ air ($K_b = 0,52^\circ\text{C/m}$).<br><strong>Langkah Penyelesaian:</strong><br>1. $\Delta T_b = m \cdot K_b \cdot 1 = 1 \cdot 0,52 = \mathbf{0,52^\circ\text{C}}$.'
                     },
                     {
                         title: 'Bab 12: Reaksi Redoks & Penyetaraan Bilangan Oksidasi',
                         kurikulum: 'K13 & Merdeka (Fase F)',
-                        summary: '<strong>Penjelasan Konsep Terperinci:</strong> Oksidasi adalah kenaikan biloks (pelepasan elektron), reduksi adalah penurunan biloks (penerimaan elektron). Di setarakan dengan metode setengah reaksi atau biloks.',
-                        visual: 'Oksidator = Mengalami Reduksi  |  Reduktor = Mengalami Oksidasi',
-                        tips: 'Unsur bebas selalu memiliki bilangan oksidasi bernilai 0.',
-                        contohSoal: 'Tentukan biloks Mangan (Mn) dalam senyawa KMnO₄.<br><strong>Langkah Penyelesaian Terperinci:</strong><br>1. (+1) + Mn + 4(-2) = 0 ⇒ 1 + Mn - 8 = 0 ⇒ <strong>Mn = +7</strong>.'
+                        summary: '<strong>Akar Konsep Redoks:</strong> Oksidasi adalah kenaikan biloks (pelepasan elektron). Reduksi adalah penurunan biloks (penerimaan elektron). Oksidator adalah zat yang mengalami reduksi.',
+                        visual: 'Oksidator (Mengalami Reduksi)  |  Reduktor (Mengalami Oksidasi)',
+                        tips: 'Bilangan oksidasi unsur bebas (seperti $\text{O}_2, \text{Fe}, \text{H}_2$) selalu bernilai nol ($0$)!',
+                        contohSoal: '<strong>Soal 1:</strong> Tentukan biloks Mangan ($\text{Mn}$) dalam senyawa $\text{KMnO}_4$.<br><strong>Langkah Penyelesaian:</strong><br>1. (+1) + Mn + 4(-2) = 0 ⇒ 1 + Mn - 8 = 0 ⇒ $\mathbf{\text{Mn} = +7}$.'
                     },
                     {
                         title: 'Bab 13: Sel Volta, Deret Volta & Korosi',
                         kurikulum: 'K13 & Merdeka (Fase F)',
-                        summary: '<strong>Penjelasan Konsep Terperinci:</strong> Sel Volta mengubah reaksi kimia spontan menjadi energi listrik. Katode (reduksi, +) dan Anode (oksidasi, -).',
-                        visual: 'E°sel = E°katode - E°anode  |  KRAO (Katode Reduksi, Anode Oksidasi)',
-                        tips: 'Logam dengan E° lebih positif berada di katode.',
-                        contohSoal: 'E° Zn²⁺/Zn = -0,76 V, E° Cu²⁺/Cu = +0,34 V. Hitung E°sel.<br><strong>Langkah Penyelesaian Terperinci:</strong><br>1. E°sel = +0,34 - (-0,76) = <strong>+1,10 Volt</strong>.'
+                        summary: '<strong>Akar Konsep Sel Volta:</strong> Sel Volta mengubah energi kimia spontan menjadi energi listrik. Katode (reduksi, $+$) dan Anode (oksidasi, $-$). Potensial sel $E^\circ_{\text{sel}} = E^\circ_{\text{katode}} - E^\circ_{\text{anode}}$.',
+                        visual: 'Jembatan Keledai KRAO: Katode Reduksi, Anode Oksidasi  |  E°sel = E°katode - E°anode',
+                        tips: 'Logam dengan $E^\circ$ lebih positif berada di katode dan bertindak sebagai oksidator.',
+                        contohSoal: '<strong>Soal 1:</strong> $E^\circ \text{Zn}^{2+}/\text{Zn} = -0,76\text{ V}, E^\circ \text{Cu}^{2+}/\text{Cu} = +0,34\text{ V}$. Hitung $E^\circ_{\text{sel}}$.<br><strong>Langkah Penyelesaian:</strong><br>1. $E^\circ_{\text{sel}} = +0,34 - (-0,76) = \mathbf{+1,10\text{ Volt}}$.'
                     },
                     {
                         title: 'Bab 14: Sel Elektrolisis & Hukum Faraday I - II',
                         kurikulum: 'K13 & Merdeka (Fase F)',
-                        summary: '<strong>Penjelasan Konsep Terperinci:</strong> Elektrolisis menggunakan energi listrik untuk menjalankan reaksi redoks tidak spontan. Hukum Faraday I: massa zat terendap W = (e · I · t) / 96500.',
-                        visual: 'W = (e · I · t) / 96500  |  massa ekuivalen e = Ar / valensi',
-                        tips: 'Di katode, kation Logam Aktif (Gol I A, II A, Al, Mn) larutan tidak tereduksi, melainkan air (H₂O).',
-                        contohSoal: 'Hitung massa Cu (Ar=63.5, valensi=2) terendap jika arus 10 A mengalir 965 detik.<br><strong>Langkah Penyelesaian Terperinci:</strong><br>1. W = [(63.5/2) × 10 × 965] / 96500 = 31.75 × 10 × 0.01 = <strong>3,175 gram</strong>.'
+                        summary: '<strong>Akar Konsep Elektrolisis:</strong> Sel elektrolisis menggunakan energi listrik untuk menjalankan reaksi redoks tidak spontan. Hukum Faraday I: massa zat terendap $W = \frac{e \cdot I \cdot t}{96500}$.',
+                        visual: 'W = (e · I · t) / 96500  |  Massa Ekuivalen e = Ar / Valensi',
+                        tips: 'Di katode, kation logam aktif Golongan IA, IIA, Al, Mn pada larutan tidak tereduksi, melainkan air ($\text{H}_2\text{O}$) yang tereduksi menjadi gas $\text{H}_2$!',
+                        contohSoal: '<strong>Soal 1:</strong> Hitung massa Cu ($A_r = 63,5$, valensi 2) terendap jika arus $10\text{ A}$ mengalir $965\text{ detik}$.<br><strong>Langkah Penyelesaian:</strong><br>1. $W = \frac{(63,5/2) \cdot 10 \cdot 965}{96500} = 31,75 \cdot 0,1 = \mathbf{3,175\text{ gram}}$.'
                     },
                     {
                         title: 'Bab 15: Kimia Organik, Tata Nama Alkana & Gugus Fungsi',
                         kurikulum: 'K13 & Merdeka (Fase F)',
-                        summary: '<strong>Penjelasan Konsep Terperinci:</strong> Kimia karbon mengkaji senyawa hidrokarbon dan turunannya berdasarkan gugus fungsi (Alkohol -OH, Eter -O-, Aldehid -CHO, Keton -CO-, Asam Karboksilat -COOH, Ester -COO-).',
-                        visual: 'Alkohol & Eter (Isomer Fungsi C_n H_2n+2 O)',
-                        tips: 'Uji Seliwanoff dan Biuret digunakan untuk mengidentifikasi karbohidrat dan protein.',
-                        contohSoal: 'Apakah rumus gugus fungsi dari senyawa Asam Asetat (Asam Cuka)?<br><strong>Langkah Penyelesaian Terperinci:</strong><br>1. Asam asetat tergolong Asam Karboksilat dengan gugus fungsi <strong>-COOH</strong>.'
+                        summary: '<strong>Akar Konsep Kimia Karbon:</strong> Hidrokarbon terbagi atas alkana, alkena, dan alkuna. Gugus fungsi menentukan sifat spesifik: Alkohol ($-\text{OH}$), Eter ($-\text{O}-$), Aldehid ($-\text{CHO}$), Keton ($-\text{CO}-$), Asam Karboksilat ($-\text{COOH}$), Ester ($-\text{COO}-$).',
+                        visual: 'Alkohol & Eter (Isomer Fungsi C_n H_2n+2 O)  |  Asam Karboksilat & Ester (Isomer Fungsi C_n H_2n O₂)',
+                        tips: 'Uji Fehling/Tollens digunakan untuk membedakan Aldehid (positif mengendap) dan Keton (negatif).',
+                        contohSoal: '<strong>Soal 1:</strong> Senyawa $\text{CH}_3-\text{COOH}$ tergolong ke dalam gugus fungsi apakah?<br><strong>Langkah Penyelesaian:</strong> Tergolong **Asam Karboksilat**.'
                     }
                 ],
                 'bio': [
                     {
                         title: 'Bab 1: Organel Sel, Struktur Membran & Transpor',
                         kurikulum: 'K13 & Merdeka (Fase F)',
-                        summary: '<strong>Penjelasan Konsep Terperinci:</strong> Sel adalah unit struktural terkecil kehidupan. Membran sel bersifat semipermeabel mengatur transpor pasif (difusi, osmosis) dan aktif (pompa ATP).',
-                        visual: 'Osmosis: Pelarut air bergerak dari hipotonis (encer) ke hipertonis (pekat)',
-                        tips: 'Sel darah merah di larutan hipertonis mengalami pengerutan (Krenasi).',
-                        contohSoal: 'Mengapa sel tumbuhan tidak pecah di lingkungan hipotonis?<br><strong>Langkah Penyelesaian Terperinci:</strong><br>1. Karena memiliki <strong>Dinding Sel</strong> kaku dari selulosa.'
+                        summary: '<strong>Akar Konsep & Biokimia Membran:</strong> Sel dilapisi oleh membran plasma berstruktur *Fluid Mosaic Model* (lapisan ganda fosfolipid dengan protein integral dan perifer). Transpor pasif (difusi & osmosis) bergerak spontan sesuai gradien konsentrasi tanpa energi ATP. Transpor aktif (pompa $\text{Na}^+/\text{K}^+$, endositosis, eksositosis) melawan gradien konsentrasi dan memerlukan ATP.',
+                        visual: 'Osmosis: Pelarut (Air) dari Hipotonis (Encer) → Hipertonis (Pekat)  |  Sel Hewan di Hipertonis = Krenasi  |  Sel Tumbuhan = Plasmolisis',
+                        tips: 'Sel tumbuhan tidak mengalami lisis/pecah di larutan hipotonis karena ditahan oleh struktur dinding sel berbahan selulosa yang memiliki tekanan turgor tinggi.',
+                        contohSoal: '<strong>Soal 1:</strong> Mengapa eritrosit pecah (hemolisis) saat diletakkan di dalam aquades (air murni)?<br><strong>Langkah Penyelesaian:</strong><br>1. Aquades bersifat hipotonis dibanding sitoplasma eritrosit.<br>2. Air masuk secara osmosis ke dalam sel hingga membran plasma yang elastis melebihi batas batas toleransinya dan pecah ($\mathbf{\text{Hemolisis}}$).'
                     },
                     {
                         title: 'Bab 2: Biokimia Enzim & Bioenergetika Sel',
                         kurikulum: 'K13 & Merdeka (Fase F)',
-                        summary: '<strong>Penjelasan Konsep Terperinci:</strong> Enzim adalah biokatalisator protein yang menurunkan energi aktivasi. Bekerja spesifik berdasarkan teori Lock and Key dan Induced Fit.',
-                        visual: 'Faktor Pengaruh Enzim: Suhu Optima, pH, Konsentrasi Substrat, Inhibitor',
-                        tips: 'Inhibitor kompetitif bersaing merebut sisi aktif enzim dengan substrat.',
-                        contohSoal: 'Apakah dampak pemanasan enzim di atas suhu 60 °C?<br><strong>Langkah Penyelesaian Terperinci:</strong><br>1. Enzim mengalami <strong>Denaturasi</strong> (kerusakan struktur tersier protein).'
+                        summary: '<strong>Akar Konsep Kinetika Enzim:</strong> Enzim adalah biokatalisator protein yang mempercepat reaksi biokimia dengan cara menurunkan energi aktivasi ($E_a$). Bekerja spesifik berdasarkan teori *Lock and Key* dan *Induced Fit*.',
+                        visual: 'Faktor Enzim: Suhu Optima, pH, Konsentrasi Substrat, Inhibitor Kompetitif vs Non-Kompetitif',
+                        tips: 'Inhibitor kompetitif dapat diatasi dengan MENAMBAH konsentrasi substrat hingga melimpah.',
+                        contohSoal: '<strong>Soal 1:</strong> Apa yang terjadi jika enzim dipanaskan di atas suhu $60^\circ\text{C}$?<br><strong>Langkah Penyelesaian:</strong> Enzim mengalami **Denaturasi** (kerusakan struktur tersier protein).'
                     },
                     {
                         title: 'Bab 3: Katabolisme Karbohidrat: Respirasi Aerob & Anaerob',
                         kurikulum: 'K13 & Merdeka (Fase F)',
-                        summary: '<strong>Penjelasan Konsep Terperinci:</strong> Respirasi aerob memecah glukosa menjadi CO₂, H₂O, dan 36-38 ATP melalui 4 tahap: Glikolisis, Dekarboksilasi Oksidatif, Siklus Krebs, dan Transpor Elektron.',
-                        visual: 'Glikolisis (Sitosol) → DO & Krebs (Mitokondria) → Transpor Elektron (Krista)',
-                        tips: 'Akseptor elektron terakhir pada respirasi aerob adalah Oksigen (O₂).',
-                        contohSoal: 'Di manakah tempat terjadinya Siklus Krebs dalam sel?<br><strong>Langkah Penyelesaian Terperinci:</strong><br>1. Berlangsung di dalam <strong>Matriks Mitokondria</strong>.'
+                        summary: '<strong>Akar Konsep Respirasi Sel:</strong> Respirasi aerob memecah 1 molekul glukosa menjadi $\text{CO}_2, \text{H}_2\text{O}$, dan $36-38\text{ ATP}$ melalui 4 tahap: (1) Glikolisis (Sitosol), (2) Dekarboksilasi Oksidatif (Matriks Mitokondria), (3) Siklus Krebs (Matriks Mitokondria), dan (4) Transpor Elektron (Krista Mitokondria).',
+                        visual: 'Glikolisis (Sitosol) → DO & Krebs (Matriks Mitokondria) → Transpor Elektron (Krista)',
+                        tips: 'Akseptor elektron terakhir pada rantai transpor elektron respirasi aerob adalah molekul **Oksigen ($\text{O}_2$)**.',
+                        contohSoal: '<strong>Soal 1:</strong> Di manakah tempat berlangsungnya Siklus Krebs dalam sel hewan?<br><strong>Langkah Penyelesaian:</strong> Berlangsung di dalam **Matriks Mitokondria**.'
                     },
                     {
                         title: 'Bab 4: Anabolisme: Fotosintesis Reaksi Terang & Gelap',
                         kurikulum: 'K13 & Merdeka (Fase F)',
-                        summary: '<strong>Penjelasan Konsep Terperinci:</strong> Fotosintesis mengubah energi foton menjadi kimia. Reaksi terang (Tilakoid) menghasilkan ATP, NADPH, O₂. Reaksi gelap/Siklus Calvin (Stroma) menghasilkan glukosa.',
-                        visual: 'Reaksi Terang (Tilakoid) + Reaksi Gelap / Siklus Calvin (Stroma)',
-                        tips: 'Fotolisis air H₂O → 2H⁺ + 2e⁻ + ½O₂ terjadi pada Reaksi Terang.',
-                        contohSoal: 'Di manakah tempat terjadinya Reaksi Gelap fotosintesis?<br><strong>Langkah Penyelesaian Terperinci:</strong><br>1. Berlangsung di dalam <strong>Stroma Kloroplas</strong>.'
+                        summary: '<strong>Akar Konsep Bioenergetika Tumbuhan:</strong> Fotosintesis mengubah energi foton cahaya menjadi energi kimia glukosa. Reaksi Terang (Tilakoid) menghasilkan ATP, NADPH, dan $\text{O}_2$. Reaksi Gelap/Siklus Calvin (Stroma) mengikat $\text{CO}_2$ menjadi gula.',
+                        visual: 'Reaksi Terang (Grana/Tilakoid) + Reaksi Gelap (Stroma Kloroplas)',
+                        tips: 'Fotolisis air ($\text{H}_2\text{O} \to 2\text{H}^+ + 2e^- + \frac{1}{2}\text{O}_2$) terjadi pada **Reaksi Terang** di Fotosistem II.',
+                        contohSoal: '<strong>Soal 1:</strong> Di manakah tempat terjadinya sintesis glukosa dalam kloroplas?<br><strong>Langkah Penyelesaian:</strong> Berlangsung di dalam **Stroma** (Reaksi Gelap).'
                     },
                     {
                         title: 'Bab 5: Genetik, Struktur DNA, RNA & Sintesis Protein',
                         kurikulum: 'K13 & Merdeka (Fase F)',
-                        summary: '<strong>Penjelasan Konsep Terperinci:</strong> DNA rantai ganda heliks ganda menyimpan kode genetik. Sintesis protein terdiri dari Transkripsi (DNA → mRNA di inti) dan Translasi (mRNA → Protein di ribosom).',
-                        visual: 'Pasangan Basa: Adenin - Timin (2 H)  |  Guanin - Sitosin (3 H)',
-                        tips: 'Pada RNA, basa Timin (T) digantikan oleh Urasil (U).',
-                        contohSoal: 'Tentukan rantai mRNA dari cetakan DNA antisense 3\'-TAC GGC-5\'.<br><strong>Langkah Penyelesaian Terperinci:</strong><br>1. mRNA dibentuk komplementer: 5\'-<strong>AUG CCG</strong>-3\'.'
+                        summary: '<strong>Akar Konsep Ekspresi Gen:</strong> DNA berbentuk heliks ganda tersusun atas nukleotida (Gula Deoksiribosa, Fosfat, Basa Nitrogen). Sintesis protein terdiri atas Transkripsi (DNA $\to$ mRNA di inti sel) dan Translasi (mRNA $\to$ Asam Amino di ribosom).',
+                        visual: 'Pasangan Basa DNA: Adenin-Timin (2 Ikatan H), Guanin-Sitosin (3 Ikatan H)  |  RNA: Timin diganti Urasil',
+                        tips: 'Rantai mRNA komplementer dibentuk dari rantai cetakan DNA Antisense (Template).',
+                        contohSoal: '<strong>Soal 1:</strong> Tentukan urutan mRNA dari cetakan DNA antisense 3\'-TAC GGC-5\'.<br><strong>Langkah Penyelesaian:</strong> mRNA = 5\'-**AUG CCG**-3\'.'
                     },
                     {
                         title: 'Bab 6: Pembelahan Sel: Mitosis, Meiosis & Gametogenesis',
                         kurikulum: 'K13 & Merdeka (Fase F)',
-                        summary: '<strong>Penjelasan Konsep Terperinci:</strong> Mitosis menghasilkan 2 sel anakan identik diploid (2n) untuk pertumbuhan. Meiosis menghasilkan 4 sel anakan haploid (n) untuk pembentukan gamet.',
-                        visual: 'Tahapan: Profase → Metafase → Anafase → Telofase',
-                        tips: 'Crossing over (pindah silang) terjadi pada Profase I Meiosis I.',
-                        contohSoal: 'Pada fase manakah kromosom berjajar di bidang ekuator sel?<br><strong>Langkah Penyelesaian Terperinci:</strong><br>1. Berjajar di tengah terjadi pada fase <strong>Metafase</strong>.'
+                        summary: '<strong>Akar Konsep Pembelahan Sel:</strong> Mitosis menghasilkan 2 sel anakan diploid ($2n$) identik untuk pertumbuhan. Meiosis menghasilkan 4 sel anakan haploid ($n$) bermutasi untuk pembentukan sel kelamin (gamet).',
+                        visual: 'Tahapan: Profase → Metafase (Kromosom di Equator) → Anafase (Kromatid Berpisah) → Telofase',
+                        tips: 'Pindah silang (*crossing over*) genetik yang memicu variasi keturunan terjadi pada fase **Profase I Meiosis I**.',
+                        contohSoal: '<strong>Soal 1:</strong> Pada fase manakah kromosom berjejer di bidang pembelahan sel?<br><strong>Langkah Penyelesaian:</strong> Terjadi pada fase **Metafase**.'
                     },
                     {
                         title: 'Bab 7: Hukum Mendel & Persilangan Monohibrid - Dihibrid',
                         kurikulum: 'K13 & Merdeka (Fase F)',
-                        summary: '<strong>Penjelasan Konsep Terperinci:</strong> Hukum I Mendel (Segregasi Bebas) dan Hukum II Mendel (Asortasi Bebas). Rasio F2 monohibrid = 3:1, dihibrid heterozigot = 9:3:3:1.',
-                        visual: 'Dihibrid Heterozigot (AaBb × AaBb) ⇒ Rasio 9 : 3 : 3 : 1',
-                        tips: 'Peluang genotip homozigot resesif aabb dari AaBb × AaBb adalah 1/16.',
-                        contohSoal: 'Dihibrid AaBb disilangkan sesamanya. Peluang anak aabb?<br><strong>Langkah Penyelesaian Terperinci:</strong><br>1. (1/4) × (1/4) = <strong>1/16</strong>.'
+                        summary: '<strong>Akar Konsep Genetika Mendel:</strong> Hukum I Mendel (Segregasi Bebas) dan Hukum II Mendel (Asortasi Bebas). Rasio fenotip F2 monohibrid dominan-resesif $= 3 : 1$. Rasio dihibrid heterozigot $= 9 : 3 : 3 : 1$.',
+                        visual: 'Persilangan Dihibrid Heterozigot (AaBb × AaBb) ⇒ Rasio Fenotip 9 : 3 : 3 : 1',
+                        tips: 'Jumlah macam gamet dari suatu genotip dapat dihitung dengan rumus $2^n$ di mana $n$ adalah jumlah pasangan heterozigot.',
+                        contohSoal: '<strong>Soal 1:</strong> Berapa macam gamet yang dihasilkan dari individu bergenotip AaBbCcDD?<br><strong>Langkah Penyelesaian:</strong> Pasangan heterozigot ada 3 (Aa, Bb, Cc). Jumlah gamet $= 2^3 = \mathbf{8\text{ macam}}$.'
                     },
                     {
                         title: 'Bab 8: Penyimpangan Semu Hukum Mendel & Hereditas',
                         kurikulum: 'K13 & Merdeka (Fase F)',
-                        summary: '<strong>Penjelasan Konsep Terperinci:</strong> Interaksi gen mengubah rasio klasik Mendel 9:3:3:1. Meliputi: Atavisme (9:3:3:1), Kriptomeri (9:3:4), Epistasis-Hipostasis (12:3:1), dan Polimeri (15:1).',
-                        visual: 'Epistasis Dominan = 12 : 3 : 1  |  Kriptomeri = 9 : 3 : 4',
-                        tips: 'Pada epistasis dominan, gen epistasis menutupi ekspresi gen hipostatis.',
-                        contohSoal: 'Persilangan kriptomeri menghasilkan rasio fenotip F2 sebesar?<br><strong>Langkah Penyelesaian Terperinci:</strong><br>1. Rasionya adalah <strong>9 : 3 : 4</strong>.'
+                        summary: '<strong>Akar Konsep Interaksi Gen:</strong> Modifikasi rasio klasik Mendel $9:3:3:1$ akibat interaksi alel. Meliputi: Atavisme ($9:3:3:1$), Kriptomeri ($9:3:4$), Epistasis-Hipostasis ($12:3:1$), dan Polimeri ($15:1$).',
+                        visual: 'Epistasis Dominan = 12 : 3 : 1  |  Kriptomeri = 9 : 3 : 4  |  Polimeri = 15 : 1',
+                        tips: 'Pada epistasis dominan, keberadaan satu gen dominan epistasis akan menutup ekspresi gen hipostatis lainnya.',
+                        contohSoal: '<strong>Soal 1:</strong> Persilangan kriptomeri bunga Linaria maroccana merah (Aabb) dan putih (aaBB) menghasilkan F1 ungu (AaBb). Rasio F2 fenotipnya adalah?<br><strong>Langkah Penyelesaian:</strong> Rasionya Ungu : Merah : Putih $= \mathbf{9 : 3 : 4}$.'
                     },
                     {
                         title: 'Bab 9: Pola Hereditas Manusia & Golongan Darah ABO',
                         kurikulum: 'K13 & Merdeka (Fase F)',
-                        summary: '<strong>Penjelasan Konsep Terperinci:</strong> Pewarisan sifat terlink-kromosom seks (Buta Warna, Hemofilia) dan autosom (Albinisme, Golongan Darah ABO/Rhesus).',
-                        visual: 'Golongan Darah ABO: Iᴬ, Iᴮ (Kodominan), Iᴼ (Resesif)',
-                        tips: 'Ibu pembawa (carrier) hemofilia XᴴXʰ menikah dengan ayah normal XᴴY memiliki 25% anak laki-laki hemofilia.',
-                        contohSoal: 'Pasangan bergolongan darah A heterozigot (IᴬIᴼ) dan B heterozigot (IᴮIᴼ) dapat memiliki anak bergolongan darah?<br><strong>Langkah Penyelesaian Terperinci:</strong><br>1. Kemungkinan anak: A, B, AB, dan O (<strong>Semua golongan darah mungkin</strong>).'
+                        summary: '<strong>Akar Konsep Pewarisan Sifat:</strong> Pewarisan terikat kromosom seks X (Buta Warna, Hemofilia) dan autosom (Albinisme, Golongan Darah ABO/Rhesus).',
+                        visual: 'Golongan Darah ABO: Iᴬ, Iᴮ (Kodominan), Iᴼ (Resesif)  |  Hemofilia: Xᴴ, Xʰ',
+                        tips: 'Pria tidak bisa menjadi *carrier* (pembawa) penyakit hemofilia atau buta warna. Pria hanya bisa normal ($X^H Y$) atau sakit ($X^h Y$).',
+                        contohSoal: '<strong>Soal 1:</strong> Pasangan A heterozigot ($I^A I^O$) dan B heterozigot ($I^B I^O$) dapat memiliki anak bergolongan darah?<br><strong>Langkah Penyelesaian:</strong> Anak dapat bergolongan darah **A, B, AB, atau O** (semua mungkin).'
                     },
                     {
                         title: 'Bab 10: Mutasi Gen & Mutasi Kromosom (Aneuploidi)',
                         kurikulum: 'K13 & Merdeka (Fase F)',
-                        summary: '<strong>Penjelasan Konsep Terperinci:</strong> Mutasi adalah perubahan materi genetik. Mutasi gen (substitusi, adisi, delesi). Mutasi kromosom (delesi, duplikasi, inversi, translokasi, aneuploidi seperti Sindrom Down 47,XX/XY +21).',
-                        visual: 'Sindrom Down = Trisomi Kromosom Nomor 21 (2n + 1 = 47)',
-                        tips: 'Sindrom Turner memiliki karyotipe 45,XO (Monosomi kromosom seks).',
-                        contohSoal: 'Apakah penyebab mutasi pada penderita Sindrom Klinefelter (47,XXY)?<br><strong>Langkah Penyelesaian Terperinci:</strong><br>1. Akibat Nondisjunction (gagal berpisah) kromosom seks saat gametogenesis.'
+                        summary: '<strong>Akar Konsep Perubahan Genetik:</strong> Mutasi adalah perubahan materi genetik. Mutasi gen (substitusi, substitusi nonsens/misens). Mutasi kromosom (delesi, duplikasi, inversi, translokasi, aneuploidi).',
+                        visual: 'Sindrom Down = Trisomi Kromosom Nomor 21 (47, XX/XY +21)',
+                        tips: 'Sindrom Turner memiliki karyotipe $45, XO$ (Monosomi kromosom seks X).',
+                        contohSoal: '<strong>Soal 1:</strong> Apakah penyebab mutasi pada penderita Sindrom Klinefelter ($47, XXY$)?<br><strong>Langkah Penyelesaian:</strong> Akibat peristiwa *Nondisjunction* (gagal berpisah) kromosom seks saat pembentukan gamet.'
                     },
                     {
                         title: 'Bab 11: Teori Evolusi, Seleksi Alam & Hukum Hardy-Weinberg',
                         kurikulum: 'K13 & Merdeka (Fase F)',
-                        summary: '<strong>Penjelasan Konsep Terperinci:</strong> Evolusi adalah perubahan frekuensi alel populasi dari waktu ke waktu. Darwin menekankan Seleksi Alam. Hukum Hardy-Weinberg: p² + 2pq + q² = 1.',
-                        visual: 'Hardy-Weinberg: p + q = 1  |  p² + 2pq + q² = 1',
-                        tips: 'Syarat Hardy-Weinberg: populasi besar, perkawinan acak, tidak ada mutasi, migrasi, atau seleksi.',
-                        contohSoal: 'Dalam populasi, 16% albino (q²=0,16). Berapa frekuensi alel resesif q?<br><strong>Langkah Penyelesaian Terperinci:</strong><br>1. q = √0,16 = <strong>0,4</strong>.'
+                        summary: '<strong>Akar Konsep Evolusi Populasi:</strong> Evolusi adalah perubahan frekuensi alel populasi dari generasi ke generasi. Teori Darwin menekankan Seleksi Alam. Hukum Hardy-Weinberg: $p + q = 1$ dan $p^2 + 2pq + q^2 = 1$.',
+                        visual: 'Hardy-Weinberg: p + q = 1  |  p² (Homozigot Dominan) + 2pq (Heterozigot) + q² (Homozigot Resesif) = 1',
+                        tips: 'Selalu hitung nilai frekuensi alel resesif $q = \sqrt{q^2}$ terlebih dahulu dari persentase fenotip resesif!',
+                        contohSoal: '<strong>Soal 1:</strong> Dalam populasi, $16\%$ penduduk albino ($q^2 = 0,16$). Hitung frekuensi alel resesif $q$.<br><strong>Langkah Penyelesaian:</strong><br>1. $q = \sqrt{0,16} = \mathbf{0,4}$.'
                     },
                     {
                         title: 'Bab 12: Bioteknologi Konvensional & Modern',
                         kurikulum: 'K13 & Merdeka (Fase F)',
-                        summary: '<strong>Penjelasan Konsep Terperinci:</strong> Bioteknologi memanfaatkan organisme. Konvensional (fermentasi: Rhizopus, Saccharomyces). Modern (rekayasa genetika: DNA rekombinan, antibodi monoklonal, kultur jaringan).',
-                        visual: 'Kloning = Transfer Inti Sel Somatis (Somatic Cell Nuclear Transfer)',
-                        tips: 'Pembuatan Insulin menggunakan bakteri E. coli dengan teknik Plasmid Rekombinan.',
-                        contohSoal: 'Mikroorganisme yang berperan dalam pembuatan Tempeh adalah?<br><strong>Langkah Penyelesaian Terperinci:</strong><br>1. Jamur <strong>Rhizopus oryzae</strong>.'
+                        summary: '<strong>Akar Konsep Rekayasa Hayati:</strong> Bioteknologi konvensional memanfaatkan mikroorganisme secara langsung (fermentasi). Bioteknologi modern memanfaatkan rekayasa genetika (DNA rekombinan, kloning, antibodi monoklonal).',
+                        visual: 'Bioteknologi Modern: Pembuatan Insulin dengan Plasmid Bakteri E. coli',
+                        tips: 'Pembuatan antibodi monoklonal menggunakan teknik **Hibridoma** (peleburan sel kanker dan sel limfosit B).',
+                        contohSoal: '<strong>Soal 1:</strong> Jamur yang berperan dalam pembuatan tempe dari kedelai adalah?<br><strong>Langkah Penyelesaian:</strong> **Rhizopus oryzae**.'
                     },
                     {
                         title: 'Bab 13: Sistem Koordinasi: Saraf, Hormon & Indra',
                         kurikulum: 'K13 & Merdeka (Fase F)',
-                        summary: '<strong>Penjelasan Konsep Terperinci:</strong> Sistem saraf mengatur respon cepat melalui impuls listrik neuron. Sistem endokrin mengatur respon lambat via hormon darah (insulin, tiroksin, adrenalin).',
-                        visual: 'Gerak Refleks: Reseptor → Neuron Sensorik → Sumsum Tulang Belakang → Neuron Motorik → Efektor',
-                        tips: 'Hormon Insulin menurunkan kadar gula darah dengan mengubah glukosa menjadi glikogen.',
-                        contohSoal: 'Di manakah pusat pengendali keseimbangan tubuh pada otak manusia?<br><strong>Langkah Penyelesaian Terperinci:</strong><br>1. Dikendalikan oleh Otak Kecil (<strong>Cerebellum</strong>).'
+                        summary: '<strong>Akar Konsep Integrasi Tubuh:</strong> Sistem saraf mengatur respon cepat via sinyal impuls kelistrikan neuron. Sistem endokrin mengatur respon lambat via hormon darah. Otak besar (berpikir), Otak kecil (keseimbangan).',
+                        visual: 'Alur Gerak Refleks: Reseptor → Neuron Sensorik → Sumsum Tulang Belakang → Neuron Motorik → Efektor',
+                        tips: 'Hormon Insulin menurunkan kadar gula darah, sedangkan hormon Glukagon menaikkan kadar gula darah.',
+                        contohSoal: '<strong>Soal 1:</strong> Bagian otak manakah yang berfungsi sebagai pusat koordinasi keseimbangan tubuh?<br><strong>Langkah Penyelesaian:</strong> Otak Kecil (**Cerebellum**).'
                     },
                     {
                         title: 'Bab 14: Ekosistem, Daur Biogeokimia & Suksesi',
                         kurikulum: 'K13 & Merdeka (Fase F)',
-                        summary: '<strong>Penjelasan Konsep Terperinci:</strong> Ekosistem adalah interaksi biotik dan abiotik. Daur biogeokimia (Karbon, Nitrogen, Fosfor, Air). Nitrifikasi: Amonium → Nitrit → Nitrat.',
-                        visual: 'Nitrifikasi: Nitrosomonas (Amonium → Nitrit) + Nitrobacter (Nitrit → Nitrat)',
-                        tips: 'Tumbuhan menyerap nitrogen tanah utamanya dalam bentuk molekul Nitrat (NO₃⁻).',
-                        contohSoal: 'Bakteri yang berperan mengikat nitrogen bebas di udara pada bintil akar legum?<br><strong>Langkah Penyelesaian Terperinci:</strong><br>1. Bakteri <strong>Rhizobium leguminosarum</strong>.'
+                        summary: '<strong>Akar Konsep Ekologi:</strong> Interaksi komponen biotik dan abiotik. Daur biogeokimia (Nitrogen, Karbon, Air, Fosfor). Nitrifikasi: Amonium $\to$ Nitrit (Nitrosomonas) $\to$ Nitrat (Nitrobacter).',
+                        visual: 'Nitrifikasi: Amonium → Nitrit (Nitrosomonas) → Nitrat (Nitrobacter)',
+                        tips: 'Tumbuhan menyerap nitrogen dari dalam tanah utama dalam bentuk senyawa **Nitrat ($\text{NO}_3^-$)**.',
+                        contohSoal: '<strong>Soal 1:</strong> Bakteri pada bintil akar tanaman kacang-kacangan yang mengikat nitrogen bebas adalah?<br><strong>Langkah Penyelesaian:</strong> **Rhizobium leguminosarum**.'
                     },
                     {
                         title: 'Bab 15: Imunologi & Sistem Pertahanan Tubuh',
                         kurikulum: 'K13 & Merdeka (Fase F)',
-                        summary: '<strong>Penjelasan Konsep Terperinci:</strong> Pertahanan non-spesifik (kulit, mukosa, fagositosis) dan spesifik (Limfosit B membentuk antibodi, Limfosit T menyerang sel terinfeksi).',
-                        visual: 'Limfosit B (Imunitas Humoral / Antibodi)  |  Limfosit T (Imunitas Seluler)',
-                        tips: 'Vaksinasi memberikan imunitas buatan aktif dengan memasukkan antigen yang dilemahkan.',
-                        contohSoal: 'Sel manakah yang memproduksi antibodi spesifik dalam tubuh?<br><strong>Langkah Penyelesaian Terperinci:</strong><br>1. Diproduksi oleh <strong>Sel Plasma (Turunan Limfosit B)</strong>.'
+                        summary: '<strong>Akar Konsep Imunitas:</strong> Pertahanan non-spesifik (kulit, mukosa, fagositosis) dan spesifik (Limfosit B membentuk antibodi humoral, Limfosit T menyerang sel terinfeksi).',
+                        visual: 'Limfosit B (Imunitas Humoral / Antibodi) vs Limfosit T (Imunitas Seluler)',
+                        tips: 'Vaksinasi memberikan kekebalan **Aktif Buatan** dengan merangsang pembentukan sel memori spesifik.',
+                        contohSoal: '<strong>Soal 1:</strong> Sel manakah yang secara spesifik memproduksi molekul antibodi?<br><strong>Langkah Penyelesaian:</strong> **Sel Plasma (Turunan Limfosit B)**.'
                     }
                 ],
                 'geo': [
                     {
                         title: 'Bab 1: Konsep Dasar & 4 Prinsip Utama Geografi',
                         kurikulum: 'K13 & Merdeka (Fase E)',
-                        summary: '<strong>Penjelasan Konsep Terperinci:</strong> Geografi mengkaji fenomena geosfer. 4 Prinsip Geografi: Persebaran (distribusi), Interelasi (sebab-akibat), Deskripsi (penjelasan data/peta), dan Korologi (komprehensif).',
-                        visual: 'Prinsip Interelasi = Keterkaitan hubungan sebab-akibat fenomena geosfer',
-                        tips: 'Banjir di hilir akibat penggundulan hutan di hulu dianalisis dengan Prinsip Interelasi.',
-                        contohSoal: 'Longsor terjadi akibat penebangan liar di lereng bukit. Prinsip yang digunakan?<br><strong>Langkah Penyelesaian Terperinci:</strong><br>1. Menggunakan <strong>Prinsip Interelasi</strong>.'
+                        summary: '<strong>Akar Konsep Geospasial:</strong> Geografi adalah ilmu yang mempelajari persamaan dan perbedaan fenomena geosfer dengan sudut pandang kelingkungan dan kewilayahan. 4 Prinsip Geografi: (1) Persebaran/Distribusi, (2) Interelasi (keterkaitan sebab-akibat), (3) Deskripsi (penjelasan data/peta), dan (4) Korologi (perpaduan 3 prinsip).',
+                        visual: 'Interelasi = Ada hubungan sebab-akibat (Misal: Penebangan hutan → Erosi banjir)',
+                        tips: 'Jika soal menanyakan hubungan timbal balik antar 2 fenomena alami/sosial, kuncinya selalu **Prinsip Interelasi**.',
+                        contohSoal: '<strong>Soal 1:</strong> Banjir di Jakarta terjadi akibat alih fungsi lahan hutan menjadi permukiman di kawasan Puncak Bogor. Prinsip geografi yang relevan adalah?<br><strong>Langkah Penyelesaian:</strong> Menggunakan **Prinsip Interelasi** karena menghubungkan fenomena hilir (banjir) dengan penyebab di hulu.'
                     },
                     {
                         title: 'Bab 2: Pemetaan, Skala & Sistem Informasi Geografis (SIG)',
                         kurikulum: 'K13 & Merdeka (Fase E)',
-                        summary: '<strong>Penjelasan Konsep Terperinci:</strong> Peta adalah gambaran permukaan bumi pada bidang datar. SIG mengolah data spasial melalui tahap Input, Analisis (Overlay/Buffering), dan Output.',
-                        visual: 'Skala Peta = Jarak Peta / Jarak Sebenarnya  |  Kontur Interval CI = (1/2000) × Skala Utama',
-                        tips: 'Makin besar angka penyebut skala, makin kecil cakupan detail peta yang ditampilkan.',
-                        contohSoal: 'Jarak A-B di peta 4 cm, jarak sebenarnya 2 km. Berapa skala petanya?<br><strong>Langkah Penyelesaian Terperinci:</strong><br>1. Skala = 4 cm / 200.000 cm = 1 / 50.000 (Skala <strong>1 : 50.000</strong>).'
+                        summary: '<strong>Akar Konsep Kartografi & SIG:</strong> Peta adalah gambaran permukaan bumi pada bidang datar yang diperkecil skala. Kontur Interval $CI = \frac{1}{2000} \times \text{Penyebut Skala}$. SIG mengolah data spasial via *Overlay* (tumpang tindih peta) dan *Buffering*.',
+                        visual: 'Skala = Jarak Peta / Jarak Sebenarnya  |  CI = (1 / 2.000) × Penyebut Skala Utama',
+                        tips: 'Makin besar penyebut angka skala, makin kecil cakupan detail geografis yang ditampilkan pada peta tersebut.',
+                        contohSoal: '<strong>Soal 1:</strong> Jarak kota A-B pada peta $4\text{ cm}$, jarak sebenarnya $2\text{ km}$. Berapa skala petanya?<br><strong>Langkah Penyelesaian:</strong><br>1. Skala $= \frac{4\text{ cm}}{200.000\text{ cm}} = \frac{1}{50.000} \implies \mathbf{1 : 50.000}$.'
                     },
                     {
                         title: 'Bab 3: Penginderaan Jauh & Interpretasi Citra Satelit',
                         kurikulum: 'K13 & Merdeka (Fase E/F)',
-                        summary: '<strong>Penjelasan Konsep Terperinci:</strong> Indrajaja merekam objek dari jarak jauh menggunakan sensor satelit/pesawat. Unsur interpretasi: Bentuk, Ukuran, Rona/Warna, Tekstur, Pola, Bayangan, Situs, Asosiasi.',
-                        visual: 'Unsur Utama: Rona (Tingkat Kecerahan) & Asosiasi (Keterkaitan Ciri Objek)',
-                        tips: 'Lapangan bola sepak dikenali dari bentuk persegi panjang dan asosiasi gawang di kedua ujungnya.',
-                        contohSoal: 'Objek pemukiman kumuh pada citra tampak bertekstur kasar dan pola tidak teratur. Unsur interpretasinya?<br><strong>Langkah Penyelesaian Terperinci:</strong><br>1. Mengenali objek berdasarkan <strong>Tekstur dan Pola</strong>.'
+                        summary: '<strong>Akar Konsep Remote Sensing:</strong> Penginderaan jauh merekam objek bumi dari jarak jauh tanpa kontak langsung. 8 Unsur Interpretasi Citra: Rona/Warna, Bentuk, Ukuran, Tekstur, Pola, Bayangan, Situs, dan Asosiasi.',
+                        visual: 'Unsur Utama Interpretasi: Rona (Tingkat Kecerahan) & Asosiasi (Keterkaitan Ciri Objek)',
+                        tips: 'Lapangan bola sepak dikenali paling cepat dari bentuk persegi panjang dan asosiasi berupa gawang di kedua ujungnya.',
+                        contohSoal: '<strong>Soal 1:</strong> Objek permukiman kumuh pada citra penginderaan jauh tampak bertekstur kasar dan pola tidak teratur. Unsur interpretasinya?<br><strong>Langkah Penyelesaian:</strong> Mengenali objek berdasarkan **Tekstur dan Pola**.'
                     },
                     {
                         title: 'Bab 4: Litosfer: Batuan, Tektonisme & Vulkanisme',
                         kurikulum: 'K13 & Merdeka (Fase F)',
-                        summary: '<strong>Penjelasan Konsep Terperinci:</strong> Litosfer adalah lapisan batuan bumi. Batuan beku, sedimen, metamorf. Gerak tektonik epirogenetik dan orogenetik. Erupsi gunung api menghasilkan intrusi dan ekstrusi magmatik.',
-                        visual: 'Divergen (Saling Menjauh)  |  Konvergen (Saling Tumbukan)  |  Transform (Sesar Geser)',
-                        tips: 'Zona Subduksi terbentuk akibat tumbukan Konvergen antara lempeng samudera dan benua.',
-                        contohSoal: 'Pegunungan Himalaya terbentuk akibat jenis pergerakan lempeng tektonik apakah?<br><strong>Langkah Penyelesaian Terperinci:</strong><br>1. Akibat pergerakan <strong>Konvergen (Tumbukan Benua-Benua)</strong>.'
+                        summary: '<strong>Akar Konsep Lapisan Batuan:</strong> Litosfer adalah kulit bumi padat. Batuan beku, sedimen, metamorf. Pergerakan lempeng tektonik: Divergen (menjauh), Konvergen (tumbukan subduksi), Transform (geser).',
+                        visual: 'Divergen (Menjauh)  |  Konvergen (Subduksi Tumbukan)  |  Transform (Sesar Geser)',
+                        tips: 'Palung laut dan gunung api aktif terbentuk di sepanjang batas pergerakan lempeng **Konvergen** (Subduksi).',
+                        contohSoal: '<strong>Soal 1:</strong> Pegunungan Himalaya terbentuk akibat jenis pergerakan lempeng tektonik apakah?<br><strong>Langkah Penyelesaian:</strong> Pergerakan **Konvergen (Tumbukan Lempeng Benua-Benua)**.'
                     },
                     {
                         title: 'Bab 5: Seismisitas & Bencana Gempa Bumi',
                         kurikulum: 'K13 & Merdeka (Fase F)',
-                        summary: '<strong>Penjelasan Konsep Terperinci:</strong> Gempa disebabkan pelepasan energi tektonik. Hiposentrum (pusat gempa di dalam bumi), Episentrum (pusat gempa di permukaan bumi). Rumus Laska menghitung jarak episentrum.',
-                        visual: 'Rumus Laska: Δ = [ (S - P) - 1\' ] × 1.000 km',
-                        tips: 'S = waktu gelombang sekunder, P = waktu gelombang primer.',
-                        contohSoal: 'Gelombang P tercatat 02.14\'00", S tercatat 02.17\'30". Hitung jarak episentrum Δ.<br><strong>Langkah Penyelesaian Terperinci:</strong><br>1. Δ = [ (3\'30") - 1\' ] × 1000 = 2.5 × 1000 = <strong>2.500 km</strong>.'
+                        summary: '<strong>Akar Konsep Kebencanaan Gempa:</strong> Gempa disebabkan pelepasan energi tektonik. Hiposentrum (pusat gempa di dalam bumi), Episentrum (pusat gempa di permukaan). Jarak episentrum dihitung dengan Rumus Laska: $\Delta = [(S - P) - 1\text{\'}] \times 1000\text{ km}$.',
+                        visual: 'Rumus Laska: Δ = [ (S - P) - 1\' ] × 1.000 km  (S = Gelombang Sekunder, P = Primer)',
+                        tips: 'Waktu $1\text{\'}$ dalam rumus Laska menyimbolkan $1\text{ menit}$.',
+                        contohSoal: '<strong>Soal 1:</strong> Gelombang P tercatat $02.14\'00"$, gelombang S tercatat $02.17\'30"$. Hitung jarak episentrum $\Delta$.<br><strong>Langkah Penyelesaian:</strong><br>1. $(S - P) = 3\'30"$.<br>2. $\Delta = [(3\'30") - 1\text{\'}] \times 1000 = 2,5 \times 1000 = \mathbf{2500\text{ km}}$.'
                     },
                     {
                         title: 'Bab 6: Pedosfer: Pembentukan & Konservasi Tanah',
                         kurikulum: 'K13 & Merdeka (Fase F)',
-                        summary: '<strong>Penjelasan Konsep Terperinci:</strong> Pedosfer adalah lapisan tanah hasil pelapukan batuan. Profil tanah (Horizon O, A, B, C, R). Konservasi tanah mekanik (terasering), vegetatif (reboisasi), kimiawi.',
-                        visual: 'Horizon O (Humus Organik) → A (Topsoil) → B (Subsoil) → C (Pelapukan) → R (Batuan Induk)',
-                        tips: 'Terasering pada lereng curam efektif menahan laju erosi tanah.',
-                        contohSoal: 'Metode konservasi tanah dengan menanam tanaman mengikut garis kontur disebut?<br><strong>Langkah Penyelesaian Terperinci:</strong><br>1. Disebut teknik <strong>Contour Plowing</strong>.'
+                        summary: '<strong>Akar Konsep Pelapukan Tanah:</strong> Pedosfer adalah lapisan tanah hasil pelapukan batuan induk. Profil tanah (Horizon O, A, B, C, R). Konservasi tanah mekanik (terasering), vegetatif (reboisasi, *contour plowing*).',
+                        visual: 'Horizon O (Humus) → A (Topsoil) → B (Subsoil) → C (Batuan Lapuk) → R (Bedrock)',
+                        tips: 'Terasering pada lereng curam sangat efektif menahan laju erosi dan tanah longsor.',
+                        contohSoal: '<strong>Soal 1:</strong> Penanaman tanaman sejajar garis ketinggian tanah dinamakan teknik?<br><strong>Langkah Penyelesaian:</strong> **Contour Plowing**.'
                     },
                     {
                         title: 'Bab 7: Atmosfer: Cuaca, Iklim & Unsur Klimatologi',
                         kurikulum: 'K13 & Merdeka (Fase F)',
-                        summary: '<strong>Penjelasan Konsep Terperinci:</strong> Atmosfer adalah lapisan udara. Troposfer (tempat fenomena cuaca). Unsur cuaca: suhu, tekanan, kelembaban, angin, curah hujan. Klasifikasi iklim Junghuhn & Koppen.',
-                        visual: 'Troposfer (Cuaca) → Stratosfer (Ozon) → Mesosfer (Meteor) → Termosfer (Ionosfer)',
-                        tips: 'Hukum Moksche: setiap naik 100 meter, suhu udara turun rata-rata 0.6 °C.',
-                        contohSoal: 'Suhu pantai (0 m) 27°C. Berapa suhu kota A di ketinggian 1.000 meter?<br><strong>Langkah Penyelesaian Terperinci:</strong><br>1. Penurunan = (1000/100) × 0.6 = 6°C. Suhu = 27 - 6 = <strong>21 °C</strong>.'
+                        summary: '<strong>Akar Konsep Udara & Iklim:</strong> Lapisan atmosfer (Troposfer, Stratosfer, Mesosfer, Termosfer). Menurut Hukum Moksche, setiap naik $100\text{ meter}$, suhu udara turun rata-rata $0,6^\circ\text{C}$.',
+                        visual: 'Troposfer (Fenomena Cuaca)  |  Stratosfer (Lapisan Ozon)  |  Mesosfer (Penghancur Meteor)',
+                        tips: 'Semua fenomena cuaca (hujan, awan, angin, petir) HANYA terjadi di lapisan **Troposfer**.',
+                        contohSoal: '<strong>Soal 1:</strong> Suhu pantai ($0\text{ m}$) $27^\circ\text{C}$. Berapa suhu kota A di ketinggian $1.000\text{ meter}$?<br><strong>Langkah Penyelesaian:</strong><br>1. Penurunan $= \frac{1000}{100} \times 0,6 = 6^\circ\text{C}$.<br>2. Suhu $= 27 - 6 = \mathbf{21^\circ\text{C}}$.'
                     },
                     {
                         title: 'Bab 8: Hidrosfer: Siklus Air & Perairan Darat - Laut',
                         kurikulum: 'K13 & Merdeka (Fase F)',
-                        summary: '<strong>Penjelasan Konsep Terperinci:</strong> Siklus hidrologi (Evaporasi, Transpirasi, Kondensasi, Presipitasi, Infiltrasi). Perairan darat (sungai, danau, air tanah). Morfologi laut (pola arus, zona neritik).',
-                        visual: 'Zona Neritik (Kedalaman < 200 m, Paling Banyak Ikan & Terumbu Karang)',
-                        tips: 'Zona Neritik kaya organisme laut karena masih tertembus sinar matahari secara optimal.',
-                        contohSoal: 'Di manakah zona laut yang paling kaya akan biota laut dan ikan?<br><strong>Langkah Penyelesaian Terperinci:</strong><br>1. Terletak pada <strong>Zona Neritik</strong>.'
+                        summary: '<strong>Akar Konsep Daur Air:</strong> Siklus hidrologi (Evaporasi, Transpirasi, Kondensasi, Presipitasi, Infiltrasi). Zona laut berdasarkan kedalaman: Litoral, Neritik ($<200\text{ m}$), Batial, Abisal.',
+                        visual: 'Zona Neritik (Kedalaman < 200 m, Terang Sinar Matahari, Paling Banyak Ikan & Terumbu Karang)',
+                        tips: 'Zona Neritik paling kaya biota laut karena sinar matahari masih mampu menembus dasar perairan secara optimal.',
+                        contohSoal: '<strong>Soal 1:</strong> Zona laut tempat hidup mayoritas terumbu karang dan ikan adalah?<br><strong>Langkah Penyelesaian:</strong> **Zona Neritik**.'
                     },
                     {
                         title: 'Bab 9: Biosfer: Bioma Dunia & Persebaran Flora-Fauna',
                         kurikulum: 'K13 & Merdeka (Fase F)',
-                        summary: '<strong>Penjelasan Konsep Terperinci:</strong> Bioma dunia (Hutan Hujan Tropis, Taiga, Tundra, Savana, Gurun). Garis Wallace dan Weber membagi fauna Indonesia (Asiatis, Peralihan, Australis).',
-                        visual: 'Asiatis (Gajah, Harimau) | Garis Wallace | Peralihan (Komodo, Anoa) | Garis Weber | Australis (Cenderawasih, Kanguru)',
-                        tips: 'Komodo dan Anoa merupakan fauna endemik kawasan Peralihan (Wallacea).',
-                        contohSoal: 'Fauna cenderawasih dan kakatua raja tergolong ke dalam tipe fauna?<br><strong>Langkah Penyelesaian Terperinci:</strong><br>1. Tergolong fauna tipe <strong>Australis</strong>.'
+                        summary: '<strong>Akar Konsep Ekosistem Dunia:</strong> Bioma dunia (Hutan Hujan Tropis, Taiga, Tundra, Savana, Gurun). Garis Wallace dan Weber membagi wilayah fauna Indonesia (Asiatis, Peralihan, Australis).',
+                        visual: 'Asiatis (Harimau, Gajah) | Garis Wallace | Peralihan (Anoa, Komodo) | Garis Weber | Australis (Cenderawasih)',
+                        tips: 'Anoa, Komodo, dan Babi Rusa adalah fauna khas endemik kawasan **Peralihan (Wallacea)**.',
+                        contohSoal: '<strong>Soal 1:</strong> Fauna cenderawasih dan kakatua raja termasuk ke dalam tipe fauna?<br><strong>Langkah Penyelesaian:</strong> Tipe **Australis**.'
                     },
                     {
                         title: 'Bab 10: Antroposfer: Dinamika Penduduk & Proyeksi Demografi',
                         kurikulum: 'K13 & Merdeka (Fase F)',
-                        summary: '<strong>Penjelasan Konsep Terperinci:</strong> Demografi menganalisis pertumbuhan penduduk (Natalitas, Mortalitas, Migrasi). Piramida penduduk (Muda/Ekspansif, Stasioner, Tua/Konstruktif).',
-                        visual: 'Dependency Ratio = (Penduduk Non-Produktif / Penduduk Produktif 15-64 thn) × 100',
-                        tips: 'Bonus Demografi terjadi ketika proporsi penduduk usia produktif (15-64 thn) melimpah tinggi.',
-                        contohSoal: 'Piramida penduduk dengan alas melebar menunjukkan karakteristik penduduk?<br><strong>Langkah Penyelesaian Terperinci:</strong><br>1. Menunjukkan pertumbuhan penduduk usia muda yang tinggi (<strong>Piramida Ekspansif</strong>).'
+                        summary: '<strong>Akar Konsep Demografi:</strong> Kependudukan dianalisis dari Natalitas, Mortalitas, dan Migrasi. Piramida Penduduk: Muda (Ekspansif), Stasioner, Tua (Konstruktif). *Dependency Ratio* $= \frac{\text{Non-Produktif}}{\text{Produktif (15-64 thn)}} \times 100$.',
+                        visual: 'Dependency Ratio = (Penduduk Usia Non-Produktif / Penduduk Usia Produktif) × 100',
+                        tips: 'Bonus Demografi terjadi saat proporsi penduduk usia produktif ($15-64\text{ tahun}$) melimpah tinggi melebihi $60\%$.',
+                        contohSoal: '<strong>Soal 1:</strong> Piramida penduduk berbentuk kerucut dengan alas lebar menunjukkan pertumbuhan penduduk?<br><strong>Langkah Penyelesaian:</strong> Pertumbuhan penduduk usia muda yang tinggi (**Piramida Ekspansif**).'
                     },
                     {
                         title: 'Bab 11: Geografi Desa & Kota serta Interaksi Spasial',
                         kurikulum: 'K13 & Merdeka (Fase F)',
-                        summary: '<strong>Penjelasan Konsep Terperinci:</strong> Desa penyedia bahan mentah, kota pusat pelayanan. Teori Titik Henti (Break-off Point) menentukan lokasi ideal fasilitas umum di antara dua kota.',
+                        summary: '<strong>Akar Konsep Interaksi Keruangan:</strong> Desa sebagai penyedia bahan mentah, kota sebagai pusat pelayanan. Teori Titik Henti (*Break-off Point*) menentukan lokasi ideal fasilitas pelayanan umum: $D_{TH} = \frac{d_{AB}}{1 + \sqrt{P_B / P_A}}$ ($P_A < P_B$).',
                         visual: 'Teori Titik Henti: D_TH = d_AB / (1 + √(P_B / P_A))',
-                        tips: 'P_A adalah jumlah penduduk kota yang lebih kecil.',
-                        contohSoal: 'Jarak A-B = 30 km. Penduduk A = 10.000, B = 40.000. Lokasi titik henti dari A?<br><strong>Langkah Penyelesaian Terperinci:</strong><br>1. D_TH = 30 / (1 + √(40.000/10.000)) = 30 / (1 + √4) = 30 / 3 = <strong>10 km dari Kota A</strong>.'
+                        tips: '$P_A$ pada rumus titik henti SELALU melambangkan jumlah penduduk kota yang lebih kecil!',
+                        contohSoal: '<strong>Soal 1:</strong> Jarak A-B $= 30\text{ km}$. Penduduk A $= 10.000$, B $= 40.000$. Hitung titik henti dari A.<br><strong>Langkah Penyelesaian:</strong><br>1. $D_{TH} = \frac{30}{1 + \sqrt{40.000/10.000}} = \frac{30}{1 + \sqrt{4}} = \frac{30}{3} = \mathbf{10\text{ km dari Kota A}}$.'
                     },
                     {
                         title: 'Bab 12: Wilayah, Perwilayahan & Pusat Pertumbuhan',
                         kurikulum: 'K13 & Merdeka (Fase F)',
-                        summary: '<strong>Penjelasan Konsep Terperinci:</strong> Wilayah formal (homogen) dan fungsional (heterogen dinamis). Teori Tempat Sentral Christaller (K=3, K=4, K=7). Spread effect dan backwash effect.',
+                        summary: '<strong>Akar Konsep Tata Ruang:</strong> Wilayah Formal (homogen) dan Fungsional (heterogen dinamis). Teori Tempat Sentral Christaller: $K=3$ (Pasar Optimum), $K=4$ (Lalu Lintas Optimum), $K=7$ (Administrasi Optimum).',
                         visual: 'K=3 (Pasar Optimum)  |  K=4 (Lalu Lintas Optimum)  |  K=7 (Administrasi Optimum)',
-                        tips: 'Hierarki K=3 melayani kebutuhan tempat belanja pasar secara optimum.',
-                        contohSoal: 'Hierarki K=4 menurut Christaller berfokus pada optimum sektor apakah?<br><strong>Langkah Penyelesaian Terperinci:</strong><br>1. Berfokus pada situasi <strong>Lalu Lintas / Transportasi Optimum</strong>.'
+                        tips: 'Hierarki $K=4$ melayani situasi arus lalu lintas dan transportasi yang optimum.',
+                        contohSoal: '<strong>Soal 1:</strong> Tempat sentral hierarki K=7 menurut Christaller berfokus pada optimum sektor?<br><strong>Langkah Penyelesaian:</strong> Sektor **Pemerintahan / Administrasi Optimum**.'
                     },
                     {
                         title: 'Bab 13: Indonesia Sebagai Poros Maritim Dunia',
                         kurikulum: 'K13 & Merdeka (Fase E/F)',
-                        summary: '<strong>Penjelasan Konsep Terperinci:</strong> Letak strategis Indonesia di antara dua samudera dan benua. Alur Laut Kepulauan Indonesia (ALKI I, II, III) serta potensi ekonomi kelautan.',
-                        visual: 'ALKI I (Sunda) | ALKI II (Lombok) | ALKI III (Ombai-Wetar)',
+                        summary: '<strong>Akar Konsep Geopolitik Kelautan:</strong> Indonesia terletak strategis di antara 2 samudera dan 2 benua. Alur Laut Kepulauan Indonesia (ALKI I, II, III) mengendalikan pelayaran internasional.',
+                        visual: 'ALKI I (Selat Sunda) | ALKI II (Selat Lombok) | ALKI III (Selat Ombai-Wetar)',
                         tips: 'ALKI II melintasi Selat Lombok, Selat Makassar, hingga Laut Sulawesi.',
-                        contohSoal: 'Selat Sunda tergolong dalam jalur pelayaran internasional ALKI nomor?<br><strong>Langkah Penyelesaian Terperinci:</strong><br>1. Tergolong dalam jalur <strong>ALKI I</strong>.'
+                        contohSoal: '<strong>Soal 1:</strong> Selat Sunda termasuk ke dalam jalur alur laut kepulauan nomor?<br><strong>Langkah Penyelesaian:</strong> **ALKI I**.'
                     },
                     {
                         title: 'Bab 14: Mitigasi & Adaptasi Bencana Alam',
                         kurikulum: 'K13 & Merdeka (Fase E/F)',
-                        summary: '<strong>Penjelasan Konsep Terperinci:</strong> Siklus bencana: Pra-bencana (mitigasi/kesiapsiagaan), Saat bencana (tanggap darurat), Pasca-bencana (rehabilitasi/rekonsiliasi).',
-                        visual: 'Mitigasi Struktural (Fisik / Candi) vs Mitigasi Non-Struktural (Edukasi / Simulasi)',
-                        tips: 'Membuat bangunan tahan gempa tergolong Mitigasi Struktural.',
-                        contohSoal: 'Penanaman hutan mangrove di pesisir pantai merupakan mitigasi bencana?<br><strong>Langkah Penyelesaian Terperinci:</strong><br>1. Mitigasi struktural vegetatif penahan gelombang <strong>Tsunami dan Abrasi</strong>.'
+                        summary: '<strong>Akar Konsep Manajemen Bencana:</strong> Tahapan bencana: Pra-bencana (Mitigasi/Kesiapsiagaan), Saat Bencana (Tanggap Darurat), Pasca-bencana (Rehabilitasi/Rekonstruksi). Mitigasi Struktural vs Non-Struktural.',
+                        visual: 'Mitigasi Fisik / Bangunan Tahan Gempa (Struktural) vs Edukasi / Simulasi (Non-Struktural)',
+                        tips: 'Pembangunan tembok penahan gelombang pantai tergolong Mitigasi **Struktural**.',
+                        contohSoal: '<strong>Soal 1:</strong> Penanaman hutan mangrove di pantai merupakan mitigasi bencana secara?<br><strong>Langkah Penyelesaian:</strong> Mitigasi **Struktural Vegetatif** penahan tsunami dan abrasi.'
                     },
                     {
                         title: 'Bab 15: Pembangunan Berkelanjutan & Kerjasama Internasional',
                         kurikulum: 'K13 & Merdeka (Fase F)',
-                        summary: '<strong>Penjelasan Konsep Terperinci:</strong> Pembangunan berkelanjutan (SDGs) memenuhi kebutuhan masa kini tanpa mengorbankan generasi mendatang. Analisis AMDAL.',
+                        summary: '<strong>Akar Konsep Ekologi Berkelanjutan:</strong> Pembangunan berkelanjutan (SDGs) memenuhi kebutuhan masa kini tanpa mengorbankan generasi mendatang. Kajian AMDAL wajib untuk proyek berdampak luas.',
                         visual: 'AMDAL (Analisis Mengenai Dampak Lingkungan) Wajib Bagi Proyek Berdampak Luas',
-                        tips: 'Prinsip eco-efficiency memanfaatkan sumber daya secara hemat dan ramah lingkungan.',
-                        contohSoal: 'Dokumen kajian lingkungan hidup wajib bagi proyek industri besar disebut?<br><strong>Langkah Penyelesaian Terperinci:</strong><br>1. Dokumen <strong>AMDAL</strong>.'
+                        tips: 'Prinsip *eco-efficiency* bertujuan memanfaatkan sumber daya secara hemat dan ramah lingkungan.',
+                        contohSoal: '<strong>Soal 1:</strong> Dokumen kajian lingkungan hidup wajib bagi pabrik kimia besar dinamakan?<br><strong>Langkah Penyelesaian:</strong> **AMDAL**.'
                     }
                 ],
                 'eko': [
                     {
                         title: 'Bab 1: Kelangkaan & Biaya Peluang (Opportunity Cost)',
                         kurikulum: 'K13 & Merdeka (Fase E)',
-                        summary: '<strong>Penjelasan Konsep Terperinci:</strong> Kelangkaan memicu masalah ekonomi. Biaya peluang adalah nilai opsi terbaik yang dikorbankan.',
-                        visual: 'Biaya Peluang = Nilai Kesempatan Terbaik yang Tidak Dipilih',
-                        tips: 'Biaya peluang tidak dijumlahkan, diambil nilai opsi tertinggi yang dilepas.',
-                        contohSoal: 'Budi melepas tawaran gaji 4 jt dan 5 jt demi kuliah. Biaya peluangnya?<br><strong>Langkah Penyelesaian Terperinci:</strong><br>1. Opsi tertinggi yang dilepas adalah <strong>Rp 5.000.000</strong>.'
+                        summary: '<strong>Akar Konsep Ekonomi:</strong> Masalah dasar ekonomi timbul dari ketidakseimbangan antara kebutuhan manusia yang tak terbatas dengan sumber daya yang terbatas (*scarcity*). Biaya Peluang adalah nilai barang/jasa atau kesempatan terbaik yang dikorbankan karena memilih suatu alternatif keputusan.',
+                        visual: 'Biaya Peluang = Nilai Alternatif Terbaik Yang TIDAK Dipilih (Bukan Total Penjumlahan)',
+                        tips: 'Jika ada lebih dari 2 pilihan yang dikorbankan, Biaya Peluang adalah **opsi dengan nilai ekonomi tertinggi** dari opsi yang dilepas.',
+                        contohSoal: '<strong>Soal 1:</strong> Budi memiliki opsi bekerja di Perusahaan A (gaji Rp4 jt), Perusahaan B (gaji Rp5 jt), atau kuliah. Jika Budi memilih kuliah, berapa biaya peluangnya?<br><strong>Langkah Penyelesaian:</strong> Pilihan tertinggi yang dikorbankan adalah gaji Perusahaan B sebesar **Rp5.000.000**.'
                     },
                     {
                         title: 'Bab 2: Keseimbangan Pasar, Permintaan & Penawaran',
                         kurikulum: 'K13 & Merdeka (Fase E)',
-                        summary: '<strong>Penjelasan Konsep Terperinci:</strong> Pasar seimbang saat Qd = Qs. Hukum permintaan (P naik, Q turun), hukum penawaran (P naik, Q naik).',
-                        visual: 'Keseimbangan Pasar: Q_d = Q_s',
-                        tips: 'Perubahan harga barang itu sendiri menyebabkan pergerakan DI SEPANJANG kurva.',
-                        contohSoal: 'Qd = 20 - 2P dan Qs = -4 + 2P. Hitung P keseimbangan.<br><strong>Langkah Penyelesaian Terperinci:</strong><br>1. 20 - 2P = -4 + 2P ⇒ 4P = 24 ⇒ P = <strong>6</strong>.'
+                        summary: '<strong>Akar Konsep Mekanisme Pasar:</strong> Keseimbangan pasar dicapai saat $Q_d = Q_s$. Hukum Permintaan: jika $P$ naik, $Q_d$ turun. Hukum Penawaran: jika $P$ naik, $Q_s$ naik.',
+                        visual: 'Keseimbangan Pasar: Q_d = Q_s  |  Harga Keseimbangan P_E & Kuantitas Q_E',
+                        tips: 'Perubahan HARGA BARANG ITU SENDIRI menyebabkan pergerakan DI SEPANJANG KURVA, bukan pergeseran kurva!',
+                        contohSoal: '<strong>Soal 1:</strong> $Q_d = 20 - 2P$ dan $Q_s = -4 + 2P$. Hitung harga $P$ keseimbangan.<br><strong>Langkah Penyelesaian:</strong><br>1. $20 - 2P = -4 + 2P \implies 4P = 24 \implies \mathbf{P = 6}$.'
                     },
                     {
                         title: 'Bab 3: Elastisitas Harga Permintaan & Penawaran',
                         kurikulum: 'K13 & Merdeka (Fase E)',
-                        summary: '<strong>Penjelasan Konsep Terperinci:</strong> Elastisitas mengukur derajat kepekaan Q terhadap P. E = (%ΔQ) / (%ΔP). E>1 Elastis, E<1 Inelastis.',
-                        visual: 'E = (ΔQ / ΔP) × (P / Q)',
-                        tips: 'Barang kebutuhan pokok (beras, garam) bersifat Inelastis (E < 1).',
-                        contohSoal: 'Harga naik 10% menyebabkan jumlah barang yang diminta turun 20%. Koefisien E?<br><strong>Langkah Penyelesaian Terperinci:</strong><br>1. E = 20% / 10% = <strong>2 (Elastis)</strong>.'
+                        summary: '<strong>Akar Konsep Kepekaan Pasar:</strong> Koefisien elastisitas $E = \frac{\%\Delta Q}{\%\Delta P} = \frac{\Delta Q}{\Delta P} \cdot \frac{P}{Q}$. $E > 1$ (Elastis), $E < 1$ (Inelastis), $E = 1$ (Unitary).',
+                        visual: 'E = (ΔQ / ΔP) × (P / Q)  |  Elastis (E > 1) vs Inelastis (E < 1)',
+                        tips: 'Barang kebutuhan pokok (beras, garam) selalu bersifat **Inelastis ($E < 1$)**.',
+                        contohSoal: '<strong>Soal 1:</strong> Harga naik $10\%$ menyebabkan jumlah barang diminta turun $20\%$. Hitung $E$.<br><strong>Langkah Penyelesaian:</strong><br>1. $E = \frac{20\%}{10\%} = \mathbf{2\text{ (Elastis)}}$.'
                     },
                     {
                         title: 'Bab 4: Biaya Produksi, Penerimaan & Laba Maksimum',
                         kurikulum: 'K13 & Merdeka (Fase F)',
-                        summary: '<strong>Penjelasan Konsep Terperinci:</strong> TC = TFC + TVC. Laba maksimum dicapai saat Penerimaan Marjinal sama dengan Biaya Marjinal (MR = MC).',
-                        visual: 'Laba Maksimum Syarat: MR = MC',
-                        tips: 'Jika MR > MC, perusahaan masih bisa meningkatkan laba dengan menambah output.',
-                        contohSoal: 'Kondisi optimum produsen untuk mencapai keuntungan maksimal adalah?<br><strong>Langkah Penyelesaian Terperinci:</strong><br>1. Terjadi saat <strong>MR = MC</strong>.'
+                        summary: '<strong>Akar Konsep Mikroekonomi:</strong> Total Biaya $TC = TFC + TVC$. Penerimaan Total $TR = P \times Q$. Laba maksimum dicapai saat Penerimaan Marjinal sama dengan Biaya Marjinal ($MR = MC$).',
+                        visual: 'Laba Maksimum Syarat Mutlak: MR = MC  |  TC = TFC + TVC',
+                        tips: 'Selama $MR > MC$, produsen masih bisa menambah keuntungan dengan cara meningkatkan jumlah output produksi.',
+                        contohSoal: '<strong>Soal 1:</strong> Kondisi optimum bagi produsen untuk mencapai keuntungan paling maksimal adalah?<br><strong>Langkah Penyelesaian:</strong> Terjadi saat **MR = MC**.'
                     },
                     {
                         title: 'Bab 5: Struktur Pasar: Persaingan Sempurna & Monopoli',
                         kurikulum: 'K13 & Merdeka (Fase F)',
-                        summary: '<strong>Penjelasan Konsep Terperinci:</strong> Pasar Persaingan Sempurna (banyak penjual, barang homogen, price taker). Pasar Monopoli (satu penjual, barrier to entry tinggi).',
-                        visual: 'Monopoli = Single Seller | Oligopoli = Beberap Produsen Dominan',
-                        tips: 'Pada Pasar Persaingan Sempurna, P = MR = AR.',
-                        contohSoal: 'Pasar dengan produsen semen dan rokok tergolong ke dalam bentuk pasar?<br><strong>Langkah Penyelesaian Terperinci:</strong><br>1. Tergolong pasar <strong>Oligopoli</strong>.'
+                        summary: '<strong>Akar Konsep Industri:</strong> Pasar Persaingan Sempurna (banyak penjual, barang homogen, *price taker*, $P = MR = AR$). Pasar Monopoli (satu penjual, *price maker*, *barrier to entry* tinggi).',
+                        visual: 'Persaingan Sempurna (P = MR = AR) vs Monopoli (Single Seller)',
+                        tips: 'Pasar yang didominasi oleh beberapa produsen besar (seperti industri semen, rokok, seluler) tergolong **Oligopoli**.',
+                        contohSoal: '<strong>Soal 1:</strong> Kurva permintaan yang dihadapi perusahaan pada Pasar Persaingan Sempurna berbentuk?<br><strong>Langkah Penyelesaian:</strong> Berbentuk **Garis Lurus Horizontal** (Elastis Sempurna).'
                     },
                     {
                         title: 'Bab 6: Pendapatan Nasional (PDB, PNB & Pendapatan Per Kapita)',
                         kurikulum: 'K13 & Merdeka (Fase F)',
-                        summary: '<strong>Penjelasan Konsep Terperinci:</strong> PDB mengukur total output wilayah. PNB = PDB + Pendapatan Neto Luar Negeri. Pendapatan Per Kapita = PNB / Jumlah Penduduk.',
-                        visual: 'Pendapatan Per Kapita = PNB Total / Jumlah Penduduk',
-                        tips: 'PDB mengikat batas wilayah geografi, PNB mengikat kewarganegaraan.',
-                        contohSoal: 'Gaji TKI di Malaysia dihitung dalam komputasi PNB Indonesia atau PDB Indonesia?<br><strong>Langkah Penyelesaian Terperinci:</strong><br>1. Masuk dalam perhitungan <strong>PNB Indonesia</strong>.'
+                        summary: '<strong>Akar Konsep Makroekonomi:</strong> PDB mengukur total output di wilayah geografis negara. PNB $= \text{PDB} + \text{Pendapatan Neto Luar Negeri}$. Pendapatan Per Kapita $= \frac{\text{PNB}}{\text{Jumlah Penduduk}}$.',
+                        visual: 'PNB = PDB + Pendapatan Neto Luar Negeri  |  Per Kapita = PNB / Jumlah Penduduk',
+                        tips: 'Gaji TKI Indonesia yang bekerja di Malaysia dihitung dalam **PNB Indonesia**, bukan PDB Indonesia!',
+                        contohSoal: '<strong>Soal 1:</strong> Gaji tenaga kerja asing yang bekerja di dalam negeri masuk dalam komputasi?<br><strong>Langkah Penyelesaian:</strong> Masuk dalam **PDB Indonesia**.'
                     },
                     {
                         title: 'Bab 7: Kebijakan Moneter, Bank Sentral & Kebijakan Fiskal',
                         kurikulum: 'K13 & Merdeka (Fase F)',
-                        summary: '<strong>Penjelasan Konsep Terperinci:</strong> Kebijakan moneter (Bank Indonesia) mengontrol jumlah uang beredar (Suku bunga, Operasi pasar terbuka, Giro wajib minimum). Kebijakan fiskal (Pemerintah) mengontrol pajak dan APBN.',
-                        visual: 'Atasi Inflasi: Naikkan Suku Bunga (BI Rate) & Jual Surat Berharga (SBI)',
-                        tips: 'Kebijakan uang ketat (tight money policy) digunakan untuk mengatasi inflasi tinggi.',
-                        contohSoal: 'Instrumen kebijakan moneter dengan menaikkan cadangan kas minimum bank disebut?<br><strong>Langkah Penyelesaian Terperinci:</strong><br>1. Disebut kebijakan <strong>Discount Rate / Reserve Requirement</strong>.'
+                        summary: '<strong>Akar Konsep Stabilisasi Ekonomi:</strong> Kebijakan Moneter (Bank Indonesia) mengontrol jumlah uang beredar via Suku Bunga (BI Rate), Operasi Pasar Terbuka (Jual/Beli SBI), dan Giro Wajib Minimum. Kebijakan Fiskal (Pemerintah) via Pajak dan APBN.',
+                        visual: 'Atasi Inflasi: Uang Ketat (Naikkan Suku Bunga, Jual Surat Berharga SBI, Naikkan Cadangan Kas)',
+                        tips: 'Untuk mengatasi lonjakan inflasi tinggi, Bank Sentral menerapkan kebijakan uang ketat (*tight money policy*).',
+                        contohSoal: '<strong>Soal 1:</strong> Instrumen moneter dengan menaikkan tingkat suku bunga bank dinamakan?<br><strong>Langkah Penyelesaian:</strong> Kebijakan **Diskonto**.'
                     },
                     {
-                        title: 'Bab 8: Inflasi, Indeks Harga Consumer (IHK) & Pengangguran',
+                        title: 'Bab 8: Inflasi, Indeks Harga Konsumen (IHK) & Pengangguran',
                         kurikulum: 'K13 & Merdeka (Fase F)',
-                        summary: '<strong>Penjelasan Konsep Terperinci:</strong> Inflasi adalah kenaikan harga secara umum dan terus menerus. Pengangguran friksional, struktural, konjungtur/siklis.',
+                        summary: '<strong>Akar Konsep Gangguan Makro:</strong> Inflasi adalah kenaikan harga secara umum dan terus-menerus. Laju Inflasi $= \frac{IHK_t - IHK_{t-1}}{IHK_{t-1}} \times 100\%$. Pengangguran Friksional, Struktural, dan Siklis.',
                         visual: 'Laju Inflasi = [ (IHK_t - IHK_t-1) / IHK_t-1 ] × 100%',
-                        tips: 'Pengangguran akibat alih teknologi otomatisasi mesin tergolong Pengangguran Struktural.',
-                        contohSoal: 'IHK bulan lalu 110, bulan ini 121. Hitung laju inflasinya.<br><strong>Langkah Penyelesaian Terperinci:</strong><br>1. Inflasi = [(121 - 110) / 110] × 100% = (11 / 110) × 100% = <strong>10%</strong>.'
+                        tips: 'Pengangguran akibat alih teknologi mesin otomatisasi pabrik tergolong Pengangguran **Struktural**.',
+                        contohSoal: '<strong>Soal 1:</strong> IHK bulan lalu $110$, bulan ini $121$. Hitung laju inflasinya.<br><strong>Langkah Penyelesaian:</strong><br>1. Inflasi $= \frac{121 - 110}{110} \times 100\% = \frac{11}{110} \times 100\% = \mathbf{10\%}$.'
                     },
                     {
                         title: 'Bab 9: Perdagangan Internasional, Kurs & Neraca Pembayaran',
                         kurikulum: 'K13 & Merdeka (Fase F)',
-                        summary: '<strong>Penjelasan Konsep Terperinci:</strong> Teori Keunggulan Mutlak (Adam Smith) & Komparatif (David Ricardo). Neraca Pembayaran mencatat seluruh transaksi ekonomi luar negeri.',
-                        visual: 'Neraca Perdagangan = Total Ekspor Barang - Total Impor Barang',
-                        tips: 'Jika Ekspor > Impor, neraca perdagangan mengalami Surplus.',
-                        contohSoal: 'Keunggulan produksi barang dengan biaya alternatif terendah disebut?<br><strong>Langkah Penyelesaian Terperinci:</strong><br>1. Keunggulan <strong>Komparatif</strong>.'
+                        summary: '<strong>Akar Konsep Ekonomi Dunia:</strong> Teori Keunggulan Mutlak (Adam Smith) & Komparatif (David Ricardo). Neraca Pembayaran mencatat transaksi ekspor-impor dan lalu lintas modal luar negeri.',
+                        visual: 'Neraca Perdagangan = Total Nilai Ekspor Barang - Total Nilai Impor Barang',
+                        tips: 'Jika nilai Ekspor barang lebih besar dari Impor, neraca perdagangan mengalami status **Surplus**.',
+                        contohSoal: '<strong>Soal 1:</strong> Keunggulan memproduksi barang dengan biaya kesempatan (*opportunity cost*) paling rendah dinamakan?<br><strong>Langkah Penyelesaian:</strong> Keunggulan **Komparatif**.'
                     },
                     {
                         title: 'Bab 10: Persamaan Dasar Akuntansi & Analisis Transaksi',
                         kurikulum: 'K13 & Merdeka (Fase F)',
-                        summary: '<strong>Penjelasan Konsep Terperinci:</strong> Akuntansi adalah sistem informasi keuangan. Persamaan dasar akuntansi: Aset = Liabilitas + Ekuitas.',
+                        summary: '<strong>Akar Konsep Pembukuan:</strong> Akuntansi adalah sistem informasi keuangan. Persamaan Dasar Akuntansi: $\text{Aset (Harta)} = \text{Liabilitas (Utang)} + \text{Ekuitas (Modal)}$.',
                         visual: 'ASET (Harta) = LIABILITAS (Utang) + EKUITAS (Modal)',
-                        tips: 'Pembelian perlengkapan secara kredit menambah Aset (Perlengkapan) dan Utang.',
-                        contohSoal: 'Diterima pendapatan jasa Rp 2.000.000 Tunai. Pengaruhnya pada persamaan dasar?<br><strong>Langkah Penyelesaian Terperinci:</strong><br>1. Kas (Aset) bertambah Rp 2 jt, Modal (Ekuitas) bertambah Rp 2 jt.'
+                        tips: 'Pembelian perlengkapan usaha secara KREDIT akan menambah akun Aset (Perlengkapan) dan Utang Usaha.',
+                        contohSoal: '<strong>Soal 1:</strong> Diterima pendapatan jasa secara tunai $Rp2.000.000$. Pengaruhnya pada persamaan dasar?<br><strong>Langkah Penyelesaian:</strong> Kas (Aset) bertambah Rp2 jt, Modal bertambah Rp2 jt.'
                     },
                     {
                         title: 'Bab 11: Jurnal Umum & Mekanisme Debet-Kredit',
                         kurikulum: 'K13 & Merdeka (Fase F)',
-                        summary: '<strong>Penjelasan Konsep Terperinci:</strong> Jurnal umum mencatat transaksi secara kronologis. Aturan Debet Kredit: Harta & Beban bertambah di Debet; Utang, Modal, Pendapatan bertambah di Kredit.',
-                        visual: 'Harta & Beban (+) Debet | Utang, Modal, Pendapatan (+) Kredit',
-                        tips: 'Selalu pastikan total jumlah kolom Debet dan Kredit sejajar seimbang (balanced).',
-                        contohSoal: 'Membeli peralatan Rp 5 jt tunai. Jurnal umumnya adalah?<br><strong>Langkah Penyelesaian Terperinci:</strong><br>1. Debet: Peralatan Rp 5 jt, Kredit: Kas Rp 5 jt.'
+                        summary: '<strong>Akar Konsep Pencatatan Transaksi:</strong> Jurnal umum mencatat transaksi secara kronologis. Aturan Saldo Normal: Harta & Beban bertambah di **Debet**; Utang, Modal, & Pendapatan bertambah di **Kredit**.',
+                        visual: 'Harta & Beban (+) Debet  |  Utang, Modal, Pendapatan (+) Kredit',
+                        tips: 'Jumlah kolom Debet dan Kredit pada jurnal umum Wajib SELALU seimbang (*balanced*)!',
+                        contohSoal: '<strong>Soal 1:</strong> Membeli peralatan kantor $Rp5.000.000$ secara tunai. Jurnal umumnya adalah?<br><strong>Langkah Penyelesaian:</strong> Debet: Peralatan Rp5 jt, Kredit: Kas Rp5 jt.'
                     },
                     {
-                        title: 'Bab 12: Buku Besar & Neraca Saldo Saldo Sebelum Penyesuaian',
+                        title: 'Bab 12: Buku Besar & Neraca Saldo Sebelum Penyesuaian',
                         kurikulum: 'K13 & Merdeka (Fase F)',
-                        summary: '<strong>Penjelasan Konsep Terperinci:</strong> Posting adalah memindahkan catatan jurnal umum ke buku besar masing-masing akun. Neraca saldo menguji kesamaan total debet kredit.',
-                        visual: 'Buku Besar Akun T: Saldo Akhir = Total Debet - Total Kredit',
-                        tips: 'Kesamaan angka di neraca saldo belum menjamin bebas dari kesalahan pencatatan transaksi.',
-                        contohSoal: 'Proses memindahkan ayat jurnal ke buku besar dinamakan?<br><strong>Langkah Penyelesaian Terperinci:</strong><br>1. Dinamakan proses <strong>Posting</strong>.'
+                        summary: '<strong>Akar Konsep Pengelompokan Akun:</strong> *Posting* adalah proses memindahkan catatan ayat jurnal umum ke dalam buku besar masing-masing akun untuk mengagregasi saldo akhir.',
+                        visual: 'Posting Jurnal Umum → Buku Besar (T-Account) → Neraca Saldo',
+                        tips: 'Proses memindahkan angka catatan dari jurnal umum ke akun buku besar dinamakan **Posting**.',
+                        contohSoal: '<strong>Soal 1:</strong> Apa fungsi utama dari penyusunan Neraca Saldo di akhir periode?<br><strong>Langkah Penyelesaian:</strong> Menguji kesamaan total saldo Debet dan Kredit dari seluruh akun buku besar.'
                     },
                     {
                         title: 'Bab 13: Jurnal Penyesuaian (AJP) Perusahaan Jasa & Dagang',
                         kurikulum: 'K13 & Merdeka (Fase F)',
-                        summary: '<strong>Penjelasan Konsep Terperinci:</strong> AJP mengupdate saldo akun di akhir periode agar mencerminkan kondisi riil (beban dibayar dimuka, penyusutan aset, beban terutang).',
-                        visual: 'AJP Penyusutan: Debet Beban Penyusutan | Kredit Akumulasi Penyusutan',
-                        tips: 'Perlengkapan di AJP dihitung dari nilai perlengkapan yang TERPAKAI.',
-                        contohSoal: 'Saldo Perlengkapan 1 jt. Di akhir periode sisa perlengkapan 300rb. AJP beban perlengkapan?<br><strong>Langkah Penyelesaian Terperinci:</strong><br>1. Terpakai = 1jt - 300rb = 700rb. AJP: Debet Beban Perlengkapan 700rb, Kredit Perlengkapan 700rb.'
+                        summary: '<strong>Akar Konsep Penyesuaian Akhir:</strong> AJP dibuat di akhir periode untuk meng-update saldo akun nominal dan riil agar mencerminkan kondisi sebenarnya (penyusutan aset, beban terutang, perlengkapan terpakai).',
+                        visual: 'AJP Perlengkapan Terpakai: Debet Beban Perlengkapan | Kredit Perlengkapan',
+                        tips: 'Nilai perlengkapan yang ditulis pada AJP adalah sebesar nilai perlengkapan yang **TELAH TERPAKAI**!',
+                        contohSoal: '<strong>Soal 1:</strong> Saldo Perlengkapan $Rp1.000.000$. Sisa akhir periode $Rp300.000$. AJP beban perlengkapan?<br><strong>Langkah Penyelesaian:</strong> Terpakai $= 1\text{jt} - 300\text{rb} = 700\text{rb}$. Jurnal: Debet Beban Perlengkapan Rp700rb, Kredit Perlengkapan Rp700rb.'
                     },
                     {
                         title: 'Bab 14: Kertas Kerja (Neraca Lajur) & Laporan Keuangan',
                         kurikulum: 'K13 & Merdeka (Fase F)',
-                        summary: '<strong>Penjelasan Konsep Terperinci:</strong> Kertas kerja mempermudah penyusunan Laporan Keuangan (Laporan Laba Rugi, Perubahan Ekuitas, Neraca Posisi Keuangan, Laporan Arus Kas).',
-                        visual: 'Laba Bersih = Total Pendapatan - Total Beban',
-                        tips: 'Akun Nominal (Pendapatan & Beban) masuk ke Laporan Laba Rugi.',
-                        contohSoal: 'Pendapatan 10 jt, Beban 6 jt, Prive 1 jt. Hitung laba bersih perusahaan.<br><strong>Langkah Penyelesaian Terperinci:</strong><br>1. Laba Bersih = 10 jt - 6 jt = <strong>Rp 4.000.000</strong>.'
+                        summary: '<strong>Akar Konsep Pelaporan Keuangan:</strong> Kertas kerja mempermudah penyusunan 4 Laporan Keuangan Utama: Laporan Laba Rugi, Laporan Perubahan Ekuitas, Neraca Posisi Keuangan, dan Laporan Arus Kas.',
+                        visual: 'Laba Bersih = Total Pendapatan - Total Beban  |  Laporan Laba Rugi',
+                        tips: 'Akun Nominal (Pendapatan dan Beban) dilaporkan masuk ke dalam Laporan **Laba Rugi**.',
+                        contohSoal: '<strong>Soal 1:</strong> Pendapatan $Rp10.000.000$, Beban $Rp6.000.000$, Prive $Rp1.000.000$. Hitung laba bersih perusahaan.<br><strong>Langkah Penyelesaian:</strong> Laba Bersih $= 10\text{jt} - 6\text{jt} = \mathbf{Rp4.000.000}$ (Prive tidak mengurangi laba).'
                     },
                     {
                         title: 'Bab 15: Jurnal Penutup & Saldo Setelah Penutupan',
                         kurikulum: 'K13 & Merdeka (Fase F)',
-                        summary: '<strong>Penjelasan Konsep Terperinci:</strong> Jurnal penutup menolkan akun sementara (nominal) di akhir periode ke akun Ikhtisar Laba Rugi agar siap dipakai periode berikutnya.',
+                        summary: '<strong>Akar Konsep Penutupan Buku:</strong> Jurnal penutup menolkan saldo akun sementara (nominal) pada akhir periode ke akun Ikhtisar Laba Rugi agar siap digunakan untuk periode akuntansi berikutnya.',
                         visual: 'Menutup Pendapatan: Debet Pendapatan | Kredit Ikhtisar Laba Rugi',
-                        tips: 'Akun riil (Harta, Utang, Modal) tidak ditutup dan dibawa ke periode berikutnya.',
-                        contohSoal: 'Akun manakah yang wajib ditutup pada akhir periode akuntansi?<br><strong>Langkah Penyelesaian Terperinci:</strong><br>1. Ditutup pada akun nominal yaitu <strong>Pendapatan dan Beban</strong>.'
+                        tips: 'Akun Riil (Harta, Utang, Modal) TIDAK DITUTUP dan saldonya dibawa terus ke periode berikutnya.',
+                        contohSoal: '<strong>Soal 1:</strong> Akun manakah yang wajib ditutup pada akhir periode akuntansi?<br><strong>Langkah Penyelesaian:</strong> Akun nominal yaitu **Pendapatan dan Beban**.'
                     }
                 ],
                 'sos': [
                     {
                         title: 'Bab 1: Hakikat Sosiologi & 4 Ciri Ilmiah Sosiologi',
                         kurikulum: 'K13 & Merdeka (Fase E)',
-                        summary: '<strong>Penjelasan Konsep Terperinci:</strong> Sosiologi mengkaji masyarakat. Ciri: Empiris, Teoritis, Kumulatif, dan Non-Etis (objektif).',
-                        visual: 'Non-Etis = Menganalisis fakta tanpa menghakimi secara moral',
-                        tips: 'Jika peneliti tidak menyalahkan pelaku kejahatan melainkan mengkaji motifnya, cirinya Non-Etis.',
-                        contohSoal: 'Peneliti mengkaji prostitusi tanpa menilai moral pelaku. Ciri sosiologi?<br><strong>Langkah Penyelesaian Terperinci:</strong><br>1. Ciri <strong>Non-Etis</strong>.'
+                        summary: '<strong>Akar Konsep Sosiologi:</strong> Sosiologi adalah ilmu positif yang mempelajari struktur sosial dan proses sosial dalam masyarakat. 4 Ciri Ilmiah Sosiologi: (1) Empiris (berdasarkan observasi riil), (2) Teoritis (menyusun abstraksi dari hasil pengamatan), (3) Kumulatif (mengembangkan teori lama), dan (4) Non-Etis (objektif, tidak menilai baik-buruk moral fakta).',
+                        visual: 'Non-Etis = Peneliti mengkaji fakta kejahatan tanpa menyalahkan atau menghakimi moral pelaku',
+                        tips: 'Jika ada pernyataan "peneliti tidak menghakimi moral subjek", jawabannya pasti **Non-Etis**.',
+                        contohSoal: '<strong>Soal 1:</strong> Sosiolog mengkaji penyebab tawuran remaja tanpa menghujat para pelaku secara moral. Ciri sosiologi tersebut adalah?<br><strong>Langkah Penyelesaian:</strong> Menunjukkan ciri **Non-Etis**.'
                     },
                     {
                         title: 'Bab 2: Interaksi Sosial, Syarat & Faktor pendorong',
                         kurikulum: 'K13 & Merdeka (Fase E)',
-                        summary: '<strong>Penjelasan Konsep Terperinci:</strong> Syarat interaksi: Kontak Sosial & Komunikasi. Faktor pendorong: Imitasi, Sugesti, Identifikasi, Simpati, Empati.',
-                        visual: 'Imitasi (Meniru luar) vs Identifikasi (Meniru identik/menjiwai penuh)',
-                        tips: 'Empati melibat aksi nyata pertolongan, simpati sebatas perasaan.',
-                        contohSoal: 'Seorang fans merubah penampilan dan perilakunya persis idola. Faktornya?<br><strong>Langkah Penyelesaian Terperinci:</strong><br>1. Mengalami proses <strong>Identifikasi</strong>.'
+                        summary: '<strong>Akar Konsep Hubungan Sosial:</strong> Syarat terjadinya interaksi sosial: Kontak Sosial dan Komunikasi. Faktor pendorong: Imitasi (meniru luar), Sugesti (pengaruh pandangan), Identifikasi (meniru penuh identik), Simpati, dan Empati (aksi nyata pertolongan).',
+                        visual: 'Imitasi (Meniru luar) vs Identifikasi (Meniru identik penuh)  |  Empati (Aksi Nyata)',
+                        tips: 'Empati selalu melibatkan **tindakan nyata pertolongan**, sedangkan simpati sebatas perasaan iba.',
+                        contohSoal: '<strong>Soal 1:</strong> Seorang penggemar merubah total penampilan dan gaya hidupnya agar persis idola. Faktornya?<br><strong>Langkah Penyelesaian:</strong> Faktor **Identifikasi**.'
                     },
                     {
                         title: 'Bab 3: Nilai & Norma Sosial dalam Masyarakat',
                         kurikulum: 'K13 & Merdeka (Fase E)',
-                        summary: '<strong>Penjelasan Konsep Terperinci:</strong> Nilai adalah sesuatu yang dianggap ideal. Tingkatan norma: Cara (Usage), Kebiasaan (Folkways), Tata Kelakuan (Mores), Adat Istiadat (Customs).',
-                        visual: 'Sanksi Terberat = Adat Istiadat (Hukum Adat / Pengucilan)',
-                        tips: 'Melanggar kebiasaan hanya mendapat teguran/sindiran halus.',
-                        contohSoal: 'Mengunyah makanan dengan bersuara keras melanggar tingkatan norma sosial apakah?<br><strong>Langkah Penyelesaian Terperinci:</strong><br>1. Melanggar norma <strong>Cara (Usage)</strong>.'
+                        summary: '<strong>Akar Konsep Patokan Perilaku:</strong> Nilai adalah sesuatu yang dianggap ideal. Tingkatan norma dari sanksi terringan ke terberat: Cara (*Usage*), Kebiasaan (*Folkways*), Tata Kelakuan (*Mores*), Adat Istiadat (*Customs*).',
+                        visual: 'Cara (Usage) → Kebiasaan (Folkways) → Tata Kelakuan (Mores) → Adat (Customs)',
+                        tips: 'Pelanggaran terhadap Adat Istiatat mendapat sanksi terberat berupa pengucilan sosial atau hukum adat.',
+                        contohSoal: '<strong>Soal 1:</strong> Mengunyah makanan dengan bersuara keras melanggar tingkatan norma sosial apakah?<br><strong>Langkah Penyelesaian:</strong> Melanggar norma **Cara (Usage)**.'
                     },
                     {
                         title: 'Bab 4: Sosialisasi & Agen Pembentuk Kepribadian',
                         kurikulum: 'K13 & Merdeka (Fase E)',
-                        summary: '<strong>Penjelasan Konsep Terperinci:</strong> Sosialisasi adalah proses mempelajari nilai budaya. Tahap Mead: Preparatory, Play, Game, Generalized Other. Agen: Keluarga, Sekolah, Teman Sebaya, Media.',
-                        visual: 'Tahap Generalized Other = Mampu menjalankan peran di masyarakat luas',
+                        summary: '<strong>Akar Konsep Pembentukan Diri:</strong> Sosialisasi adalah proses mempelajari nilai dan peran budaya. Tahapan Mead: *Preparatory Stage*, *Play Stage*, *Game Stage*, dan *Generalized Other*. Agen: Keluarga, Sekolah, Peer Group, Media.',
+                        visual: 'Generalized Other = Mampu menjalankan peran di tengah masyarakat luas',
                         tips: 'Sosialisasi primer pertama terjadi di lingkungan internal keluarga.',
-                        contohSoal: 'Anak mulai menirukan peran dewasa tanpa memahami maksudnya pada tahap?<br><strong>Langkah Penyelesaian Terperinci:</strong><br>1. Berada pada tahap <strong>Play Stage</strong>.'
+                        contohSoal: '<strong>Soal 1:</strong> Anak mulai menirukan peran orang dewasa tanpa memahami maksudnya pada tahap?<br><strong>Langkah Penyelesaian:</strong> **Play Stage**.'
                     },
                     {
                         title: 'Bab 5: Perilaku Menyimpang & Teori Anomie Merton',
                         kurikulum: 'K13 & Merdeka (Fase F)',
-                        summary: '<strong>Penjelasan Konsep Terperinci:</strong> Penyimpangan sosial akibat sosialisasi tidak sempurna atau subkebudayaan menyimpang. Teori Anomie Merton (Kesesuaian, Inovasi, Ritualisme, Retretisme, Pemberontakan).',
-                        visual: 'Inovasi = Menerima Tujuan Budaya tetapi Menolak Cara Legal',
-                        tips: 'Korupsi demi gaya hidup tergolong bentuk adaptasi Inovasi Merton.',
-                        contohSoal: 'Karyawan bekerja hanya formalitas routine tanpa peduli target sukses tergolong adaptasi?<br><strong>Langkah Penyelesaian Terperinci:</strong><br>1. Bentuk adaptasi <strong>Ritualisme</strong>.'
+                        summary: '<strong>Akar Konsep Penyimpangan:</strong> Penyimpangan timbul akibat sosialisasi tidak sempurna. Teori Anomie Merton membagi 5 adaptasi: Konformitas, Inovasi (terima tujuan, tolak cara legal), Ritualisme, Retretisme, Pemberontakan.',
+                        visual: 'Inovasi Merton = Menerima Tujuan Sukses Budaya, Tetapi Menolak Cara Legal (Misal: Korupsi)',
+                        tips: 'Koruptor yang mengejar kekayaan dengan jalan melanggar hukum tergolong bentuk adaptasi **Inovasi**.',
+                        contohSoal: '<strong>Soal 1:</strong> Karyawan bekerja hanya formalitas rutin tanpa peduli target sukses tergolong adaptasi?<br><strong>Langkah Penyelesaian:</strong> Bentuk adaptasi **Ritualisme**.'
                     },
                     {
                         title: 'Bab 6: Struktur Sosial & Stratifikasi Sosial (Pelapisan)',
                         kurikulum: 'K13 & Merdeka (Fase F)',
-                        summary: '<strong>Penjelasan Konsep Terperinci:</strong> Stratifikasi (vertikal/hierarki) dan Diferensiasi (horizontal/setara). Sifat stratifikasi: Terbuka, Tertutup, Campuran.',
-                        visual: 'Stratifikasi Tertutup (Kasta Bali/India) vs Terbuka (Prestasi/Ekonomi)',
-                        tips: 'Sistem kasta Bali tergolong stratifikasi sosial tertutup.',
-                        contohSoal: 'Pelapisan sosial berdasarkan kepemilikan kasta di India tergolong bersifat?<br><strong>Langkah Penyelesaian Terperinci:</strong><br>1. Stratifikasi sosial <strong>Tertutup</strong>.'
+                        summary: '<strong>Akar Konsep Hirarki Sosial:</strong> Stratifikasi (vertikal/bertingkat) dan Diferensiasi (horizontal/setara). Sifat stratifikasi: Terbuka (berdasarkan prestasi), Tertutup (berdasarkan kasta/kelahiran), dan Campuran.',
+                        visual: 'Stratifikasi Tertutup (Kasta Bali/India) vs Terbuka (Prestasi Ekonomi)',
+                        tips: 'Sistem kasta tradisional di Bali/India tergolong stratifikasi sosial **Tertutup**.',
+                        contohSoal: '<strong>Soal 1:</strong> Pelapisan sosial berdasarkan kasta keturunan tergolong bersifat?<br><strong>Langkah Penyelesaian:</strong> Stratifikasi sosial **Tertutup**.'
                     },
                     {
                         title: 'Bab 7: Diferensiasi Sosial & Multikulturalisme',
                         kurikulum: 'K13 & Merdeka (Fase F)',
-                        summary: '<strong>Penjelasan Konsep Terperinci:</strong> Pengelompokan horizontal tanpa hierarki (Ras, Etnis, Agama, Gender). Konsolidasi sosial dan Interseksi sosial.',
-                        visual: 'Interseksi = Persilangan keanggotaan kelompok sosial yang berbeda',
-                        tips: 'Sikap toleransi merupakan kunci utama masyarakat multikultural.',
-                        contohSoal: 'Persilangan keanggotaan berdasarkan agama dan suku bangsa dinamakan?<br><strong>Langkah Penyelesaian Terperinci:</strong><br>1. Dinamakan proses <strong>Interseksi Sosial</strong>.'
+                        summary: '<strong>Akar Konsep Keragaman Horizontal:</strong> Pengelompokan masyarakat tanpa hierarki (Ras, Etnis, Agama, Gender). Konsolidasi sosial (penguatan internal) dan Interseksi sosial (persilangan keanggotaan).',
+                        visual: 'Interseksi Sosial = Persilangan keanggotaan dalam kelompok sosial yang berbeda',
+                        tips: 'Sikap toleransi dan kesetaraan merupakan kunci keharmonisan masyarakat multikultural.',
+                        contohSoal: '<strong>Soal 1:</strong> Persilangan keanggotaan masyarakat berdasarkan suku bangsa dan agama dinamakan?<br><strong>Langkah Penyelesaian:</strong> **Interseksi Sosial**.'
                     },
                     {
                         title: 'Bab 8: Konflik Sosial & Resolusi Akomodasi Konflik',
                         kurikulum: 'K13 & Merdeka (Fase F)',
-                        summary: '<strong>Penjelasan Konsep Terperinci:</strong> Konflik timbul karena perbedaan kepentingan. Bentuk akomodasi: Konsiliasi, Mediasi (Pihak ketiga netral penasihat), Arbitrase (Pihak ketiga pengambil keputusan mengikat), Ajudikasi (Pengadilan).',
-                        visual: 'Mediasi (Ketiga = Penasihat) vs Arbitrase (Ketiga = Pemutus Mengikat)',
-                        tips: 'Penyelesaian konflik melalui meja hijau pengadilan dinamakan Ajudikasi.',
-                        contohSoal: 'Penyelesaian sengketa lahan di pengadilan dinamakan bentuk akomodasi?<br><strong>Langkah Penyelesaian Terperinci:</strong><br>1. Bentuk akomodasi <strong>Ajudikasi</strong>.'
+                        summary: '<strong>Akar Konsep Dinamika Konflik:</strong> Konflik timbul karena perbedaan kepentingan. Akomodasi penyelesaian: Mediasi (pihak ke-3 netral penasihat), Arbitrase (pihak ke-3 pengambil keputusan mengikat), Ajudikasi (pengadilan).',
+                        visual: 'Mediasi (Pihak 3 Penasihat) vs Arbitrase (Pihak 3 Pemutus Mengikat) vs Ajudikasi (Pengadilan)',
+                        tips: 'Penyelesaian sengketa melalui lembaga peradilan hukum dinamakan **Ajudikasi**.',
+                        contohSoal: '<strong>Soal 1:</strong> Penyelesaian sengketa lahan di meja hijau pengadilan dinamakan bentuk akomodasi?<br><strong>Langkah Penyelesaian:</strong> **Ajudikasi**.'
                     },
                     {
                         title: 'Bab 9: Mobilitas Sosial & Saluran-Salurannya',
                         kurikulum: 'K13 & Merdeka (Fase F)',
-                        summary: '<strong>Penjelasan Konsep Terperinci:</strong> Perubahan status sosial individu/kelompok. Mobilitas Vertikal (Naik/Climbing, Turun/Sinking) & Horizontal. Saluran: Pendidikan, Organisasi Politik, Ekonomi, Militer.',
+                        summary: '<strong>Akar Konsep Perpindahan Status:</strong> Mobilitas sosial adalah perubahan posisi individu/kelompok secara vertikal (naik/turun) atau horizontal. Saluran utama: Pendidikan, Organisasi Politik, Ekonomi, Militer.',
                         visual: 'Pendidikan = Saluran Utama Mobilitas Sosial Vertikal Naik (Social Elevator)',
-                        tips: 'Seorang guru naik jabatan menjadi kepala sekolah tergolong mobilitas vertikal naik.',
-                        contohSoal: 'Saluran mobilitas sosial paling efektif yang sering disebut social elevator adalah?<br><strong>Langkah Penyelesaian Terperinci:</strong><br>1. Saluran lembaga <strong>Pendidikan</strong>.'
+                        tips: 'Lembaga pendidikan sering dijuluki sebagai *social elevator* paling efektif dalam mobilitas sosial vertikal.',
+                        contohSoal: '<strong>Soal 1:</strong> Saluran mobilitas sosial paling efektif yang sering disebut social elevator adalah?<br><strong>Langkah Penyelesaian:</strong> Saluran lembaga **Pendidikan**.'
                     },
                     {
                         title: 'Bab 10: Perubahan Sosial & Teori-Teori Perubahan',
                         kurikulum: 'K13 & Merdeka (Fase F)',
-                        summary: '<strong>Penjelasan Konsep Terperinci:</strong> Perubahan struktur dan fungsi masyarakat. Teori Evolusi, Teori Siklus (Oswald Spengler), Teori Konflik (Karl Marx), dan Teori Linier.',
-                        visual: 'Teori Siklus = Perubahan berulang seperti roda berputar (Lahir-Tumbuh-Runtuh)',
-                        tips: 'Penyebab internal perubahan sosial: jumlah penduduk, penemuan baru, konflik internal.',
-                        contohSoal: 'Peradaban manusia berkembang dari primitif menuju modern secara berurutan dijelaskan teori?<br><strong>Langkah Penyelesaian Terperinci:</strong><br>1. Dijelaskan oleh <strong>Teori Linier / Evolusi</strong>.'
+                        summary: '<strong>Akar Konsep Perubahan Masyarakat:</strong> Perubahan struktur dan fungsi sosial. Teori Siklus (perubahan berulang seperti roda), Teori Linier/Evolusi (perkembangan berurutan tahap demi tahap), Teori Konflik.',
+                        visual: 'Teori Siklus (Perubahan Berulang) vs Teori Linier (Perkembangan Maju Berurutan)',
+                        tips: 'Penyebab internal perubahan sosial: perubahan jumlah penduduk, penemuan baru (*discovery/invention*), konflik internal.',
+                        contohSoal: '<strong>Soal 1:</strong> Peradaban manusia berkembang dari primitif menuju modern secara berurutan dijelaskan teori?<br><strong>Langkah Penyelesaian:</strong> **Teori Linier / Evolusi**.'
                     },
                     {
                         title: 'Bab 11: Modernisasi, Globalisasi & Sekularisasi',
                         kurikulum: 'K13 & Merdeka (Fase F)',
-                        summary: '<strong>Penjelasan Konsep Terperinci:</strong> Globalisasi menghubungkan batas dunia. Dampak: Westernisasi, Konsumerisme, Hedonisme, Anomie Budaya, Sekularisasi.',
-                        visual: 'Cultural Lag = Ketimpangan pertumbuhan antara budaya material & non-material',
-                        tips: 'Teknologi cepat berkembang tetapi mental hukum lambat beradaptasi disebut Cultural Lag.',
-                        contohSoal: 'Masyarakat menerima HP canggih tetapi menyebarkan hoax menunjukkan fenomena?<br><strong>Langkah Penyelesaian Terperinci:</strong><br>1. Fenomena <strong>Cultural Lag (Ketimpangan Budaya)</strong>.'
+                        summary: '<strong>Akar Konsep Integrasi Dunia:</strong> Globalisasi menghilangkan batas antarnegara. Dampak negatif: *Cultural Lag* (ketimpangan pertumbuhan budaya material dan non-material), Konsumerisme, Hedonisme.',
+                        visual: 'Cultural Lag = Ketimpangan antara kemajuan teknologi material & kesiapan mental non-material',
+                        tips: 'Masyarakat menerima smartphone canggih namun mentalitas menyebarkan hoax menunjukkan fenomena ***Cultural Lag***.',
+                        contohSoal: '<strong>Soal 1:</strong> Ketimpangan antara perkembangan teknologi canggih dan hukum penataannya dinamakan?<br><strong>Langkah Penyelesaian:</strong> **Cultural Lag**.'
                     },
                     {
                         title: 'Bab 12: Lembaga Sosial & Fungsi Manfaatnya',
                         kurikulum: 'K13 & Merdeka (Fase F)',
-                        summary: '<strong>Penjelasan Konsep Terperinci:</strong> Sistem norma terorganisir untuk memenuhi kebutuhan dasar. Lembaga Keluarga, Agama, Ekonomi, Politik, Pendidikan.',
-                        visual: 'Ciri Lembaga: Punya Simbol, Alat Kelengkapan, Norma Tertulis/Lisan, Kekekalan',
-                        tips: 'Fungsi laten adalah fungsi tersembunyi yang tidak disadari dari suatu lembaga.',
-                        contohSoal: 'Fungsi keluarga dalam memberikan kasih sayang dan rasa aman dinamakan fungsi?<br><strong>Langkah Penyelesaian Terperinci:</strong><br>1. Dinamakan fungsi <strong>Afeksi</strong>.'
+                        summary: '<strong>Akar Konsep Institusi Masyarakat:</strong> Sistem norma terorganisir untuk memenuhi kebutuhan dasar. Lembaga Keluarga, Agama, Ekonomi, Politik, Pendidikan. Fungsi manifes (disadari) vs laten (tersembunyi).',
+                        visual: 'Fungsi Manifes (Disadari & Diharapkan) vs Fungsi Laten (Tersembunyi)',
+                        tips: 'Fungsi keluarga dalam memberikan kasih sayang dan perlindungan emosional dinamakan fungsi **Afeksi**.',
+                        contohSoal: '<strong>Soal 1:</strong> Fungsi keluarga dalam memberikan rasa aman dan kasih sayang dinamakan fungsi?<br><strong>Langkah Penyelesaian:</strong> Fungsi **Afeksi**.'
                     },
                     {
                         title: 'Bab 13: Penelitian Sosial: Metode Kualitatif & Kuantitatif',
                         kurikulum: 'K13 & Merdeka (Fase F)',
-                        summary: '<strong>Penjelasan Konsep Terperinci:</strong> Penelitian ilmiah mencari kebenaran fakta sosial. Metode Kuantitatif (Survei, Angket, Statistik) vs Kualitatif (Wawancara mendalam, Observasi).',
-                        visual: 'Kuantitatif (Data Angka) vs Kualitatif (Deskripsi Kata & Motif)',
-                        tips: 'Sampel acak (Random Sampling) digunakan pada metode Kuantitatif.',
-                        contohSoal: 'Penelitian yang berfokus menguraikan riwayat hidup dan motif mendalam subjek adalah?<br><strong>Langkah Penyelesaian Terperinci:</strong><br>1. Penelitian dengan pendekatan <strong>Kualitatif</strong>.'
+                        summary: '<strong>Akar Konsep Metodologi Riset:</strong> Penelitian Kuantitatif (data angka, kuesioner angket, analisis statistik). Penelitian Kualitatif (data kata deskriptif, wawancara mendalam, pengamatan partisipatif).',
+                        visual: 'Kuantitatif (Angka & Statistik) vs Kualitatif (Deskripsi Kata & Motif)',
+                        tips: 'Teknik *Random Sampling* (sampel acak) digunakan pada pendekatan kuantitatif.',
+                        contohSoal: '<strong>Soal 1:</strong> Penelitian yang berfokus menguraikan riwayat hidup dan motif mendalam subjek adalah?<br><strong>Langkah Penyelesaian:</strong> Penelitian pendekatan **Kualitatif**.'
                     },
                     {
                         title: 'Bab 14: Masalah Sosial, Kemiskinan & Ketimpangan',
                         kurikulum: 'K13 & Merdeka (Fase F)',
-                        summary: '<strong>Penjelasan Konsep Terperinci:</strong> Kondisi tidak sesuai ekspektasi masyarakat. Kemiskinan Absolut vs Relatif. Ketimpangan sosial akibat redistribusi ekonomi tidak merata.',
-                        visual: 'Kemiskinan Absolut = Tidak mampu memenuhi kebutuhan dasar minimum (makan/papan)',
-                        tips: 'Indeks Gini mengukur tingkat ketimpangan distribusi pendapatan masyarakat.',
-                        contohSoal: 'Koefisien Indeks Gini mendekati angka 1 menunjukkan tingkat ketimpangan?<br><strong>Langkah Penyelesaian Terperinci:</strong><br>1. Menunjukkan ketimpangan pendapatan yang <strong>Sangat Tinggi</strong>.'
+                        summary: '<strong>Akar Konsep Patologi Sosial:</strong> Masalah sosial timbul saat kondisi riil tidak sesuai ekspektasi norma masyarakat. Kemiskinan Absolut vs Relatif. Ketimpangan diukur dengan Indeks Gini ($0 - 1$).',
+                        visual: 'Indeks Gini Mendekati 1 = Ketimpangan Distribusi Pendapatan Sangat Tinggi',
+                        tips: 'Kemiskinan Absolut terjadi saat seseorang tidak mampu memenuhi kebutuhan fisik minimum (makan/papan).',
+                        contohSoal: '<strong>Soal 1:</strong> Koefisien Indeks Gini mendekati angka 1 menunjukkan tingkat ketimpangan?<br><strong>Langkah Penyelesaian:</strong> Ketimpangan pendapatan yang **Sangat Tinggi**.'
                     },
                     {
                         title: 'Bab 15: Pemberdayaan Masyarakat & Kearifan Lokal',
                         kurikulum: 'K13 & Merdeka (Fase F)',
-                        summary: '<strong>Penjelasan Konsep Terperinci:</strong> Pemberdayaan tingkatkan kemandirian warga berbasis kearifan lokal. Menjaga identitas kebudayaan nasional di tengah arus globalisasi.',
-                        visual: 'Kearifan Lokal = Pengetahuan tradisional adaptif mengelola lingkungan',
-                        tips: 'Sistem Subak di Bali merupakan contoh kearifan lokal dalam pengelolaan irigasi pertanian.',
-                        contohSoal: 'Sistem irigasi pertanian tradisional Subak di Bali tergolong bentuk?<br><strong>Langkah Penyelesaian Terperinci:</strong><br>1. Bentuk <strong>Kearifan Lokal (Local Wisdom)</strong>.'
+                        summary: '<strong>Akar Konsep Kemandirian Warga:</strong> Pemberdayaan bertujuan meningkatkan kemandirian masyarakat berbasis kearifan lokal (*local wisdom*) sebagai mekanisme adaptasi lingkungan.',
+                        visual: 'Kearifan Lokal = Pengetahuan Tradisional Adaptif Mengelola Lingkungan (Misal: Subak Bali)',
+                        tips: 'Sistem pengairan pertanian Subak di Bali merupakan contoh kearifan lokal yang diakui dunia.',
+                        contohSoal: '<strong>Soal 1:</strong> Sistem irigasi pertanian tradisional Subak di Bali tergolong bentuk?<br><strong>Langkah Penyelesaian:</strong> **Kearifan Lokal (Local Wisdom)**.'
                     }
                 ],
                 'sej': [
                     {
                         title: 'Bab 1: Hakikat Ilmu Sejarah, Diakronik & Sinkronik',
                         kurikulum: 'K13 & Merdeka (Fase E)',
-                        summary: '<strong>Penjelasan Konsep Terperinci:</strong> Sejarah merekonstruksi peristiwa masa lalu. Berpikir Diakronik (memanjang waktu, kronologis) vs Sinkronik (meluas dalam ruang, mendalam).',
-                        visual: 'Diakronik (Kronologi Waktu) vs Sinkronik (Kajian Ruang Mendalam)',
-                        tips: 'Kritik sumber sejarah terdiri dari Kritik Intern (kredibilitas isi) dan Ekstern (keaslian fisik).',
-                        contohSoal: 'Mengkaji kondisi ekonomi Indonesia saat krisis 1998 secara mendalam menggunakan pendekatan?<br><strong>Langkah Penyelesaian Terperinci:</strong><br>1. Menggunakan pendekatan <strong>Sinkronik</strong>.'
+                        summary: '<strong>Akar Konsep Metodologi Sejarah:</strong> Sejarah merekonstruksi peristiwa masa lalu secara kritis. Cara berpikir Diakronik memanjang dalam waktu dan menyempit dalam ruang (kronologis berurutan waktu). Cara berpikir Sinkronik meluas dalam ruang dan menyempit dalam waktu (mengkaji struktur peristiwa secara mendalam di suatu waktu tertentu).',
+                        visual: 'Diakronik (Kronologis Waktu) vs Sinkronik (Analisis Mendalam Struktur Ruang)',
+                        tips: 'Kritik Sumber terdiri dari Kritik Ekstern (menguji keaslian fisik dokumen) dan Kritik Intern (menguji kredibilitas isi naskah).',
+                        contohSoal: '<strong>Soal 1:</strong> Mengkaji kondisi sosial-ekonomi masyarakat Jakarta pada masa Proklamasi 1945 secara mendalam merupakan pendekatan?<br><strong>Langkah Penyelesaian:</strong> Pendekatan **Sinkronik**.'
                     },
                     {
                         title: 'Bab 2: Manusia Purba & Kehidupan Praaksara Nusantara',
                         kurikulum: 'K13 & Merdeka (Fase E)',
-                        summary: '<strong>Penjelasan Konsep Terperinci:</strong> Manusia purba Nusantara (Meganthropus, Pithecanthropus, Homo). Kebudayaan Paleolitikum, Mesolitikum (Kjokkenmoddinger), Neolitikum (Beliung persegi), Megalitikum.',
-                        visual: 'Neolitikum = Revolusi dari Food Gathering menjadi Food Producing',
-                        tips: 'Kjokkenmoddinger adalah fosil tumpukan bukit sampah dapur kerang pada masa Mesolitikum.',
-                        contohSoal: 'Revolusi kebudayaan perubahan pola hidup berpindah menjadi menetap terjadi pada masa?<br><strong>Langkah Penyelesaian Terperinci:</strong><br>1. Terjadi pada masa <strong>Neolitikum</strong>.'
+                        summary: '<strong>Akar Konsep Kehidupan Awal:</strong> Manusia purba Nusantara (*Meganthropus, Pithecanthropus, Homo*). Periodisasi kebudayaan: Paleolitikum, Mesolitikum (*Kjokkenmoddinger*), Neolitikum (Beliung persegi), Megalitikum.',
+                        visual: 'Neolitikum = Revolusi Kebudayaan dari Food Gathering ke Food Producing',
+                        tips: '*Kjokkenmoddinger* adalah fosil bukit sampah dapur kerang/siput pada zaman Mesolitikum.',
+                        contohSoal: '<strong>Soal 1:</strong> Revolusi kebudayaan perubahan pola hidup dari berpindah (*nomaden*) menjadi menetap terjadi pada masa?<br><strong>Langkah Penyelesaian:</strong> Masa **Neolitikum**.'
                     },
                     {
                         title: 'Bab 3: Kerajaan-Kerajaan Hindu-Buddha di Indonesia',
                         kurikulum: 'K13 & Merdeka (Fase F)',
-                        summary: '<strong>Penjelasan Konsep Terperinci:</strong> Masuknya Hindu-Buddha (Teori Brahmana, Ksatria, Waisya, Arus Balik). Kerajaan Kutai, Tarumanegara, Sriwijaya (Maritim), Mataram Kuno, Majapahit.',
-                        visual: 'Sriwijaya = Kerajaan Maritim & Pusat Agama Buddha terbesar di Asia Tenggara',
-                        tips: 'Sumpah Palapa diucapkan Patih Gajah Mada untuk menyatukan Nusantara di bawah Majapahit.',
-                        contohSoal: 'Prasasti Yupa dari Kerajaan Kutai ditulis menggunakan huruf dan bahasa apakah?<br><strong>Langkah Penyelesaian Terperinci:</strong><br>1. Huruf <strong>Pallawa</strong> dan bahasa <strong>Sanskerta</strong>.'
+                        summary: '<strong>Akar Konsep Pengaruh India:</strong> Masuknya Hindu-Buddha (Teori Brahmana, Ksatria, Waisya, Arus Balik). Kerajaan Kutai (Prasasti Yupa), Tarumanegara, Sriwijaya (Maritim-Buddha), Mataram Kuno, Majapahit.',
+                        visual: 'Majapahit = Sumpah Palapa Patih Gajah Mada Menyatukan Nusantara',
+                        tips: 'Prasasti Yupa dari Kerajaan Kutai ditulis menggunakan huruf **Pallawa** dan bahasa **Sanskerta**.',
+                        contohSoal: '<strong>Soal 1:</strong> Kerajaan maritim dan pusat agama Buddha terbesar di Asia Tenggara pada abad ke-7 adalah?<br><strong>Langkah Penyelesaian:</strong> Kerajaan **Sriwijaya**.'
                     },
                     {
                         title: 'Bab 4: Kerajaan-Kerajaan Islam & Akulturasi Budaya',
                         kurikulum: 'K13 & Merdeka (Fase F)',
-                        summary: '<strong>Penjelasan Konsep Terperinci:</strong> Islamisasi via perdagangan, pernikahan, tasawuf, pendidikan. Samudera Pasai, Demak, Mataram Islam, Gowa-Tallo, Ternate-Tidore. Akulturasi arsitektur masjid beratap tumpang.',
-                        visual: 'Akulturasi Masjid Kudus = Menara masjid berbentuk Candi Hindu',
-                        tips: 'Atap masjid berbentuk tumpang susun merupakan akulturasi budaya Islam dan Hindu-Buddha.',
-                        contohSoal: 'Kerajaan Islam pertama di pulau Jawa adalah Kerajaan?<br><strong>Langkah Penyelesaian Terperinci:</strong><br>1. Kerajaan <strong>Demak</strong>.'
+                        summary: '<strong>Akar Konsep Akulturasi Islam:</strong> Islamisasi via perdagangan, pernikahan, tasawuf, dan kesenian. Kerajaan Samudera Pasai, Demak, Mataram Islam, Gowa-Tallo, Ternate-Tidore. Akulturasi masjid atap tumpang.',
+                        visual: 'Akulturasi Masjid Menara Kudus = Bentuk Menara Mirip Candi Hindu',
+                        tips: 'Atap masjid berbentuk tumpang bertingkat ganjil merupakan akulturasi budaya Islam dan Hindu-Buddha.',
+                        contohSoal: '<strong>Soal 1:</strong> Kerajaan Islam pertama di pulau Jawa adalah Kerajaan?<br><strong>Langkah Penyelesaian:</strong> Kerajaan **Demak**.'
                     },
                     {
                         title: 'Bab 5: Kolonialisme Barat & Perlawanan Daerah',
                         kurikulum: 'K13 & Merdeka (Fase F)',
-                        summary: '<strong>Penjelasan Konsep Terperinci:</strong> Penjelajahan Samudera (Gold, Glory, Gospel). Kekuasaan VOC (Monopoli, Hak Ekstirpasi), Tanam Paksa Cultuurstelsel (Van den Bosch). Perlawanan Diponegoro, Pattimura, Aceh.',
-                        visual: 'VOC Hancur 1799 akibat Korupsi & Utang Besar',
-                        tips: 'Sistem Tanam Paksa mewajibkan rakyat menanam komoditas ekspor pasar Eropa.',
-                        contohSoal: 'Tokoh Belanda penggagas Kebijakan Politik Etis (Trias Van Deventer) adalah?<br><strong>Langkah Penyelesaian Terperinci:</strong><br>1. Digagas oleh <strong>Conrad Theodor van Deventer</strong>.'
+                        summary: '<strong>Akar Konsep Penjajahan Eropa:</strong> Penjelajahan Samudera (*Gold, Glory, Gospel*). VOC (Monopoli, Hak Ekstirpasi). Tanam Paksa *Cultuurstelsel* (Van den Bosch). Perlawanan Diponegoro, Pattimura, Aceh.',
+                        visual: 'VOC Hancur 1799 akibat Korupsi & Utang Besar  |  Politik Etis (Trias Van Deventer)',
+                        tips: 'Politik Etis terdiri dari 3 program utama: Edukasi, Irigasi, dan Transmigrasi (Emigrasi).',
+                        contohSoal: '<strong>Soal 1:</strong> Tokoh Belanda penggagas Politik Etis Trias Van Deventer adalah?<br><strong>Langkah Penyelesaian:</strong> **Conrad Theodor van Deventer**.'
                     },
                     {
                         title: 'Bab 6: Pergerakan Nasional & Sumpah Pemuda 1928',
                         kurikulum: 'K13 & Merdeka (Fase F)',
-                        summary: '<strong>Penjelasan Konsep Terperinci:</strong> Kebangkitan nasional dipicu Politik Etis (edukasi). Budi Utomo (1908), Sarekat Islam, Indische Partij. Kongres Pemuda II (28 Oktober 1928) lahirkan Sumpah Pemuda.',
-                        visual: 'Sumpah Pemuda: Satu Nusa, Satu Bangsa, Satu Bahasa Indonesia',
-                        tips: 'Indische Partij adalah organisasi pergerakan radikal pertama yang menyuarakan kemerdekaan.',
-                        contohSoal: 'Organisasi pergerakan nasional pertama di Indonesia yang berdiri 20 Mei 1908 adalah?<br><strong>Langkah Penyelesaian Terperinci:</strong><br>1. Organisasi <strong>Budi Utomo</strong>.'
+                        summary: '<strong>Akar Konsep Kebangkitan Nasional:</strong> Pendidikan Politik Etis melahirkan golongan terpelajar. Budi Utomo (1908), Sarekat Islam, Indische Partij. Kongres Pemuda II (28 Oktober 1928) lahirkan Sumpah Pemuda.',
+                        visual: 'Sumpah Pemuda 28 Oktober 1928: Satu Nusa, Satu Bangsa, Satu Bahasa Indonesia',
+                        tips: '*Indische Partij* adalah organisasi pergerakan politik radikal pertama yang menyuarakan kemerdekaan Indonesia.',
+                        contohSoal: '<strong>Soal 1:</strong> Organisasi pergerakan nasional pertama di Indonesia yang berdiri 20 Mei 1908 adalah?<br><strong>Langkah Penyelesaian:</strong> **Budi Utomo**.'
                     },
                     {
                         title: 'Bab 7: Pendudukan Jepang di Indonesia (1942-1945)',
                         kurikulum: 'K13 & Merdeka (Fase F)',
-                        summary: '<strong>Penjelasan Konsep Terperinci:</strong> Propaganda Jepang (3A). Organisasi militer/semimiliter (PETA, Heiho, Seinendan). Kerja paksa Romusha. PETA melatih militer pemuda Indonesia.',
-                        visual: 'PETA (Pembela Tanah Air) = Cikal bakal pembentukan TNI',
-                        tips: 'Perlawanan PETA Blitar dipimpin oleh Supriyadi pada Februari 1945.',
-                        contohSoal: 'Siapakah pemimpin pemberontakan PETA di Blitar melawan tentara Jepang?<br><strong>Langkah Penyelesaian Terperinci:</strong><br>1. Dipimpin oleh <strong>Supriyadi</strong>.'
+                        summary: '<strong>Akar Konsep Perang Pasifik:</strong> Propaganda Jepang (3A). Organisasi militer/semimiliter (PETA, Heiho, Seinendan). Kerja paksa Romusha. Pelatihan militer PETA menjadi cikal bakal TNI.',
+                        visual: 'PETA (Pembela Tanah Air) = Cikal Bakal Pembentukan TNI',
+                        tips: 'Pemberontakan tentara PETA melawan Jepang di Blitar dipimpin oleh **Supriyadi** pada Februari 1945.',
+                        contohSoal: '<strong>Soal 1:</strong> Siapakah pemuda yang memimpin pemberontakan PETA di Blitar?<br><strong>Langkah Penyelesaian:</strong> **Supriyadi**.'
                     },
                     {
                         title: 'Bab 8: Proklamasi Kemerdekaan & Peristiwa Rengasdengklok',
                         kurikulum: 'K13 & Merdeka (Fase F)',
-                        summary: '<strong>Penjelasan Konsep Terperinci:</strong> Rengasdengklok (16 Ags 1945) penculikan Soekarno-Hatta oleh pemuda. Penyusunan teks proklamasi di rumah Laksamana Maeda. Pembacaan teks 17 Agustus 1945.',
-                        visual: 'Rengasdengklok → Rumah Laksamana Maeda → Pegangsaan Timur 56',
-                        tips: 'Teks Proklamasi diketik oleh Sayuti Melik dengan perubahan tiga kata.',
-                        contohSoal: 'Siapakah tokoh yang mengetik naskah asli Proklamasi Kemerdekaan Indonesia?<br><strong>Langkah Penyelesaian Terperinci:</strong><br>1. Diketik oleh <strong>Sayuti Melik</strong>.'
+                        summary: '<strong>Akar Konsep Detik-Detik Proklamasi:</strong> Peristiwa Rengasdengklok (16 Ags 1945) mengamankan Soekarno-Hatta dari pengaruh Jepang. Perumusan naskah di rumah Laksamana Maeda. Pembacaan teks 17 Agustus 1945.',
+                        visual: 'Rengasdengklok → Rumah Laksamana Maeda → Jalan Pegangsaan Timur No. 56',
+                        tips: 'Naskah Proklamasi Kemerdekaan diketik oleh **Sayuti Melik** dengan perubahan beberapa kata.',
+                        contohSoal: '<strong>Soal 1:</strong> Tokoh yang mengetik naskah otentik Proklamasi Kemerdekaan Indonesia adalah?<br><strong>Langkah Penyelesaian:</strong> **Sayuti Melik**.'
                     },
                     {
                         title: 'Bab 9: Perjuangan Mempertahankan Kemerdekaan (Diplomasi & Fisik)',
                         kurikulum: 'K13 & Merdeka (Fase F)',
-                        summary: '<strong>Penjelasan Konsep Terperinci:</strong> Perjuangan fisik (Surabaya, Medan Area, Bandung Lautan Api). Perjuangan diplomasi (Perjanjian Linggajati, Renville, Roem-Royen, KMB 1949).',
-                        visual: 'KMB (Konferensi Meja Bundar 1949) = Pengakuan kedaulatan RIS oleh Belanda',
-                        tips: 'Peristiwa Bandung Lautan Api bertujuan mencegah pangkalan militer Sekutu.',
-                        contohSoal: 'Konferensi internasional yang menghasilkan pengakuan kedaulatan Indonesia oleh Belanda?<br><strong>Langkah Penyelesaian Terperinci:</strong><br>1. Hasil dari <strong>Konferensi Meja Bundar (KMB)</strong>.'
+                        summary: '<strong>Akar Konsep Pertahanan Negara:</strong> Perjuangan fisik (Surabaya, Bandung Lautan Api, Agresi Militer). Perjuangan diplomasi (Linggajati, Renville, Roem-Royen, Konferensi Meja Bundar/KMB 1949).',
+                        visual: 'KMB (Konferensi Meja Bundar 1949) = Pengakuan Kedaulatan Indonesia oleh Belanda',
+                        tips: 'Peristiwa Bandung Lautan Api bertujuan mencegah Sekutu menguasai fasilitas militer strategis.',
+                        contohSoal: '<strong>Soal 1:</strong> Konferensi diplomasi internasional yang menghasilkan pengakuan kedaulatan Indonesia oleh Belanda?<br><strong>Langkah Penyelesaian:</strong> **Konferensi Meja Bundar (KMB)**.'
                     },
                     {
                         title: 'Bab 10: Demokrasi Liberal & Pemilu Pertama 1955',
                         kurikulum: 'K13 & Merdeka (Fase F)',
-                        summary: '<strong>Penjelasan Konsep Terperinci:</strong> Sistem parlementer banyak partai. Pergantian kabinet cepat (Natsir, Sukiman, Wilopo, Ali Sastroamidjojo, Burhanuddin Harahap). Pemilu 1955 memilih DPR dan Konstituante.',
-                        visual: 'Pemilu 1955 = Pemilu paling demokratis memilih DPR & Konstituante',
-                        tips: '4 Partai Pemenang Pemilu 1955: PNI, Masyumi, NU, PKI.',
-                        contohSoal: 'Kabinet yang berhasil menyelenggarakan Pemilu pertama tahun 1955 adalah?<br><strong>Langkah Penyelesaian Terperinci:</strong><br>1. Kabinet <strong>Burhanuddin Harahap</strong>.'
+                        summary: '<strong>Akar Konsep Parlementer:</strong> Sistem parlementer banyak partai. Pergantian kabinet cepat (Natsir, Sukiman, Wilopo, Ali Sastroamidjojo, Burhanuddin Harahap). Pemilu 1955 memilih DPR dan Konstituante.',
+                        visual: 'Pemilu 1955 = Pemilu Paling Demokratis Memilih Anggota DPR & Konstituante',
+                        tips: '4 Partai Pemenang Pemilu 1955: PNI, Masyumi, NU, dan PKI.',
+                        contohSoal: '<strong>Soal 1:</strong> Kabinet yang berhasil menyelenggarakan Pemilu pertama tahun 1955 adalah?<br><strong>Langkah Penyelesaian:</strong> Kabinet **Burhanuddin Harahap**.'
                     },
                     {
                         title: 'Bab 11: Demokrasi Terpimpin & Dekrit Presiden 5 Juli 1959',
                         kurikulum: 'K13 & Merdeka (Fase F)',
-                        summary: '<strong>Penjelasan Konsep Terperinci:</strong> Dekrit Presiden 1959 kembali ke UUD 1945 dan membubarkan Konstituante. Konsep Nasakom. Politik Mercusuar dan pembebasan Irian Barat.',
-                        visual: 'Dekrit Presiden 5 Juli 1959: Kembali ke UUD 1945 & Bubarkan Konstituante',
-                        tips: 'Politik Mercusuar menghasilkan bangunan fisik seperti GBK, Monas, Hotel Indonesia.',
-                        contohSoal: 'Apakah isi utama dari Dekrit Presiden 5 Juli 1959?<br><strong>Langkah Penyelesaian Terperinci:</strong><br>1. Pembubaran Konstituante dan <strong>kembali berlakunya UUD 1945</strong>.'
+                        summary: '<strong>Akar Konsep Kekuasaan Terpusat:</strong> Dekrit Presiden 5 Juli 1959 kembali ke UUD 1945 dan membubarkan Konstituante. Konsep Nasakom. Politik Mercusuar dan pembebasan Irian Barat.',
+                        visual: 'Dekrit Presiden 5 Juli 1959: Kembali ke UUD 1945 & Pembubaran Konstituante',
+                        tips: 'Politik Mercusuar menghasilkan proyek megah seperti GBK, Monas, Patung Selamat Datang, dan Hotel Indonesia.',
+                        contohSoal: '<strong>Soal 1:</strong> Apakah isi utama Dekrit Presiden 5 Juli 1959?<br><strong>Langkah Penyelesaian:</strong> Pembubaran Konstituante dan **kembali berlakunya UUD 1945**.'
                     },
                     {
                         title: 'Bab 12: Orde Baru: Dualisme Kepemimpinan & Pembangunan',
                         kurikulum: 'K13 & Merdeka (Fase F)',
-                        summary: '<strong>Penjelasan Konsep Terperinci:</strong> Peralihan pasca G30S/PKI via Supersemar. Dwifungsi ABRI. Pembangunan Ekonomi Repelita dan stabilitas politik.',
-                        visual: 'Supersemar 11 Maret 1966 = Penyerahan mandat pengamanan kepada Soeharto',
-                        tips: 'Dwifungsi ABRI menempatkan militer dalam ranah pertahanan dan politik pemerintahan.',
-                        contohSoal: 'Surat perintah tanggal 11 Maret 1966 yang menjadi pilar awal Orde Baru dinamakan?<br><strong>Langkah Penyelesaian Terperinci:</strong><br>1. Dinamakan surat <strong>Supersemar</strong>.'
+                        summary: '<strong>Akar Konsep Stabilitas Politik:</strong> Peralihan kekuasaan pasca G30S/PKI via Supersemar 11 Maret 1966. Dwifungsi ABRI. Pembangunan ekonomi lima tahun (Repelita).',
+                        visual: 'Supersemar 11 Maret 1966 = Penyerahan Mandat Pengamanan Kepada Soeharto',
+                        tips: 'Dwifungsi ABRI menempatkan militer dalam ranah pertahanan negara sekaligus politik pemerintahan.',
+                        contohSoal: '<strong>Soal 1:</strong> Surat perintah 11 Maret 1966 yang menjadi tonggak awal lahirnya Orde Baru dinamakan?<br><strong>Langkah Penyelesaian:</strong> Surat **Supersemar**.'
                     },
                     {
                         title: 'Bab 13: Reformasi 1998 & Jatuhnya Pemerintahan Orde Baru',
                         kurikulum: 'K13 & Merdeka (Fase F)',
-                        summary: '<strong>Penjelasan Konsep Terperinci:</strong> Krisis moneter 1997 memicu gerakan mahasiswa 1998 menduduki gedung DPR. Pengunduran diri Presiden Soeharto 21 Mei 1998 gantikan BJ Habibie.',
-                        visual: '21 Mei 1998 = Soeharto Mundur, B.J. Habibie dilantik jadi Presiden ke-3',
-                        tips: '6 Agenda Reformasi: Adili Soeharto, Amandemen UUD, Otonomi Daerah, Hapus Dwifungsi ABRI.',
-                        contohSoal: 'Siapakah Presiden yang menggantikan Soeharto saat menyatakan mundur 21 Mei 1998?<br><strong>Langkah Penyelesaian Terperinci:</strong><br>1. Digantikan oleh <strong>B.J. Habibie</strong>.'
+                        summary: '<strong>Akar Konsep Gerakan Mahasiswa:</strong> Krisis moneter 1997 memicu aksi demonstrasi mahasiswa 1998. Pengunduran diri Presiden Soeharto 21 Mei 1998 digantikan BJ Habibie.',
+                        visual: '21 Mei 1998 = Soeharto Mundur, B.J. Habibie Dilantik Jadi Presiden ke-3',
+                        tips: '6 Agenda Reformasi: Adili Soeharto, Amandemen UUD 1945, Otonomi Daerah, Hapus Dwifungsi ABRI, Supremasi Hukum, Pelaksanaan Demokrasi.',
+                        contohSoal: '<strong>Soal 1:</strong> Siapakah Presiden yang menggantikan Soeharto saat menyatakan mundur 21 Mei 1998?<br><strong>Langkah Penyelesaian:</strong> **B.J. Habibie**.'
                     },
                     {
                         title: 'Bab 14: Perang Dingin & Organisasi Internasional (KAA, ASEAN)',
                         kurikulum: 'K13 & Merdeka (Fase F)',
-                        summary: '<strong>Penjelasan Konsep Terperinci:</strong> Persaingan Blok Barat (USA) dan Blok Timur (Uni Soviet). Indonesia aktif Bebas Aktif. Konferensi Asia Afrika (KAA 1955), Gerakan Non-Blok (GNB), pendirian ASEAN 1967.',
-                        visual: 'Deklarasi Bangkok (12 Ags 1967) = Berdirinya organisasi ASEAN',
-                        tips: 'Peran Indonesia dalam KAA Bandung melahirkan Dasa Sila Bandung.',
-                        contohSoal: 'Deklarasi pendirian ASEAN tahun 1967 ditandatangani di kota?<br><strong>Langkah Penyelesaian Terperinci:</strong><br>1. Ditandatangani di <strong>Bangkok, Thailand</strong>.'
+                        summary: '<strong>Akar Konsep Politik Luar Negeri:</strong> Persaingan Blok Barat (USA) dan Blok Timur (USSR). Politik Bebas Aktif Indonesia. Konferensi Asia Afrika (KAA 1955), Gerakan Non-Blok (GNB), pendirian ASEAN 1967.',
+                        visual: 'Deklarasi Bangkok (8 Agustus 1967) = Berdirinya Organisasi ASEAN',
+                        tips: 'KAA di Bandung melahirkan **Dasa Sila Bandung** sebagai prinsip hubungan internasional.',
+                        contohSoal: '<strong>Soal 1:</strong> Deklarasi pendirian ASEAN tahun 1967 ditandatangani di kota?<br><strong>Langkah Penyelesaian:</strong> **Bangkok, Thailand**.'
                     },
                     {
                         title: 'Bab 15: Perang Dunia I - II & Organisasi Perdamaian LBB - PBB',
                         kurikulum: 'K13 & Merdeka (Fase F)',
-                        summary: '<strong>Penjelasan Konsep Terperinci:</strong> PD I (Sebab khusus: Terbunuhnya Franz Ferdinand). PD II (Sebab khusus: Serangan Jerman ke Polandia 1939). Pembentukan Liga Bangsa-Bangsa (LBB) lalu PBB (24 Okt 1945).',
-                        visual: 'PBB (Perserikatan Bangsa-Bangsa) didirikan 24 Oktober 1945 San Francisco',
-                        tips: '5 Anggota Tetap Dewan Keamanan PBB punya Hak Veto: USA, Inggris, Prancis, Rusia, China.',
-                        contohSoal: 'Sebutkan peristiwa sebab khusus meletusnya Perang Dunia II di kawasan Eropa!<br><strong>Langkah Penyelesaian Terperinci:</strong><br>1. Serangan invasi militer <strong>Jerman ke Polandia pada 1 September 1939</strong>.'
+                        summary: '<strong>Akar Konsep Konflik Global:</strong> PD I (Sebab khusus: Pembunuhan Franz Ferdinand). PD II (Sebab khusus: Serangan Jerman ke Polandia 1939). Pendirian LBB lalu PBB (24 Oktober 1945).',
+                        visual: 'PBB Didirikan 24 Oktober 1945 di San Francisco | 5 Anggota Tetap Hak Veto',
+                        tips: '5 Anggota Tetap Dewan Keamanan PBB pemegang Hak Veto: USA, Inggris, Prancis, Rusia, dan China.',
+                        contohSoal: '<strong>Soal 1:</strong> Sebutkan peristiwa sebab khusus meletusnya Perang Dunia II di Eropa!<br><strong>Langkah Penyelesaian:</strong> Invasi militer **Jerman ke Polandia pada 1 September 1939**.'
                     }
                 ],
                 'lit': [
                     {
                         title: 'Bab 1: Penalaran Logis: Modus Ponens, Tollens & Silogisme',
                         kurikulum: 'UTBK SNBT 2026',
-                        summary: '<strong>Penjelasan Konsep Terperinci:</strong> Logika deduktif menarik kesimpulan yang pasti dari premis. Aturan: Modus Ponens (P→Q, P ⇒ Q), Modus Tollens (P→Q, ~Q ⇒ ~P), Silogisme (P→Q, Q→R ⇒ P→R).',
+                        summary: '<strong>Akar Konsep Logika Formal:</strong> Penalaran deduktif menarik kesimpulan yang sahih (valid) dari premis-premis mayor dan minor. Aturan utama: (1) Modus Ponens ($P \implies Q, P \vdash Q$), (2) Modus Tollens ($P \implies Q, \sim Q \vdash \sim P$), dan (3) Silogisme ($P \implies Q, Q \implies R \vdash P \implies R$).',
                         visual: 'Ponens: P→Q, P ⇒ Q  |  Tollens: P→Q, ~Q ⇒ ~P  |  Silogisme: P→Q, Q→R ⇒ P→R',
-                        tips: 'Jebakan UTBK: P → Q TIDAK BISA disimpulkan ~P → ~Q atau Q → P.',
-                        contohSoal: 'Premis 1: Jika rajin, maka sukses. Premis 2: Budi tidak sukses. Kesimpulan?<br><strong>Langkah Penyelesaian Terperinci:</strong><br>1. Menurut Modus Tollens: Budi tidak rajin.'
+                        tips: 'Jebakan UTBK SNBT: Pernyataan $P \implies Q$ **TIDAK SAMA** dengan $\sim P \implies \sim Q$ atau $Q \implies P$. Inversi dan konversi TIDAK EKUIVALEN!',
+                        contohSoal: '<strong>Soal 1:</strong> Premis 1: Jika Budi belajar, maka ia lulus. Premis 2: Budi tidak lulus. Kesimpulan?<br><strong>Langkah Penyelesaian:</strong> Menurut Modus Tollens, kesimpulannya adalah **Budi tidak belajar**.'
                     },
                     {
                         title: 'Bab 2: Penalaran Analitis & Urutan Posisi Kompleks',
                         kurikulum: 'UTBK SNBT 2026',
-                        summary: '<strong>Penjelasan Konsep Terperinci:</strong> Penalaran analitis menguji kemampuan menyusun urutan, jadwal, atau posisi berdasarkan sekumpulan syarat dan batasan.',
-                        visual: 'Metode Diagram Matriks / Garis Urutan Posisi',
-                        tips: 'Pilih syarat yang memberikan kepastian posisi absolut terlebih dahulu.',
-                        contohSoal: 'A lebih tinggi dari B, C lebih tinggi dari A. Siapa paling tinggi?<br><strong>Langkah Penyelesaian Terperinci:</strong><br>1. Urutan tinggi: C > A > B. Paling tinggi adalah <strong>C</strong>.'
+                        summary: '<strong>Akar Konsep Matriks Posisi:</strong> Penalaran analitis menguji kemampuan menyusun urutan, jadwal, atau posisi berdasarkan sekumpulan syarat batasan logika.',
+                        visual: 'Metode Baris Urutan Posisi Absolut & Relatif',
+                        tips: 'Selalu cari dan tempatkan syarat logika yang memberikan **posisi absolut mutlak** terlebih dahulu!',
+                        contohSoal: '<strong>Soal 1:</strong> A lebih tinggi dari B, C lebih tinggi dari A. Siapakah yang paling tinggi?<br><strong>Langkah Penyelesaian:</strong> Urutan tinggi: C > A > B. Paling tinggi adalah **C**.'
                     },
                     {
                         title: 'Bab 3: Penalaran Kuantitatif: Pola Barisan & Deret Angka',
                         kurikulum: 'UTBK SNBT 2026',
-                        summary: '<strong>Penjelasan Konsep Terperinci:</strong> Mengidentifikasi pola deret bilangan: tingkat satu, tingkat dua, larik berselang, atau operasi bertingkat.',
+                        summary: '<strong>Akar Konsep Pola Deret:</strong> Mengidentifikasi pola deret bilangan: tingkat satu, tingkat dua, larik berselang-seling, atau operasi aritmatika bertingkat.',
                         visual: 'Pola Beda Bertingkat atau Pola Larik Selang-Seling',
-                        tips: 'Jika pola angka naik turun berulang, kemungkinan besar merupakan deret berselang 2 atau 3 langkah.',
-                        contohSoal: '3, 6, 12, 21, 33, ... Berapa angka selanjutnya?<br><strong>Langkah Penyelesaian Terperinci:</strong><br>1. Selisih: +3, +6, +9, +12. Selisih berikut +15. 33 + 15 = <strong>48</strong>.'
+                        tips: 'Jika pola angka naik-turun berulang secara bergantian, kemungkinan besar merupakan deret berselang 2 atau 3 langkah!',
+                        contohSoal: '<strong>Soal 1:</strong> $3, 6, 12, 21, 33, \dots$ Berapakah angka selanjutnya?<br><strong>Langkah Penyelesaian:</strong><br>1. Pola selisih: $+3, +6, +9, +12 \implies$ selisih berikut $+15$.<br>2. Angka berikutnya $= 33 + 15 = \mathbf{48}$.'
                     },
                     {
                         title: 'Bab 4: Pemahaman Bacaan: Ide Pokok & Kalimat Utama',
                         kurikulum: 'UTBK SNBT 2026',
-                        summary: '<strong>Penjelasan Konsep Terperinci:</strong> Gagasan utama adalah inti pembahasan paragraf. Paragraf Deduktif (awal), Induktif (akhir), Campuran.',
-                        visual: 'Gagasan Utama = Topik Bahasan + Pandangan Penulis',
-                        tips: 'Kalimat utama bersifat umum dan dijelaskan oleh kalimat-kalimat pengembang.',
-                        contohSoal: 'Di manakah letak ide pokok paragraf deduktif?<br><strong>Langkah Penyelesaian Terperinci:</strong><br>1. Terletak pada <strong>Awal Paragraf</strong>.'
+                        summary: '<strong>Akar Konsep Analisis Teks:</strong> Ide pokok adalah gagasan inti pembahasan dalam suatu paragraf. Paragraf Deduktif (ide di awal), Induktif (ide di akhir), Campuran.',
+                        visual: 'Gagasan Utama = Topik Utama Paragraf + Pandangan Penulis',
+                        tips: 'Kalimat utama bersifat umum dan dijelaskan oleh kalimat-kalimat pengembang berikutnya.',
+                        contohSoal: '<strong>Soal 1:</strong> Di manakah letak ide pokok pada paragraf bertipe deduktif?<br><strong>Langkah Penyelesaian:</strong> Terletak pada **Awal Paragraf**.'
                     },
                     {
                         title: 'Bab 5: Penggunaan EBI: Ejaan, Tanda Baca & Kata Baku',
-                        kurikulum: 'UTBK SNBT 2026',
-                        summary: '<strong>Penjelasan Konsep Terperinci:</strong> Menguji kaidah Bahasa Indonesia baku: penulisan huruf kapital, kata serapan, pemakaian tanda koma, dan titik koma.',
+                        kurikulum: 'K13 & Merdeka (Fase E/F)',
+                        summary: '<strong>Akar Konsep Kebebasabahasaan:</strong> Kaidah Bahasa Indonesia baku: penulisan huruf kapital, kata serapan baku, pemakaian tanda koma (,), dan titik koma (;).',
                         visual: 'Kata Baku: Apotek (bukan Apotik), Praktik (bukan Praktek), Efektif',
-                        tips: 'Gelar akademis diapit tanda koma: Budi, S.Pd.',
-                        contohSoal: 'Manakah bentuk penulisan kata baku yang benar: Apotik atau Apotek?<br><strong>Langkah Penyelesaian Terperinci:</strong><br>1. Bentuk baku adalah <strong>Apotek</strong>.'
+                        tips: 'Penulisan gelar akademis selalu diapit dan dipisahkan oleh tanda koma, misal: Budi, S.Pd.',
+                        contohSoal: '<strong>Soal 1:</strong> Manakah bentuk kata baku yang benar: Apotik atau Apotek?<br><strong>Langkah Penyelesaian:</strong> Bentuk baku sesuai KBBI adalah **Apotek**.'
                     },
                     {
                         title: 'Bab 6: Analisis Makna Kata: Konotatif, Denotatif & Kontekstual',
                         kurikulum: 'UTBK SNBT 2026',
-                        summary: '<strong>Penjelasan Konsep Terperinci:</strong> Denotatif adalah makna sebenarnya/Kamus. Konotatif adalah makna kiasan/tambahan. Makna kontekstual bergantung pada kalimat.',
-                        visual: 'Denotatif (Makna Sebenarnya) vs Konotatif (Kiasan)',
-                        tips: 'Perhatikan hubungan asosiasi kata dalam kalimat untuk menemukan makna konotasi.',
-                        contohSoal: 'Frasa "panjang tangan" dalam arti suka mencuri tergolong makna?<br><strong>Langkah Penyelesaian Terperinci:</strong><br>1. Tergolong makna <strong>Konotatif</strong>.'
+                        summary: '<strong>Akar Konsep Semantik:</strong> Denotatif adalah makna lugas sebenarnya sesuai kamus. Konotatif adalah makna kiasan/tambahan. Makna kontekstual bergantung pada kalimat.',
+                        visual: 'Denotatif (Makna Sebenarnya) vs Konotatif (Makna Kiasan Tambahan)',
+                        tips: 'Perhatikan hubungan konteks asosiasi kata di dalam keseluruhan kalimat.',
+                        contohSoal: '<strong>Soal 1:</strong> Ungkapan "panjang tangan" dalam arti suka mencuri tergolong makna?<br><strong>Langkah Penyelesaian:</strong> Tergolong makna **Konotatif**.'
                     },
                     {
                         title: 'Bab 7: Penalaran Gambar & Spasial (Figural)',
                         kurikulum: 'UTBK SNBT 2026',
-                        summary: '<strong>Penjelasan Konsep Terperinci:</strong> Menganalisis rotasi, cermin, analogi gambar, atau kelanjutan pola perubahan bentuk 2D/3D.',
-                        visual: 'Rotasi Searah Jarum Jam 90° / 180° / Pencerminan',
-                        tips: 'Fokus pada satu elemen kecil dalam gambar lalu ikuti pergerakannya.',
-                        contohSoal: 'Bentuk yang diputar 90 derajat searah jarum jam akan menghadap ke?<br><strong>Langkah Penyelesaian Terperinci:</strong><br>1. Sisi atas berpindah menghadap ke <strong>Sisi Kanan</strong>.'
+                        summary: '<strong>Akar Konsep Visual Spasial:</strong> Menganalisis rotasi, pencerminan, analogi gambar, atau kelanjutan pola perubahan bentuk 2D/3D.',
+                        visual: 'Rotasi Searah Jarum Jam 90° / 180° / Pencerminan Vektor',
+                        tips: 'Fokus pada satu elemen kecill khusus dalam gambar lalu ikuti pergerakan rotasinya!',
+                        contohSoal: '<strong>Soal 1:</strong> Bentuk yang diputar 90 derajat searah jarum jam akan menghadap ke?<br><strong>Langkah Penyelesaian:</strong> Sisi atas berpindah menghadap ke **Sisi Kanan**.'
                     },
                     {
                         title: 'Bab 8: Kalimat Efektif & Kehematan Kata',
                         kurikulum: 'UTBK SNBT 2026',
-                        summary: '<strong>Penjelasan Konsep Terperinci:</strong> Kalimat efektif memenuhi syarat: kesepadanan struktur, keparalelan bentuk, kehematan kata, dan kelogisan penalaran.',
+                        summary: '<strong>Akar Konsep Tata Kalimat:</strong> Kalimat efektif memenuhi syarat: kesepadanan struktur, keparalelan bentuk, kehematan kata, dan kelogisan penalaran.',
                         visual: 'Hindari Pleonasme: "sangat indah sekali" (Salah) → "sangat indah" (Benar)',
-                        tips: 'Subjek kalimat tidak boleh didahului oleh kata depan (seperti "Dalam...", "Bagi...").',
-                        contohSoal: 'Perbaiki kalimat pleonasme: "Hadirin para bapak-bapak sekalian".<br><strong>Langkah Penyelesaian Terperinci:</strong><br>1. Kalimat efektif: "<strong>Hadirin sekalian</strong>" atau "<strong>Para bapak</strong>".'
+                        tips: 'Subjek kalimat tidak boleh didahului oleh kata depan (seperti "Dalam...", "Bagi...", "Untuk...").',
+                        contohSoal: '<strong>Soal 1:</strong> Perbaiki kalimat pleonasme: "Hadirin para bapak-bapak sekalian".<br><strong>Langkah Penyelesaian:</strong> Kalimat efektif: "**Hadirin sekalian**" atau "**Para bapak**".'
                     },
                     {
                         title: 'Bab 9: Pemahaman Paragraf: Hubungan Antarkalimat',
                         kurikulum: 'UTBK SNBT 2026',
-                        summary: '<strong>Penjelasan Konsep Terperinci:</strong> Menganalisis keterkaitan logis antarkalimat: hubungan penjelas, pertentangan, sebab-akibat, penegasan, atau contoh.',
+                        summary: '<strong>Akar Konsep Kohesi Teks:</strong> Menganalisis keterkaitan logis antarkalimat: hubungan penjelas, pertentangan, sebab-akibat, penegasan, atau contoh.',
                         visual: 'Konjungsi Antarkalimat: Namun, Oleh karena itu, Dengan demikian',
-                        tips: 'Kata konjungsi "Namun" digunakan di awal kalimat untuk menyatakan pertentangan.',
-                        contohSoal: 'Kata sambung untuk menunjukkan hubungan akibat di awal kalimat?<br><strong>Langkah Penyelesaian Terperinci:</strong><br>1. Menggunakan konjungsi <strong>"Oleh karena itu,"</strong>.'
+                        tips: 'Kata konjungsi "Namun" digunakan di awal kalimat untuk menyatakan pertentangan dengan kalimat sebelumnya.',
+                        contohSoal: '<strong>Soal 1:</strong> Kata sambung untuk menunjukkan hubungan akibat di awal kalimat?<br><strong>Langkah Penyelesaian:</strong> Menggunakan konjungsi **"Oleh karena itu,"**.'
                     },
                     {
                         title: 'Bab 10: Teks Argumentasi: Inferensi & Simpulan Implisit',
                         kurikulum: 'UTBK SNBT 2026',
-                        summary: '<strong>Penjelasan Konsep Terperinci:</strong> Menarik inferensi yang tidak tertulis secara eksplisit dalam teks berdasarkan bukti faktual paragraf.',
-                        visual: 'Inferensi Sah = Harus Didukung Bukti Langsung dalam Teks',
-                        tips: 'Jangan memilih jawaban simpulan yang mengandung kata ekstrem tanpa bukti kuat.',
-                        contohSoal: 'Apakah syarat utama kesimpulan implisit paragraf dapat dinyatakan sah?<br><strong>Langkah Penyelesaian Terperinci:</strong><br>1. Harus sepenuhnya <strong>didukung oleh fakta dalam teks</strong>.'
+                        summary: '<strong>Akar Konsep Penalaran Kritis:</strong> Menarik simpulan tersirat (*inferensi*) yang tidak tertulis secara eksplisit berdasarkan bukti faktual paragraf.',
+                        visual: 'Inferensi Sah = Harus Didukung Bukti Langsung dalam Teks Paragraf',
+                        tips: 'Jangan memilih jawaban simpulan yang mengandung kata-kata ekstrem tanpa bukti kuat!',
+                        contohSoal: '<strong>Soal 1:</strong> Apakah syarat utama kesimpulan implisit paragraf dapat dinyatakan sah?<br><strong>Langkah Penyelesaian:</strong> Harus sepenuhnya **didukung oleh fakta dalam teks**.'
                     },
                     {
                         title: 'Bab 11: Literasi Bahasa Inggris: Main Idea & Author\'s Attitude',
                         kurikulum: 'UTBK SNBT 2026',
-                        summary: '<strong>Penjelasan Konsep Terperinci:</strong> Memahami teks Bahasa Inggris akademik: Main Idea, Author\'s Tone (Critical, Neutral, Optimistic), Synonyms in Context.',
-                        visual: 'Tone: Critical, Informative, Objective, Persuasive',
-                        tips: 'Skimming paragraf pertama dan terakhir untuk menemukan topic sentence.',
-                        contohSoal: 'What is the main purpose of an informative text in English literacy?<br><strong>Langkah Penyelesaian Terperinci:</strong><br>1. To <strong>provide factual information to the readers</strong>.'
+                        summary: '<strong>Akar Konsep Literasi Inggris:</strong> Memahami teks akademik Bahasa Inggris: *Main Idea*, *Author\'s Tone* (*Critical, Neutral, Optimistic*), *Synonyms in Context*.',
+                        visual: 'Tone: Critical, Informative, Objective, Persuasive, Skeptical',
+                        tips: 'Lakukan *skimming* pada paragraf pertama dan terakhir untuk menemukan *topic sentence*.',
+                        contohSoal: '<strong>Soal 1:</strong> What is the main purpose of an informative text in English literacy?<br><strong>Langkah Penyelesaian:</strong> To **provide factual information to the readers**.'
                     },
                     {
                         title: 'Bab 12: Literasi Bahasa Inggris: Inference & Vocabulary',
                         kurikulum: 'UTBK SNBT 2026',
-                        summary: '<strong>Penjelasan Konsep Terperinci:</strong> Menarik kesimpulan tersirat dalam bacaan Bahasa Inggris serta menentukan padanan kata teknis.',
+                        summary: '<strong>Akar Konsep Pemahaman Konteks:</strong> Menarik kesimpulan tersirat dalam bacaan Bahasa Inggris serta menentukan padanan kata teknis akademik.',
                         visual: 'Inference Questions: "It can be inferred from paragraph 2 that..."',
-                        tips: 'Gunakan kalimat sebelum dan sesudah kata asing untuk menebak konteks arti.',
-                        contohSoal: 'Synonym of the word "substantial" in academic context?<br><strong>Langkah Penyelesaian Terperinci:</strong><br>1. Synonym: <strong>Significant / Considerable</strong>.'
+                        tips: 'Gunakan kalimat sebelum dan sesudah kata asing untuk menebak arti secara kontekstual.',
+                        contohSoal: '<strong>Soal 1:</strong> Synonym of the word "substantial" in academic context?<br><strong>Langkah Penyelesaian:</strong> Synonym: **Significant / Considerable**.'
                     },
                     {
                         title: 'Bab 13: Penalaran Matematika Sederhana & Diagram Venn',
                         kurikulum: 'UTBK SNBT 2026',
-                        summary: '<strong>Penjelasan Konsep Terperinci:</strong> Soal cerita aplikasi himpunan dan diagram Venn pada permasalahan sehari-hari.',
-                        visual: 'n(A ∪ B) = n(A) + n(B) - n(A ∩ B)',
-                        tips: 'Isi bagian irisan n(A ∩ B) terlebih dahulu di tengah diagram Venn.',
-                        contohSoal: 'Dari 30 siswa, 20 suka Mat, 15 suka Fis, 10 suka keduanya. Berapa tidak suka keduanya?<br><strong>Langkah Penyelesaian Terperinci:</strong><br>1. Total suka setidaknya satu = 20 + 15 - 10 = 25. Tidak suka = 30 - 25 = <strong>5 siswa</strong>.'
+                        summary: '<strong>Akar Konsep Himpunan:</strong> Soal cerita aplikasi himpunan dan diagram Venn pada permasalahan sehari-hari: $n(A \cup B) = n(A) + n(B) - n(A \cap B)$.',
+                        visual: 'Diagram Venn: n(A ∪ B) = n(A) + n(B) - n(A ∩ B)',
+                        tips: 'Isi bagian irisan $n(A \cap B)$ terlebih dahulu di tengah diagram Venn!',
+                        contohSoal: '<strong>Soal 1:</strong> Dari 30 siswa, 20 suka Mat, 15 suka Fis, 10 suka keduanya. Berapa tidak suka keduanya?<br><strong>Langkah Penyelesaian:</strong><br>1. Suka setidaknya satu $= 20 + 15 - 10 = 25$.<br>2. Tidak suka keduanya $= 30 - 25 = \mathbf{5\text{ siswa}}$.'
                     },
                     {
                         title: 'Bab 14: Analisis Tabel, Grafik & Data Statistik UTBK',
                         kurikulum: 'UTBK SNBT 2026',
-                        summary: '<strong>Penjelasan Konsep Terperinci:</strong> Membaca dan menyimpulkan tren data kuantitatif dalam bentuk tabel, diagram batang, atau grafik garis.',
+                        summary: '<strong>Akar Konsep Interpretasi Data:</strong> Membaca dan menyimpulkan tren data kuantitatif dalam bentuk tabel, diagram batang, atau grafik garis. Persentase Kenaikan $= \frac{\text{Data Baru} - \text{Data Lama}}{\text{Data Lama}} \times 100\%$.',
                         visual: 'Persentase Kenaikan = [ (Data Baru - Data Lama) / Data Lama ] × 100%',
-                        tips: 'Perhatikan sumbu X dan Y beserta satuan skala sebelum menghitung.',
-                        contohSoal: 'Penjualan naik dari 100 ke 150 unit. Berapa persen kenaikannya?<br><strong>Langkah Penyelesaian Terperinci:</strong><br>1. Kenaikan = [(150 - 100) / 100] × 100% = <strong>50%</strong>.'
+                        tips: 'Perhatikan skala pada sumbu X dan sumbu Y sebelum melakukan penghitungan angka!',
+                        contohSoal: '<strong>Soal 1:</strong> Penjualan naik dari 100 ke 150 unit. Berapa persen kenaikannya?<br><strong>Langkah Penyelesaian:</strong> Kenaikan $= \frac{150 - 100}{100} \times 100\% = \mathbf{50\%}$.'
                     },
                     {
                         title: 'Bab 15: Pemecahan Masalah Studi Kasus Kebijakan Publik',
                         kurikulum: 'UTBK SNBT 2026',
-                        summary: '<strong>Penjelasan Konsep Terperinci:</strong> Menguji penalaran logis kritis dalam menilai solusi paling efektif dari permasalahan sosial atau ekonomi.',
-                        visual: 'Pilih Solusi yang Paling Rasional, Berdampak Luas & Minim Risiko',
-                        tips: 'Gunakan prinsip kepatuhan hukum dan efisiensi biaya saat memilih solusi.',
-                        contohSoal: 'Kriteria utama memilih solusi terbaik dari kasus dilema publik?<br><strong>Langkah Penyelesaian Terperinci:</strong><br>1. Memilih solusi yang <strong>paling rasional, minim dampak negatif, dan sesuai hukum</strong>.'
+                        summary: '<strong>Akar Konsep Studi Kasus:</strong> Menguji penalaran logis kritis dalam menilai solusi paling efektif dari permasalahan dilema sosial atau ekonomi.',
+                        visual: 'Pilih Solusi Paling Rasional, Berdampak Luas & Minim Risiko Negatif',
+                        tips: 'Gunakan prinsip kepatuhan hukum dan efisiensi biaya saat memilih opsi solusi terbaik.',
+                        contohSoal: '<strong>Soal 1:</strong> Kriteria utama memilih solusi terbaik dari kasus dilema publik?<br><strong>Langkah Penyelesaian:</strong> Memilih solusi yang **paling rasional, minim dampak negatif, dan sesuai hukum**.'
                     }
                 ]
             },
@@ -1442,107 +1442,6 @@
                             pilihan: ['A. 2', 'B. 4', 'C. 8', 'D. 16', 'E. 32'],
                             kunci: 'B. 4',
                             solusiLengkap: '3ⁿ(3 + 1) = 36 ⇒ 3ⁿ(4) = 36 ⇒ 3ⁿ = 9 ⇒ n = 2. Maka 2ⁿ = 2² = 4.'
-                        },
-                        {
-                            id: 'pk_q3',
-                            pertanyaan: 'Jika ᵃlog 2 = x dan ᵃlog 3 = y, maka nilai dari ᵃlog 18 adalah...',
-                            pilihan: ['A. x + y', 'B. x + 2y', 'C. 2x + y', 'D. x² + y', 'E. x · y²'],
-                            kunci: 'B. x + 2y',
-                            solusiLengkap: 'ᵃlog 18 = ᵃlog(2 × 3²) = ᵃlog 2 + 2 · ᵃlog 3 = x + 2y.'
-                        },
-                        {
-                            id: 'pk_q4',
-                            pertanyaan: 'Nilai dari lim (x→2) (x² - 4) / (x - 2) adalah...',
-                            pilihan: ['A. 0', 'B. 2', 'C. 4', 'D. 8', 'E. Tidak terdefinisi'],
-                            kunci: 'C. 4',
-                            solusiLengkap: 'Bentuk 0/0. Aturan L\'Hopital: turunkan pembilang (2x) dan penyebut (1). lim (x→2) (2x / 1) = 2(2) = 4.'
-                        },
-                        {
-                            id: 'pk_q5',
-                            pertanyaan: 'Luas daerah yang dibatasi oleh parabola y = x² dan garis y = 4 adalah...',
-                            pilihan: ['A. 16/3 satuan', 'B. 32/3 satuan', 'C. 64/3 satuan', 'D. 8 satuan', 'E. 12 satuan'],
-                            kunci: 'B. 32/3 satuan',
-                            solusiLengkap: 'Titik potong x² = 4 ⇒ x = -2 sampai x = 2. Luas = ∫[-2,2] (4 - x²) dx = [4x - x³/3] limit -2 sampai 2 = (8 - 8/3) - (-8 + 8/3) = 16 - 16/3 = 32/3.'
-                        }
-                    ]
-                },
-                'utbk-pu': {
-                    title: 'UTBK SNBT - Penalaran Umum & Logika (PU)',
-                    durasiMinutes: 10,
-                    soal: [
-                        {
-                            id: 'pu_q1',
-                            pertanyaan: 'Semua peserta tryout membawa kartu ujian. Sebagian peserta tryout menggunakan kemeja putih. Kesimpulan yang tepat adalah...',
-                            pilihan: [
-                                'A. Semua peserta tryout berkemeja putih membawa kartu ujian',
-                                'B. Sebagian peserta tryout yang membawa kartu ujian berkemeja putih',
-                                'C. Semua peserta tryout tidak berkemeja putih',
-                                'D. Peserta yang membawa kartu ujian pasti tidak berkemeja putih',
-                                'E. Tidak ada kesimpulan yang dapat ditarik'
-                            ],
-                            kunci: 'B. Sebagian peserta tryout yang membawa kartu ujian berkemeja putih',
-                            solusiLengkap: 'Karena SEMUA peserta membawa kartu ujian, maka SEBAGIAN peserta berkemeja putih pasti membawa kartu ujian.'
-                        },
-                        {
-                            id: 'pu_q2',
-                            pertanyaan: 'Jika hari hujan, maka jalanan licin. Hari ini jalanan tidak licin. Kesimpulan yang sah adalah...',
-                            pilihan: ['A. Hari ini hujan', 'B. Hari ini tidak hujan', 'C. Hari ini mendung', 'D. Jalanan kering karena hujan', 'E. Tidak dapat disimpulkan'],
-                            kunci: 'B. Hari ini tidak hujan',
-                            solusiLengkap: 'Modus Tollens: P → Q, ~Q ⇒ ~P. P = Hujan, Q = Licin. Karena ~Q (tidak licin), maka ~P (tidak hujan).'
-                        },
-                        {
-                            id: 'pu_q3',
-                            pertanyaan: 'Diketahui barisan angka: 3, 6, 12, 21, 33, ... Angka berikutnya adalah...',
-                            pilihan: ['A. 42', 'B. 45', 'C. 48', 'D. 51', 'E. 54'],
-                            kunci: 'C. 48',
-                            solusiLengkap: 'Pola selisih: +3, +6, +9, +12, ... Selisih berikutnya adalah +15. Maka 33 + 15 = 48.'
-                        }
-                    ]
-                },
-                'tka-saintek': {
-                    title: 'TKA Saintek - Fisika, Kimia & Biologi HOTS',
-                    durasiMinutes: 10,
-                    soal: [
-                        {
-                            id: 'saintek_q1',
-                            pertanyaan: 'Benda bermassa 2 kg ditarik gaya F = 20 N sudut 60° terhadap horizontal pada lantai licin. Berapakah percepatan benda?',
-                            pilihan: ['A. 5 m/s²', 'B. 10 m/s²', 'C. 5√3 m/s²', 'D. 20 m/s²', 'E. 10√3 m/s²'],
-                            kunci: 'A. 5 m/s²',
-                            solusiLengkap: 'F_x = F cos 60° = 20 (0,5) = 10 N. a = F_x / m = 10 / 2 = 5 m/s².'
-                        },
-                        {
-                            id: 'saintek_q2',
-                            pertanyaan: 'Larutan HCl 0,01 M memiliki volume 100 mL. Nilai pH larutan tersebut adalah...',
-                            pilihan: ['A. 1', 'B. 2', 'C. 3', 'D. 12', 'E. 13'],
-                            kunci: 'B. 2',
-                            solusiLengkap: 'HCl asam kuat valensi 1. [H⁺] = 10⁻² M. pH = -log(10⁻²) = 2.'
-                        },
-                        {
-                            id: 'saintek_q3',
-                            pertanyaan: 'Pada katode sel elektrolisis larutan CuSO₄ dengan elektrode karbon (C), zat yang dihasilkan adalah...',
-                            pilihan: ['A. Gas Oksigen', 'B. Gas Hidrogen', 'C. Endapan Logam Tembaga (Cu)', 'D. Gas Klorin', 'E. Larutan Asam Sulfat'],
-                            kunci: 'C. Endapan Logam Tembaga (Cu)',
-                            solusiLengkap: 'Di katode terjadi reduksi kation. Kation Cu²⁺ memiliki E° lebih positif daripada air, sehingga Cu²⁺ tereduksi menjadi logam Cu (Cu²⁺ + 2e⁻ → Cu).'
-                        }
-                    ]
-                },
-                'tka-soshum': {
-                    title: 'TKA Soshum - Ekonomi, Sosiologi & Geografi',
-                    durasiMinutes: 10,
-                    soal: [
-                        {
-                            id: 'soshum_q1',
-                            pertanyaan: 'Apabila pemerintah menetapkan harga maksimum (Ceiling Price) di bawah harga keseimbangan pasar, dampak langsung yang terjadi adalah...',
-                            pilihan: ['A. Kelebihan penawaran (Excess Supply)', 'B. Kelebihan permintaan / Kelangkaan barang (Excess Demand)', 'C. Harga pasar melonjak', 'D. Produsen mengalami surplus besar', 'E. Kurva penawaran bergeser ke kanan'],
-                            kunci: 'B. Kelebihan permintaan / Kelangkaan barang (Excess Demand)',
-                            solusiLengkap: 'Harga maksimum di bawah pasar membuat Qd naik (pembeli ingin beli banyak) tetapi Qs turun (penjual enggan menjual), memicu Excess Demand.'
-                        },
-                        {
-                            id: 'soshum_q2',
-                            pertanyaan: 'Peneliti sosiologi menganalisis fenomena kemiskinan perkotaan tanpa menghakimi secara moral baik atau buruknya objek. Ciri sosiologi ini adalah...',
-                            pilihan: ['A. Empiris', 'B. Kumulatif', 'C. Non-Etis', 'D. Teoritis', 'E. Spekulatif'],
-                            kunci: 'C. Non-Etis',
-                            solusiLengkap: 'Ciri Non-Etis berarti sosiologi menjelaskan fakta sosial secara objektif tanpa memberikan penilaian etis/moral.'
                         }
                     ]
                 }
@@ -1553,12 +1452,12 @@
         function switchView(viewName) {
             state.activeView = viewName;
 
-            ['home', 'materi', 'kalkulator', 'utbk', 'flashcards', 'riwayat'].forEach(v => {
+            ['home', 'materi', 'visualizer', 'kalkulator', 'utbk', 'flashcards', 'riwayat'].forEach(v => {
                 const el = document.getElementById(`nav-${v}`);
                 if (el) {
                     el.className = v === viewName 
-                        ? "px-4 py-2.5 rounded-xl text-white bg-purple-600 font-bold shadow-md shadow-purple-600/30 transition flex items-center gap-1.5"
-                        : "px-4 py-2.5 rounded-xl text-slate-300 hover:text-white font-medium transition flex items-center gap-1.5";
+                        ? "px-3.5 py-2 rounded-xl text-white bg-purple-600 font-bold shadow-md shadow-purple-600/30 transition flex items-center gap-1.5"
+                        : "px-3.5 py-2 rounded-xl text-slate-300 hover:text-white font-medium transition flex items-center gap-1.5";
                 }
 
                 const mobEl = document.getElementById(`mob-${v}`);
@@ -1572,6 +1471,10 @@
             const content = document.getElementById('app-content');
             if (viewName === 'home') content.innerHTML = renderHome();
             else if (viewName === 'materi') content.innerHTML = renderMateriScreen();
+            else if (viewName === 'visualizer') {
+                content.innerHTML = renderVisualizerScreen();
+                initGraphCanvas();
+            }
             else if (viewName === 'kalkulator') content.innerHTML = renderKalkulatorScreen();
             else if (viewName === 'utbk') content.innerHTML = renderUTBKScreen();
             else if (viewName === 'flashcards') content.innerHTML = renderFlashcardScreen();
@@ -1584,7 +1487,7 @@
             window.scrollTo({ top: 0, behavior: 'smooth' });
         }
 
-        // Global Search Logic
+        // Search Engine
         function handleGlobalSearch(query) {
             const popover = document.getElementById('search-results-popover');
             if (!query || query.trim().length < 2) {
@@ -1597,9 +1500,9 @@
 
             db.mapel.forEach(m => {
                 const list = db.materiDetails[m.id] || [];
-                list.forEach((mat, idx) => {
+                list.forEach(mat => {
                     if (mat.title.toLowerCase().includes(q) || mat.summary.toLowerCase().includes(q)) {
-                        matches.push({ mapelId: m.id, mapelNama: m.nama, title: mat.title, babIdx: idx });
+                        matches.push({ mapelId: m.id, mapelNama: m.nama, title: mat.title });
                     }
                 });
             });
@@ -1608,7 +1511,7 @@
                 popover.innerHTML = `<div class="p-3 text-xs text-slate-400 text-center">Tidak ditemukan materi dengan kata kunci "${query}"</div>`;
             } else {
                 popover.innerHTML = matches.map(res => `
-                    <div onclick="selectSearchResult('${res.mapelId}', ${res.babIdx})" class="p-3 hover:bg-slate-800/80 rounded-xl cursor-pointer transition border-b border-slate-800/60 last:border-0">
+                    <div onclick="selectSearchResult('${res.mapelId}')" class="p-3 hover:bg-slate-800/80 rounded-xl cursor-pointer transition border-b border-slate-800/60 last:border-0">
                         <span class="text-[10px] font-bold text-purple-400 uppercase tracking-wider block">${res.mapelNama}</span>
                         <span class="text-xs text-white font-semibold block mt-0.5">${res.title}</span>
                     </div>
@@ -1617,11 +1520,10 @@
             popover.classList.remove('hidden');
         }
 
-        function selectSearchResult(mapelId, babIdx = 0) {
+        function selectSearchResult(mapelId) {
             document.getElementById('search-results-popover').classList.add('hidden');
             document.getElementById('global-search').value = '';
             state.selectedSubject = mapelId;
-            state.currentBabIdx = babIdx;
             switchView('materi');
             openDetailMapel(mapelId);
         }
@@ -1629,36 +1531,34 @@
         // Render Home View
         function renderHome() {
             return `
-                <!-- Hero Banner -->
                 <div class="relative rounded-3xl gradient-brand p-8 sm:p-12 overflow-hidden border border-purple-500/30 shadow-2xl mb-12">
                     <div class="absolute -right-20 -bottom-20 w-96 h-96 bg-purple-600/20 rounded-full blur-3xl pointer-events-none"></div>
                     <div class="relative z-10 max-w-3xl">
                         <div class="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-purple-500/10 border border-purple-500/30 text-purple-300 text-xs font-semibold mb-6">
                             <i data-lucide="sparkles" class="w-4 h-4 text-purple-400"></i>
-                            <span>Nihiluxxy AI Pro 2026 • Dedicated Slide Presentation System</span>
+                            <span>Nihiluxxy AI Pro v8.0 • Megamodule Engine Edition</span>
                         </div>
                         <h1 class="text-3xl sm:text-5xl font-black text-white tracking-tight mb-4 leading-tight">
-                            Mode Presentasi Slide Interaktif & <span class="bg-clip-text text-transparent gradient-accent">UTBK SNBT 2026</span>.
+                            Kuasai Seluruh Konsep SMA & Taklukkan <span class="bg-clip-text text-transparent gradient-accent">UTBK SNBT 2026</span>.
                         </h1>
                         <p class="text-slate-300 text-xs sm:text-sm mb-8 leading-relaxed">
-                            Nikmati cara belajar baru seperti dalam ruang les bimbel elite! 15 Bab Terperinci per mapel kini tersaji dalam **Sistem Slide Mandiri** lengkap dengan indikator progress, tab konsep visual, tips cepat, dan contoh soal HOTS.
+                            Modul Bimbel Elite 135 Bab Penuh, derivasi rumus mendalam, analogi visual intuitif, visualizer grafik interaktif, serta **Nihiluxxy AI Tutor v8.0** yang mengupas materi hingga akar-akarnya!
                         </p>
                         <div class="flex flex-wrap gap-4">
                             <button onclick="switchView('materi')" class="gradient-accent text-white font-extrabold px-6 py-3.5 rounded-2xl shadow-lg shadow-purple-500/25 hover:opacity-95 transition flex items-center gap-2 text-xs sm:text-sm">
-                                <i data-lucide="presentation" class="w-4 h-4"></i> Buka Mode Slide Presentasi
+                                <i data-lucide="book-open" class="w-4 h-4"></i> Pelajari 135 Modul Terperinci
                             </button>
-                            <button onclick="switchView('kalkulator')" class="bg-slate-900/90 border border-cyan-500/40 text-cyan-200 font-extrabold px-6 py-3.5 rounded-2xl hover:bg-slate-800 transition flex items-center gap-2 text-xs sm:text-sm">
-                                <i data-lucide="calculator" class="w-4 h-4 text-cyan-400"></i> Kalkulator AI Math & Sains
+                            <button onclick="switchView('visualizer')" class="bg-slate-900/90 border border-emerald-500/40 text-emerald-200 font-extrabold px-6 py-3.5 rounded-2xl hover:bg-slate-800 transition flex items-center gap-2 text-xs sm:text-sm">
+                                <i data-lucide="line-chart" class="w-4 h-4 text-emerald-400"></i> Simulasikan Grafik Fungsi
                             </button>
                         </div>
                     </div>
                 </div>
 
-                <!-- Stats Cards -->
                 <div class="grid grid-cols-2 md:grid-cols-4 gap-4 mb-12">
                     <div class="glass-card p-5 rounded-2xl text-center border-purple-500/20">
-                        <span class="text-2xl font-black text-purple-400 font-mono">135+</span>
-                        <span class="text-xs text-slate-400 block mt-1 font-semibold">Bab Slide Mandiri</span>
+                        <span class="text-2xl font-black text-purple-400 font-mono">135 Bab</span>
+                        <span class="text-xs text-slate-400 block mt-1 font-semibold">Modul Terperinci Penuh</span>
                     </div>
                     <div class="glass-card p-5 rounded-2xl text-center border-purple-500/20">
                         <span class="text-2xl font-black text-emerald-400 font-mono">100%</span>
@@ -1666,20 +1566,20 @@
                     </div>
                     <div class="glass-card p-5 rounded-2xl text-center border-purple-500/20">
                         <span class="text-2xl font-black text-amber-400 font-mono">HOTS</span>
-                        <span class="text-xs text-slate-400 block mt-1 font-semibold">Pembahasan Akurat</span>
+                        <span class="text-xs text-slate-400 block mt-1 font-semibold">Pembahasan Akar Konsep</span>
                     </div>
                     <div class="glass-card p-5 rounded-2xl text-center border-purple-500/20">
-                        <span class="text-2xl font-black text-cyan-400 font-mono">v6.5</span>
-                        <span class="text-xs text-slate-400 block mt-1 font-semibold">Slide Presenter Engine</span>
+                        <span class="text-2xl font-black text-cyan-400 font-mono">2026</span>
+                        <span class="text-xs text-slate-400 block mt-1 font-semibold">Megamodule Engine v8.0</span>
                     </div>
                 </div>
 
-                <!-- Subject Grid Section -->
+                <!-- Subject Grid -->
                 <div class="mb-12">
                     <div class="flex flex-col sm:flex-row justify-between items-start sm:items-center gap-4 mb-6">
                         <div>
-                            <h2 class="text-2xl font-black text-white tracking-tight">Mata Pelajaran SMA (Format Slide Interaktif)</h2>
-                            <p class="text-slate-400 text-xs sm:text-sm">Pilih mata pelajaran untuk langsung memulai mode slide presentasi</p>
+                            <h2 class="text-2xl font-black text-white tracking-tight">Mata Pelajaran SMA (Bimbel Elite Standard)</h2>
+                            <p class="text-slate-400 text-xs sm:text-sm">Pilih kurikulum untuk menyesuaikan target pembelajaran</p>
                         </div>
                         <div class="bg-slate-900/90 p-1 rounded-2xl border border-slate-800 flex gap-1 text-xs font-bold">
                             <button onclick="setKurikulum('Merdeka')" class="px-4 py-2 rounded-xl transition ${state.selectedKurikulum === 'Merdeka' ? 'bg-purple-600 text-white shadow-md' : 'text-slate-400 hover:text-white'}">Kurikulum Merdeka</button>
@@ -1698,59 +1598,12 @@
                                     ${state.selectedKurikulum === 'Merdeka' ? m.merdeka : m.k13}
                                 </p>
                                 <div class="flex items-center justify-between text-xs text-slate-400 pt-3 border-t border-slate-800/80">
-                                    <span class="font-bold text-[11px]">Putar Slide Belajar</span>
-                                    <i data-lucide="play-circle" class="w-4 h-4 text-purple-400 group-hover:scale-110 transition"></i>
+                                    <span class="font-bold text-[11px]">Buka Modul Belajar</span>
+                                    <i data-lucide="arrow-right" class="w-4 h-4 text-purple-400 group-hover:translate-x-1 transition"></i>
                                 </div>
                             </div>
                         `).join('')}
                     </div>
-                </div>
-
-                <!-- Last Attempt Card -->
-                <div class="glass-card border border-slate-800 rounded-3xl p-6 sm:p-8 shadow-xl">
-                    <div class="flex items-center justify-between mb-4">
-                        <div class="flex items-center gap-3">
-                            <div class="p-2.5 rounded-2xl bg-purple-500/10 text-purple-400 border border-purple-500/20">
-                                <i data-lucide="history" class="w-5 h-5"></i>
-                            </div>
-                            <div>
-                                <h3 class="font-extrabold text-white text-base">Riwayat Simulasi Terakhir</h3>
-                                <p class="text-xs text-slate-400">Evaluasi & pelajari pembahasan akurat dari pengerjaan Anda</p>
-                            </div>
-                        </div>
-                        <button onclick="switchView('riwayat')" class="text-xs text-purple-400 hover:text-purple-300 font-bold flex items-center gap-1">
-                            <span>Lihat Semua</span>
-                            <i data-lucide="chevron-right" class="w-4 h-4"></i>
-                        </button>
-                    </div>
-                    ${renderLastAttemptCard()}
-                </div>
-            `;
-        }
-
-        function renderLastAttemptCard() {
-            if (state.attempts.length === 0) {
-                return `
-                    <div class="text-center py-8 text-slate-500 text-xs border border-dashed border-slate-800 rounded-2xl bg-slate-900/40">
-                        <i data-lucide="info" class="w-6 h-6 mx-auto mb-2 text-slate-600"></i>
-                        Belum ada simulasi yang diselesaikan. Selesaikan simulasi TKA/UTBK untuk mencatat riwayat akurat Anda di sini.
-                    </div>
-                `;
-            }
-            const last = state.attempts[state.attempts.length - 1];
-            return `
-                <div class="bg-slate-900/80 border border-slate-800 p-5 rounded-2xl flex flex-col sm:flex-row justify-between sm:items-center gap-4">
-                    <div>
-                        <div class="flex items-center gap-2 mb-1.5">
-                            <span class="text-[10px] font-extrabold px-2 py-0.5 rounded-full bg-emerald-500/20 text-emerald-300 border border-emerald-500/30">Pengerjaan Terakhir</span>
-                            <span class="text-xs text-slate-500 font-mono">${last.tanggal}</span>
-                        </div>
-                        <h4 class="font-black text-white text-base">${last.judulSimulasi}</h4>
-                        <p class="text-xs text-slate-400 mt-1">Akurasi Skor: <span class="text-purple-300 font-bold font-mono">${last.skor}%</span> (${last.benar} dari ${last.totalSoal} Soal Benar)</p>
-                    </div>
-                    <button onclick="openDetailRiwayat(${state.attempts.length - 1})" class="px-5 py-3 bg-purple-600 hover:bg-purple-500 text-white font-extrabold text-xs rounded-xl transition shadow-lg shadow-purple-600/20 flex items-center justify-center gap-2">
-                        <i data-lucide="file-search" class="w-4 h-4"></i> Lihat Pembahasan Akurat
-                    </button>
                 </div>
             `;
         }
@@ -1760,36 +1613,29 @@
             switchView('home');
         }
 
-        // ==========================================
-        // DEDICATED SLIDE PRESENTATION ENGINE (v6.5)
-        // ==========================================
+        // Render Modul Materi Screen with Notes Feature
         function renderMateriScreen() {
             return `
-                <div class="mb-6 flex flex-col md:flex-row md:items-center justify-between gap-4">
-                    <div>
-                        <h1 class="text-2xl sm:text-3xl font-black text-white tracking-tight">Modul Pembelajaran SMA (Mode Presentasi Slide)</h1>
-                        <p class="text-slate-400 text-xs sm:text-sm mt-1">Pelajari 15 Bab terperinci per mata pelajaran dalam format slide interaktif mandiri.</p>
-                    </div>
-                    <!-- Pemilih Mapel Cepat -->
-                    <div class="flex items-center gap-2 bg-slate-900 p-1.5 rounded-2xl border border-slate-800">
-                        <i data-lucide="book-open" class="w-4 h-4 text-purple-400 ml-2"></i>
-                        <select id="mapel-slide-select" onchange="openDetailMapel(this.value)" class="bg-transparent text-xs font-bold text-slate-200 p-2 focus:outline-none cursor-pointer">
-                            ${db.mapel.map(m => `<option value="${m.id}" ${m.id === state.selectedSubject ? 'selected' : ''} class="bg-slate-900 text-white">${m.nama}</option>`).join('')}
-                        </select>
-                    </div>
+                <div class="mb-8">
+                    <h1 class="text-3xl font-black text-white tracking-tight">Modul Pembelajaran SMA (Kupas Tuntas Akar Konsep)</h1>
+                    <p class="text-slate-400 text-xs sm:text-sm mt-1">Penjelasan mendalam, derivasi matematis, analogi intuitif, rumus visual, dan contoh soal HOTS berantai.</p>
                 </div>
-
                 <div class="grid grid-cols-1 lg:grid-cols-12 gap-8">
-                    <!-- Sidebar Daftar Bab Slide -->
-                    <div class="lg:col-span-4 space-y-2 max-h-[75vh] overflow-y-auto custom-scrollbar pr-1">
-                        <h3 class="text-xs uppercase tracking-wider font-extrabold text-purple-400 px-1 mb-2">Daftar 15 Bab Presentasi</h3>
-                        <div id="bab-slide-list" class="space-y-2">
-                            <!-- Injected by JS -->
-                        </div>
+                    <div class="lg:col-span-4 space-y-3">
+                        <h3 class="text-xs uppercase tracking-wider font-extrabold text-purple-400 px-1">Pilih Mata Pelajaran</h3>
+                        ${db.mapel.map(m => `
+                            <button onclick="openDetailMapel('${m.id}')" id="mapel-btn-${m.id}" class="w-full text-left p-4 rounded-2xl bg-slate-900/60 border border-slate-800 hover:bg-slate-800 hover:border-purple-500/50 transition flex items-center gap-3.5 group">
+                                <div class="w-10 h-10 rounded-xl bg-gradient-to-br ${m.color} flex items-center justify-center text-white font-bold text-xs shadow-md group-hover:scale-105 transition">
+                                    <i data-lucide="${m.icon}" class="w-5 h-5"></i>
+                                </div>
+                                <div class="flex flex-col">
+                                    <span class="font-extrabold text-sm text-slate-200 group-hover:text-purple-300 transition">${m.nama}</span>
+                                    <span class="text-[10px] text-slate-500 font-medium">15 Bab Terperinci Penuh</span>
+                                </div>
+                            </button>
+                        `).join('')}
                     </div>
-
-                    <!-- Slide Reader Area Utama -->
-                    <div id="materi-reader" class="lg:col-span-8 glass-card border border-purple-500/40 rounded-3xl p-6 sm:p-8 shadow-2xl relative flex flex-col justify-between min-h-[620px]">
+                    <div id="materi-reader" class="lg:col-span-8 glass-card border border-slate-800 rounded-3xl p-6 sm:p-8 shadow-2xl">
                         <!-- Injected by JS -->
                     </div>
                 </div>
@@ -1798,202 +1644,247 @@
 
         function openDetailMapel(mapelId) {
             state.selectedSubject = mapelId;
-            state.currentBabIdx = 0;
-            state.currentTabSlide = 'konsep';
-            
-            if (state.activeView !== 'materi') {
-                switchView('materi');
-                return;
-            }
+            if (state.activeView !== 'materi') switchView('materi');
 
-            const selectEl = document.getElementById('mapel-slide-select');
-            if (selectEl) selectEl.value = mapelId;
+            db.mapel.forEach(m => {
+                const btn = document.getElementById(`mapel-btn-${m.id}`);
+                if (btn) {
+                    btn.className = m.id === mapelId
+                        ? "w-full text-left p-4 rounded-2xl bg-slate-800 border border-purple-500/80 flex items-center gap-3.5 group shadow-lg"
+                        : "w-full text-left p-4 rounded-2xl bg-slate-900/60 border border-slate-800 hover:bg-slate-800 transition flex items-center gap-3.5 group";
+                }
+            });
 
-            renderBabListSidebar();
-            renderSlideBab();
-        }
+            const mapel = db.mapel.find(m => m.id === mapelId);
+            const materiList = db.materiDetails[mapelId] || [];
+            const savedNote = state.userNotes[mapelId] || '';
 
-        function renderBabListSidebar() {
-            const listContainer = document.getElementById('bab-slide-list');
-            if (!listContainer) return;
-
-            const materiList = db.materiDetails[state.selectedSubject] || [];
-
-            listContainer.innerHTML = materiList.map((mat, idx) => `
-                <button onclick="jumpToBabSlide(${idx})" class="w-full text-left p-3.5 rounded-2xl border transition flex items-center justify-between group ${idx === state.currentBabIdx ? 'bg-purple-900/40 border-purple-500/80 text-white shadow-lg' : 'bg-slate-900/60 border-slate-800 text-slate-400 hover:bg-slate-800 hover:text-slate-200'}">
-                    <div class="flex items-center gap-3">
-                        <span class="w-7 h-7 rounded-xl ${idx === state.currentBabIdx ? 'bg-purple-600 text-white' : 'bg-slate-800 text-slate-400'} flex items-center justify-center text-xs font-mono font-bold">${idx + 1}</span>
-                        <span class="text-xs font-bold leading-tight line-clamp-1 group-hover:text-purple-300 transition">${mat.title.replace(/^Bab \d+: /, '')}</span>
-                    </div>
-                    <i data-lucide="chevron-right" class="w-4 h-4 ${idx === state.currentBabIdx ? 'text-purple-400' : 'opacity-0 group-hover:opacity-100'} transition"></i>
-                </button>
-            `).join('');
-            
-            lucide.createIcons();
-        }
-
-        function renderSlideBab() {
             const reader = document.getElementById('materi-reader');
-            if (!reader) return;
-
-            const mapel = db.mapel.find(m => m.id === state.selectedSubject);
-            const materiList = db.materiDetails[state.selectedSubject] || [];
-            const bab = materiList[state.currentBabIdx];
-
-            if (!bab) {
-                reader.innerHTML = `<div class="text-center py-12 text-slate-400">Data modul bab belum tersedia.</div>`;
-                return;
-            }
-
-            const totalBab = materiList.length;
-
-            reader.innerHTML = `
-                <!-- Top Bar Slide Info & Progress Bar -->
-                <div>
-                    <div class="flex flex-wrap items-center justify-between gap-2 pb-4 border-b border-slate-800 mb-4">
-                        <div class="flex items-center gap-2">
-                            <span class="text-[10px] font-black uppercase px-2.5 py-1 rounded-full bg-purple-500/20 text-purple-300 border border-purple-500/30">
-                                ${mapel.nama}
-                            </span>
-                            <span class="text-[10px] font-extrabold uppercase px-2.5 py-1 rounded-full bg-emerald-500/20 text-emerald-300 border border-emerald-500/30">
-                                ${bab.kurikulum}
-                            </span>
+            if (reader) {
+                reader.innerHTML = `
+                    <div class="flex items-center justify-between pb-6 border-b border-slate-800 mb-8">
+                        <div class="flex items-center gap-4">
+                            <div class="w-12 h-12 rounded-2xl bg-gradient-to-br ${mapel.color} flex items-center justify-center text-white font-bold shadow-lg">
+                                <i data-lucide="${mapel.icon}"></i>
+                            </div>
+                            <div>
+                                <h2 class="text-2xl font-black text-white tracking-tight">${mapel.nama}</h2>
+                                <p class="text-xs text-purple-400 font-extrabold mt-0.5">Materi Terperinci Kurikulum Merdeka & K13 (15 Bab Penuh)</p>
+                            </div>
                         </div>
-                        <div class="flex items-center gap-2">
-                            <span class="text-xs font-mono font-extrabold text-purple-400">Slide ${state.currentBabIdx + 1} / ${totalBab}</span>
-                            <button onclick="askAiAboutTopic('${bab.title}')" class="px-3 py-1.5 bg-purple-600/20 border border-purple-500/40 text-purple-300 hover:bg-purple-600 hover:text-white rounded-xl text-xs font-bold transition flex items-center gap-1">
-                                <i data-lucide="bot" class="w-3.5 h-3.5"></i> Tanya AI
+                        <button onclick="askAiAboutSubject('${mapel.nama}')" class="px-3.5 py-2 rounded-xl bg-purple-600/20 border border-purple-500/40 text-purple-300 hover:bg-purple-600 hover:text-white transition text-xs font-bold flex items-center gap-1.5">
+                            <i data-lucide="bot" class="w-4 h-4"></i> Tanya AI
+                        </button>
+                    </div>
+
+                    <!-- Personal Interactive Note Area -->
+                    <div class="bg-slate-900/90 border border-purple-500/30 p-5 rounded-2xl mb-8 shadow-md">
+                        <div class="flex items-center justify-between mb-2">
+                            <span class="text-xs font-extrabold text-purple-300 flex items-center gap-1.5">
+                                <i data-lucide="notebook-pen" class="w-4 h-4 text-purple-400"></i> Catatan Ringkas Pribadi (${mapel.nama})
+                            </span>
+                            <button onclick="saveUserNote('${mapelId}')" class="px-3 py-1 bg-purple-600 hover:bg-purple-500 text-white rounded-lg text-[10px] font-bold transition">
+                                Simpan Catatan
                             </button>
                         </div>
+                        <textarea id="user-note-input" rows="3" placeholder="Tuliskan rumus cepat atau ringkasan pribadi kamu untuk bab ini di sini..." class="w-full bg-slate-950 border border-slate-700/80 rounded-xl p-3 text-xs text-slate-100 focus:outline-none focus:border-purple-500 custom-scrollbar">${savedNote}</textarea>
                     </div>
 
-                    <!-- Progress Indicator Bar -->
-                    <div class="w-full bg-slate-900 rounded-full h-1.5 mb-6 overflow-hidden border border-slate-800">
-                        <div class="bg-gradient-to-r from-purple-500 to-pink-500 h-1.5 rounded-full transition-all duration-500" style="width: ${((state.currentBabIdx + 1) / totalBab) * 100}%"></div>
-                    </div>
+                    <div class="space-y-6">
+                        ${materiList.map((mat, idx) => `
+                            <div class="bg-slate-900/90 border border-slate-800 p-6 rounded-2xl shadow-md">
+                                <div class="flex items-center justify-between mb-3">
+                                    <span class="text-[10px] font-extrabold uppercase bg-purple-500/20 text-purple-300 px-3 py-1 rounded-full border border-purple-500/30">${mat.kurikulum}</span>
+                                    <span class="text-xs text-slate-500 font-mono">Modul Terperinci #${idx + 1}</span>
+                                </div>
+                                <h3 class="text-lg font-extrabold text-white mb-3">${mat.title}</h3>
+                                <div class="text-slate-300 text-xs sm:text-sm mb-4 leading-relaxed">${mat.summary}</div>
+                                
+                                <div class="bg-slate-950 p-4 rounded-xl font-mono text-xs text-purple-300 mb-4 border border-slate-800 text-center overflow-x-auto">
+                                    ${mat.visual}
+                                </div>
 
-                    <!-- Title Slide -->
-                    <h2 class="text-xl sm:text-2xl font-black text-white tracking-tight mb-6 leading-snug">
-                        ${bab.title}
-                    </h2>
+                                <div class="bg-amber-500/10 border-l-4 border-amber-500 p-4 rounded-r-xl text-xs text-amber-200 mb-4 leading-relaxed">
+                                    ${mat.tips}
+                                </div>
 
-                    <!-- Sub-Slide Tab Navigation Bar -->
-                    <div class="flex gap-2 border-b border-slate-800/80 pb-3 mb-6 overflow-x-auto custom-scrollbar text-xs font-bold">
-                        <button onclick="changeSlideTab('konsep')" class="px-4 py-2 rounded-xl transition flex items-center gap-1.5 whitespace-nowrap ${state.currentTabSlide === 'konsep' ? 'bg-purple-600 text-white shadow-md' : 'bg-slate-900 text-slate-400 hover:text-white'}">
-                            <i data-lucide="book-open-text" class="w-3.5 h-3.5"></i> 1. Penjelasan Konsep
-                        </button>
-                        <button onclick="changeSlideTab('formula')" class="px-4 py-2 rounded-xl transition flex items-center gap-1.5 whitespace-nowrap ${state.currentTabSlide === 'formula' ? 'bg-purple-600 text-white shadow-md' : 'bg-slate-900 text-slate-400 hover:text-white'}">
-                            <i data-lucide="binary" class="w-3.5 h-3.5"></i> 2. Formula & Visual
-                        </button>
-                        <button onclick="changeSlideTab('tips')" class="px-4 py-2 rounded-xl transition flex items-center gap-1.5 whitespace-nowrap ${state.currentTabSlide === 'tips' ? 'bg-purple-600 text-white shadow-md' : 'bg-slate-900 text-slate-400 hover:text-white'}">
-                            <i data-lucide="zap" class="w-3.5 h-3.5 text-amber-400"></i> 3. Tips Cepat Bimbel
-                        </button>
-                        <button onclick="changeSlideTab('soal')" class="px-4 py-2 rounded-xl transition flex items-center gap-1.5 whitespace-nowrap ${state.currentTabSlide === 'soal' ? 'bg-purple-600 text-white shadow-md' : 'bg-slate-900 text-slate-400 hover:text-white'}">
-                            <i data-lucide="file-check-2" class="w-3.5 h-3.5 text-emerald-400"></i> 4. Bedah Soal HOTS
-                        </button>
-                    </div>
+                                <div class="bg-slate-950/80 border border-slate-800 p-4 rounded-xl text-xs text-slate-300 leading-relaxed mb-4">
+                                    <span class="text-emerald-400 font-extrabold block mb-2">📝 Pembahasan Soal HOTS & Akar Konsep:</span>
+                                    ${mat.contohSoal}
+                                </div>
 
-                    <!-- Dynamic Content Body Slide -->
-                    <div class="bg-slate-950/70 border border-slate-800/90 rounded-2xl p-5 sm:p-6 min-h-[220px] leading-relaxed text-xs sm:text-sm text-slate-200">
-                        ${renderSlideTabContent(bab)}
+                                <button onclick="askAiAboutTopic('${mat.title}')" class="w-full py-2.5 bg-slate-800 hover:bg-purple-900/40 border border-slate-700 hover:border-purple-500/50 text-purple-300 text-xs font-bold rounded-xl transition flex items-center justify-center gap-2">
+                                    <i data-lucide="sparkles" class="w-3.5 h-3.5"></i> Minta AI Bedah Lebih Dalam Bab Ini
+                                </button>
+                            </div>
+                        `).join('')}
                     </div>
+                `;
+                lucide.createIcons();
+            }
+        }
+
+        function saveUserNote(mapelId) {
+            const input = document.getElementById('user-note-input');
+            if (input) {
+                state.userNotes[mapelId] = input.value;
+                localStorage.setItem('nihiluxxy_v8_notes', JSON.stringify(state.userNotes));
+                alert('Catatan pribadi kamu berhasil disimpan!');
+            }
+        }
+
+        // Render Canvas Interactive Graph Visualizer Screen
+        function renderVisualizerScreen() {
+            return `
+                <div class="mb-8">
+                    <h1 class="text-3xl font-black text-white tracking-tight">AI Graph & Math Visualizer (Interactive Canvas)</h1>
+                    <p class="text-slate-400 text-xs sm:text-sm mt-1">Simulasikan kurva parabola $f(x) = ax^2 + bx + c$ secara otomatis untuk memahami pengaruh diskriminan dan titik puncak.</p>
                 </div>
 
-                <!-- Bottom Controls Slide Navigation -->
-                <div class="flex items-center justify-between pt-6 border-t border-slate-800/80 mt-6">
-                    <button onclick="prevBabSlide()" ${state.currentBabIdx === 0 ? 'disabled class="opacity-40 cursor-not-allowed px-5 py-2.5 bg-slate-900 text-slate-500 rounded-xl text-xs font-bold"' : 'class="px-5 py-2.5 bg-slate-900 border border-slate-700 hover:bg-slate-800 text-slate-200 rounded-xl text-xs font-bold transition flex items-center gap-2"'}>
-                        <i data-lucide="arrow-left" class="w-4 h-4"></i> Bab Sebelumnya
-                    </button>
+                <div class="grid grid-cols-1 lg:grid-cols-12 gap-8">
+                    <div class="lg:col-span-5 glass-card border border-purple-500/30 p-6 rounded-3xl shadow-xl">
+                        <h3 class="font-extrabold text-white text-base mb-4 flex items-center gap-2">
+                            <i data-lucide="sliders" class="w-5 h-5 text-purple-400"></i> Kontrol Parameter Parabola
+                        </h3>
 
-                    <span class="hidden sm:inline text-[11px] font-mono text-slate-500 font-bold">Gunakan tombol atau klik daftar bab</span>
+                        <div class="space-y-5 text-xs font-semibold">
+                            <div>
+                                <div class="flex justify-between mb-1 text-slate-300">
+                                    <span>Nilai a (Arah Kurva): <span id="val-a" class="text-purple-400 font-mono font-bold">1</span></span>
+                                </div>
+                                <input type="range" id="slider-a" min="-5" max="5" step="0.5" value="1" oninput="updateGraphCanvas()" class="w-full accent-purple-500">
+                            </div>
 
-                    <button onclick="nextBabSlide()" ${state.currentBabIdx === totalBab - 1 ? 'disabled class="opacity-40 cursor-not-allowed px-5 py-2.5 bg-slate-900 text-slate-500 rounded-xl text-xs font-bold"' : 'class="px-6 py-2.5 bg-purple-600 hover:bg-purple-500 text-white rounded-xl text-xs font-extrabold transition shadow-lg shadow-purple-600/30 flex items-center gap-2"'}>
-                        Bab Selanjutnya <i data-lucide="arrow-right" class="w-4 h-4"></i>
-                    </button>
+                            <div>
+                                <div class="flex justify-between mb-1 text-slate-300">
+                                    <span>Nilai b (Pergeseran Puncak): <span id="val-b" class="text-purple-400 font-mono font-bold">-2</span></span>
+                                </div>
+                                <input type="range" id="slider-b" min="-10" max="10" step="1" value="-2" oninput="updateGraphCanvas()" class="w-full accent-purple-500">
+                            </div>
+
+                            <div>
+                                <div class="flex justify-between mb-1 text-slate-300">
+                                    <span>Nilai c (Titik Potong Sumbu Y): <span id="val-c" class="text-purple-400 font-mono font-bold">-3</span></span>
+                                </div>
+                                <input type="range" id="slider-c" min="-10" max="10" step="1" value="-3" oninput="updateGraphCanvas()" class="w-full accent-purple-500">
+                            </div>
+                        </div>
+
+                        <div id="graph-analysis-box" class="mt-6 p-4 rounded-2xl bg-slate-950 border border-slate-800 text-xs font-mono text-slate-300 space-y-1.5">
+                            <!-- Injected by JS -->
+                        </div>
+                    </div>
+
+                    <div class="lg:col-span-7 glass-card border border-slate-800 p-6 rounded-3xl flex flex-col justify-center items-center shadow-xl">
+                        <canvas id="graphCanvas" width="500" height="400" class="w-full max-w-lg bg-slate-950 border border-slate-800 rounded-2xl shadow-inner"></canvas>
+                        <span class="text-[10px] text-slate-500 font-mono mt-3">Visualisasi Grafik Kartesius Canvas HTML5 Real-Time</span>
+                    </div>
                 </div>
             `;
-
-            lucide.createIcons();
-            renderBabListSidebar();
         }
 
-        function renderSlideTabContent(bab) {
-            if (state.currentTabSlide === 'konsep') {
-                return `
-                    <div class="space-y-3 animate-fadeIn">
-                        <span class="text-xs font-extrabold text-purple-400 uppercase tracking-wider block">📖 Penjelasan Konsep Inti:</span>
-                        <div class="text-slate-200 leading-relaxed">${bab.summary}</div>
-                    </div>
+        function initGraphCanvas() {
+            setTimeout(updateGraphCanvas, 50);
+        }
+
+        function updateGraphCanvas() {
+            const sliderA = document.getElementById('slider-a');
+            const sliderB = document.getElementById('slider-b');
+            const sliderC = document.getElementById('slider-c');
+            const canvas = document.getElementById('graphCanvas');
+            if (!sliderA || !sliderB || !sliderC || !canvas) return;
+
+            const a = parseFloat(sliderA.value);
+            const b = parseFloat(sliderB.value);
+            const c = parseFloat(sliderC.value);
+
+            document.getElementById('val-a').innerText = a;
+            document.getElementById('val-b').innerText = b;
+            document.getElementById('val-c').innerText = c;
+
+            // Analysis Calculation
+            const D = b * b - 4 * a * c;
+            const xp = a !== 0 ? -b / (2 * a) : 0;
+            const yp = a !== 0 ? -D / (4 * a) : c;
+
+            const analysisBox = document.getElementById('graph-analysis-box');
+            if (analysisBox) {
+                analysisBox.innerHTML = `
+                    <div class="text-emerald-400 font-bold mb-1">📊 Analisis Matematika Grafik:</div>
+                    <div>Persamaan: f(x) = ${a}x² ${b >= 0 ? '+ '+b : b}x ${c >= 0 ? '+ '+c : c}</div>
+                    <div>Diskriminan D = ${D} (${D > 0 ? 'D > 0: 2 Akar Real' : D === 0 ? 'D = 0: 1 Akar Kembar' : 'D < 0: Imajiner'})</div>
+                    <div>Titik Puncak Parabola: (${xp.toFixed(2)}, ${yp.toFixed(2)})</div>
+                    <div>Bentuk: ${a > 0 ? 'Terbuka Ke Atas (Minimum)' : a < 0 ? 'Terbuka Ke Bawah (Maksimum)' : 'Garis Lurus'}</div>
                 `;
-            } else if (state.currentTabSlide === 'formula') {
-                return `
-                    <div class="space-y-3 animate-fadeIn">
-                        <span class="text-xs font-extrabold text-cyan-400 uppercase tracking-wider block">📐 Formulasi & Ringkasan Rumus Visual:</span>
-                        <div class="bg-slate-900 p-4 sm:p-6 rounded-2xl border border-purple-500/30 font-mono text-xs sm:text-sm text-purple-300 text-center overflow-x-auto shadow-inner my-2">
-                            ${bab.visual}
-                        </div>
-                    </div>
-                `;
-            } else if (state.currentTabSlide === 'tips') {
-                return `
-                    <div class="space-y-3 animate-fadeIn">
-                        <span class="text-xs font-extrabold text-amber-400 uppercase tracking-wider block">⚡ Tips & Trik Cepat Soal Bimbel:</span>
-                        <div class="bg-amber-500/10 border-l-4 border-amber-500 p-4 rounded-r-2xl text-amber-200 text-xs sm:text-sm leading-relaxed">
-                            ${bab.tips}
-                        </div>
-                    </div>
-                `;
-            } else if (state.currentTabSlide === 'soal') {
-                return `
-                    <div class="space-y-3 animate-fadeIn">
-                        <span class="text-xs font-extrabold text-emerald-400 uppercase tracking-wider block">📝 Bedah Contoh Soal HOTS & Solusi Terperinci:</span>
-                        <div class="bg-slate-900 border border-slate-800 p-4 sm:p-5 rounded-2xl text-slate-200 leading-relaxed">
-                            ${bab.contohSoal}
-                        </div>
-                    </div>
-                `;
+            }
+
+            const ctx = canvas.getContext('2d');
+            const width = canvas.width;
+            const height = canvas.height;
+            const cx = width / 2;
+            const cy = height / 2;
+            const scale = 20; // 20px per unit
+
+            ctx.clearRect(0, 0, width, height);
+
+            // Draw Grid Lines
+            ctx.strokeStyle = '#1e293b';
+            ctx.lineWidth = 1;
+            for (let x = 0; x < width; x += scale) {
+                ctx.beginPath(); ctx.moveTo(x, 0); ctx.lineTo(x, height); ctx.stroke();
+            }
+            for (let y = 0; y < height; y += scale) {
+                ctx.beginPath(); ctx.moveTo(0, y); ctx.lineTo(width, y); ctx.stroke();
+            }
+
+            // Draw Main Axes X and Y
+            ctx.strokeStyle = '#64748b';
+            ctx.lineWidth = 2;
+            ctx.beginPath(); ctx.moveTo(0, cy); ctx.lineTo(width, cy); ctx.stroke();
+            ctx.beginPath(); ctx.moveTo(cx, 0); ctx.lineTo(cx, height); ctx.stroke();
+
+            // Draw Parabola Curve
+            ctx.strokeStyle = '#a855f7';
+            ctx.lineWidth = 3;
+            ctx.beginPath();
+
+            let firstPoint = true;
+            for (let px = 0; px <= width; px += 2) {
+                const x = (px - cx) / scale;
+                const y = a * x * x + b * x + c;
+                const py = cy - y * scale;
+
+                if (firstPoint) {
+                    ctx.moveTo(px, py);
+                    firstPoint = false;
+                } else {
+                    ctx.lineTo(px, py);
+                }
+            }
+            ctx.stroke();
+
+            // Draw Vertex Point
+            if (a !== 0) {
+                const vpx = cx + xp * scale;
+                const vpy = cy - yp * scale;
+                ctx.fillStyle = '#ec4899';
+                ctx.beginPath();
+                ctx.arc(vpx, vpy, 5, 0, 2 * Math.PI);
+                ctx.fill();
             }
         }
 
-        function changeSlideTab(tabKey) {
-            state.currentTabSlide = tabKey;
-            renderSlideBab();
-        }
-
-        function jumpToBabSlide(index) {
-            state.currentBabIdx = index;
-            state.currentTabSlide = 'konsep';
-            renderSlideBab();
-        }
-
-        function nextBabSlide() {
-            const materiList = db.materiDetails[state.selectedSubject] || [];
-            if (state.currentBabIdx < materiList.length - 1) {
-                state.currentBabIdx++;
-                state.currentTabSlide = 'konsep';
-                renderSlideBab();
-            }
-        }
-
-        function prevBabSlide() {
-            if (state.currentBabIdx > 0) {
-                state.currentBabIdx--;
-                state.currentTabSlide = 'konsep';
-                renderSlideBab();
-            }
-        }
-
-        // Render Kalkulator Sains & Matematika Screen
+        // Render Kalkulator Screen
         function renderKalkulatorScreen() {
             return `
                 <div class="mb-8">
-                    <h1 class="text-3xl font-black text-white tracking-tight">Kalkulator AI Matematika & Sains</h1>
-                    <p class="text-slate-400 text-xs sm:text-sm mt-1">Hitung otomatis persamaan kuadrat, invers/determinan matriks, kombinatorika, deret tak hingga, pH kimia, dan kinematics.</p>
+                    <h1 class="text-3xl font-black text-white tracking-tight">Kalkulator AI Matematika & Sains Multi-Solver</h1>
+                    <p class="text-slate-400 text-xs sm:text-sm mt-1">Hitung otomatis persamaan kuadrat, determinan matriks, kombinasi, pH larutan, gas ideal, dan gerak parabola.</p>
                 </div>
 
                 <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
                     
-                    <!-- 1. Kalkulator Persamaan Kuadrat -->
+                    <!-- 1. Persamaan Kuadrat -->
                     <div class="glass-card border border-purple-500/30 p-6 rounded-3xl shadow-xl">
                         <div class="flex items-center gap-3 mb-4">
                             <div class="p-2.5 rounded-xl bg-purple-500/20 text-purple-300">
@@ -2014,29 +1905,28 @@
                         </div>
                     </div>
 
-                    <!-- 2. Kalkulator Determinan & Invers Matriks 2x2 -->
-                    <div class="glass-card border border-cyan-500/30 p-6 rounded-3xl shadow-xl">
+                    <!-- 2. Fisika: Hukum Gas Ideal PV = nRT -->
+                    <div class="glass-card border border-amber-500/30 p-6 rounded-3xl shadow-xl">
                         <div class="flex items-center gap-3 mb-4">
-                            <div class="p-2.5 rounded-xl bg-cyan-500/20 text-cyan-300">
-                                <i data-lucide="grid" class="w-5 h-5"></i>
+                            <div class="p-2.5 rounded-xl bg-amber-500/20 text-amber-300">
+                                <i data-lucide="flame" class="w-5 h-5"></i>
                             </div>
-                            <h3 class="font-extrabold text-white text-sm">Determinan & Invers Matriks</h3>
+                            <h3 class="font-extrabold text-white text-sm">Gas Ideal (Tekanan P = nRT / V)</h3>
                         </div>
-                        <div class="grid grid-cols-2 gap-2 mb-4 max-w-xs mx-auto">
-                            <input type="number" id="mat-a" placeholder="a" value="3" class="bg-slate-950 border border-slate-700 rounded-xl p-2 text-center text-xs font-mono text-white">
-                            <input type="number" id="mat-b" placeholder="b" value="2" class="bg-slate-950 border border-slate-700 rounded-xl p-2 text-center text-xs font-mono text-white">
-                            <input type="number" id="mat-c" placeholder="c" value="1" class="bg-slate-950 border border-slate-700 rounded-xl p-2 text-center text-xs font-mono text-white">
-                            <input type="number" id="mat-d" placeholder="d" value="4" class="bg-slate-950 border border-slate-700 rounded-xl p-2 text-center text-xs font-mono text-white">
+                        <div class="grid grid-cols-3 gap-2 mb-4">
+                            <input type="number" id="gas-n" placeholder="n (mol)" value="1" class="bg-slate-950 border border-slate-700 rounded-xl p-2 text-center text-xs font-mono text-white">
+                            <input type="number" id="gas-t" placeholder="T (°C)" value="27" class="bg-slate-950 border border-slate-700 rounded-xl p-2 text-center text-xs font-mono text-white">
+                            <input type="number" id="gas-v" placeholder="V (Liter)" value="22.4" class="bg-slate-950 border border-slate-700 rounded-xl p-2 text-center text-xs font-mono text-white">
                         </div>
-                        <button onclick="calculateMatrix()" class="w-full py-2 bg-cyan-600 hover:bg-cyan-500 text-white font-extrabold text-xs rounded-xl transition mb-4 shadow-md">
-                            Hitung Invers & Det
+                        <button onclick="calculateGasIdeal()" class="w-full py-2 bg-amber-600 hover:bg-amber-500 text-white font-extrabold text-xs rounded-xl transition mb-4 shadow-md">
+                            Hitung Tekanan P (atm)
                         </button>
-                        <div id="calc-mat-res" class="bg-slate-950/80 border border-slate-800 p-3 rounded-xl text-xs font-mono text-cyan-300">
-                            Hasil matriks muncul di sini...
+                        <div id="calc-gas-res" class="bg-slate-950/80 border border-slate-800 p-3 rounded-xl text-xs font-mono text-amber-300">
+                            Hasil gas ideal di sini...
                         </div>
                     </div>
 
-                    <!-- 3. Kalkulator Permutasi & Kombinasi -->
+                    <!-- 3. Permutasi & Kombinasi -->
                     <div class="glass-card border border-emerald-500/30 p-6 rounded-3xl shadow-xl">
                         <div class="flex items-center gap-3 mb-4">
                             <div class="p-2.5 rounded-xl bg-emerald-500/20 text-emerald-300">
@@ -2052,67 +1942,7 @@
                             Hitung Peluang & Cara
                         </button>
                         <div id="calc-comb-res" class="bg-slate-950/80 border border-slate-800 p-3 rounded-xl text-xs font-mono text-emerald-300">
-                            Hasil kombinasi muncul di sini...
-                        </div>
-                    </div>
-
-                    <!-- 4. Deret Geometri Tak Hingga -->
-                    <div class="glass-card border border-amber-500/30 p-6 rounded-3xl shadow-xl">
-                        <div class="flex items-center gap-3 mb-4">
-                            <div class="p-2.5 rounded-xl bg-amber-500/20 text-amber-300">
-                                <i data-lucide="infinity" class="w-5 h-5"></i>
-                            </div>
-                            <h3 class="font-extrabold text-white text-sm">Deret Geometri Tak Hingga (S_∞)</h3>
-                        </div>
-                        <div class="grid grid-cols-2 gap-2 mb-4">
-                            <input type="number" id="geo-a" placeholder="a (suku awal)" value="12" class="bg-slate-950 border border-slate-700 rounded-xl p-2 text-center text-xs font-mono text-white">
-                            <input type="text" id="geo-r" placeholder="r (rasio < 1)" value="0.333" class="bg-slate-950 border border-slate-700 rounded-xl p-2 text-center text-xs font-mono text-white">
-                        </div>
-                        <button onclick="calculateGeoInfin()" class="w-full py-2 bg-amber-600 hover:bg-amber-500 text-white font-extrabold text-xs rounded-xl transition mb-4 shadow-md">
-                            Hitung Jumlah Tak Hingga
-                        </button>
-                        <div id="calc-geo-res" class="bg-slate-950/80 border border-slate-800 p-3 rounded-xl text-xs font-mono text-amber-300">
-                            Hasil deret muncul di sini...
-                        </div>
-                    </div>
-
-                    <!-- 5. Kalkulator Kimia: pH Larutan Asam / Basa -->
-                    <div class="glass-card border border-pink-500/30 p-6 rounded-3xl shadow-xl">
-                        <div class="flex items-center gap-3 mb-4">
-                            <div class="p-2.5 rounded-xl bg-pink-500/20 text-pink-300">
-                                <i data-lucide="flask-conical" class="w-5 h-5"></i>
-                            </div>
-                            <h3 class="font-extrabold text-white text-sm">Hitung pH Asam Kuat (pH = -log[H⁺])</h3>
-                        </div>
-                        <div class="grid grid-cols-2 gap-2 mb-4">
-                            <input type="number" step="0.001" id="chem-m" placeholder="Molaritas (M)" value="0.01" class="bg-slate-950 border border-slate-700 rounded-xl p-2 text-center text-xs font-mono text-white">
-                            <input type="number" id="chem-val" placeholder="Valensi Asam" value="1" class="bg-slate-950 border border-slate-700 rounded-xl p-2 text-center text-xs font-mono text-white">
-                        </div>
-                        <button onclick="calculatePH()" class="w-full py-2 bg-pink-600 hover:bg-pink-500 text-white font-extrabold text-xs rounded-xl transition mb-4 shadow-md">
-                            Hitung Konsentrasi & pH
-                        </button>
-                        <div id="calc-ph-res" class="bg-slate-950/80 border border-slate-800 p-3 rounded-xl text-xs font-mono text-pink-300">
-                            Hasil pH muncul di sini...
-                        </div>
-                    </div>
-
-                    <!-- 6. Kalkulator Fisika: Tinggi Maksimum Gerak Parabola -->
-                    <div class="glass-card border border-blue-500/30 p-6 rounded-3xl shadow-xl">
-                        <div class="flex items-center gap-3 mb-4">
-                            <div class="p-2.5 rounded-xl bg-blue-500/20 text-blue-300">
-                                <i data-lucide="zap" class="w-5 h-5"></i>
-                            </div>
-                            <h3 class="font-extrabold text-white text-sm">Tinggi Maksimum Gerak Parabola</h3>
-                        </div>
-                        <div class="grid grid-cols-2 gap-2 mb-4">
-                            <input type="number" id="phys-v0" placeholder="v₀ (m/s)" value="20" class="bg-slate-950 border border-slate-700 rounded-xl p-2 text-center text-xs font-mono text-white">
-                            <input type="number" id="phys-angle" placeholder="Sudut θ (°)" value="30" class="bg-slate-950 border border-slate-700 rounded-xl p-2 text-center text-xs font-mono text-white">
-                        </div>
-                        <button onclick="calculateParabola()" class="w-full py-2 bg-blue-600 hover:bg-blue-500 text-white font-extrabold text-xs rounded-xl transition mb-4 shadow-md">
-                            Hitung H_max & X_max
-                        </button>
-                        <div id="calc-phys-res" class="bg-slate-950/80 border border-slate-800 p-3 rounded-xl text-xs font-mono text-blue-300">
-                            Hasil ketinggian muncul di sini...
+                            Hasil kombinasi di sini...
                         </div>
                     </div>
 
@@ -2120,7 +1950,7 @@
             `;
         }
 
-        // Calculation Logic
+        // Calculation Logics
         function calculateQuad() {
             const a = parseFloat(document.getElementById('calc-a').value);
             const b = parseFloat(document.getElementById('calc-b').value);
@@ -2140,7 +1970,7 @@
             if (D > 0) {
                 const x1 = (-b + Math.sqrt(D)) / (2 * a);
                 const x2 = (-b - Math.sqrt(D)) / (2 * a);
-                text += `Akar Real Beda: x₁ = ${x1.toFixed(2)}, x₂ = ${x2.toFixed(2)}`;
+                text += `Akar Real: x₁ = ${x1.toFixed(2)}, x₂ = ${x2.toFixed(2)}`;
             } else if (D === 0) {
                 const x = -b / (2 * a);
                 text += `Akar Kembar: x₁ = x₂ = ${x.toFixed(2)}`;
@@ -2150,22 +1980,22 @@
             res.innerHTML = text;
         }
 
-        function calculateMatrix() {
-            const a = parseFloat(document.getElementById('mat-a').value);
-            const b = parseFloat(document.getElementById('mat-b').value);
-            const c = parseFloat(document.getElementById('mat-c').value);
-            const d = parseFloat(document.getElementById('mat-d').value);
-            const res = document.getElementById('calc-mat-res');
+        function calculateGasIdeal() {
+            const n = parseFloat(document.getElementById('gas-n').value);
+            const tC = parseFloat(document.getElementById('gas-t').value);
+            const v = parseFloat(document.getElementById('gas-v').value);
+            const res = document.getElementById('calc-gas-res');
 
-            const det = a * d - b * c;
-            let text = `det(A) = ${det}<br>`;
-
-            if (det === 0) {
-                text += `Matriks Singular (Tidak berpangkat/invers).`;
-            } else {
-                text += `A⁻¹ = [[ ${(d/det).toFixed(2)}, ${(-b/det).toFixed(2)} ], [ ${(-c/det).toFixed(2)}, ${(a/det).toFixed(2)} ]]`;
+            if (isNaN(n) || isNaN(tC) || isNaN(v) || v <= 0) {
+                res.innerHTML = "Volume harus lebih dari nol!";
+                return;
             }
-            res.innerHTML = text;
+
+            const R = 0.08206; // L atm / mol K
+            const TK = tC + 273.15;
+            const P = (n * R * TK) / v;
+
+            res.innerHTML = `Suhu T = ${TK.toFixed(2)} K<br><strong>Tekanan Gas P = ${P.toFixed(3)} atm</strong>`;
         }
 
         function factorial(n) {
@@ -2192,69 +2022,12 @@
             res.innerHTML = `P(${n},${r}) = ${P} cara<br>C(${n},${r}) = ${C} cara`;
         }
 
-        function calculateGeoInfin() {
-            const a = parseFloat(document.getElementById('geo-a').value);
-            let r_str = document.getElementById('geo-r').value;
-            let r = parseFloat(r_str);
-
-            if (r_str.includes('/')) {
-                const parts = r_str.split('/');
-                r = parseFloat(parts[0]) / parseFloat(parts[1]);
-            }
-
-            const res = document.getElementById('calc-geo-res');
-
-            if (Math.abs(r) >= 1) {
-                res.innerHTML = "Deret Divergen (|r| ≥ 1).";
-                return;
-            }
-
-            const S_inf = a / (1 - r);
-            res.innerHTML = `r = ${r.toFixed(3)}<br>Jumlah S_∞ = ${S_inf.toFixed(2)}`;
-        }
-
-        function calculatePH() {
-            const m = parseFloat(document.getElementById('chem-m').value);
-            const val = parseFloat(document.getElementById('chem-val').value);
-            const res = document.getElementById('calc-ph-res');
-
-            if (isNaN(m) || isNaN(val) || m <= 0) {
-                res.innerHTML = "Masukkan molaritas positif!";
-                return;
-            }
-
-            const h_plus = m * val;
-            const ph = -Math.log10(h_plus);
-            res.innerHTML = `[H⁺] = ${h_plus.toExponential(2)} M<br><strong>pH Larutan = ${ph.toFixed(2)}</strong>`;
-        }
-
-        function calculateParabola() {
-            const v0 = parseFloat(document.getElementById('phys-v0').value);
-            const angleDeg = parseFloat(document.getElementById('phys-angle').value);
-            const res = document.getElementById('calc-phys-res');
-
-            if (isNaN(v0) || isNaN(angleDeg)) {
-                res.innerHTML = "Masukkan nilai valid!";
-                return;
-            }
-
-            const g = 10;
-            const rad = (angleDeg * Math.PI) / 180;
-            const sinVal = Math.sin(rad);
-            const sin2Val = Math.sin(2 * rad);
-
-            const H_max = (v0 * v0 * sinVal * sinVal) / (2 * g);
-            const X_max = (v0 * v0 * sin2Val) / g;
-
-            res.innerHTML = `H_max = ${H_max.toFixed(2)} meter<br>Jarak Terjauh X_max = ${X_max.toFixed(2)} meter`;
-        }
-
         // Render UTBK Simulation Screen
         function renderUTBKScreen() {
             return `
                 <div class="mb-8">
                     <h1 class="text-3xl font-black text-white tracking-tight">Simulasi TKA & UTBK SNBT 2026</h1>
-                    <p class="text-slate-400 text-xs sm:text-sm mt-1">Uji pemahaman dengan timer real-time interaktif, penilaian otomatis, & pembahasan terperinci.</p>
+                    <p class="text-slate-400 text-xs sm:text-sm mt-1">Uji pemahaman dengan timer real-time interaktif, penilaian otomatis, & pembahasan akar konsep.</p>
                 </div>
                 <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
                     <div class="glass-card border border-slate-800 p-6 rounded-3xl flex flex-col justify-between shadow-xl">
@@ -2270,53 +2043,10 @@
                             <i data-lucide="play" class="w-4 h-4 fill-current"></i> Mulai Tes (10 Menit)
                         </button>
                     </div>
-
-                    <div class="glass-card border border-slate-800 p-6 rounded-3xl flex flex-col justify-between shadow-xl">
-                        <div>
-                            <div class="w-12 h-12 rounded-2xl bg-cyan-500/20 border border-cyan-500/30 text-cyan-400 flex items-center justify-center mb-4 font-black">
-                                <i data-lucide="brain" class="w-6 h-6"></i>
-                            </div>
-                            <span class="text-[10px] uppercase font-extrabold text-cyan-400 bg-cyan-500/10 px-2.5 py-1 rounded-md border border-cyan-500/20">SNBT Standard</span>
-                            <h3 class="text-xl font-extrabold text-white mt-3 mb-1">UTBK - Penalaran Umum (PU)</h3>
-                            <p class="text-slate-400 text-xs mb-6 leading-relaxed">Uji logika deduktif, silogisme, pola barisan, & kesimpulan paragraf.</p>
-                        </div>
-                        <button onclick="startSimulasi('utbk-pu')" class="w-full py-3.5 bg-cyan-500 hover:bg-cyan-400 text-slate-950 font-black text-xs rounded-xl transition shadow-lg shadow-cyan-500/20 flex items-center justify-center gap-2">
-                            <i data-lucide="play" class="w-4 h-4 fill-current"></i> Mulai Tes (10 Menit)
-                        </button>
-                    </div>
-
-                    <div class="glass-card border border-slate-800 p-6 rounded-3xl flex flex-col justify-between shadow-xl">
-                        <div>
-                            <div class="w-12 h-12 rounded-2xl bg-indigo-500/20 border border-indigo-500/30 text-indigo-400 flex items-center justify-center mb-4 font-black">
-                                <i data-lucide="zap" class="w-6 h-6"></i>
-                            </div>
-                            <span class="text-[10px] uppercase font-extrabold text-indigo-400 bg-indigo-500/10 px-2.5 py-1 rounded-md border border-indigo-500/20">TKA High Level</span>
-                            <h3 class="text-xl font-extrabold text-white mt-3 mb-1">TKA Saintek - Fisika, Kimia & Bio</h3>
-                            <p class="text-slate-400 text-xs mb-6 leading-relaxed">Uji penalaran sains lanjutan: mekanika, sel elektrolisis, & genetika.</p>
-                        </div>
-                        <button onclick="startSimulasi('tka-saintek')" class="w-full py-3.5 bg-indigo-600 hover:bg-indigo-500 text-white font-black text-xs rounded-xl transition shadow-lg shadow-indigo-600/20 flex items-center justify-center gap-2">
-                            <i data-lucide="play" class="w-4 h-4 fill-current"></i> Mulai Tes (10 Menit)
-                        </button>
-                    </div>
-
-                    <div class="glass-card border border-slate-800 p-6 rounded-3xl flex flex-col justify-between shadow-xl">
-                        <div>
-                            <div class="w-12 h-12 rounded-2xl bg-rose-500/20 border border-rose-500/30 text-rose-400 flex items-center justify-center mb-4 font-black">
-                                <i data-lucide="users" class="w-6 h-6"></i>
-                            </div>
-                            <span class="text-[10px] uppercase font-extrabold text-rose-400 bg-rose-500/10 px-2.5 py-1 rounded-md border border-rose-500/20">TKA High Level</span>
-                            <h3 class="text-xl font-extrabold text-white mt-3 mb-1">TKA Soshum - Eko, Sos & Geo</h3>
-                            <p class="text-slate-400 text-xs mb-6 leading-relaxed">Uji pemahaman ekonomi ceiling price, sosiologi empiris, & prinsip geografi.</p>
-                        </div>
-                        <button onclick="startSimulasi('tka-soshum')" class="w-full py-3.5 bg-rose-600 hover:bg-rose-500 text-white font-black text-xs rounded-xl transition shadow-lg shadow-rose-600/20 flex items-center justify-center gap-2">
-                            <i data-lucide="play" class="w-4 h-4 fill-current"></i> Mulai Tes (10 Menit)
-                        </button>
-                    </div>
                 </div>
             `;
         }
 
-        // Active Simulation Engine with Timer
         function startSimulasi(simKey) {
             state.activeSimKey = simKey;
             state.currentSimAnswers = {};
@@ -2327,8 +2057,6 @@
             const app = document.getElementById('app-content');
             app.innerHTML = `
                 <div class="max-w-3xl mx-auto glass-card border border-purple-500/30 p-6 sm:p-8 rounded-3xl shadow-2xl relative">
-                    
-                    <!-- Timer Header -->
                     <div class="sticky top-24 z-30 bg-slate-900/95 border border-purple-500/40 p-4 rounded-2xl mb-6 backdrop-blur-xl flex items-center justify-between shadow-xl">
                         <div>
                             <span class="text-[10px] font-extrabold text-purple-400 tracking-wider uppercase block">Simulasi Berjalan</span>
@@ -2388,7 +2116,7 @@
 
                 if (state.simTimeLeft <= 0) {
                     clearInterval(state.simTimerInterval);
-                    alert('Waktu pengerjaan telah habis! Jawaban Anda akan tersimpan secara otomatis.');
+                    alert('Waktu habis! Jawaban otomatis tersimpan.');
                     submitSimulasi(simKey);
                 }
             }, 1000);
@@ -2437,13 +2165,13 @@
             };
 
             state.attempts.push(attemptRecord);
-            localStorage.setItem('nihiluxxy_attempts', JSON.stringify(state.attempts));
+            localStorage.setItem('nihiluxxy_v8_attempts', JSON.stringify(state.attempts));
 
             switchView('riwayat');
             openDetailRiwayat(state.attempts.length - 1);
         }
 
-        // Render Interactive Flashcard View
+        // Flashcards View
         function renderFlashcardScreen() {
             let cards = db.flashcards;
             if (state.flashcardFilter && state.flashcardFilter !== 'semua') {
@@ -2456,25 +2184,21 @@
 
             return `
                 <div class="mb-8 text-center max-w-2xl mx-auto">
-                    <span class="text-xs font-extrabold uppercase tracking-widest text-emerald-400 bg-emerald-500/10 px-3 py-1 rounded-full border border-emerald-500/20 mb-2 inline-block">Flashcards Pintar</span>
+                    <span class="text-xs font-extrabold uppercase tracking-widest text-emerald-400 bg-emerald-500/10 px-3 py-1 rounded-full border border-emerald-500/20 mb-2 inline-block">Flashcards Intuitif</span>
                     <h1 class="text-3xl font-black text-white tracking-tight">Latihan Cepat Hafalan & Konsep</h1>
                     <p class="text-slate-400 text-xs sm:text-sm mt-1">Uji ingatan intuitif Anda sebelum menghadapi ujian asli.</p>
 
-                    <!-- Filter Chips -->
                     <div class="flex flex-wrap justify-center gap-2 mt-4 text-xs font-semibold">
                         <button onclick="setFlashcardFilter('semua')" class="px-3.5 py-1.5 rounded-xl transition ${state.flashcardFilter === 'semua' ? 'bg-purple-600 text-white' : 'bg-slate-900 text-slate-400 border border-slate-800 hover:text-white'}">Semua</button>
                         <button onclick="setFlashcardFilter('matematika')" class="px-3.5 py-1.5 rounded-xl transition ${state.flashcardFilter === 'matematika' ? 'bg-purple-600 text-white' : 'bg-slate-900 text-slate-400 border border-slate-800 hover:text-white'}">Matematika</button>
                         <button onclick="setFlashcardFilter('fisika')" class="px-3.5 py-1.5 rounded-xl transition ${state.flashcardFilter === 'fisika' ? 'bg-purple-600 text-white' : 'bg-slate-900 text-slate-400 border border-slate-800 hover:text-white'}">Fisika</button>
                         <button onclick="setFlashcardFilter('kimia')" class="px-3.5 py-1.5 rounded-xl transition ${state.flashcardFilter === 'kimia' ? 'bg-purple-600 text-white' : 'bg-slate-900 text-slate-400 border border-slate-800 hover:text-white'}">Kimia</button>
-                        <button onclick="setFlashcardFilter('biologi')" class="px-3.5 py-1.5 rounded-xl transition ${state.flashcardFilter === 'biologi' ? 'bg-purple-600 text-white' : 'bg-slate-900 text-slate-400 border border-slate-800 hover:text-white'}">Biologi</button>
-                        <button onclick="setFlashcardFilter('geografi')" class="px-3.5 py-1.5 rounded-xl transition ${state.flashcardFilter === 'geografi' ? 'bg-purple-600 text-white' : 'bg-slate-900 text-slate-400 border border-slate-800 hover:text-white'}">Geografi</button>
-                        <button onclick="setFlashcardFilter('ekonomi')" class="px-3.5 py-1.5 rounded-xl transition ${state.flashcardFilter === 'ekonomi' ? 'bg-purple-600 text-white' : 'bg-slate-900 text-slate-400 border border-slate-800 hover:text-white'}">Ekonomi</button>
                     </div>
                 </div>
 
                 <div class="max-w-xl mx-auto">
                     <div id="flashcard-box" onclick="flipFlashcard()" class="glass-card border border-purple-500/40 rounded-3xl p-8 sm:p-12 min-h-[280px] flex flex-col justify-between items-center text-center cursor-pointer shadow-2xl transition-all duration-300 transform hover:scale-[1.02]">
-                        <span class="text-[10px] font-black uppercase text-purple-400 font-mono tracking-widest">${card.mapel} • Klik Kartu Untuk Membalik</span>
+                        <span class="text-[10px] font-black uppercase text-purple-400 font-mono tracking-widest">${card.mapel} • Klik Kartu Membalik</span>
                         
                         <div id="flashcard-content" class="my-auto py-4 w-full">
                             <p class="text-base sm:text-lg font-bold text-white leading-relaxed">${card.pertanyaan}</p>
@@ -2551,14 +2275,14 @@
                 return `
                     <div class="mb-8">
                         <h1 class="text-3xl font-black text-white tracking-tight">Riwayat Pengerjaan</h1>
-                        <p class="text-slate-400 text-xs sm:text-sm mt-1">Daftar evaluasi simulasi dan pembahasan akurat Anda.</p>
+                        <p class="text-slate-400 text-xs sm:text-sm mt-1">Daftar evaluasi simulasi dan pembahasan akar konsep Anda.</p>
                     </div>
                     <div class="glass-card border border-slate-800 rounded-3xl p-12 text-center text-slate-500 shadow-xl">
                         <div class="w-16 h-16 rounded-full bg-slate-900 border border-slate-800 flex items-center justify-center mx-auto mb-4 text-slate-600">
                             <i data-lucide="history" class="w-8 h-8"></i>
                         </div>
                         <p class="text-base font-extrabold text-slate-300">Belum Ada Riwayat Tersimpan</p>
-                        <p class="text-xs text-slate-500 mt-1 mb-6">Selesaikan simulasi TKA/UTBK untuk mencatat riwayat jawaban akurat Anda di sini.</p>
+                        <p class="text-xs text-slate-500 mt-1 mb-6">Selesaikan simulasi TKA/UTBK untuk mencatat riwayat jawaban Anda di sini.</p>
                         <button onclick="switchView('utbk')" class="px-6 py-3 bg-purple-600 hover:bg-purple-500 text-white font-extrabold text-xs rounded-xl transition shadow-lg shadow-purple-600/25">
                             Mulai Simulasi Sekarang
                         </button>
@@ -2569,7 +2293,7 @@
             return `
                 <div class="mb-8 flex flex-col sm:flex-row sm:items-center justify-between gap-4">
                     <div>
-                        <h1 class="text-3xl font-black text-white tracking-tight">Riwayat & Pembahasan Akurat</h1>
+                        <h1 class="text-3xl font-black text-white tracking-tight">Riwayat & Pembahasan Akar Konsep</h1>
                         <p class="text-slate-400 text-xs sm:text-sm mt-1">Pilih pengerjaan di bawah untuk memeriksa kunci jawaban & cara pengerjaan terperinci.</p>
                     </div>
                     <button onclick="clearHistory()" class="px-4 py-2 border border-rose-500/30 text-rose-400 hover:bg-rose-500/10 text-xs font-bold rounded-xl transition self-start sm:self-auto flex items-center gap-1.5">
@@ -2647,13 +2371,9 @@
                             </div>
 
                             <div class="bg-purple-950/30 border border-purple-800/40 p-4 rounded-xl text-xs text-slate-300 leading-relaxed mb-3">
-                                <span class="text-purple-300 font-extrabold block mb-1">📘 Pembahasan Akurat & Langkah Penyelesaian:</span>
+                                <span class="text-purple-300 font-extrabold block mb-1">📘 Pembahasan Akar Konsep & Langkah:</span>
                                 ${d.solusi}
                             </div>
-
-                            <button onclick="askAiAboutQuestion('${d.pertanyaan.replace(/'/g, "\\'")}')" class="w-full py-2 bg-slate-950 hover:bg-purple-950/50 border border-purple-500/30 text-purple-300 text-xs font-bold rounded-xl transition flex items-center justify-center gap-1.5">
-                                <i data-lucide="bot" class="w-3.5 h-3.5"></i> Jelaskan Langkah Ini Lebih Detail via AI
-                            </button>
                         </div>
                     `).join('')}
                 </div>
@@ -2662,16 +2382,14 @@
         }
 
         function clearHistory() {
-            if (confirm('Apakah Anda yakin ingin menghapus seluruh riwayat pengerjaan simulasi?')) {
+            if (confirm('Hapus seluruh riwayat pengerjaan simulasi?')) {
                 state.attempts = [];
-                localStorage.removeItem('nihiluxxy_attempts');
+                localStorage.removeItem('nihiluxxy_v8_attempts');
                 switchView('riwayat');
             }
         }
 
-        // ==========================================
-        // ENHANCED NIHILUXXY AI TUTOR ENGINE v6.5
-        // ==========================================
+        // AI Tutor Drawer Modal Logic
         function toggleAiModal() {
             const modal = document.getElementById('ai-tutor-modal');
             if (modal) {
@@ -2699,17 +2417,12 @@
 
         function askAiAboutTopic(topicTitle) {
             toggleAiModal();
-            injectAiPrompt(`Tolong berikan penjelasan super mendalam, analisis konsep, dan rumus praktis untuk topik: ${topicTitle}`);
+            injectAiPrompt(`Tolong berikan penjelasan super mendalam, akar konsep, derivasi rumus, dan trik bimbel cepat untuk topik: ${topicTitle}`);
         }
 
         function askAiAboutSubject(subjectName) {
             toggleAiModal();
-            injectAiPrompt(`Beri saya ringkasan peta konsep terpenting yang sering keluar di UTBK SNBT untuk mata pelajaran: ${subjectName}`);
-        }
-
-        function askAiAboutQuestion(qText) {
-            toggleAiModal();
-            injectAiPrompt(`Tolong bedah dan jelaskan langkah demi langkah penyelesaian dari soal berikut: "${qText}"`);
+            injectAiPrompt(`Beri saya peta konsep akar terpenting yang sering keluar di UTBK SNBT 2026 untuk mata pelajaran: ${subjectName}`);
         }
 
         function sendAiQuery() {
@@ -2720,7 +2433,6 @@
             const text = input.value.trim();
             if (!text) return;
 
-            // Render User Bubble
             const userBubble = document.createElement('div');
             userBubble.className = "flex gap-3 items-start justify-end";
             userBubble.innerHTML = `
@@ -2734,7 +2446,6 @@
             input.value = '';
             chatBody.scrollTop = chatBody.scrollHeight;
 
-            // Render AI Loading State
             const aiBubble = document.createElement('div');
             aiBubble.className = "flex gap-3 items-start";
             const loadingId = 'ai-loading-' + Date.now();
@@ -2742,85 +2453,55 @@
                 <div class="w-8 h-8 rounded-xl gradient-accent flex-shrink-0 flex items-center justify-center text-white text-xs font-bold">AI</div>
                 <div id="${loadingId}" class="bg-slate-900/90 border border-purple-500/30 p-4 rounded-2xl text-xs sm:text-sm text-slate-300 max-w-xl leading-relaxed shadow-lg flex items-center gap-2">
                     <i data-lucide="loader-2" class="w-4 h-4 text-purple-400 animate-spin"></i>
-                    <span>Nihiluxxy AI v6.5 sedang memproses & menganalisis pertanyaan...</span>
+                    <span>Nihiluxxy AI v8.0 sedang membedah konsep & derivasi rumus...</span>
                 </div>
             `;
             chatBody.appendChild(aiBubble);
             lucide.createIcons();
             chatBody.scrollTop = chatBody.scrollHeight;
 
-            // Multi-Subject Smart Response Engine
             setTimeout(() => {
                 const target = document.getElementById(loadingId);
                 if (target) {
-                    const responseHTML = generateSmartAiResponse(text);
-                    target.innerHTML = responseHTML;
+                    target.innerHTML = generateSmartAiResponse(text);
                     chatBody.scrollTop = chatBody.scrollHeight;
                 }
-            }, 1000);
+            }, 900);
         }
 
         function generateSmartAiResponse(query) {
             const q = query.toLowerCase();
 
-            // VEKTOR & PROYEKSI
-            if (q.includes('vektor') || q.includes('proyeksi') || q.includes('ortogonal')) {
+            if (q.includes('vieta') || q.includes('kuadrat')) {
                 return `
                     <div class="space-y-3">
-                        <span class="text-blue-400 font-extrabold block text-xs">➡️ Nihiluxxy AI Multi-Solver - Vektor:</span>
-                        <p><strong>1. Perkalian Titik (Dot Product):</strong> u · v = u₁v₁ + u₂v₂ + u₃v₃ = |u||v| cos θ</p>
-                        <p><strong>2. Syarat Saling Tegak Lurus:</strong> u · v = 0</p>
-                        <p><strong>3. Proyeksi Vektor Ortogonal u pada v:</strong></p>
+                        <span class="text-blue-400 font-extrabold block text-xs">➡️ Bedah Akar Konsep - Rumus Vieta Persamaan Kuadrat:</span>
+                        <p>Persamaan $ax^2 + bx + c = 0$ dapat difaktorkan menjadi $a(x - x_1)(x - x_2) = 0$.</p>
+                        <p>Jika dikalikan: $a[x^2 - (x_1 + x_2)x + x_1 x_2] = ax^2 - a(x_1 + x_2)x + a x_1 x_2 = 0$.</p>
+                        <p>Dengan menyamakan koefisien $ax^2 + bx + c$, diperoleh dua teorema Vieta utama:</p>
                         <div class="bg-slate-950 p-3 rounded-xl border border-slate-800 text-xs font-mono text-purple-300 text-center">
-                            p = [ (u · v) / |v|² ] · v
+                            x₁ + x₂ = -b/a   |   x₁ · x₂ = c/a   |   x₁ - x₂ = √D / a
                         </div>
                     </div>
                 `;
-            }
-            // MATRIKS & INVERS
-            else if (q.includes('matriks') || q.includes('determinan') || q.includes('invers')) {
+            } else if (q.includes('respirasi') || q.includes('aerob') || q.includes('krebs')) {
                 return `
                     <div class="space-y-3">
-                        <span class="text-pink-400 font-extrabold block text-xs">📊 Nihiluxxy AI - Matriks & Invers:</span>
-                        <p><strong>Invers Matriks 2x2:</strong> Jika A = [[a,b],[c,d]], maka A⁻¹ = (1/det A) · [[d,-b],[-c,a]] dengan det A = ad - bc.</p>
-                        <p><strong>Sifat Utama Determinan UTBK:</strong></p>
-                        <ul class="list-disc list-inside space-y-1 text-xs text-slate-300 font-mono">
-                            <li>det(A · B) = det(A) · det(B)</li>
-                            <li>det(A⁻¹) = 1 / det(A)</li>
-                            <li>det(k · A_n×n) = kⁿ · det(A)</li>
+                        <span class="text-emerald-400 font-extrabold block text-xs">🧬 Bedah Biokimia - 4 Tahap Respirasi Aerob:</span>
+                        <ul class="list-disc list-inside space-y-1.5 text-xs text-slate-300">
+                            <li><strong>1. Glikolisis (Sitosol):</strong> 1 Glukosa → 2 Asam Pyruvat + 2 NADH + 2 ATP.</li>
+                            <li><strong>2. Dekarboksilasi Oksidatif (Matriks Mitokondria):</strong> 2 Asam Pyruvat → 2 Asetil-KoA + 2 CO₂ + 2 NADH.</li>
+                            <li><strong>3. Siklus Krebs (Matriks Mitokondria):</strong> 2 Asetil-KoA → 4 CO₂ + 6 NADH + 2 FADH₂ + 2 ATP.</li>
+                            <li><strong>4. Transpor Elektron (Krista Mitokondria):</strong> Pembentukan total 34 ATP via fosforilasi oksidatif. (Akseptor elektron terakhir = O₂).</li>
                         </ul>
                     </div>
                 `;
-            }
-            // GEOGRAFI
-            else if (q.includes('geografi') || q.includes('peta') || q.includes('indrajaja') || q.includes('litosfer')) {
-                return `
-                    <div class="space-y-3">
-                        <span class="text-emerald-400 font-extrabold block text-xs">🌍 Nihiluxxy AI - Geografi & SIG:</span>
-                        <p><strong>1. Skala Peta:</strong> Skala = Jarak Peta / Jarak Sebenarnya</p>
-                        <p><strong>2. Kontur Interval (CI):</strong> CI = (1 / 2.000) × Penyebut Skala Utama</p>
-                        <p><strong>3. Teori Titik Henti (Break-Off Point):</strong> D_TH = d_AB / (1 + √(P_B / P_A)) dengan P_A < P_B.</p>
-                    </div>
-                `;
-            }
-            // KIMIA & LAJU REAKSI
-            else if (q.includes('kimia') || q.includes('laju') || q.includes('buffer') || q.includes('ph')) {
-                return `
-                    <div class="space-y-3">
-                        <span class="text-pink-400 font-extrabold block text-xs">🧪 Nihiluxxy AI - Kimia & Laju Reaksi:</span>
-                        <p><strong>1. Persamaan Laju Reaksi:</strong> V = k [A]ᵐ [B]ⁿ</p>
-                        <p><strong>2. pH Asam Kuat:</strong> [H⁺] = Molaritas × Valensi Asam ⇒ pH = -log[H⁺]</p>
-                        <p><strong>3. Buffer Asam:</strong> [H⁺] = K_a × (mol Asam Lemah / mol Basa Konjugasi)</p>
-                    </div>
-                `;
-            }
-            // FALLBACK GENERAL
-            else {
+            } else {
                 return `
                     <div class="space-y-2">
-                        <span class="text-purple-300 font-extrabold block text-xs">🤖 Analisis AI Nihiluxxy v6.5:</span>
+                        <span class="text-purple-300 font-extrabold block text-xs">🤖 Nihiluxxy AI v8.0 Analysis:</span>
                         <p>Terima kasih atas pertanyaanmu mengenai: <em>"${query}"</em>.</p>
-                        <p>Untuk membedah tipe soal ini dengan tepat, petakan variabel ke rumus utamanya dan eliminasi pilihan jawaban yang tidak logis. Kamu juga bisa menggunakan fitur <strong>Kalkulator AI Math & Sains</strong> di menu navigasi!</p>
+                        <p>Untuk menyelesaikannya secara presisi, urutkan dulu data yang diketahui, tentukan konsep dasar hukum fisika/matematika yang menaunginya, dan gunakan fitur **Graph Visualizer AI** atau **Kalkulator Multi-Solver** jika memerlukan pembuktian visual!</p>
                     </div>
                 `;
             }
